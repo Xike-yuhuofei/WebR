@@ -4,6 +4,14 @@
  * Exposes frozen evidence to a reconstruction workflow and produces a local
  * replica. Reconstruction must not access the original source origin; every
  * path here is derived purely from the local Evidence Package.
+ *
+ * GOAL-002 change: the replica is a genuinely dynamic site, not a set of
+ * static per-state snapshots. Each route is reconstructed as ONE document
+ * (the route's entry DOM) plus its own runtime: the site's localized JS is
+ * kept, cross-origin/CDN assets are localized and rewritten, and recorded
+ * API payloads are replayed through a local fetch shim. Recorded states that
+ * share a route therefore live in a single file that changes at runtime —
+ * multiple states never overwrite one route file.
  */
 import { copyFile, mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
@@ -115,9 +123,10 @@ export function sourceOriginDenied(
 }
 
 /**
- * Scan generated replica HTML files for any remaining source-origin URL
+ * Scan generated replica files for any remaining source-origin URL
  * references. The reconstructed site must not load resources from the
- * original origin; a hit here is a hard failure.
+ * original origin; a hit here is a hard failure. We scan HTML, JS and CSS so
+ * a leftover fetch/xhr/import to the source origin is caught at build time.
  */
 export async function scanReplicaForSourceOrigin(
   replicaPath: string,
@@ -131,7 +140,7 @@ export async function scanReplicaForSourceOrigin(
       const abs = join(dir, e.name);
       if (e.isDirectory()) {
         await walk(abs);
-      } else if (/\.html?$/.test(e.name)) {
+      } else if (/\.(html?|js|css|mjs|json)$/.test(e.name)) {
         const text = await readFile(abs, 'utf8');
         if (text.includes(origin)) {
           hits.push(`${abs.replace(replicaPath, '')}`);
@@ -152,11 +161,58 @@ export function mimeTypeFor(path: string, fallback = 'application/octet-stream')
   return lookup(path.slice(path.lastIndexOf('.'))) ?? fallback;
 }
 
+/** Absolute route key for a captured URL (pathname, trailing slashes trimmed). */
+export function routeKeyFor(url: string): string {
+  try {
+    return new URL(url).pathname.replace(/\/+$/, '') || '/';
+  } catch {
+    return '/';
+  }
+}
+
 /**
- * Build a static HTML replica from the Reconstruction Spec. Each state becomes
- * a route page rendered from its captured DOM; assets are served locally.
- * This is a minimal adapter demonstration: it produces a runnable local site
- * with zero source-origin dependencies.
+ * Capture-order index embedded in a state id (the `-N` suffix). State ids are
+ * content-derived, so we cannot rely on array order (`readdir` order is
+ * arbitrary); the sequence suffix gives the true capture order and thus the
+ * identity of each route's entry state (the first time that route was seen).
+ */
+export function captureIndex(stateId: string): number {
+  const m = /-(\d+)$/.exec(stateId);
+  return m ? parseInt(m[1], 10) : 0;
+}
+
+/** Local URL within the replica for a localized asset (rooted absolute). */
+function localAssetUrl(localPath: string): string {
+  return `/${localPath.replace(/^\/+/, '')}`;
+}
+
+/** Group states into a Map<routeKey, StateRecord[]> preserving capture order. */
+export function groupStatesByRoute(spec: ReconstructionSpec): Map<string, typeof spec.states> {
+  const map = new Map<string, typeof spec.states>();
+  for (const state of spec.states) {
+    const key = routeKeyFor(state.url);
+    const bucket = map.get(key) ?? [];
+    bucket.push(state);
+    // Keep each route bucket in capture order; bucket[0] is the entry state.
+    bucket.sort((a, b) => captureIndex(a.id) - captureIndex(b.id));
+    map.set(key, bucket);
+  }
+  return map;
+}
+
+/**
+ * Build a dynamic HTML replica from the Reconstruction Spec.
+ *
+ * Layout per route `<route>/index.html` (plus `index.html` for `/`):
+ *   1. the route's *entry* DOM is the document (its state includes the
+ *      API-rendered content, so no fetch is required to paint);
+ *   2. every localized asset URL (same-origin and cross-origin) is rewritten
+ *      to the local cache;
+ *   3. a fetch shim replays recorded API/network payloads locally, so the
+ *      site's own JS keeps working offline;
+ *   4. the site's own JS is kept and runs against the local assets, so all
+ *      interactions (menu, modal, tabs, form, scroll header, mobile menu)
+ *      are genuinely implemented by the replica rather than stored snapshots.
  */
 export async function buildReplica(
   spec: ReconstructionSpec,
@@ -166,8 +222,7 @@ export async function buildReplica(
 ): Promise<void> {
   await mkdir(replicaPath, { recursive: true });
 
-  // Copy localized assets into the replica's public tree, preserving the
-  // package-relative path so internal references keep working.
+  // Copy localized assets (same + cross-origin) into the replica tree.
   if (options.copyAssets ?? true) {
     for (const asset of spec.assets) {
       const src = join(evidencePath, asset.localPath);
@@ -182,45 +237,27 @@ export async function buildReplica(
     }
   }
 
-  // Write per-state HTML pages under the same route structure as evidence.
-  for (const state of spec.states) {
-    const domPath = state.artifacts.dom;
+  const routes = groupStatesByRoute(spec);
+
+  // Build one dynamic document per route.
+  for (const [route, routeStates] of routes) {
+    const entry = routeStates[0];
+    const domPath = entry.artifacts.dom;
     if (!domPath) continue;
-    const dom = await readFile(join(evidencePath, 'states', state.id, domPath), 'utf8');
-    const page = pageFromDom(dom, state, spec);
-    const routeDir = replicaRouteFor(spec, state.id);
-    await mkdir(join(replicaPath, routeDir), { recursive: true });
-    await writeFile(join(replicaPath, routeDir, 'index.html'), page, 'utf8');
+    const dom = await readFile(join(evidencePath, 'states', entry.id, domPath), 'utf8');
+    const html = pageFromDom(dom, entry, spec);
+    const routeDir = route === '/' ? '' : `./${route.replace(/^\/+/, '')}`;
+    const absDir = join(replicaPath, routeDir);
+    await mkdir(absDir, { recursive: true });
+    await writeFile(join(absDir, 'index.html'), html, 'utf8');
   }
-
-  // Write the entry page (route "/").
-  const entry = spec.pages.find((p) => p.route === '/') ?? spec.pages[0];
-  if (entry && entry.entryState) {
-    const src = join(replicaPath, replicaRouteFor(spec, entry.entryState), 'index.html');
-    const dest = join(replicaPath, 'index.html');
-    try {
-      await stat(src);
-      await copyFile(src, dest);
-    } catch {
-      // fall through: no entry page available
-    }
-  }
-}
-
-/** Map a state to a safe local route directory (never the source URL). */
-export function replicaRouteFor(spec: ReconstructionSpec, stateId: string): string {
-  const page = spec.pages.find((p) => p.states.includes(stateId));
-  const route = page?.route ?? '/';
-  const clean = route
-    .split('?')[0]
-    .replace(/[^a-zA-Z0-9_/-]/g, '-')
-    .replace(/^\/+|\/+$/g, '');
-  return clean ? `routes/${clean}` : 'routes/home';
 }
 
 /**
- * Rewrite a captured DOM page so source-origin resource references resolve to
- * local assets, and add a visible replica marker for validation tracing.
+ * Rewrite a captured entry DOM into an offline replica document:
+ *   – rewrite all localized asset URLs (same-origin and CDN) to local paths;
+ *   – inject a fetch shim that replays recorded API payloads offline;
+ *   – add a visible replica marker for validation tracing.
  */
 function pageFromDom(
   dom: string,
@@ -230,29 +267,55 @@ function pageFromDom(
   const origin = spec.source.origin;
   let html = dom;
 
-  // Replace absolute source-origin resource URLs with local asset paths.
+  // 1) Rewrite asset references (absolute URLs, and same-origin relative
+  //    pathname references) to the local cache.
+  const absoluteRe = new Map<string, string>();
+  const pathRe = new Map<string, string>();
   for (const asset of spec.assets) {
-    const original = asset.originalUrl;
-    if (!original.startsWith(origin)) continue;
-    const escaped = original.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const replacement = `assets/${asset.localPath.replace(/^assets\//, '')}`;
-    html = html.replace(new RegExp(escaped, 'g'), replacement);
+    const local = localAssetUrl(asset.localPath);
+    absoluteRe.set(asset.originalUrl, local);
+    try {
+      const isOrigin = new URL(asset.originalUrl).origin === origin;
+      if (isOrigin) pathRe.set(new URL(asset.originalUrl).pathname, local);
+    } catch {
+      // ignore malformed provenance URLs
+    }
+  }
+  for (const [from, to] of absoluteRe) {
+    html = html.split(from).join(to);
+  }
+  for (const [fromPath, to] of pathRe) {
+    if (fromPath === '/') continue;
+    html = html.split(fromPath).join(to);
   }
 
-  // Strip any remaining <link> to source-origin stylesheets (offline rule).
-  html = html.replace(
-    new RegExp(`<link[^>]+href=["']${escapeRe(origin)}[^"']*["'][^>]*>`, 'g'),
-    '',
-  );
+  // 2) Inject a fetch shim that replays recorded network payloads (API/JSON)
+  //    from the local asset cache, keyed by request pathname.
+  const fetchMap = spec.assets
+    .filter((a) => {
+      try {
+        return new URL(a.originalUrl)?.pathname;
+      } catch {
+        return false;
+      }
+    })
+    .map((a) => {
+      const path = new URL(a.originalUrl).pathname;
+      return { p: path, f: localAssetUrl(a.localPath) };
+    });
+  const shimBlock = `<script>
+(function(){var MAP=${JSON.stringify(fetchMap)};var nativeFetch=window.fetch.bind(window);
+window.fetch=function(input,init){var u=(typeof input==='string')?new URL(input,location.href):(input&&input.url)?new URL(input.url):null;
+if(u){for(var i=0;i<MAP.length;i++){if(u.pathname===MAP[i].p){return nativeFetch(MAP[i].f,init);}}}
+return nativeFetch.apply(window,arguments);};})();
+</script>`;
+  html = html.replace('</head>', `${shimBlock}</head>`);
 
-  // Add a replica marker for evidence tracing.
-  const marker = `<div class="wr-ReplicaBanner" data-wr-replica="true" data-wr-state="${state.id}">Reconstructed replica</div>`;
+  // 3) Add a replica marker for evidence tracing (hidden from view so it never
+  //    pollutes visual diffs; still present in DOM for structural checks).
+  const marker = `<div class="wr-ReplicaBanner" data-wr-replica="true" data-wr-state="${state.id}" style="display:none" aria-hidden="true">Reconstructed replica</div>`;
   html = html.replace('</body>', `${marker}\n</body>`);
   return html;
-}
-
-function escapeRe(s: string): string {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 export type { PageRecord, StateRecord };

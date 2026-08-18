@@ -8,6 +8,7 @@
 import { sha256Hex } from '../checksum.js';
 import { TOOL_VERSION, type CaptureMetadata, type Viewport } from '../contracts.js';
 import { launchSession } from './browser.js';
+import { collectFingerprintSignals, fingerprintString } from './fingerprint.js';
 import {
   createHarCollector,
   isLocalizableAsset,
@@ -78,7 +79,7 @@ export async function capturePackage(config: CaptureConfig): Promise<CaptureOutc
   const harCollector = createHarCollector(page, TOOL_VERSION);
 
   const stopObserving = observeResponses(page, (obs) => {
-    if (!isLocalizableAsset(obs, sourceOrigin)) return;
+    if (!isLocalizableAsset(obs)) return;
     if (assetMap.has(obs.url)) return;
     const id = assetId(obs.url);
     const localPath = assetLocalPath(obs.url, obs.body!, assetMap.size);
@@ -94,7 +95,30 @@ export async function capturePackage(config: CaptureConfig): Promise<CaptureOutc
 
   const captureState = async (fingerprint: string): Promise<CapturedStateEvidence> => {
     await waitForPageReady(page);
-    const scroll = { x: 0, y: 0 };
+    // Record the *actual* observable context (viewport, scroll, URL), which
+    // may differ from the session default after resize/scroll/navigation
+    // actions produce a distinct state.
+    const layout = await page.evaluate(() => ({
+      scroll: { x: window.scrollX, y: window.scrollY },
+      viewportCss: { width: window.innerWidth, height: window.innerHeight },
+    }));
+    const vp = page.viewportSize();
+    const actualViewport: Viewport = {
+      width: vp?.width ?? layout.viewportCss.width,
+      height: vp?.height ?? layout.viewportCss.height,
+      deviceScaleFactor: 1,
+    };
+    // Recompute the fingerprint *here*, from the exact DOM that is about to be
+    // screenshot-captured. The exploration-time fingerprint can include
+    // transient residues that settle during the pre-capture wait; storing a
+    // fingerprint that matches the snapshot keeps it reproducible for replay.
+    const signals = await page.evaluate(collectFingerprintSignals, [
+      page.url(),
+      { width: actualViewport.width, height: actualViewport.height },
+      layout.scroll,
+    ] as [string, { width: number; height: number }, import('../contracts.js').ScrollPosition]);
+    fingerprint = fingerprintString(signals);
+
     const screenshot = await page.screenshot({ type: 'png' });
     const fullpage = exploreOptions.fullPage
       ? await page.screenshot({ type: 'png', fullPage: true })
@@ -120,8 +144,8 @@ export async function capturePackage(config: CaptureConfig): Promise<CaptureOutc
       pageId: 'page-1',
       url: page.url(),
       title,
-      viewport,
-      scroll,
+      viewport: actualViewport,
+      scroll: layout.scroll,
       artifacts: {
         screenshot,
         fullpage,

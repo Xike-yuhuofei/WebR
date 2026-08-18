@@ -83,18 +83,54 @@ export async function discoverActions(page: Page): Promise<DiscoveredAction[]> {
     const selectors =
       'a[href],button,[role="button"],input,select,textarea,[role="menuitem"],[role="tab"],[role="link"],[contenteditable="true"],summary';
 
+    // Build a stable, ideally unique CSS selector for an element. Preferring
+    // id, otherwise a structural path (tag + class + nth-of-type). A text
+    // locator is ambiguous (e.g. the same label in both the desktop nav and
+    // the hidden mobile menu), so we only fall back to text when no stable
+    // selector is computable.
+    const stableSelector = (el: Element): string | null => {
+      const idOf = (e: Element): string => (e as HTMLElement).id;
+      if (idOf(el)) return `#${CSS.escape(idOf(el))}`;
+      const parts: string[] = [];
+      let node: Element | null = el;
+      while (node) {
+        const tag = node.tagName.toLowerCase();
+        const id = idOf(node);
+        if (id) {
+          parts.unshift(`#${CSS.escape(id)}`);
+          break;
+        }
+        let sel = tag;
+        const cls = Array.from(node.classList)
+          .slice(0, 3)
+          .map((c) => `.${CSS.escape(c)}`)
+          .join('');
+        if (cls) sel += cls;
+        const parent: Element | null = node.parentElement;
+        if (parent) {
+          const cur: Element = node;
+          const sameTag: Element[] = Array.from(parent.children).filter(
+            (c: Element) => c.tagName === cur.tagName,
+          );
+          if (sameTag.length > 1) {
+            const nth = sameTag.indexOf(cur) + 1;
+            sel += `:nth-of-type(${nth})`;
+          }
+        }
+        parts.unshift(sel);
+        if (parts.length > 8) break;
+        node = parent;
+      }
+      return parts.join(' > ');
+    };
+
     const add = (el: Element, type: ActionType, label?: string) => {
-      const key =
-        type +
-        ':' +
-        (el.id ??
-          el.getAttribute('data-wr-evidence') ??
-          el.textContent?.trim()?.slice(0, 60) ??
-          '');
+      const selector = stableSelector(el) ?? '';
+      const key = type + ':' + selector;
       if (seen.has(key)) return;
       seen.add(key);
-      const target = el.id
-        ? { strategy: 'css' as const, value: `#${CSS.escape(el.id)}` }
+      const target = selector
+        ? { strategy: 'css' as const, value: selector }
         : {
             strategy: 'text' as const,
             value: (el.textContent ?? '').trim().slice(0, 60) || el.tagName.toLowerCase(),
@@ -135,6 +171,48 @@ export async function discoverActions(page: Page): Promise<DiscoveredAction[]> {
         el.getAttribute('role') === 'tab'
       ) {
         add(el, 'click');
+      }
+    }
+
+    // Hover discovery: find elements that reveal content on hover (menu
+    // triggers). We scan stylesheets for `:hover` rules (hover-dependent
+    // layout/visibility) and also accept `aria-haspopup`/`[data-menu]`
+    // triggers. The hovered element is the selector segment before the first
+    // `:hover`.
+    const hoverSelectors = new Set<string>();
+    for (const sheet of document.styleSheets) {
+      let rules: CSSRuleList | null = null;
+      try {
+        rules = sheet.cssRules;
+      } catch {
+        continue; // cross-origin/opaque stylesheet: unreadable, skip
+      }
+      if (!rules) continue;
+      const queue: CSSRule[] = Array.from(rules);
+      while (queue.length) {
+        const rule = queue.shift()!;
+        if ('cssRules' in rule) queue.push(...Array.from((rule as CSSGroupingRule).cssRules));
+        if (rule instanceof CSSStyleRule && rule.selectorText.includes(':hover')) {
+          const trigger = /([^{,]+):hover/.exec(rule.selectorText);
+          if (trigger && trigger[1].trim()) hoverSelectors.add(trigger[1].trim());
+        }
+      }
+    }
+    for (const sel of hoverSelectors) {
+      try {
+        for (const el of document.querySelectorAll<HTMLElement>(sel)) {
+          if (!(el.id || el.getAttribute('data-wr-evidence'))) continue;
+          add(el, 'hover', `hover:${sel}`);
+        }
+      } catch {
+        // invalid selector: ignore
+      }
+    }
+    if (!seen.has('hover:aria-haspopup')) {
+      for (const el of document.querySelectorAll<HTMLElement>('[aria-haspopup]')) {
+        const vs = getComputedStyle(el);
+        if (vs.display === 'none' || vs.visibility === 'hidden') continue;
+        add(el, 'hover', 'hover:aria-haspopup');
       }
     }
 
@@ -194,12 +272,20 @@ export async function performAction(
       case 'focus':
         await page.focus(action.target.value);
         break;
-      case 'type':
-        await page.focus(action.target.value);
-        await page.keyboard.type('WebR test input');
-        break;
       case 'hover':
-        await page.hover(action.target.value);
+        await page.hover(action.target.value, { timeout: 3000 }).catch(async () => {
+          await page.hover(`text=${action.target.value}`, { timeout: 3000 });
+        });
+        break;
+      case 'type':
+        await page.focus(action.target.value).catch(() => {});
+        await page
+          .locator(action.target.value)
+          .first()
+          .fill('WebR test input')
+          .catch(async () => {
+            await page.locator(`text=${action.target.value}`).first().fill('WebR test input');
+          });
         break;
       case 'press':
         await page.keyboard.press(action.target.value as never);
@@ -336,10 +422,19 @@ export async function explore(
       }
       await ctx.page.waitForTimeout(150);
 
+      // Fingerprint the *actual* observable context: after resize/scroll the
+      // viewport/scroll differ from the session defaults, and clicking a link
+      // changes the URL. Capturing these makes each state genuinely distinct.
+      const layout = await ctx.page.evaluate(() => ({
+        url: window.location.href,
+        vw: window.innerWidth,
+        vh: window.innerHeight,
+        scroll: { x: window.scrollX, y: window.scrollY },
+      }));
       const signals = await ctx.page.evaluate(collectFingerprintSignals, [
-        ctx.url,
-        ctx.viewport,
-        { x: 0, y: 0 },
+        layout.url,
+        { width: layout.vw, height: layout.vh },
+        layout.scroll,
       ] as [string, { width: number; height: number }, ScrollPosition]);
       const fp = fingerprintString(signals);
 
@@ -350,11 +445,20 @@ export async function explore(
           continue;
         }
         const newState = await captureState(fp);
-        newState.id = stateIdFor(fp, states.length);
-        toId = newState.id;
-        states.push(newState);
-        const path = [...current.path, { id: '', from: current.id, action, to: toId }];
-        pathTo.set(toId, path);
+        // Re-dedupe by the *captured* fingerprint: exploration-time residues
+        // can settle before capture, so the reproducible fingerprint may not
+        // equal the pre-capture `fp`. If the captured DOM already exists,
+        // reuse that state rather than creating a near-duplicate.
+        const match = [...states].find((s) => s.fingerprint === newState.fingerprint);
+        if (match) {
+          toId = match.id;
+        } else {
+          newState.id = stateIdFor(fp, states.length);
+          toId = newState.id;
+          states.push(newState);
+          const path = [...current.path, { id: '', from: current.id, action, to: toId }];
+          pathTo.set(toId, path);
+        }
       }
 
       // Record the transition (dedupe identical transitions).

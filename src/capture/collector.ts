@@ -113,20 +113,28 @@ export function observeResponses(
 
 /**
  * Decide whether a response should be localized as a package asset.
- * Filters out data: URIs, source-site HTML documents (kept in state DOM) and
- * unknown/empty bodies.
+ *
+ * Localizes any body-bearing 2xx resource so the reconstruction can run fully
+ * offline: same-origin static assets, cross-origin/CDN assets (stylesheets,
+ * images, fonts, scripts), and JSON/API payloads. This is what makes it safe
+ * to disconnect the source *and* the CDN origins after capture.
+ *
+ * We deliberately exclude:
+ *   - data: URIs (inline, nothing to fetch separately);
+ *   - `text/html` documents (the main document is kept as state DOM, and
+ *     other HTML documents are content, not reusable resources);
+ *   - empty bodies and non-2xx responses.
  */
-export function isLocalizableAsset(obs: ResponseObservation, sourceOrigin: string): boolean {
+export function isLocalizableAsset(obs: ResponseObservation): boolean {
   if (!obs.body || obs.body.length === 0) return false;
   if (obs.url.startsWith('data:')) return false;
+  if (obs.status < 200 || obs.status >= 300) return false;
+  if (obs.mimeType === 'text/html') return false;
   try {
-    const u = new URL(obs.url);
-    if (u.origin !== sourceOrigin) return false;
+    new URL(obs.url);
   } catch {
     return false;
   }
-  if (obs.status < 200 || obs.status >= 300) return false;
-  if (obs.mimeType === 'text/html') return false;
   return true;
 }
 
