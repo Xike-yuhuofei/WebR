@@ -90,10 +90,12 @@ describe('Phase 5 — replica generation', () => {
 
     await buildReplica(spec, evidenceDir, out);
 
-    // Entry page + per-state route + copied assets exist.
+    // Entry page + copied assets exist. The fixture has one route ("/"), so
+    // the replica is a single dynamic document at the root — no per-state
+    // snapshot directories are generated.
     await stat(join(out, 'index.html'));
     const entries = await readdir(out);
-    expect(entries).toContain('routes');
+    expect(entries).toContain('assets');
     // The fixture has one asset (logo.svg) copied locally at its localPath.
     expect(spec.assets.length).toBeGreaterThan(0);
     await stat(join(out, spec.assets[0].localPath));

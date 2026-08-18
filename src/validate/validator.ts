@@ -13,7 +13,8 @@ import { lookup } from './mime.js';
 import { chromium, type Browser, type Page } from 'playwright';
 import { readPackage } from '../packageIO.js';
 import type { EvidencePackage, StateRecord, Transition } from '../contracts.js';
-import { buildReconstructionSpec, replicaRouteFor } from '../reconstruct/adapter.js';
+import { routeKeyFor, captureIndex } from '../reconstruct/adapter.js';
+import { collectFingerprintSignals, fingerprintString } from '../capture/fingerprint.js';
 import pixelmatch from 'pixelmatch';
 import { PNG } from 'pngjs';
 
@@ -40,6 +41,17 @@ export async function startReplicaServer(root: string, port = 0): Promise<Replic
       return;
     }
     try {
+      const { stat: statFile } = await import('node:fs/promises');
+      const info = await statFile(abs);
+      // Serve directory indexes so route links like `/about` resolve to
+      // `/about/index.html` (the reconstructed replica uses real routes).
+      if (info.isDirectory()) {
+        const index = join(abs, 'index.html');
+        const data = await readFile(index);
+        res.writeHead(200, { 'content-type': mimeForPath(index) });
+        res.end(data);
+        return;
+      }
       const data = await readFile(abs);
       res.writeHead(200, { 'content-type': mimeForPath(abs) });
       res.end(data);
@@ -299,6 +311,258 @@ export function selectTransitions(pkg: EvidencePackage, profile: ValidationProfi
   return t;
 }
 
+// ---------------------------------------------------------------------------
+// Observable-state machinery (GOAL-002)
+//
+// A transition only counts as successful if, after executing its action, the
+// replica's *actual observable state* matches the transition's destination
+// state — performing the action without a side effect on the DOM is a failure.
+// ---------------------------------------------------------------------------
+
+function stateById(pkg: EvidencePackage, id: string): StateRecord | undefined {
+  return pkg.states.find((s) => s.id === id);
+}
+
+/** Local URL that serves the reconstructed document for a route key. */
+function routeUrl(serverUrl: string, route: string): string {
+  return route === '/' ? `${serverUrl}/` : `${serverUrl}${route}/`;
+}
+
+async function applyViewport(
+  page: Page,
+  vp: { width: number; height: number } | undefined,
+): Promise<void> {
+  if (!vp) return;
+  const cur = page.viewportSize();
+  if (cur && cur.width === vp.width && cur.height === vp.height) return;
+  await page.setViewportSize({ width: vp.width, height: vp.height });
+}
+
+async function scrollTo(page: Page, x: number, y: number): Promise<void> {
+  await page.evaluate(([px, py]) => window.scrollTo(px || 0, py || 0), [x, y]);
+}
+
+/**
+ * Compute the replica's current observable fingerprint (route + viewport +
+ * scroll + DOM structural signals). `ctx` lets callers compare DOM structure
+ * at a fixed viewport/scroll regardless of the current one, so the check
+ * asserts the *state* the action produced rather than transient scroll
+ * quantization.
+ */
+export async function observeFingerprint(
+  page: Page,
+  ctx?: { viewport?: { width: number; height: number }; scroll?: { x: number; y: number } },
+): Promise<string> {
+  const layout = await page.evaluate(() => ({
+    url: window.location.href,
+    vw: window.innerWidth,
+    vh: window.innerHeight,
+    scroll: { x: window.scrollX, y: window.scrollY },
+  }));
+  const viewport = ctx?.viewport ?? { width: layout.vw, height: layout.vh };
+  const scroll = ctx?.scroll ?? layout.scroll;
+  const signals = await page.evaluate(collectFingerprintSignals, [layout.url, viewport, scroll] as [
+    string,
+    { width: number; height: number },
+    import('../contracts.js').ScrollPosition,
+  ]);
+  return fingerprintString(signals);
+}
+
+/** Build `from → transitions[]` adjacency for BFS path resolution. */
+function buildAdjacency(pkg: EvidencePackage): Map<string, Transition[]> {
+  const adj = new Map<string, Transition[]>();
+  for (const t of pkg.stateGraph.transitions) {
+    const list = adj.get(t.from) ?? [];
+    list.push(t);
+    adj.set(t.from, list);
+  }
+  return adj;
+}
+
+/** BFS shortest transition path from `fromId` to `targetId`, or null. */
+export function findPath(
+  pkg: EvidencePackage,
+  fromId: string,
+  targetId: string,
+): Transition[] | null {
+  if (fromId === targetId) return [];
+  const adj = buildAdjacency(pkg);
+  const prev = new Map<string, Transition | null>();
+  const visited = new Set<string>([fromId]);
+  const queue: string[] = [fromId];
+  while (queue.length) {
+    const cur = queue.shift()!;
+    for (const t of adj.get(cur) ?? []) {
+      if (visited.has(t.to)) continue;
+      visited.add(t.to);
+      prev.set(t.to, t);
+      if (t.to === targetId) {
+        // Reconstruct the path.
+        const path: Transition[] = [];
+        let node: string | null = targetId;
+        while (node && prev.has(node) && node !== fromId) {
+          const step: Transition = prev.get(node) as Transition;
+          path.unshift(step);
+          node = step.from;
+        }
+        return path;
+      }
+      queue.push(t.to);
+    }
+  }
+  return null;
+}
+
+/** Route entry state id: the first-captured state on a route (the reconstructed doc). */
+function routeEntryId(pkg: EvidencePackage, route: string): string | undefined {
+  let entry: { id: string; idx: number } | undefined;
+  for (const s of pkg.states) {
+    if (routeKeyFor(s.url) !== route) continue;
+    const idx = captureIndex(s.id);
+    if (!entry || idx < entry.idx) entry = { id: s.id, idx };
+  }
+  return entry?.id;
+}
+
+/** Execute one recorded action on the live replica, targeting `toState` when needed. */
+async function executeAction(
+  page: Page,
+  action: Transition['action'],
+  toState?: StateRecord,
+): Promise<boolean> {
+  const target = action.target?.value;
+  try {
+    switch (action.type) {
+      case 'click':
+        await page
+          .click(target ?? 'body', { timeout: 3000 })
+          .catch(() => page.click(`text=${target}`, { timeout: 3000 }));
+        break;
+      case 'hover':
+        await page
+          .hover(target ?? 'body', { timeout: 3000 })
+          .catch(() => page.hover(`text=${target}`, { timeout: 3000 }));
+        break;
+      case 'focus':
+        await page.focus(target ?? 'body');
+        break;
+      case 'type':
+        await page
+          .locator(target ?? 'input')
+          .first()
+          .fill('WebR test input')
+          .catch(() => page.locator(`text=${target}`).first().fill('WebR test input'));
+        break;
+      case 'press':
+        await page.keyboard.press(target ?? 'Enter');
+        break;
+      case 'scroll':
+        if (toState) await scrollTo(page, toState.scroll.x, toState.scroll.y);
+        else await scrollTo(page, 0, 600);
+        break;
+      case 'resize':
+        if (toState) await applyViewport(page, toState.viewport);
+        break;
+      case 'navigate':
+        if (toState)
+          await page.goto(
+            `${page.url().split('/').slice(0, 3).join('/')}${routeKeyFor(toState.url)}/`,
+            { waitUntil: 'domcontentloaded' },
+          );
+        break;
+      default:
+        return false;
+    }
+    await page.waitForTimeout(120);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Establish the recorded context for a state on the replica: navigate to its
+ * route, size/scroll to its context, and (when the state is not the route's
+ * entry) replay the shortest transition path to it — verifying each step's
+ * observable result against the recorded destination fingerprint.
+ */
+export async function establishState(
+  page: Page,
+  serverUrl: string,
+  pkg: EvidencePackage,
+  stateId: string,
+): Promise<void> {
+  const target = stateById(pkg, stateId);
+  if (!target) throw new Error(`unknown state ${stateId}`);
+  const route = routeKeyFor(target.url);
+  const entry = routeEntryId(pkg, route);
+  await applyViewport(page, target.viewport);
+  await page.goto(routeUrl(serverUrl, route), { waitUntil: 'domcontentloaded', timeout: 10_000 });
+  await page.waitForTimeout(200);
+  if (entry === stateId) {
+    await scrollTo(page, target.scroll.x, target.scroll.y);
+    await page.waitForTimeout(100);
+    return;
+  }
+  if (!entry) throw new Error(`no entry state for route ${route}`);
+  const path = findPath(pkg, entry, stateId);
+  if (!path) throw new Error(`no transition path from ${entry} to ${stateId}`);
+  for (const step of path) {
+    const to = stateById(pkg, step.to);
+    const ok = await executeAction(page, step.action, to);
+    if (!ok) throw new Error(`transition ${step.id} action failed during context setup`);
+    await page.waitForTimeout(100);
+  }
+  await scrollTo(page, target.scroll.x, target.scroll.y);
+  await page.waitForTimeout(100);
+}
+
+export interface TransitionOutcome {
+  /** Whether the action executed and the observable state matched `to`. */
+  passed: boolean;
+  /** Human detail for reporting. */
+  detail: string;
+}
+
+/**
+ * Replay one transition's action and verify the actual observable state
+ * corresponds to `transition.to` (task 4). The action executing is NOT
+ * sufficient; the observable fingerprint must match.
+ */
+export async function replayTransitionVerify(
+  page: Page,
+  t: Transition,
+  pkg: EvidencePackage,
+  serverUrl: string,
+): Promise<TransitionOutcome> {
+  const from = stateById(pkg, t.from);
+  const to = stateById(pkg, t.to);
+  if (!from || !to) return { passed: false, detail: 'missing from/to state' };
+  // Establish the from-state context via real interactions.
+  await establishState(page, serverUrl, pkg, t.from);
+  const ok = await executeAction(page, t.action, to);
+  if (!ok) {
+    return { passed: false, detail: 'action failed to execute' };
+  }
+  await page.waitForTimeout(150);
+  // Reproduce the recorded destination context (viewport/scroll) so a
+  // transition into a responsive/scroll state is compared where that state
+  // actually exists. Then measure the action's effect on the observable
+  // state (DOM structure + route). "Action succeeded" is not enough — the
+  // observable result must correspond to the recorded destination.
+  await applyViewport(page, to.viewport);
+  await scrollTo(page, to.scroll.x, to.scroll.y);
+  await page.waitForTimeout(100);
+  const actual = await observeFingerprint(page);
+  return actual === to.fingerprint
+    ? { passed: true, detail: 'observable state matches destination' }
+    : {
+        passed: false,
+        detail: `observable state does not match: ${t.action.type}:${t.action.target?.value ?? ''} (${routeKeyFor(from.url)}:${t.from} → ${routeKeyFor(to.url)}:${t.to})`,
+      };
+}
+
 /**
  * Run the full offline validation. Returns the report; throws on package
  * read failure.
@@ -341,18 +605,18 @@ export async function validateReplica(
     // Isolation monitor: flag any request to the source origin.
     const violations = monitorIsolation(page, sourceOrigin);
 
-    // Replay transitions on the replica.
+    // Replay transitions on the replica and verify the observable result
+    // matches the recorded destination (task 4).
     const transitions = selectTransitions(pkg, options.profile);
     for (const t of transitions) {
       report.transitions.tested += 1;
       try {
-        await navigateToState(page, server.url, pkg, t.from);
-        const ok = await replayTransition(page, t);
-        if (ok) {
+        const outcome = await replayTransitionVerify(page, t, pkg, server.url);
+        if (outcome.passed) {
           report.transitions.passed += 1;
         } else {
           report.transitions.failed += 1;
-          report.failures.push(`transition ${t.id} did not reach expected state`);
+          report.failures.push(`transition ${t.id}: ${outcome.detail}`);
         }
       } catch (err) {
         report.transitions.failed += 1;
@@ -365,7 +629,8 @@ export async function validateReplica(
     for (const state of states) {
       report.states.tested += 1;
       try {
-        await navigateToState(page, server.url, pkg, state.id);
+        await establishState(page, server.url, pkg, state.id);
+        await page.waitForTimeout(150);
         const actual = await page.screenshot({ type: 'png' });
         const expectedPath = join(evidencePath, 'states', state.id, state.artifacts.screenshot);
         const expected = await readFile(expectedPath);
@@ -437,57 +702,6 @@ export async function validateReplica(
   }
 
   return report;
-}
-
-/** Navigate to the replica page corresponding to a given evidence state. */
-async function navigateToState(
-  page: Page,
-  serverUrl: string,
-  pkg: EvidencePackage,
-  stateId: string,
-): Promise<void> {
-  const spec = buildReconstructionSpec(pkg);
-  const routeDir = replicaRouteFor(spec, stateId);
-  const url = `${serverUrl}/${routeDir}/index.html`;
-  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 10_000 });
-  await page.waitForTimeout(150);
-}
-
-/** Replay a single recorded transition action on the replica. */
-async function replayTransition(page: Page, t: Transition): Promise<boolean> {
-  try {
-    const action = t.action;
-    const target = action.target?.value;
-    switch (action.type) {
-      case 'click':
-        await page.click(target ?? 'body', { timeout: 3_000 });
-        break;
-      case 'hover':
-        await page.hover(target ?? 'body', { timeout: 3_000 });
-        break;
-      case 'focus':
-        await page.focus(target ?? 'body');
-        break;
-      case 'type':
-        await page.focus(target ?? 'body');
-        await page.keyboard.type('WebR validate input');
-        break;
-      case 'press':
-        await page.keyboard.press(target ?? 'Enter');
-        break;
-      case 'navigate':
-        await page.goto(`${page.url().split('/').slice(0, 3).join('/')}/${target}`, {
-          waitUntil: 'domcontentloaded',
-        });
-        break;
-      default:
-        return false;
-    }
-    await page.waitForTimeout(100);
-    return true;
-  } catch {
-    return false;
-  }
 }
 
 /** Render the human-readable validation report. */

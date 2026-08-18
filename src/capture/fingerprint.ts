@@ -42,9 +42,25 @@ export function collectFingerprintSignals(
 ): string[] {
   const [url, viewport, scroll] = arg;
   const signals: string[] = [];
-  signals.push(`url:${url}`);
+  // Compare the *route* (pathname + query), not the origin: the replica runs
+  // on a different host/port than the captured source, so an origin-sensitive
+  // URL signal could never match between capture and validation.
+  let route = url;
+  try {
+    const u = new URL(url);
+    route = u.pathname + u.search;
+  } catch {
+    // keep raw url when it cannot be parsed
+  }
+  signals.push(`url:${route}`);
   signals.push(`viewport:${viewport.width}x${viewport.height}`);
-  signals.push(`scroll:${scroll.x},${scroll.y}`);
+  // Scroll is a positional signal, not an observable *state*: an exact
+  // `scrollY` differs by sub-pixel quantization between capture and replay,
+  // which produces false transition failures. A coarse on/off discriminator
+  // keeps scroll-dependent states distinct (e.g. a scroll-revealed header)
+  // while remaining reproducible; exact scroll is recorded separately in
+  // each state's metadata for context setup.
+  signals.push(`scrolled:${scroll.x > 0 || scroll.y > 0 ? 1 : 0}`);
 
   if (typeof document === 'undefined') return signals;
 
@@ -60,6 +76,13 @@ export function collectFingerprintSignals(
   while (node) {
     if (node.nodeType === Node.ELEMENT_NODE) {
       const el = node as HTMLElement;
+      // Ignore reconstructed-replica tracer artifacts so a displayed replica
+      // marker never perturbs the observable fingerprint (it is intentionally
+      // hidden from view but present in the DOM for structural checks).
+      if (el.hasAttribute('data-wr-replica')) {
+        node = walker.nextNode();
+        continue;
+      }
       const tag = el.tagName.toLowerCase();
       count.set(tag, (count.get(tag) ?? 0) + 1);
       const style = getComputedStyle(el);
@@ -97,14 +120,16 @@ export function collectFingerprintSignals(
     signals.push(`interactive:${tag}`);
   }
 
-  // aria-expanded / aria-hidden / open dialogs
+  // aria-expanded / aria-hidden / open dialogs (excluding replica tracers)
   let expanded = 0;
   let ariaHidden = 0;
   let dialogs = 0;
   for (const el of document.querySelectorAll<HTMLElement>('[aria-expanded]')) {
+    if (el.hasAttribute('data-wr-replica')) continue;
     if (el.getAttribute('aria-expanded') === 'true') expanded += 1;
   }
   for (const el of document.querySelectorAll<HTMLElement>('[aria-hidden]')) {
+    if (el.hasAttribute('data-wr-replica')) continue;
     if (el.getAttribute('aria-hidden') === 'true') ariaHidden += 1;
   }
   for (const el of document.querySelectorAll<HTMLDialogElement>('dialog[open]')) {
@@ -121,6 +146,19 @@ export function collectFingerprintSignals(
       `focus:${active.tagName.toLowerCase()}${active.className ? `.${String(active.className).split(' ').join('.')}` : ''}`,
     );
   }
+
+  // Input/textarea values: typing must create an observable, distinct state.
+  const namedValues: string[] = [];
+  for (const el of document.querySelectorAll<
+    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+  >('input,textarea,select')) {
+    const name = el.getAttribute('name') ?? el.id ?? el.tagName.toLowerCase();
+    let value = '';
+    if ('value' in el) value = String(el.value);
+    if (el.tagName.toLowerCase() === 'select') value = (el as HTMLSelectElement).value;
+    if (value) namedValues.push(`${name}:${value}`);
+  }
+  for (const v of [...namedValues].sort()) signals.push(`value:${v}`);
 
   return signals;
 }

@@ -89,7 +89,9 @@ export {
   buildReplica,
   sourceOriginDenied,
   scanReplicaForSourceOrigin,
-  replicaRouteFor,
+  routeKeyFor,
+  captureIndex,
+  groupStatesByRoute,
   mimeTypeFor,
   type ReconstructionSpec,
   type ReplicaBuildOptions,
@@ -105,6 +107,10 @@ export {
   monitorIsolation,
   selectStates,
   selectTransitions,
+  observeFingerprint,
+  findPath,
+  establishState,
+  replayTransitionVerify,
   renderValidationReport,
   reportToJson,
   DEFAULT_VALIDATE_OPTIONS,
@@ -117,5 +123,9 @@ export {
   type StructuralComparison,
   type IsolationViolation,
   type ReplicaServer,
+  type TransitionOutcome,
 } from './validate/validator.js';
 export { lookup } from './validate/mime.js';
+
+// GOAL-002 — controlled Benchmark Site (two local origins: main + CDN; + API)
+export { startBenchmarkSite, type BenchmarkSite, type BenchmarkUrls } from './benchmark/site.js';
