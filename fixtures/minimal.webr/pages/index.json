@@ -1,0 +1,12 @@
+{
+  "pages": [
+    {
+      "id": "page-home",
+      "url": "https://example.com/",
+      "route": "/",
+      "stateIds": [
+        "state-home"
+      ]
+    }
+  ]
+}

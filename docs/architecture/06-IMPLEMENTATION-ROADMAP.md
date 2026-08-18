@@ -189,6 +189,7 @@ Use this goal for the first implementation iteration:
 > Before coding, read `AGENTS.md` and all referenced canonical architecture documents.
 >
 > Complete only:
+>
 > 1. initialize the project structure;
 > 2. implement Evidence Package v1 data models/schemas;
 > 3. implement manifest, page, state, transition, asset and integrity contracts;

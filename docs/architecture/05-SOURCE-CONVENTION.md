@@ -100,15 +100,9 @@ Utilities should be small, explicit and reusable.
 <header class="wr-Header is-compact">
   <a class="wr-Header-logo" href="/">...</a>
 
-  <nav class="wr-Header-navigation" aria-label="Primary">
-    ...
-  </nav>
+  <nav class="wr-Header-navigation" aria-label="Primary">...</nav>
 
-  <button
-    class="wr-IconButton wr-IconButton--ghost"
-    type="button"
-    aria-expanded="false"
-  >
+  <button class="wr-IconButton wr-IconButton--ghost" type="button" aria-expanded="false">
     <svg class="wr-Icon wr-Icon--viewLeft" aria-hidden="true">...</svg>
   </button>
 </header>
