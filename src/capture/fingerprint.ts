@@ -1,0 +1,141 @@
+/**
+ * State fingerprinting (`docs/architecture/01` §5).
+ *
+ * A fingerprint summarizes the observable browser condition of a state so the
+ * State Explorer can deduplicate equivalent states. It must be deterministic
+ * across captures of the same page, and change when the observable state
+ * changes (DOM structure, text, visibility, focus/overlay, scroll).
+ *
+ * The fingerprint is computed in-page over a curated, normalized view of the
+ * document, so it is stable and bounded regardless of page size.
+ */
+import { sha256Hex } from '../checksum.js';
+import type { ScrollPosition } from '../contracts.js';
+
+export interface FingerprintInput {
+  url: string;
+  viewport: { width: number; height: number };
+  scroll: ScrollPosition;
+  /** Active/focused element descriptor, when captured. */
+  activeElement?: string | null;
+  /** Open overlay/menu/modal descriptors, when captured. */
+  openOverlays?: string[];
+}
+
+/**
+ * Compute a fingerprint from normalized in-page signals. The heavier DOM
+ * extraction happens in-page via `collectFingerprintSignals`; this function
+ * hashes the resulting canonical string.
+ */
+export function fingerprintString(signals: string[]): string {
+  return `sha256:${sha256Hex(signals.join('\u0000'))}`;
+}
+
+/**
+ * Self-contained fingerprint signal collector. Designed to run inside
+ * `page.evaluate`, it must not reference any module-scope binding (Playwright
+ * serializes the function body and executes it in the browser). Arguments are
+ * passed as a single array `[url, viewport, scroll]`.
+ */
+export function collectFingerprintSignals(
+  arg: [string, { width: number; height: number }, ScrollPosition],
+): string[] {
+  const [url, viewport, scroll] = arg;
+  const signals: string[] = [];
+  signals.push(`url:${url}`);
+  signals.push(`viewport:${viewport.width}x${viewport.height}`);
+  signals.push(`scroll:${scroll.x},${scroll.y}`);
+
+  if (typeof document === 'undefined') return signals;
+
+  signals.push(`title:${document.title}`);
+
+  const count = new Map<string, number>();
+  const visibleInteractive = new Set<string>();
+  const hiddenCounts = new Map<string, number>();
+  const disabledCounts = new Map<string, number>();
+
+  const walker = document.createTreeWalker(document.body ?? document.documentElement);
+  let node = walker.nextNode();
+  while (node) {
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      const el = node as HTMLElement;
+      const tag = el.tagName.toLowerCase();
+      count.set(tag, (count.get(tag) ?? 0) + 1);
+      const style = getComputedStyle(el);
+      const isVisible = style.display !== 'none' && style.visibility !== 'hidden' && !el.hidden;
+      if (isVisible) {
+        const role = el.getAttribute('role');
+        if (
+          el.matches?.(
+            'a[href],button,input,select,textarea,[contenteditable="true"],[role="button"],[role="menuitem"],[role="tab"]',
+          ) ??
+          (role && ['button', 'link', 'menuitem', 'tab'].includes(role))
+        ) {
+          visibleInteractive.add(tag);
+        }
+      } else {
+        hiddenCounts.set(tag, (hiddenCounts.get(tag) ?? 0) + 1);
+      }
+      if ((el as HTMLButtonElement).disabled === true) {
+        disabledCounts.set(tag, (disabledCounts.get(tag) ?? 0) + 1);
+      }
+    }
+    node = walker.nextNode();
+  }
+
+  for (const [tag, n] of [...count.entries()].sort()) {
+    signals.push(`tag:${tag}=${n}`);
+  }
+  for (const [tag, n] of [...hiddenCounts.entries()].sort()) {
+    signals.push(`hidden:${tag}=${n}`);
+  }
+  for (const [tag, n] of [...disabledCounts.entries()].sort()) {
+    signals.push(`disabled:${tag}=${n}`);
+  }
+  for (const tag of [...visibleInteractive].sort()) {
+    signals.push(`interactive:${tag}`);
+  }
+
+  // aria-expanded / aria-hidden / open dialogs
+  let expanded = 0;
+  let ariaHidden = 0;
+  let dialogs = 0;
+  for (const el of document.querySelectorAll<HTMLElement>('[aria-expanded]')) {
+    if (el.getAttribute('aria-expanded') === 'true') expanded += 1;
+  }
+  for (const el of document.querySelectorAll<HTMLElement>('[aria-hidden]')) {
+    if (el.getAttribute('aria-hidden') === 'true') ariaHidden += 1;
+  }
+  for (const el of document.querySelectorAll<HTMLDialogElement>('dialog[open]')) {
+    if (el.open) dialogs += 1;
+  }
+  signals.push(`aria-expanded:${expanded}`);
+  signals.push(`aria-hidden:${ariaHidden}`);
+  signals.push(`open-dialogs:${dialogs}`);
+
+  // active element (focus)
+  const active = document.activeElement as HTMLElement | null;
+  if (active && active !== document.body) {
+    signals.push(
+      `focus:${active.tagName.toLowerCase()}${active.className ? `.${String(active.className).split(' ').join('.')}` : ''}`,
+    );
+  }
+
+  return signals;
+}
+
+/** Convenience: full fingerprint for the current page state. */
+export async function fingerprintPage(
+  page: import('playwright').Page,
+  url: string,
+  viewport: { width: number; height: number },
+  scroll: ScrollPosition,
+): Promise<string> {
+  const signals = await page.evaluate(collectFingerprintSignals, [url, viewport, scroll] as [
+    string,
+    { width: number; height: number },
+    ScrollPosition,
+  ]);
+  return fingerprintString(signals);
+}

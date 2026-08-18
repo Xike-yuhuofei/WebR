@@ -1,0 +1,11 @@
+{
+  "assets": [
+    {
+      "id": "asset-logo",
+      "originalUrl": "https://example.com/assets/logo.svg",
+      "localPath": "assets/svg/logo.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "aa004b5a8287f8d5753dcabcdc3372797ca171d02dfd2b77ca459644077d67b4"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "state-home",
+  "pageId": "page-home",
+  "url": "https://example.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 2
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html"
+  },
+  "fingerprint": "sha256:d68c6a92fbd491cb9587622383c1c4e2e18ede08f28c708b9924216b83e85f82"
+}

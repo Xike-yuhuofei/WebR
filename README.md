@@ -39,15 +39,54 @@ webr validate <evidence-path> <replica-path>
 
 Only `capture` may require access to the original website. Reconstruction and validation must remain isolated from the source origin.
 
+## Implementation status
+
+The following roadmap phases are implemented (`docs/architecture/06-IMPLEMENTATION-ROADMAP.md`):
+
+- **Phase 1 — Foundation / Contract Layer**: Evidence Package v1 schemas, package I/O, SHA-256 integrity, structural validator, CLI shells.
+- **Phase 2 — Capture Baseline**: Playwright + Chromium capture (screenshots, full-page shots, DOM snapshot, accessibility, computed-style evidence, asset localization, capture metadata).
+- **Phase 3 — State Explorer / UI State Graph**: interactive-element discovery, action vocabulary, content-derived fingerprint deduplication, bounded BFS exploration, transition recording.
+- **Phase 4 — Completeness Audit / Evidence Freeze**: structural validity vs. freeze-readiness, coverage metrics, unresolved external dependency report, Golden Reference coverage.
+- **Phase 5 — Reconstruction Adapter**: Reconstruction Spec generation, static replica build from local evidence, source-origin deny policy.
+- **Phase 6 — Offline Validator**: local replica server, transition replay, visual diff (pixelmatch) against Golden References, offline-isolation monitoring, machine-readable report.
+
+### Quick start
+
+```bash
+# 1. Capture a site into an evidence package (only this step needs network).
+webr capture https://example.com --out ./example.webr
+
+# 2. Audit the package (offline). `valid` means structurally valid;
+#    `freeze-ready` means complete enough to disconnect from the source.
+webr audit ./example.webr
+
+# 3. Reconstruct a local replica from the frozen evidence (offline).
+webr reconstruct ./example.webr --out ./replica
+
+# 4. Validate the replica against Golden References (offline).
+webr validate ./example.webr ./replica
+```
+
+Exit codes follow `docs/architecture/03` §8: `0` success, `1` command failure, `2` invalid arguments, `3` invalid evidence, `4` source-origin isolation violation, `5` validation thresholds not met.
+
+### Development
+
+```bash
+npm install
+npx playwright install chromium   # required for capture/validate
+npm run build
+npm test
+npm run lint
+npm run format:check
+```
+
+The capture and validate integration tests launch Chromium against a
+controlled local test site; they do not require network access.
+
 ## Architecture status
 
-The v1 architecture is currently frozen at the specification level. Implementation begins with the Foundation / Contract Layer.
-
-Start here:
-
-1. [`AGENTS.md`](./AGENTS.md)
-2. [`docs/architecture/00-FROZEN-DECISIONS.md`](./docs/architecture/00-FROZEN-DECISIONS.md)
-3. [`docs/architecture/06-IMPLEMENTATION-ROADMAP.md`](./docs/architecture/06-IMPLEMENTATION-ROADMAP.md)
+The v1 architecture is frozen at the specification level. Implementation
+progresses through the roadmap phases above.
 
 ## Canonical architecture documents
 
