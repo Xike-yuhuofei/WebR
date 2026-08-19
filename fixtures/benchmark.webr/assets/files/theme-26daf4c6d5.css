@@ -1,0 +1,4 @@
+
+/* Cross-origin/CDN stylesheet. In production this ships from a CDN; here it is
+   the second local origin used to verify cross-origin asset localization. */
+.Verdant-mark { color:#0a6c4a; }

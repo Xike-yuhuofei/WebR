@@ -1,0 +1,24 @@
+{
+  "id": "state-fa38be47a0-11",
+  "pageId": "page-1",
+  "url": "http://127.0.0.1:59048/products",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:e9c7f0dad5d50ef92d1adbd1d8c08bd5278c5c6ae83edf01ba3be4ce48cecbe8",
+  "title": "Products · Verdant"
+}

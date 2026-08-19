@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "url": "http://127.0.0.1:59048",
+      "route": "/",
+      "stateIds": [
+        "state-a664bbec19-0",
+        "state-ee51347b0c-1",
+        "state-6d77bbeea9-2",
+        "state-2fa1e2643a-3",
+        "state-8d207580a8-4",
+        "state-d3ed1806ad-5",
+        "state-4ed71d4300-6",
+        "state-8db81c6a4d-7",
+        "state-7e71bc0542-8",
+        "state-a47980dc63-9",
+        "state-4d933f37fa-10",
+        "state-fa38be47a0-11",
+        "state-b7bf5df9e2-12",
+        "state-1a5303c826-13",
+        "state-39f6ff4e28-14",
+        "state-57b3caa594-15",
+        "state-85fe93cda7-16",
+        "state-6bf0e7991e-17"
+      ],
+      "title": "Home · Verdant"
+    }
+  ]
+}

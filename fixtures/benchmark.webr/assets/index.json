@@ -1,0 +1,39 @@
+{
+  "assets": [
+    {
+      "id": "asset-cfb2743590a7",
+      "originalUrl": "http://127.0.0.1:59048/styles.css",
+      "localPath": "assets/files/styles-b73bee3cde.css",
+      "mimeType": "text/css",
+      "sha256": "b73bee3cde5cb58ba134ab113fce585a069a3fc7fb56eeea8a992ed5b5677792"
+    },
+    {
+      "id": "asset-8e75875443b6",
+      "originalUrl": "http://127.0.0.1:59047/cdn/theme.css",
+      "localPath": "assets/files/theme-26daf4c6d5.css",
+      "mimeType": "text/css",
+      "sha256": "26daf4c6d5313393d07c04958ff5977ad3d58d8dbe9e8970715a5af4626d7391"
+    },
+    {
+      "id": "asset-c3990bb82d6d",
+      "originalUrl": "http://127.0.0.1:59047/cdn/logo.svg",
+      "localPath": "assets/files/logo-e5c747f358.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "e5c747f3582150e72caacc49c08ee528f91bdcdcd70ba313cac70cee242e57e9"
+    },
+    {
+      "id": "asset-4b0566d8f295",
+      "originalUrl": "http://127.0.0.1:59048/app.js",
+      "localPath": "assets/files/app-0d233879f5.js",
+      "mimeType": "application/javascript",
+      "sha256": "0d233879f50eb2ec13edeccd06fa30028aa9f7b2e99a1358ffbb3941465ad304"
+    },
+    {
+      "id": "asset-77b5351a976d",
+      "originalUrl": "http://127.0.0.1:59048/api/widgets",
+      "localPath": "assets/files/widgets-7a3d446faf",
+      "mimeType": "application/json",
+      "sha256": "7a3d446fafb4541b9d82ba4eb888ee41fb75807c1177b6a99ccd2342b219a611"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "state-d3ed1806ad-5",
+  "pageId": "page-1",
+  "url": "http://127.0.0.1:59048/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:a4ee9b633c5024b95873d1e0505a4d4f751aa4169a68925f2926ea89825ed899",
+  "title": "Home · Verdant"
+}

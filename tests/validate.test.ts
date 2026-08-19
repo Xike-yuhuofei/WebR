@@ -12,6 +12,7 @@ import {
   structuralSignalsFromDom,
   startReplicaServer,
   monitorIsolation,
+  monitorNetworkIsolation,
   selectStates,
   selectTransitions,
   readPackage,
@@ -138,6 +139,35 @@ describe('Phase 6 — replica server + isolation monitoring', () => {
       await page.waitForTimeout(300);
       expect(violations.length).toBeGreaterThan(0);
       expect(violations[0].url).toContain('https://example.com');
+    } finally {
+      await browser.close();
+    }
+  });
+
+  it('flags ANY non-local HTTP(S) request that is not an allowed origin (GOAL-003)', async () => {
+    const browser = await chromium.launch({ headless: true });
+    try {
+      const page = await browser.newPage();
+      // Only the local replica origin is allowed; CDN/fonts/analytics/external
+      // APIs are all offline-isolation violations — even when they are NOT the
+      // captured source origin.
+      const violations = monitorNetworkIsolation(page, new Set(['http://127.0.0.1:9999']));
+      await page
+        .goto(
+          'data:text/html,' +
+            '<script>' +
+            'fetch("https://fonts.gstatic.com/x.css");' +
+            'fetch("https://cdn.example.com/a.js");' +
+            'fetch("https://analytics.example.com/beacon");' +
+            '</script>',
+        )
+        .catch(() => {});
+      await page.waitForTimeout(300);
+      expect(violations.length).toBeGreaterThanOrEqual(3);
+      const urls = violations.map((v) => v.url);
+      expect(urls.some((u) => u.includes('fonts.gstatic.com'))).toBe(true);
+      expect(urls.some((u) => u.includes('cdn.example.com'))).toBe(true);
+      expect(urls.some((u) => u.includes('analytics.example.com'))).toBe(true);
     } finally {
       await browser.close();
     }

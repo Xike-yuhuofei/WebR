@@ -26,6 +26,8 @@ interface CliOptions {
   verbose: boolean;
   quiet: boolean;
   out?: string;
+  mode?: 'replay' | 'rebuild';
+  profile?: 'smoke' | 'standard' | 'full';
   args: string[];
 }
 
@@ -51,6 +53,14 @@ Options:
   --verbose     Verbose output
   --quiet       Suppress non-essential output
   --out <path>  Explicit output path
+  --mode <m>    Reconstruction mode: replay (default) or rebuild
+  --profile <p> Validation profile: smoke, standard (default) or full
+                (validate only)
+
+Modes:
+  replay   Reuse captured HTML/CSS/JS to produce a high-fidelity offline replay.
+  rebuild  Create a blank authored-source workspace for a coding Agent to
+           independently re-implement the site from frozen evidence only.
 
 Exit codes:
   0 success · 1 command failure · 2 invalid arguments · 3 invalid evidence
@@ -97,9 +107,36 @@ function parseArgs(argv: string[]): CliOptions {
         opts.out = v;
         break;
       }
+      case '--mode': {
+        const v = argv[++i];
+        if (v === undefined || (v !== 'replay' && v !== 'rebuild')) {
+          throw new Error('--mode must be replay or rebuild');
+        }
+        opts.mode = v;
+        break;
+      }
+      case '--profile': {
+        const v = argv[++i];
+        if (v === undefined || !['smoke', 'standard', 'full'].includes(v)) {
+          throw new Error('--profile must be smoke, standard or full');
+        }
+        opts.profile = v as 'smoke' | 'standard' | 'full';
+        break;
+      }
       default:
         if (a.startsWith('--out=')) {
           opts.out = a.slice('--out='.length);
+        } else if (a.startsWith('--mode=')) {
+          const v = a.slice('--mode='.length);
+          if (v !== 'replay' && v !== 'rebuild')
+            throw new Error('--mode must be replay or rebuild');
+          opts.mode = v;
+        } else if (a.startsWith('--profile=')) {
+          const v = a.slice('--profile='.length);
+          if (!['smoke', 'standard', 'full'].includes(v)) {
+            throw new Error('--profile must be smoke, standard or full');
+          }
+          opts.profile = v as 'smoke' | 'standard' | 'full';
         } else if (a.startsWith('-') && a !== '-') {
           throw new Error(`Unknown option: ${a}`);
         } else {
@@ -229,6 +266,8 @@ async function runReconstruct(evidencePath: string, opts: CliOptions): Promise<n
       sourceOriginDenied,
       scanReplicaForSourceOrigin,
     } = await import('./reconstruct/adapter.js');
+
+    const mode = opts.mode ?? 'replay';
     const pkg = await readPackage(evidencePath);
     const spec = buildReconstructionSpec(pkg);
     const localized = new Set(spec.assets.map((a) => a.localPath));
@@ -251,6 +290,36 @@ async function runReconstruct(evidencePath: string, opts: CliOptions): Promise<n
       }
       return EXIT_CODES.isolationViolation;
     }
+
+    if (mode === 'rebuild') {
+      const { scaffoldRebuildWorkspace } = await import('./reconstruct/rebuild.js');
+      await scaffoldRebuildWorkspace(spec, evidencePath, out);
+      if (opts.json) {
+        process.stdout.write(
+          JSON.stringify({
+            command: 'reconstruct',
+            success: true,
+            version: PACKAGE_VERSION,
+            summary: {
+              replicaPath: out,
+              mode,
+              states: spec.states.length,
+              transitions: spec.transitions.length,
+              assets: spec.assets.length,
+              warningsBase: 'blank workspace scaffolded; agent-authored implementation required',
+            },
+            warnings: [],
+            errors: [],
+          }),
+        );
+      } else {
+        process.stdout.write(
+          `scaffolded rebuild workspace for ${spec.states.length} state(s) from ${evidencePath} → ${out} (${mode})\n`,
+        );
+      }
+      return EXIT_CODES.success;
+    }
+
     await buildReplica(spec, evidencePath, out);
     // Post-build isolation check: generated HTML must not reference the origin.
     const originHits = await scanReplicaForSourceOrigin(out, pkg.manifest.source.origin);
@@ -320,8 +389,12 @@ async function runValidate(
   opts: CliOptions,
 ): Promise<number> {
   try {
-    const { validateReplica, renderValidationReport } = await import('./validate/validator.js');
-    const report = await validateReplica(evidencePath, replicaPath);
+    const { validateReplica, renderValidationReport, DEFAULT_VISUAL_OPTIONS } =
+      await import('./validate/validator.js');
+    const report = await validateReplica(evidencePath, replicaPath, {
+      profile: opts.profile ?? 'standard',
+      visual: DEFAULT_VISUAL_OPTIONS,
+    });
     if (opts.json) {
       process.stdout.write(
         JSON.stringify({

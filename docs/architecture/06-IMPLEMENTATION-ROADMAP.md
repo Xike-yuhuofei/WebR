@@ -206,3 +206,61 @@ Use this goal for the first implementation iteration:
 ## Agent execution rule
 
 Each future iteration should receive **one bounded Goal**. Durable decisions discovered during implementation belong in repository documentation/ADRs, not only in prompts or chat transcripts.
+
+---
+
+# Immediate Agent Goal — GOAL-002 (completed)
+
+> **Goal:** Benchmark Site + dynamic replay replica + observable-state validation.
+
+Delivered the controlled two-origin Benchmark Site (`src/benchmark/site.ts`),
+a dynamic per-route replay replica, and observable-state transition validation
+(`observeFingerprint`). See `tests/benchmark.test.ts`.
+
+---
+
+# Immediate Agent Goal — GOAL-003 — Independent Agent Reconstruction
+
+> **Goal:** prove a Coding Agent can independently rebuild the Benchmark Site in
+> a blank project from a frozen Evidence Package, without the source/CDN.
+
+Core workflow:
+
+`Capture → Audit → Freeze Evidence → Source/CDN Offline → Empty Reconstruction Workspace → Agent Reconstruction → Full Validate`
+
+## Deliverables
+
+1. **Two reconstruction modes.** `webr reconstruct --mode replay|rebuild`.
+   - `replay` (default) reuses captured HTML/CSS/JS for a high-fidelity offline
+     replay.
+   - `rebuild` creates a truly blank authored-source workspace (`spec.json`,
+     agent `README.md`, reused content assets only — no captured DOM/JS/CSS).
+2. **Agent readable inputs.** Only the Evidence Package, the derived
+   Reconstruction Spec, and the WebR canonical docs; the original site is never
+   accessed.
+3. **Agent-authored implementation.** The Agent re-implements hover menu,
+   modal, tabs, form/input, scroll header, mobile/responsive menu, routes,
+   animation, and API mock/replay. Content assets (images/fonts/SVG/video) may
+   be reused.
+4. **Authored source convention.** `wr-*` classes, `is-*` state classes,
+   `--wr-*` tokens, semantic HTML, consistent formatting (see `05`).
+5. **Deterministic validation.** `webr validate --profile full` itself returns
+   `success=true`, `transitions.failed=0` — no test-side carve-out for `resize`.
+   Root causes fixed: route trailing-slash normalization, and class-agnostic
+   fingerprint focus signal + class-stripped action-locator resolution.
+6. **Hardened offline isolation.** Validate hard-fails ANY non-local HTTP(S)
+   request (source origin, CDN, fonts, analytics, external APIs), not only the
+   source origin.
+7. **Rebuild Benchmark Regression** (`tests/rebuild.test.ts`): source/CDN off,
+   empty workspace scaffolded, Agent-authored replica populated, full-profile
+   validation exits `0`.
+
+## Completion criteria
+
+`webr validate <evidence> <replica> --profile full` returns success with all
+required states, transitions and isolation checks passing — with no original-site
+access and no original-site runtime JS/CSS dependency.
+
+## Agent execution rule
+
+Each future iteration should receive **one bounded Goal**. Durable decisions discovered during implementation belong in repository documentation/ADRs, not only in prompts or chat transcripts.
