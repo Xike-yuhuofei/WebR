@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "id": "asset-f3b04bcda910",
+      "originalUrl": "https://cursor.com/.well-known/vercel/security/static/challenge.v2.min.js",
+      "localPath": "assets/files/challenge.v2.min-8e50e23439.js",
+      "mimeType": "application/javascript",
+      "sha256": "8e50e23439e81839d961f79f54f0530a12d3e1c81fdef9bcf9f689e333fab85a"
+    },
+    {
+      "id": "asset-aa9361bb997e",
+      "originalUrl": "https://cursor.com/.well-known/vercel/security/static/challenge.v2.wasm",
+      "localPath": "assets/files/challenge.v2-dc140fe0b5.wasm",
+      "mimeType": "application/wasm",
+      "sha256": "dc140fe0b5f75c01fbef2cef24f15c91bd1d54dffcaa1b83f7de24e1963ac19a"
+    }
+  ]
+}

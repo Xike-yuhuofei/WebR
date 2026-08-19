@@ -1,0 +1,24 @@
+{
+  "id": "state-e7e75cff10-2",
+  "pageId": "page-1",
+  "url": "https://cursor.com/",
+  "viewport": {
+    "width": 360,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:78cb42ee734e3784ed2761432378a0a3e110797e6cb5c6844443f2db7ee994b7",
+  "title": "Vercel Security Checkpoint"
+}

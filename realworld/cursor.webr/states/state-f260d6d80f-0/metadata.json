@@ -1,0 +1,24 @@
+{
+  "id": "state-f260d6d80f-0",
+  "pageId": "page-1",
+  "url": "https://cursor.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:25bf70f84739db2907cc7cffd5d44b9c3aff660093e4395cb66303e23a907fd7",
+  "title": "AI Coding Agent for Building Ambitious Software | Cursor"
+}

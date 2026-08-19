@@ -83,6 +83,11 @@ npm run format:check
 The capture and validate integration tests launch Chromium against a
 controlled local test site; they do not require network access.
 
+## On-demand workflows and browser policy
+
+- **Realtime Debug Workflow** (`docs/agents/realtime-debug-workflow.md`) — on-demand workflow for reproducing, observing, collecting evidence from, and debugging a real web page at runtime (`真实操作 → 观察状态变化 → 获取证据 → 再诊断/修改`). It does not change the default flow.
+- **Browser Policy** (`docs/architecture/07-BROWSER-POLICY.md`) — project-wide rule: any WebR activity that needs a live web page MUST use the specified Profile Chrome (CDP `9222`, `$HOME/chrome-debug-profile`). Default Chrome, temporary profiles, headless browsers, and other profiles are forbidden. Default target page: `https://work.trae.cn/`.
+
 ## Architecture status
 
 The v1 architecture is frozen at the specification level. Implementation
@@ -97,5 +102,6 @@ progresses through the roadmap phases above.
 - `04-VALIDATION-CONTRACT.md`
 - `05-SOURCE-CONVENTION.md`
 - `06-IMPLEMENTATION-ROADMAP.md`
+- `07-BROWSER-POLICY.md`
 
 These documents are the project source of truth. Chat history and Agent prompts are not substitutes for the canonical repository contracts.

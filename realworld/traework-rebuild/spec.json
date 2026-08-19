@@ -1,0 +1,1650 @@
+{
+  "format": "webr-reconstruction-spec",
+  "version": "1.0.0",
+  "source": {
+    "origin": "https://work.trae.cn",
+    "entryUrl": "https://work.trae.cn/"
+  },
+  "pages": [
+    {
+      "id": "page-1",
+      "route": "/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "entryState": "state-8731aa3420-0",
+      "states": [
+        "state-8731aa3420-0",
+        "state-ca4a23f713-1",
+        "state-3c44bb1eab-2",
+        "state-e23b3d427f-3",
+        "state-280be01cb9-4",
+        "state-280be01cb9-5",
+        "state-4282ef6b99-6",
+        "state-da9d1838d9-7",
+        "state-4dce41c98c-8",
+        "state-48d5851a9a-9",
+        "state-7721e52219-10",
+        "state-d73f178d80-11",
+        "state-18f78aff7b-12",
+        "state-aa2aff73da-13",
+        "state-0e46cf988d-14",
+        "state-1d6c985505-15",
+        "state-1845ae28e7-16",
+        "state-fb7c114541-17",
+        "state-8ce93ed3eb-18",
+        "state-49f5367ba2-19"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "state-0e46cf988d-14",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:2bc89422afbdea8ab0431474b569d7b588928d50e2074dcfff2240fb823471ea"
+    },
+    {
+      "id": "state-1845ae28e7-16",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 360,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:ab85ea4368bddc19b2cb679cfcdc53dbc9f3f8e743c9fc81d1673e0cc6d83358"
+    },
+    {
+      "id": "state-18f78aff7b-12",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:572cec5474e863a705225bf20ac34fdd99ea5320e1642a06ea2df23416b400d4"
+    },
+    {
+      "id": "state-1d6c985505-15",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:d657408d6fd235682aac1aed04afcdcf985fdc99acf0161e4fe7bcbeb2c5c87b"
+    },
+    {
+      "id": "state-280be01cb9-4",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:c3e066b66c0aa52fb5297a2f0be2b9328647ce133de83163f45fd8f039236436"
+    },
+    {
+      "id": "state-280be01cb9-5",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:e9e32e415ec3af0b6d5478df48b6564c89441cd5e35fef34ceef61f09111cefa"
+    },
+    {
+      "id": "state-3c44bb1eab-2",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:c0a46a74291a8b892901f98574af6206453f3d1f7b0ff982b1465c673d461681"
+    },
+    {
+      "id": "state-4282ef6b99-6",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:e08ca32f5336ba73479843358345192afbcc69ba741045c33bb861324e942329"
+    },
+    {
+      "id": "state-48d5851a9a-9",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:d1a9546a55b3fe2e897b9d97e163016a2027c01d327d3e40e112ca9f57362467"
+    },
+    {
+      "id": "state-49f5367ba2-19",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:4dfaa0354fb834f2a37ba31e4441ca86aa852c71f596df51df953e28096643b4"
+    },
+    {
+      "id": "state-4dce41c98c-8",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:034f0e3a08f2aa6390557fc7caad240b01d566867b093087550fbbcc3bd26b29"
+    },
+    {
+      "id": "state-7721e52219-10",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 360,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:83d9c74006eff980f8b6904ca88f44c7dccb5a36f4b07188fd41e39271892642"
+    },
+    {
+      "id": "state-8731aa3420-0",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:b321daf3e63d44b4352d97024bbc73c241156d8ffc948a32e623044400dc6904"
+    },
+    {
+      "id": "state-8ce93ed3eb-18",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:78bc09885a0aad49f73a49eeda109eb466442bf7a6d1b068cbd3ad2bd4d98fda"
+    },
+    {
+      "id": "state-aa2aff73da-13",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:490fbac8ac42b86a8b50c2cfa4c95cf4b727426a42e999e5626e116fd118c5e1"
+    },
+    {
+      "id": "state-ca4a23f713-1",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:a8263729c62764b17e50fa89cadf475d050f2c956324ca47e3b828609c2194d4"
+    },
+    {
+      "id": "state-d73f178d80-11",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:a5de0db362be12361a04b8cef51e94af1436b3d9650069f25ce432b57097e0a4"
+    },
+    {
+      "id": "state-da9d1838d9-7",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:e2dda6c03cf3a819c81629d8a4dba342527915191c47d65eec4755f08e2d2127"
+    },
+    {
+      "id": "state-e23b3d427f-3",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:afb5898c24aa8bf6f7c6677b5cded0f728b531ec071691533eb7af34a554564f"
+    },
+    {
+      "id": "state-fb7c114541-17",
+      "url": "https://work.trae.cn/",
+      "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写",
+      "viewport": {
+        "width": 720,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:1098cbfb52ba8e3856a59977490b58bd48fd7579735cfea431303538b2bb8bdf"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "transition-664f0f1683f4",
+      "from": "state-8731aa3420-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-ca4a23f713-1"
+    },
+    {
+      "id": "transition-72ef463d44a6",
+      "from": "state-8731aa3420-0",
+      "action": {
+        "type": "scroll",
+        "target": {
+          "strategy": "css",
+          "value": "document"
+        },
+        "label": "scroll:document"
+      },
+      "to": "state-ca4a23f713-1"
+    },
+    {
+      "id": "transition-ed67f7180234",
+      "from": "state-8731aa3420-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-3c44bb1eab-2"
+    },
+    {
+      "id": "transition-ada048480f08",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > div > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-e23b3d427f-3"
+    },
+    {
+      "id": "transition-33b875284fd9",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > span.trigger-eRptMM:nth-of-type(1) > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-280be01cb9-4"
+    },
+    {
+      "id": "transition-5d6c00883ef4",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > span.trigger-eRptMM:nth-of-type(2) > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-280be01cb9-5"
+    },
+    {
+      "id": "transition-6fb254e7059b",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "focus",
+        "target": {
+          "strategy": "css",
+          "value": "div.workspace-W5Ai9G:nth-of-type(2) > div.homeMessageInput-fQs3jY:nth-of-type(2) > div.messageInputContainer > div.messageInputEditorWrapper:nth-of-type(2) > div.chat-input-v2-container.chat-input-v2-container--has-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-upper-area:nth-of-type(1) > div.chat-input-v2-input-box-wrapper.chat-input-v2-input-box--modern-scroll:nth-of-type(2) > div.chat-input-v2-input-box-editable:nth-of-type(2)"
+        },
+        "label": "focus:div"
+      },
+      "to": "state-3c44bb1eab-2"
+    },
+    {
+      "id": "transition-3c260b11d66b",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-editor-part-lower-content:nth-of-type(2) > div.chat-input-v2-editor-part-lower__left:nth-of-type(1) > div.left-l-select:nth-of-type(2) > div.model-select-area > div.model-select-area-model > div > div.core-model-select > button.core-model-select-trigger",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "Auto Mode"
+            }
+          ]
+        },
+        "label": "click:Auto Mode"
+      },
+      "to": "state-4282ef6b99-6"
+    },
+    {
+      "id": "transition-7df3fec6f53e",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.chat-input-v2-container.chat-input-v2-container--has-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-editor-part-lower-content:nth-of-type(2) > div.chat-input-v2-editor-part-lower__right:nth-of-type(2) > div.chat-input-v2-slot-toolbar-right > div > span.trigger-eRptMM > span > button.rtcVoicePluginButton"
+        },
+        "label": "click:button"
+      },
+      "to": "state-da9d1838d9-7"
+    },
+    {
+      "id": "transition-d9aa8481acf8",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.messageInputEditorWrapper:nth-of-type(2) > div.chat-input-v2-container.chat-input-v2-container--has-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-editor-part-lower-content:nth-of-type(2) > div.chat-input-v2-editor-part-lower__right:nth-of-type(2) > span.wrapper-i89Z4u > span.trigger-eRptMM > span > button.chat-input-v2-send-button.voice-call-mode"
+        },
+        "label": "click:button"
+      },
+      "to": "state-4dce41c98c-8"
+    },
+    {
+      "id": "transition-1663544cb1bf",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > div.workspace-W5Ai9G:nth-of-type(2) > div.homeMessageInput-fQs3jY:nth-of-type(2) > div.messageInputContainer > div.inputBarContainer-sSF0Pb.inputBarContainer:nth-of-type(3) > button.inputBarButton-l_13bv",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "默认环境"
+            }
+          ]
+        },
+        "label": "click:默认环境"
+      },
+      "to": "state-48d5851a9a-9"
+    },
+    {
+      "id": "transition-4fa7ff50f8d8",
+      "from": "state-3c44bb1eab-2",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-7721e52219-10"
+    },
+    {
+      "id": "transition-a56a381b69e1",
+      "from": "state-e23b3d427f-3",
+      "action": {
+        "type": "focus",
+        "target": {
+          "strategy": "css",
+          "value": "div.workspace-W5Ai9G:nth-of-type(2) > div.homeMessageInput-fQs3jY:nth-of-type(2) > div.messageInputContainer > div.messageInputEditorWrapper:nth-of-type(2) > div.chat-input-v2-container.chat-input-v2-container--no-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-upper-area:nth-of-type(1) > div.chat-input-v2-input-box-wrapper.chat-input-v2-input-box--modern-scroll:nth-of-type(2) > div.chat-input-v2-input-box-editable:nth-of-type(2)"
+        },
+        "label": "focus:div"
+      },
+      "to": "state-d73f178d80-11"
+    },
+    {
+      "id": "transition-bb9b01af1d4b",
+      "from": "state-e23b3d427f-3",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "html > body > div.drawerOverlay-WxJ2L7:nth-of-type(3) > aside.drawer-gGx3Mf > div.header-L3Opt4:nth-of-type(1) > div:nth-of-type(1) > div > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-18f78aff7b-12"
+    },
+    {
+      "id": "transition-7a31c8dd2d51",
+      "from": "state-e23b3d427f-3",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "html > body > div.drawerOverlay-WxJ2L7:nth-of-type(3) > aside.drawer-gGx3Mf > div.header-L3Opt4:nth-of-type(1) > div:nth-of-type(1) > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-aa2aff73da-13"
+    },
+    {
+      "id": "transition-06a7c696de74",
+      "from": "state-e23b3d427f-3",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "html > body > div.drawerOverlay-WxJ2L7:nth-of-type(3) > aside.drawer-gGx3Mf > div.content-iohNf5:nth-of-type(2) > div.modeContainer-lRmzdv:nth-of-type(1) > div.container-NkZPqY > button.tab-UWCly2:nth-of-type(1)",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "Work"
+            }
+          ]
+        },
+        "label": "click:Work"
+      },
+      "to": "state-0e46cf988d-14"
+    },
+    {
+      "id": "transition-a70dd684dec4",
+      "from": "state-e23b3d427f-3",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "html > body > div.drawerOverlay-WxJ2L7:nth-of-type(3) > aside.drawer-gGx3Mf > div.content-iohNf5:nth-of-type(2) > div.modeContainer-lRmzdv:nth-of-type(1) > div.container-NkZPqY > button.tab-UWCly2:nth-of-type(3)",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "Design"
+            }
+          ]
+        },
+        "label": "click:Design"
+      },
+      "to": "state-1d6c985505-15"
+    },
+    {
+      "id": "transition-128d8a23e3b1",
+      "from": "state-e23b3d427f-3",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-1845ae28e7-16"
+    },
+    {
+      "id": "transition-f1b3fc08c33d",
+      "from": "state-280be01cb9-4",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > div > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-fb7c114541-17"
+    },
+    {
+      "id": "transition-a0f057bdcded",
+      "from": "state-280be01cb9-4",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > span.trigger-eRptMM:nth-of-type(1) > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-8ce93ed3eb-18"
+    },
+    {
+      "id": "transition-bf585b1c645f",
+      "from": "state-280be01cb9-4",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > span.trigger-eRptMM:nth-of-type(2) > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-8ce93ed3eb-18"
+    },
+    {
+      "id": "transition-5877cd31dff0",
+      "from": "state-280be01cb9-4",
+      "action": {
+        "type": "focus",
+        "target": {
+          "strategy": "css",
+          "value": "div.workspace-W5Ai9G:nth-of-type(2) > div.homeMessageInput-fQs3jY:nth-of-type(2) > div.messageInputContainer.messageInputNoBg > div.messageInputEditorWrapper:nth-of-type(2) > div.chat-input-v2-container.chat-input-v2-container--no-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-upper-area:nth-of-type(1) > div.chat-input-v2-input-box-wrapper.chat-input-v2-input-box--modern-scroll:nth-of-type(2) > div.chat-input-v2-input-box-editable:nth-of-type(2)"
+        },
+        "label": "focus:div"
+      },
+      "to": "state-49f5367ba2-19"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-68a440e2ca4f",
+      "originalUrl": "chrome-extension://bpoadfkcbjbfhfodiogcnhhhpibjhbnh/content_main.js",
+      "localPath": "assets/files/content_main-dbeb075e65.js",
+      "mimeType": "text/javascript"
+    },
+    {
+      "id": "asset-c01c47f24a75",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/2634.f458c28f.css",
+      "localPath": "assets/files/2634.f458c28f-1446933a0a.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-c830a33b53b4",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/680.dafddc0b.css",
+      "localPath": "assets/files/680.dafddc0b-b0c9718749.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-b513996e638f",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-framer-motion.3cddde72.js",
+      "localPath": "assets/files/lib-framer-motion.3cddde72-550633aec9.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-6836cec38d7b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-polyfill.39b78bfb.js",
+      "localPath": "assets/files/lib-polyfill.39b78bfb-31bd8a60fa.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-796cd369d958",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/argus-builder-strategy.1ab070bc.js",
+      "localPath": "assets/files/argus-builder-strategy.1ab070bc-e76d3ddb62.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-3336cc1a0a1a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/main.ae166435.css",
+      "localPath": "assets/files/main.ae166435-8e38091ab8.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-9af3a498af87",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-axios.758f5b0e.js",
+      "localPath": "assets/files/lib-axios.758f5b0e-e1be5eb07c.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-e0f9fd0e6a65",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-react.5174bd9e.js",
+      "localPath": "assets/files/lib-react.5174bd9e-e7c5a38351.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-c4f632e2c3dc",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/1426.1b8a058b.js",
+      "localPath": "assets/files/1426.1b8a058b-1141e5dbd3.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-aa0c71b65b13",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-router.f0336b25.js",
+      "localPath": "assets/files/lib-router.f0336b25-ac540f784d.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-00e0442c005d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/6056.5af5aa05.js",
+      "localPath": "assets/files/6056.5af5aa05-1220e0a0dc.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-d89d8e0a7f5b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/137.1831bb10.js",
+      "localPath": "assets/files/137.1831bb10-45c847a63d.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-9d21e180bbe2",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/680.0ad0e654.js",
+      "localPath": "assets/files/680.0ad0e654-e82c7cd6fd.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-752b43b8a616",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/main.c3ed3fd2.js",
+      "localPath": "assets/files/main.c3ed3fd2-1f31f86761.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-de5b8ba38493",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/2634.0faba9c3.js",
+      "localPath": "assets/files/2634.0faba9c3-b5a1b57f25.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-f46ea69753d2",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/8317.51ac482a.css",
+      "localPath": "assets/files/8317.51ac482a-2a9dc28e29.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-2fcc93d53b2c",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/7839.fb095fac.css",
+      "localPath": "assets/files/7839.fb095fac-622fc71080.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-c8875206c90b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/7614.6420d7a9.css",
+      "localPath": "assets/files/7614.6420d7a9-d7bdd017c6.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-1ab503b1823f",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/8682.bc73944e.js",
+      "localPath": "assets/files/8682.bc73944e-616046d133.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-35cb1820d2fa",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7614.46ad1e19.js",
+      "localPath": "assets/files/7614.46ad1e19-9382207087.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-5b598a129c3d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/4575.3b35873a.js",
+      "localPath": "assets/files/4575.3b35873a-466fd1588c.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-05e6a21872ef",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/6074.71ca00e7.js",
+      "localPath": "assets/files/6074.71ca00e7-ad4a9d0502.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-b7434a56a4a4",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7839.e36f4367.js",
+      "localPath": "assets/files/7839.e36f4367-a93e355ad0.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-830f1d80d78b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/8203.34de4ecf.js",
+      "localPath": "assets/files/8203.34de4ecf-bc41e64fa7.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ec904d9cb4a7",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1693.1f3804c0.js",
+      "localPath": "assets/files/1693.1f3804c0-5091bebd6a.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-e5af6a50af6a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7774.8f4f6a98.js",
+      "localPath": "assets/files/7774.8f4f6a98-97bb0a15c0.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-c652208475b9",
+      "originalUrl": "chrome-extension://bpoadfkcbjbfhfodiogcnhhhpibjhbnh/default_config.content.json",
+      "localPath": "assets/files/default_config.content-d21eb79d3d.json",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-c9381e135cbb",
+      "originalUrl": "https://work.trae.cn/ttwid/check/",
+      "localPath": "assets/files/check-69f8c71132",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-41ddcfa4aaf8",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/4653.17fbf6d6.css",
+      "localPath": "assets/files/4653.17fbf6d6-f217c301cc.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-b910bb814de9",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/6036.9a65274c.css",
+      "localPath": "assets/files/6036.9a65274c-799f575817.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-f87e89148a5d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7379.676ada39.js",
+      "localPath": "assets/files/7379.676ada39-4fa95f17dc.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-22226c342eec",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5833.897c6cb1.js",
+      "localPath": "assets/files/5833.897c6cb1-1d6c721476.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ec47e6bc1778",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1854.7da98e10.js",
+      "localPath": "assets/files/1854.7da98e10-0e5fc9a8b6.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-40adcb3c36c3",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/581.25d449dd.js",
+      "localPath": "assets/files/581.25d449dd-9903e83fb7.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-3a968936d5c9",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/lib-arco-icons.8c3954b2.js",
+      "localPath": "assets/files/lib-arco-icons.8c3954b2-a20354f23e.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-9d66d7ebdb95",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/9646.5415a429.js",
+      "localPath": "assets/files/9646.5415a429-a680ad6a82.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-d89744a8826e",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7618.04a13c08.js",
+      "localPath": "assets/files/7618.04a13c08-b7961756e5.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-4c9d9468572c",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5271.5b615c32.js",
+      "localPath": "assets/files/5271.5b615c32-5d7362dd07.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-4f3c7c882941",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5736.9b365615.js",
+      "localPath": "assets/files/5736.9b365615-4c0a9218c3.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-acf67202609a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/page.994adb99.css",
+      "localPath": "assets/files/page.994adb99-1e84d0ed7f.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-60fd89b8ef71",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/7618.af8d05c6.css",
+      "localPath": "assets/files/7618.af8d05c6-6f7bbaabcc.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-7411595b218f",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/6036.f46c4b7e.js",
+      "localPath": "assets/files/6036.f46c4b7e-81ddba0c91.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-5a0768f5f546",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/page.6bd07fb7.js",
+      "localPath": "assets/files/page.6bd07fb7-237c16c037.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ad3db8927423",
+      "originalUrl": "https://work.trae.cn/icon-192.png",
+      "localPath": "assets/files/icon-192-c98dd31ad2.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-77a82056ae01",
+      "originalUrl": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.16.7.js",
+      "localPath": "assets/files/common-monitors.1.16.7-61ee8e97bb.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-a502adcc2b8a",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/common/GetUserToken",
+      "localPath": "assets/files/GetUserToken-0332d83b3a",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-6524dc7d4747",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/CheckLogin",
+      "localPath": "assets/files/CheckLogin-0154d981b1",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-07c6a234b613",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/GetUserInfo",
+      "localPath": "assets/files/GetUserInfo-96923f9b89",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-0fc66bd8bc22",
+      "originalUrl": "https://abtestvm.bytedance.com/service/2/abtest_config/",
+      "localPath": "assets/files/abtest_config-970d3a2577",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-1730f6e1bcf6",
+      "originalUrl": "https://mon.zijieapi.com/monitor_web/settings/browser-settings?bid=solo_web&store=1",
+      "localPath": "assets/files/browser-settings-86c8507c2d",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-2a5857a02c80",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions?page_size=100&mode=code",
+      "localPath": "assets/files/chat_sessions-605c46145b",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-a386a7d86e86",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/explorer",
+      "localPath": "assets/files/explorer-d0e616707c",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-96397e16c97d",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions?page_size=100&mode=work",
+      "localPath": "assets/files/chat_sessions-605c46145b",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-fb76f8b9d8f1",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/native/config/query?productCode=SOLO_Web&packageType=prod&uid=3991694265563584",
+      "localPath": "assets/files/query-9b78b72e26",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-c3cf3353b2f9",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions?page_size=100&mode=design",
+      "localPath": "assets/files/chat_sessions-605c46145b",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-3820f23cd1f9",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7108.a4f717bc.js",
+      "localPath": "assets/files/7108.a4f717bc-fb912a721e.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-c81afea47e80",
+      "originalUrl": "https://p3-passport.byteacctimg.com/img/user-avatar/faf9eaa6ff86f4156dd1414ab7f2544a~128x128.image",
+      "localPath": "assets/files/faf9eaa6ff86f4156dd1414ab7f2544a-128x128-6ba8804e2d.image",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c60e93eac9d3",
+      "originalUrl": "https://api.trae.cn/trae/api/v2/pay/web_user_pay_status",
+      "localPath": "assets/files/web_user_pay_status-3942ec6f64",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-542912dcedce",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/GetThirdPartyToken",
+      "localPath": "assets/files/GetThirdPartyToken-a7dfeb4dfe",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-32fa3ea0bedc",
+      "originalUrl": "https://api.trae.cn/trae/api/v2/pay/web_user_ent_usage",
+      "localPath": "assets/files/web_user_ent_usage-879fbc5b3f",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-73edb85a2f3d",
+      "originalUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/privacy/query",
+      "localPath": "assets/files/query-6751add5c9",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-175d72da2e10",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/models?functions=solo_agent_remote%2Csolo_work_remote%2Csolo_design_remote&show_custom_model=true",
+      "localPath": "assets/files/models-13d331434b",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-014cd164e2bd",
+      "originalUrl": "https://api.trae.cn/icube/api/v1/native/version/trae/cn/latest",
+      "localPath": "assets/files/latest-b59af616e8",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-8cd64c75e1e2",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/doubao.svg",
+      "localPath": "assets/files/doubao-063a993f66.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-64fbdefebcc1",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/glm-v3-light.svg",
+      "localPath": "assets/files/glm-v3-light-676dbd2f8e.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-4c8c93b01d3f",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/deepseek.svg",
+      "localPath": "assets/files/deepseek-70bb958c3b.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-ccc9dcaa7cac",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/kimi-v2-light.svg",
+      "localPath": "assets/files/kimi-v2-light-c27e105a17.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-9c9f1b244fb4",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/minimax-light.svg",
+      "localPath": "assets/files/minimax-light-2d85a52292.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-9230896d66b4",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/qwen_light.svg",
+      "localPath": "assets/files/qwen_light-72902c6af0.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-010ffacaebcf",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/pinned?page_size=100&mode=work",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-fe3dae89ac83",
+      "originalUrl": "https://mcs.zijieapi.com/list?aid=932203&sdk_version=5.3.9&device_platform=web",
+      "localPath": "assets/files/list-948190a15a",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-ddbe2415753a",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/pinned?page_size=100&mode=code",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-ad99e6bfcb05",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions/pinned?page_size=100&mode=work",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-c56c4910a72f",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions/pinned?page_size=100&mode=design",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-27553c1b1335",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/GetLoginGuidanceForBytedance",
+      "localPath": "assets/files/GetLoginGuidanceForBytedance-08747a3c2b",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-f61da128fbe1",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/notifications/count?platform=Web&language=zh-cn",
+      "localPath": "assets/files/count-3080a3c8a0",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-6fcd4ee4972f",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/registries?product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/registries-b3807b92ce",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-d744e44ede95",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/frontier/access_key",
+      "localPath": "assets/files/access_key-33b993224d",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-1549629371a3",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/environments?source=chat&page_size=30",
+      "localPath": "assets/files/environments-fceb0bda6d",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-98dafca03d46",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/code-dark-v1.png",
+      "localPath": "assets/files/code-dark-v1-9f53f08a4a.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4d838b89b34e",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/golden-code-dark-v1.png",
+      "localPath": "assets/files/golden-code-dark-v1-1e5640ac9b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bbe22c94cb7c",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/code-light-v1.png",
+      "localPath": "assets/files/code-light-v1-28a671831a.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-659b76cb1d4a",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/golden-code-light-v1.png",
+      "localPath": "assets/files/golden-code-light-v1-91098d4721.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-daa8a9f6d7cd",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/normal-code-dark-v1.png",
+      "localPath": "assets/files/normal-code-dark-v1-a5966d6fec.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3dcae3dde0dc",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/skill/list?product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/list-0ef59f9807",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-8cd36236cc6e",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions/pinned?page_size=100&mode=code",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-08ef01104e39",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks?page_size=100&hide_empty=true",
+      "localPath": "assets/files/scheduled_tasks-605c46145b",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-b7887d07b9ba",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/normal-code-light-v1.png",
+      "localPath": "assets/files/normal-code-light-v1-cf147b516c.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-655c36b49c17",
+      "originalUrl": "https://agent-sandbox-bj-c1-gw.trae.cn/explorer/direct/slash/list?git_repo=",
+      "localPath": "assets/files/list-920c2c4f69",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-17730195084c",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/categories?registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/categories-3710906523",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-b00d4773611d",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/recommended?product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/recommended-0a4b74dbc2",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-351cad262bb4",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/list?page_size=200&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/list-95c70f70c7",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-de5e145e033e",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/pinned?page_size=100&mode=design",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-4d4515f80fa0",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/plugins?page_size=50&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/plugins-e06acd7222",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-cfcf7d5d92f4",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1001/62d25e0e-333e-4ddd-887a-3307c010b0f5/icons/37ae07b0-3cbb-48fd-bb5d-862a9c8fd055.svg",
+      "localPath": "assets/files/37ae07b0-3cbb-48fd-bb5d-862a9c8fd055-34060ab325.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-825342a35b87",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1001/42ef9a5d-9586-4445-93e8-37155ac24caa/icons/fc261b07-e620-4811-835c-517b4dc4a03c.svg",
+      "localPath": "assets/files/fc261b07-e620-4811-835c-517b4dc4a03c-e4d042f68b.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-3ce6dcf37fda",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/9a2783e4-0fee-4dfe-a558-bc49ad963c75/icons/1dcefd8b-65a9-4bd7-a59e-a9302d8ca1e3.svg",
+      "localPath": "assets/files/1dcefd8b-65a9-4bd7-a59e-a9302d8ca1e3-7227f69f4d.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-679ee1a362d1",
+      "originalUrl": "https://api.trae.ai/icube/api/v1/native/version/trae/cn/latest",
+      "localPath": "assets/files/latest-f7e53c50c4",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-b6a6e588e3b2",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=df05c328-ffe2-4352-bae8-8192187fb72e&version=0.3.0&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-54275555e0",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-aef306f739f1",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=62d25e0e-333e-4ddd-887a-3307c010b0f5&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-91919925fb",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-72d20ffb5677",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=4d072205-c47e-425e-acab-2fed2b8ba16f&version=0.0.2&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-4c76607f7f",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-6c776936f1d1",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=42ef9a5d-9586-4445-93e8-37155ac24caa&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-156aee25d4",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-7b89f0286eed",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&version=0.1.1&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-25bfb137ed3f",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6614a267-48fb-485f-8758-fea6136602f8&version=1.0.4&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-c96542e7c3",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-147765155218",
+      "originalUrl": "https://starling.zijieapi.com/check_and_get_text/b6cbdbd05b0a11f1aa88adcf24691eff/normal/trae-work?lang=zh,zh&version=1787127833018109000",
+      "localPath": "assets/files/trae-work-8387c79320",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-55ce48a39b74",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/git/repositories",
+      "localPath": "assets/files/repositories-326abf2d1f",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-05b4c084a98a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7670.c2e11a8a.js",
+      "localPath": "assets/files/7670.c2e11a8a-1116ff5784.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-3d59b2b6d6ef",
+      "originalUrl": "https://web-log-report.rtc.volcvideo.com/video/v1/webrtc_log/",
+      "localPath": "assets/files/webrtc_log-85cac9d891",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-df1100175fdc",
+      "originalUrl": "https://trae-api-cn.mchost.guru/api/stream/v1/startVoiceChat",
+      "localPath": "assets/files/startVoiceChat-a8f174200a",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-c2689997e855",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/4687.6e9aff58.js",
+      "localPath": "assets/files/4687.6e9aff58-88f29456e0.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-9635acd1d8b4",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/4657.535c4a68.js",
+      "localPath": "assets/files/4657.535c4a68-b6ba9abc68.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ebaf9db3a558",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/5078.8f9dbe39.css",
+      "localPath": "assets/files/5078.8f9dbe39-602701fbc6.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-200d9a9e5d95",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5078.0941ca4b.js",
+      "localPath": "assets/files/5078.0941ca4b-a0a6350fcc.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-6e3f57c2ab69",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/4502.675f7f93.js",
+      "localPath": "assets/files/4502.675f7f93-5990925f54.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ebee8b679a77",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/4988.afd6c2bf.js",
+      "localPath": "assets/files/4988.afd6c2bf-1e80ef703c.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-8d3c3949b4a3",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7706.28bbf0a7.js",
+      "localPath": "assets/files/7706.28bbf0a7-4111bb4405.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-09db0feb128a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1344.ce2f6551.js",
+      "localPath": "assets/files/1344.ce2f6551-419fdcb3df.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-9d91de7df1a6",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/mf/manifest?code=templates_mf",
+      "localPath": "assets/files/manifest-412bb2f72f",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-bc14498052b7",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/css/6713.3b358a22.css",
+      "localPath": "assets/files/6713.3b358a22-2c836d8c03.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-ad8f674425f1",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/css/async/__federation_expose_index.4fb3b149.css",
+      "localPath": "assets/files/__federation_expose_index.4fb3b149-4401ec7e5b.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-dc58953e6ca3",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/js/templates_mf.560fdb6d.js",
+      "localPath": "assets/files/templates_mf.560fdb6d-36293572e7.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-1103e157da7d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/js/async/__federation_expose_index.2e2755ee.js",
+      "localPath": "assets/files/__federation_expose_index.2e2755ee-389c3dc086.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-8e29bbfe287d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/js/async/5450.7fa2ec9d.js",
+      "localPath": "assets/files/5450.7fa2ec9d-55a3646500.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-c4de316b12b7",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/suggestions/list",
+      "localPath": "assets/files/list-7d98979817",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-a16a255c30a0",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6d2de3fc-425c-48dd-a0a4-5e816d20358a&product_name=web&chat_mode=work&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-4c25c9f920",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-31ad95a60ec6",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=d2882ad2-c245-4be5-b997-444532cdce7a&product_name=web&chat_mode=work&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-2742020052",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-301b83028a85",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/suggestions/scenes",
+      "localPath": "assets/files/scenes-4afb330a05",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-6e0eb11373d3",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/d2882ad2-c245-4be5-b997-444532cdce7a/icons/abc6ad48-9c88-4116-89b3-f862820f778a.svg",
+      "localPath": "assets/files/abc6ad48-9c88-4116-89b3-f862820f778a-9ece4492a2.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-545824d3c26b",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/6d2de3fc-425c-48dd-a0a4-5e816d20358a/icons/64f79233-cfce-4b07-a676-b13a9cdb4707.svg",
+      "localPath": "assets/files/64f79233-cfce-4b07-a676-b13a9cdb4707-0ddace3186.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-ae6f0c5d9828",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/skill/list?product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/list-0ef59f9807",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-2e60d22a0029",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/042f20bb-60cc-4eea-ab78-475f42b388d9/icons/fc57cee7-1be5-4e25-a040-37b44b7cceb5.svg",
+      "localPath": "assets/files/fc57cee7-1be5-4e25-a040-37b44b7cceb5-77ab242ec1.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-a7cce8aed6ad",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/registries?product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/registries-b3807b92ce",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-7a8cf2669984",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/plugins?page_size=50&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/plugins-e06acd7222",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-dfa2fda7c2bd",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=68c8bc26-ebcf-42a1-963f-ed7a5e820fa9&product_name=web&chat_mode=work&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-ad58b24d15",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-2720e1ea38ca",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/68c8bc26-ebcf-42a1-963f-ed7a5e820fa9/icons/0dbcd223-c0f8-434c-9eaa-942edaf1dede.svg",
+      "localPath": "assets/files/0dbcd223-c0f8-434c-9eaa-942edaf1dede-08c92b90fb.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-43d391d383af",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/categories?registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/categories-3710906523",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-889a4b2aa160",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/list?page_size=200&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/list-95c70f70c7",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-ff06b647a25b",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=db4f882f-1b96-4abb-89fc-051cb2e77b59&product_name=web&chat_mode=work&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-4888ff39e7",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-6ba69890f585",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/db4f882f-1b96-4abb-89fc-051cb2e77b59/icons/a85fb66f-f7ef-4ddd-a8ef-5da02d6ea00c.svg",
+      "localPath": "assets/files/a85fb66f-f7ef-4ddd-a8ef-5da02d6ea00c-a8020fcd42.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-94ea0edfc3c7",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/recommended?product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/recommended-0a4b74dbc2",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-294ae6ab2061",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=df05c328-ffe2-4352-bae8-8192187fb72e&version=0.3.0&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-54275555e0",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-0cb9a7beb6e1",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6614a267-48fb-485f-8758-fea6136602f8&version=1.0.4&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-c96542e7c3",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-a87d497927fa",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&version=0.1.1&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-f7e3258ca80d",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=4d072205-c47e-425e-acab-2fed2b8ba16f&version=0.0.2&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-4c76607f7f",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-769b77e88f9c",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=42ef9a5d-9586-4445-93e8-37155ac24caa&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-156aee25d4",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-7c64cb0dd7e2",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=62d25e0e-333e-4ddd-887a-3307c010b0f5&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-91919925fb",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-0180374c62b5",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=27b9d3c3-294e-4497-b3f8-ff9b84646612&product_name=web&chat_mode=work&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-c7cb63653e",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-faeea09fc81a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/onboarding-preview.a04d9dca.png",
+      "localPath": "assets/files/onboarding-preview.a04d9dca-2811fd4fe4.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-58497520b0fe",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/design_style_explore_darkmode@3x.da878da1.png",
+      "localPath": "assets/files/design_style_explore_darkmode-3x.da878da1-46f808fa74.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1f323b2ff053",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/design_spec_output_darkmode@3x.b9ac4e66.png",
+      "localPath": "assets/files/design_spec_output_darkmode-3x.b9ac4e66-7243b7a37a.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9beba1a64110",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/design_concept_draft_darkmode@3x.44490403.png",
+      "localPath": "assets/files/design_concept_draft_darkmode-3x.44490403-772f08ee25.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c8f16e898091",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=e7adaf46-6a84-4d3b-8773-d9351d4c7eea&product_name=web&chat_mode=work&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-be27c698c3",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-f9cb617206b8",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/design_libraries",
+      "localPath": "assets/files/design_libraries-266b89c7a9",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-9789dafffaf2",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/registries?product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/registries-b3807b92ce",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-b651f5d32c80",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/skill/list?product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/list-0ef59f9807",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-cd227fcf3326",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/plugins?page_size=50&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/plugins-e06acd7222",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-f1981a08fe86",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/recommended?product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/recommended-0a4b74dbc2",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-5abd9c97cef3",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/categories?registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/categories-3710906523",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-f4823f436f55",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/list?page_size=200&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/list-95c70f70c7",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-6d4c5bf12e8b",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=62d25e0e-333e-4ddd-887a-3307c010b0f5&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-91919925fb",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-5e5dfb860554",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=4d072205-c47e-425e-acab-2fed2b8ba16f&version=0.0.2&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-4c76607f7f",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-1b10622a7209",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=42ef9a5d-9586-4445-93e8-37155ac24caa&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-156aee25d4",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-c422b667df3c",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=df05c328-ffe2-4352-bae8-8192187fb72e&version=0.3.0&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-54275555e0",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-dd2d2bedda85",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6614a267-48fb-485f-8758-fea6136602f8&version=1.0.4&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-c96542e7c3",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-d9c182242d6f",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&version=0.1.1&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2790",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json"
+    }
+  ]
+}

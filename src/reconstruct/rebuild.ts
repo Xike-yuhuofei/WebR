@@ -10,9 +10,9 @@
  * final HTML, never the original JS bundle as the replica runtime. Only
  * content assets (images / fonts / SVG / video / audio) may be reused.
  */
-import { copyFile, mkdir, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, writeFile, readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { mimeTypeFor } from './adapter.js';
+import { mimeTypeFor, buildReconstructionSpec } from './adapter.js';
 import type { ReconstructionSpec } from './adapter.js';
 import type { Asset } from '../contracts.js';
 
@@ -84,9 +84,38 @@ clean offline-isolation report and \`transitions.failed = 0\`.
 const PLACEHOLDER = ''; // keeps empty scaffold directories tracked
 
 /**
+ * Build a Reconstruction Spec enriched with per-state title/heading `outline`
+ * and interactive `targets` for agent guidance (P2-2), by reading each state's
+ * captured DOM from the frozen evidence. Falls back to the caller's spec when
+ * the evidence package cannot be read (e.g. schema-variant edge cases).
+ */
+async function enrichedSpec(
+  evidencePath: string,
+  spec: ReconstructionSpec,
+): Promise<ReconstructionSpec> {
+  try {
+    const { readPackage } = await import('../packageIO.js');
+    const pkg = await readPackage(evidencePath);
+    const domMap: Record<string, string> = {};
+    for (const s of pkg.states) {
+      if (!s.artifacts.dom) continue;
+      try {
+        domMap[s.id] = await readFile(join(evidencePath, 'states', s.id, s.artifacts.dom), 'utf8');
+      } catch {
+        // a state missing its DOM just stays un-enriched
+      }
+    }
+    return buildReconstructionSpec(pkg, domMap);
+  } catch {
+    return spec;
+  }
+}
+
+/**
  * Create a blank rebuild workspace from frozen evidence. Copies only reusable
- * content assets and writes the Reconstruction Spec; every implementation
- * concern is left for the Agent.
+ * content assets, writes an enriched Reconstruction Spec (title/heading outline
+ * + interactive targets per state), and leaves every implementation concern to
+ * the Agent.
  */
 export async function scaffoldRebuildWorkspace(
   spec: ReconstructionSpec,
@@ -98,8 +127,11 @@ export async function scaffoldRebuildWorkspace(
   await mkdir(publicDir, { recursive: true });
   await mkdir(srcDir, { recursive: true });
 
-  // Write the Agent-facing Reconstruction Spec.
-  await writeFile(join(out, 'spec.json'), JSON.stringify(spec, null, 2) + '\n');
+  // Write the Agent-facing Reconstruction Spec (enriched with DOM-derived
+  // outline/targets so an independent agent can reproduce the recorded
+  // structure without reverse-engineering the raw DOM).
+  const finalSpec = await enrichedSpec(evidencePath, spec);
+  await writeFile(join(out, 'spec.json'), JSON.stringify(finalSpec, null, 2) + '\n');
   await writeFile(join(out, 'README.md'), README);
   await writeFile(join(srcDir, '.gitkeep'), PLACEHOLDER);
 

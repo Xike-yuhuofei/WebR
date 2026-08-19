@@ -79,6 +79,15 @@ export async function writePackage(
     states: CapturedStateEvidence[];
     assets: CapturedAsset[];
     transitions: { id: string; from: string; action: unknown; to: string }[];
+    /**
+     * Additional pages (P2-3 multi-route capture). Each entry carries its own
+     * page metadata and its captured entry-state evidence. Optional; when
+     * omitted behavior is identical to single-page capture.
+     */
+    extraPages?: {
+      page: { id: string; url: string; route: string; title?: string };
+      states: CapturedStateEvidence[];
+    }[];
   },
 ): Promise<WrittenPackage> {
   await rm(outDir, { recursive: true, force: true });
@@ -92,13 +101,33 @@ export async function writePackage(
     indexes: { ...DEFAULT_INDEXES },
   };
 
-  const page: PageRecord = {
+  // Flatten primary + extra pages into a single list, preserving capture order
+  // for the primary page (P2-3). Each page record keeps its own state ids.
+  const extraPages = evidence.extraPages ?? [];
+  const primaryPage: PageRecord = {
     id: evidence.page.id,
     url: evidence.page.url,
     route: evidence.page.route,
     stateIds: evidence.states.map((s) => s.id),
     ...(evidence.page.title ? { title: evidence.page.title } : {}),
   };
+  const extraPageRecords: PageRecord[] = extraPages.map((p) => ({
+    id: p.page.id,
+    url: p.page.url,
+    route: p.page.route,
+    stateIds: p.states.map((s) => s.id),
+    ...(p.page.title ? { title: p.page.title } : {}),
+  }));
+  const pageRecords: PageRecord[] = [primaryPage, ...extraPageRecords];
+
+  // State → owning page id map for building state records + metadata.
+  const primaryPageId = evidence.page.id;
+  const pageIdByState = new Map<string, string>();
+  for (const s of evidence.states) pageIdByState.set(s.id, primaryPageId);
+  for (const p of extraPages) {
+    for (const s of p.states) pageIdByState.set(s.id, p.page.id);
+  }
+  const allStates = [...evidence.states, ...extraPages.flatMap((p) => p.states)];
 
   const stateRecords: StateRecord[] = [];
   const files: Record<string, Buffer> = {};
@@ -111,8 +140,9 @@ export async function writePackage(
   };
 
   // ---- states ----
-  for (const state of evidence.states) {
+  for (const state of allStates) {
     const stateDir = `states/${state.id}`;
+    const owningPageId = pageIdByState.get(state.id) ?? primaryPageId;
     const artifacts: StateRecord['artifacts'] = {
       screenshot: 'screenshot.png',
       dom: 'dom.html',
@@ -149,13 +179,17 @@ export async function writePackage(
 
     stateRecords.push({
       id: state.id,
-      pageId: evidence.page.id,
+      pageId: owningPageId,
       url: state.url,
       viewport: state.viewport,
       scroll: state.scroll,
       artifacts,
       fingerprint: state.fingerprint,
       ...(state.title ? { title: state.title } : {}),
+      // Golden-Reference validity (GOAL-005 P0-2): record the health so audit
+      // and validation can distinguish a valid Golden Reference from an
+      // error/challenge/empty page captured under a hostile or failed load.
+      ...(state.health && state.health !== 'ok' ? { tags: ['health:' + state.health] } : {}),
     });
 
     put(
@@ -163,13 +197,14 @@ export async function writePackage(
       JSON.stringify(
         {
           id: state.id,
-          pageId: evidence.page.id,
+          pageId: owningPageId,
           url: state.url,
           viewport: state.viewport,
           scroll: state.scroll,
           artifacts,
           fingerprint: state.fingerprint,
           ...(state.title ? { title: state.title } : {}),
+          ...(state.health && state.health !== 'ok' ? { tags: ['health:' + state.health] } : {}),
         },
         null,
         2,
@@ -203,7 +238,7 @@ export async function writePackage(
   };
 
   // ---- page index ----
-  const pageIndex: PageIndex = { pages: [page] };
+  const pageIndex: PageIndex = { pages: pageRecords };
 
   // ---- write canonical JSON ----
   put('manifest.json', JSON.stringify(manifest, null, 2) + '\n');
@@ -224,7 +259,7 @@ export async function writePackage(
 
   return {
     manifest,
-    page,
+    page: primaryPage,
     states: stateRecords,
     graph,
     assets: assetIndex,

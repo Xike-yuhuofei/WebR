@@ -1,0 +1,293 @@
+{
+  "nodeCount": 32,
+  "nodes": [
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tablist",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "WorkCodeDesign",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Work",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Code",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Design",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "稀客Pro+",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "下载桌面端",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "下载桌面端",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "textbox",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "添加文件及更多",
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": null,
+      "name": "添加文件及更多"
+    },
+    {
+      "tag": "input",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "调用插件",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "调用插件"
+    },
+    {
+      "tag": "button",
+      "role": "combobox",
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": "Auto Mode",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "向左滚动",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "向左滚动"
+    },
+    {
+      "tag": "div",
+      "role": "group",
+      "ariaLabel": "建议场景",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "PPT文档数据分析视频图像产品开发内容创作金融投资商业增长",
+      "name": "建议场景"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "PPT",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "文档",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "数据分析",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "视频",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "图像",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "产品开发",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "内容创作",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "金融投资",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "商业增长",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "向右滚动",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "向右滚动"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "前端设计工具集设计一个数据密集型的后台管理界面",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "合规审查根据业务流程整理一份上线前合规检查文档",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "视觉图片生成为新品发布会设计一张科技感预热海报",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "根据研究材料撰写一份结构规范的分析报告",
+      "name": null
+    }
+  ]
+}

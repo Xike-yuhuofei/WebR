@@ -1,0 +1,22 @@
+{
+  "format": "webr-evidence",
+  "version": "1.0.0",
+  "capture": {
+    "capturedAt": "2026-08-19T02:52:21.336Z",
+    "toolVersion": "0.1.0",
+    "browser": {
+      "name": "chromium",
+      "version": "151.0.7922.34"
+    }
+  },
+  "source": {
+    "origin": "https://cursor.com",
+    "entryUrl": "https://cursor.com"
+  },
+  "indexes": {
+    "pages": "pages/index.json",
+    "transitions": "transitions/state-graph.json",
+    "assets": "assets/index.json",
+    "checksums": "checksums.json"
+  }
+}

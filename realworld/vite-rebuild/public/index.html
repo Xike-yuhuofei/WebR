@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vite | Next Generation Frontend Tooling</title>
+    <meta name="description" content="Vite is a blazing fast frontend build tool powering the next generation of web applications." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wr-App" id="app">
+      <!-- Top announcement banner -->
+      <div class="wr-TopBanner" id="site-top-banner">
+        <a class="wr-TopBanner-link" href="./blog/cloudflare-supports-vite/index.html">
+          Cloudflare supports Vite's mission →
+        </a>
+        <button class="wr-TopBanner-close" id="top-banner-close" type="button" aria-label="Dismiss banner">
+          &times;
+        </button>
+      </div>
+
+      <header class="wr-Header" id="site-header">
+        <div class="wr-Header-inner wr-Container">
+          <div class="wr-Header-brand">
+            <a class="wr-Header-logo-link" href="./index.html" aria-label="Vite home">
+              <img
+                class="wr-Header-logo"
+                src="./assets/files/vite-light.t8GCa_VF-4529cda6e4.svg"
+                alt="Vite"
+              />
+            </a>
+
+            <nav class="wr-Header-nav" aria-label="Main Navigation">
+              <a class="wr-Header-link" href="./guide/index.html">Guide</a>
+              <a class="wr-Header-link" href="./config/index.html">Config</a>
+              <a class="wr-Header-link" href="./plugins/index.html">Plugins</a>
+
+              <div class="wr-Flyout" id="flyout-resources">
+                <button class="wr-Flyout-trigger" type="button" data-wr-evidence="flyout-resources-trigger">
+                  Resources
+                </button>
+                <div class="wr-Flyout-menu">
+                  <a class="wr-Flyout-item" href="./plugins/index.html">Plugin Registry</a>
+                  <a class="wr-Flyout-item" href="./plugins/index.html">Team</a>
+                  <a class="wr-Flyout-item" href="./blog/cloudflare-supports-vite/index.html">Blog</a>
+                  <a class="wr-Flyout-item" href="./config/index.html">Releases</a>
+                </div>
+              </div>
+
+              <div class="wr-Flyout" id="flyout-versions">
+                <button class="wr-Flyout-trigger" type="button" data-wr-evidence="flyout-versions-trigger">
+                  v8.2.1
+                </button>
+                <div class="wr-Flyout-menu">
+                  <a class="wr-Flyout-item" href="./config/index.html">Unreleased Docs</a>
+                  <a class="wr-Flyout-item" href="./guide/index.html">Vite 7 Docs</a>
+                  <a class="wr-Flyout-item" href="./guide/index.html">Vite 6 Docs</a>
+                  <a class="wr-Flyout-item" href="./guide/index.html">Vite 5 Docs</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="wr-Header-actions">
+            <div class="wr-SearchTrigger" id="search-trigger-wrap">
+              <button class="wr-SearchButton" id="search-trigger" type="button">
+                <span>Search</span>
+                <kbd>Ctrl K</kbd>
+              </button>
+            </div>
+
+            <div class="wr-Flyout wr-Flyout--right" id="flyout-lang">
+              <button class="wr-Flyout-trigger" type="button" data-wr-evidence="flyout-lang-trigger">
+                English
+              </button>
+              <div class="wr-Flyout-menu">
+                <a class="wr-Flyout-item" href="./index.html">English</a>
+                <a class="wr-Flyout-item" href="./index.html">简体中文</a>
+                <a class="wr-Flyout-item" href="./index.html">日本語</a>
+                <a class="wr-Flyout-item" href="./index.html">Español</a>
+                <a class="wr-Flyout-item" href="./index.html">한국어</a>
+              </div>
+            </div>
+
+            <div class="wr-SocialLinks" id="site-social-links">
+              <a class="wr-SocialLink" href="./index.html">Bluesky</a>
+              <a class="wr-SocialLink" href="./index.html">Mastodon</a>
+              <a class="wr-SocialLink" href="./index.html">X</a>
+              <a class="wr-SocialLink" href="./config/index.html">Discord Chat</a>
+              <a class="wr-SocialLink" href="./plugins/index.html">Awesome Vite</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="wr-Hero wr-Container">
+          <span class="wr-Hero-eyebrow">By VoidZero</span>
+          <h1 class="wr-Hero-title">
+            The Build Tool for the Web <span class="wr-Hero-accent">·</span>
+          </h1>
+          <p class="wr-Hero-sub">
+            Vite is a blazing fast frontend build tool powering the next
+            generation of web applications.
+          </p>
+          <div class="wr-ButtonRow">
+            <a class="wr-Button wr-Button--primary" href="./guide/index.html">Get Started</a>
+            <a class="wr-Button wr-Button--secondary" href="./config/index.html">View on GitHub</a>
+          </div>
+
+          <div class="wr-Tabs" id="install-tabs">
+            <div class="wr-Tabs-bar" role="tablist">
+              <button class="wr-Tab is-active" type="button" data-tab="npm">npm</button>
+              <button class="wr-Tab" type="button" data-tab="yarn">Yarn</button>
+              <button class="wr-Tab" type="button" data-tab="pnpm">pnpm</button>
+              <button class="wr-Tab" type="button" data-tab="bun">Bun</button>
+              <button class="wr-Tab" type="button" data-tab="deno">Deno</button>
+            </div>
+            <div class="wr-Tabs-panels">
+              <div class="wr-Tabs-panel is-active" data-panel="npm">
+                <p class="wr-Tabs-prompt">bash · <code>$ npm create vite@latest</code></p>
+                <pre><code>$ npm create vite@latest</code></pre>
+              </div>
+              <div class="wr-Tabs-panel" data-panel="yarn">
+                <p class="wr-Tabs-prompt">bash · <code>$ yarn create vite</code></p>
+                <pre><code>$ yarn create vite</code></pre>
+              </div>
+              <div class="wr-Tabs-panel" data-panel="pnpm">
+                <p class="wr-Tabs-prompt">bash · <code>$ pnpm create vite</code></p>
+                <pre><code>$ pnpm create vite</code></pre>
+              </div>
+              <div class="wr-Tabs-panel" data-panel="bun">
+                <p class="wr-Tabs-prompt">bash · <code>$ bun create vite</code></p>
+                <pre><code>$ bun create vite</code></pre>
+              </div>
+              <div class="wr-Tabs-panel" data-panel="deno">
+                <p class="wr-Tabs-prompt">bash · <code>$ deno init --npm vite</code></p>
+                <pre><code>$ deno init --npm vite</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="wr-TrustedBy">
+          <p>Trusted by the world's best software teams</p>
+          <div class="wr-TrustedBy-logos">
+            <span class="wr-TrustedBy-logo">
+              <img src="./assets/files/stripe-16127d400f.svg" alt="Stripe" />
+            </span>
+            <span class="wr-TrustedBy-logo">
+              <img src="./assets/files/shopify-d36c6c94c3.svg" alt="Shopify" />
+            </span>
+            <span class="wr-TrustedBy-logo">
+              <img src="./assets/files/storyblok-a28f4b0acd.png" alt="Storyblok" />
+            </span>
+            <span class="wr-TrustedBy-logo">
+              <img src="./assets/files/nx-d0c1eb0f22.svg" alt="Nx" />
+            </span>
+          </div>
+        </section>
+
+        <section class="wr-Section wr-Container">
+          <h2 class="wr-Section-heading">Redefining developer experience</h2>
+          <p class="wr-Section-sub">Vite makes web development enjoyable again.</p>
+          <div class="wr-Grid">
+            <div class="wr-Feature">
+              <h3 class="wr-Feature-title">Instant Server Start</h3>
+              <p class="wr-Feature-body">
+                On demand source file serving over native ESM, with blazing fast
+                dependency pre-bundling.
+              </p>
+            </div>
+            <div class="wr-Feature">
+              <h3 class="wr-Feature-title">Lightning Fast HMR</h3>
+              <p class="wr-Feature-body">
+                Instantly reflect changes as you save, no matter how big your app is.
+              </p>
+            </div>
+            <div class="wr-Feature">
+              <h3 class="wr-Feature-title">Rich Features Out of the Box</h3>
+              <p class="wr-Feature-body">
+                TypeScript, JSX, CSS, Workers, WebAssembly... and more just a plugin away.
+              </p>
+            </div>
+            <div class="wr-Feature">
+              <h3 class="wr-Feature-title">Optimized Build</h3>
+              <p class="wr-Feature-body">
+                Advanced tree-shaking, built-in minification, fine-grained chunking control
+                powered by Rolldown.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="wr-Section wr-Section--alt">
+          <div class="wr-Container">
+            <h2 class="wr-Section-heading">A shared foundation to build upon</h2>
+            <p class="wr-Section-sub">Flexible plugins, fully typed APIs, SSR support, and ecosystem CI.</p>
+            <div class="wr-Stats">
+              <div class="wr-Stat">
+                <div class="wr-Stat-value">80k+</div>
+                <div class="wr-Stat-label">Github Stars</div>
+              </div>
+              <div class="wr-Stat">
+                <div class="wr-Stat-value">80m+</div>
+                <div class="wr-Stat-label">Weekly NPM downloads</div>
+              </div>
+            </div>
+            <div class="wr-Grid">
+              <div class="wr-Testimonial">
+                <p class="wr-Testimonial-quote">
+                  "I'm loving what Vite enables. We've found building SolidStart that it is
+                  less a metaframework but a system of symbiotic Vite plugins."
+                </p>
+                <footer class="wr-Testimonial-author">Ryan Carniato · @RyanCarniato</footer>
+              </div>
+              <div class="wr-Testimonial">
+                <p class="wr-Testimonial-quote">
+                  "Vite is basically the united nations of JavaScript at this point. I'll be
+                  there as a representative of Sveltelandia."
+                </p>
+                <footer class="wr-Testimonial-author">Rich Harris · @Rich_Harris</footer>
+              </div>
+              <div class="wr-Testimonial">
+                <p class="wr-Testimonial-quote">
+                  "Each and every time I use Vite, I feel a true sense of pure and unbridled joy."
+                </p>
+                <footer class="wr-Testimonial-author">David East · @_davideast</footer>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="wr-Section wr-Container">
+          <h2 class="wr-Section-heading">Powering your favorite frameworks and tools</h2>
+          <p class="wr-Section-sub">Vite powers billions of web apps every week.</p>
+        </section>
+      </main>
+
+      <footer class="wr-Footer">
+        <div class="wr-Footer-grid wr-Container">
+          <div>
+            <p class="wr-Footer-col-title">Vite</p>
+            <a class="wr-Footer-link" href="./guide/index.html">Guide</a>
+            <a class="wr-Footer-link" href="./config/index.html">Config</a>
+            <a class="wr-Footer-link" href="./plugins/index.html">Plugins</a>
+            <a class="wr-Footer-link" href="./blog/cloudflare-supports-vite/index.html">Blog</a>
+          </div>
+          <div>
+            <p class="wr-Footer-col-title">Resources</p>
+            <a class="wr-Footer-link" href="./blog/cloudflare-supports-vite/index.html">Releases</a>
+            <a class="wr-Footer-link" href="./config/index.html">Team</a>
+            <a class="wr-Footer-link" href="./plugins/index.html">Plugin Registry</a>
+          </div>
+          <div>
+            <p class="wr-Footer-col-title">Versions</p>
+            <a class="wr-Footer-link" href="./config/index.html">Unreleased Docs</a>
+            <a class="wr-Footer-link" href="./guide/index.html">Vite 7 Docs</a>
+            <a class="wr-Footer-link" href="./guide/index.html">Vite 6 Docs</a>
+            <a class="wr-Footer-link" href="./guide/index.html">Vite 5 Docs</a>
+          </div>
+        </div>
+        <div class="wr-Footer-bottom wr-Container">
+          <p>&copy; Vite — Free &amp; open source. MIT Licensed.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Search modal -->
+    <div class="wr-Modal" id="search-modal" aria-modal="true" role="dialog">
+      <div class="wr-Modal-box">
+        <input class="wr-Modal-input" id="search-input" type="text" placeholder="Search the docs..." />
+        <div class="wr-Modal-results">
+          <a class="wr-Modal-result" href="./guide/index.html">Guide — Getting Started</a>
+          <a class="wr-Modal-result" href="./config/index.html">Config — Configuring Vite</a>
+          <a class="wr-Modal-result" href="./plugins/index.html">Plugins — Official Plugins</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

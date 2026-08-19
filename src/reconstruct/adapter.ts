@@ -36,6 +36,21 @@ export interface ReconstructionSpec {
     viewport: { width: number; height: number; deviceScaleFactor: number };
     artifacts: { screenshot?: string; dom?: string; domJson?: string };
     fingerprint: string;
+    /**
+     * Enriched structural outline (P2-2): document title + full h1-h6 heading
+     * text, extracted from the captured DOM. Populated when `domMap` is
+     * supplied to {@link buildReconstructionSpec} so an independent rebuild
+     * agent can reproduce the recorded title/heading structure without
+     * reverse-engineering the raw DOM.
+     */
+    outline?: { title?: string; headings: string[] };
+    /**
+     * Enriched visible interactive targets (P2-2): stable id/role/text locators
+     * found on the page at this state, so authored `wr-*` source can expose the
+     * same observable interaction surface (id / role / text) the validator
+     * resolves class-agnostically.
+     */
+    targets?: { id?: string; role?: string | null; text?: string; tag?: string }[];
   }[];
   transitions: {
     id: string;
@@ -46,12 +61,76 @@ export interface ReconstructionSpec {
   assets: { id: string; originalUrl: string; localPath: string; mimeType: string }[];
 }
 
+/** Extract title + full heading outline from serialized HTML (P2-2). */
+export function outlineFromDom(dom: string): { title?: string; headings: string[] } {
+  const titleMatch = /<title[^>]*>([^<]*)<\/title>/i.exec(dom);
+  const title = titleMatch ? titleMatch[1].trim() : undefined;
+  const headings: string[] = [];
+  for (const m of dom.matchAll(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi)) {
+    const text = m[2]
+      .replace(/<script[\s\S]*?<\/script>/gi, '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;|\u0020/g, ' ')
+      .trim();
+    if (text) headings.push(text);
+  }
+  return { ...(title ? { title } : {}), headings };
+}
+
+/**
+ * Extract visible interactive targets (id / role / text / tag) from serialized
+ * HTML (P2-2). Class-agnostic by design: only stable attributes are reported so
+ * the agent knows what id/role/text surface to make reachable.
+ *
+ * A lightweight serialized-HTML parser covers the common cases (a/button/input
+ * with id/aria/text); a full DOM walk is not needed for agent guidance.
+ */
+export function targetsFromDomMinimal(dom: string): {
+  id?: string;
+  role?: string | null;
+  text?: string;
+  tag?: string;
+}[] {
+  const out: { id?: string; role?: string | null; text?: string; tag?: string }[] = [];
+  const re = /<(a|button|input|select|textarea|summary)\b([^>]*)>([\s\S]*?)<\/\1>/gi;
+  let m: RegExpExecArray | null;
+  let count = 0;
+  while ((m = re.exec(dom)) !== null && count < 60) {
+    const tag = m[1].toLowerCase();
+    const attrs = m[2];
+    const inner = m[3]
+      .replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;|\s+/g, ' ')
+      .trim();
+    const idMatch = /(?:^|\s)id=["']([^"']*)["']/i.exec(attrs);
+    const roleMatch = /(?:^|\s)role=["']([^"']*)["']/i.exec(attrs);
+    // Skip hidden / non-rendered inputs.
+    if (tag === 'input' && /type=["']hidden["']/i.test(attrs)) continue;
+    out.push({
+      ...(idMatch ? { id: idMatch[1] } : {}),
+      role: roleMatch ? roleMatch[1] : null,
+      ...(inner ? { text: inner.slice(0, 60) } : {}),
+      tag,
+    });
+    count += 1;
+  }
+  return out;
+}
+
 /**
  * Derive a Reconstruction Spec from the frozen Evidence Package. The spec is
  * an agent-neutral description of what to rebuild; it never references
  * original-site URLs as build inputs (they are provenance metadata only).
+ *
+ * `domMap` (optional, P2-2) maps stateId → serialized DOM; when supplied, each
+ * state is enriched with its title/heading `outline` and stable interactive
+ * `targets` so an independent rebuild agent can reproduce the recorded
+ * structure without re-deriving it from raw DOM.
  */
-export function buildReconstructionSpec(pkg: EvidencePackage): ReconstructionSpec {
+export function buildReconstructionSpec(
+  pkg: EvidencePackage,
+  domMap?: Record<string, string>,
+): ReconstructionSpec {
   const pages = pkg.pages.map((p) => ({
     id: p.id,
     route: p.route,
@@ -60,18 +139,30 @@ export function buildReconstructionSpec(pkg: EvidencePackage): ReconstructionSpe
     states: p.stateIds,
   }));
 
-  const states = pkg.states.map((s) => ({
-    id: s.id,
-    url: s.url,
-    title: s.title,
-    viewport: s.viewport,
-    artifacts: {
-      screenshot: s.artifacts.screenshot,
-      dom: s.artifacts.dom,
-      domJson: s.artifacts.domJson,
-    },
-    fingerprint: s.fingerprint,
-  }));
+  const states: ReconstructionSpec['states'] = pkg.states.map((s) => {
+    const dom = domMap?.[s.id];
+    const enriched: ReconstructionSpec['states'][number] = {
+      id: s.id,
+      url: s.url,
+      title: s.title,
+      viewport: s.viewport,
+      artifacts: {
+        screenshot: s.artifacts.screenshot,
+        dom: s.artifacts.dom,
+        domJson: s.artifacts.domJson,
+      },
+      fingerprint: s.fingerprint,
+    };
+    if (dom !== undefined) {
+      const outline = outlineFromDom(dom);
+      if (outline.title !== undefined || outline.headings.length > 0) {
+        enriched.outline = outline;
+      }
+      const targets = targetsFromDomMinimal(dom);
+      if (targets.length > 0) enriched.targets = targets;
+    }
+    return enriched;
+  });
 
   const transitions = pkg.stateGraph.transitions.map((t) => ({
     id: t.id,

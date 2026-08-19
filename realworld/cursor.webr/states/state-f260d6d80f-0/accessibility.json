@@ -1,0 +1,23 @@
+{
+  "nodeCount": 2,
+  "nodes": [
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Take me home",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Try again",
+      "name": null
+    }
+  ]
+}

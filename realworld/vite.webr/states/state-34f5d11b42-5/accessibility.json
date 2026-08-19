@@ -1,0 +1,365 @@
+{
+  "nodeCount": 40,
+  "nodes": [
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Cloudflare supports Vite's mission",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Close banner",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Close banner"
+    },
+    {
+      "tag": "svg",
+      "role": "img",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": "true",
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Skip to content",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Guide",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Config",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Plugins",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": "Resources",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Team",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Blog",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Releases",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Acknowledgements",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Code of Conduct",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Plugin Registry",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "The Documentary",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Bluesky",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Mastodon",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "X",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Discord Chat",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Awesome Vite",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "ViteConf",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "DEV Community",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": "v8.2.1",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Changelog",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Contributing",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Unreleased Docs",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Vite 7 Docs",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Vite 6 Docs",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Vite 5 Docs",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Vite 4 Docs",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Vite 3 Docs",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Vite 2 Docs",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Search",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Search⌘CtrlK",
+      "name": "Search"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "extra navigation",
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": null,
+      "name": "extra navigation"
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "简体中文",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "日本語",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Español",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Português",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "한국어",
+      "name": null
+    }
+  ]
+}

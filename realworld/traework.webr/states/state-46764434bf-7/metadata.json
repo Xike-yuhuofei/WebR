@@ -1,0 +1,23 @@
+{
+  "id": "state-46764434bf-7",
+  "pageId": "page-1",
+  "url": "https://work.trae.cn/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:84833a02e2f4501992b8082a2bb2aaf272035f19a37a064f4efafe1021d4dae0",
+  "title": "TraeWork - AI 办公平台 | 自动生成PPT/数据分析/深度调研/文档撰写"
+}

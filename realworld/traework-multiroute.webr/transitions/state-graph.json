@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    "state-e70d2ccc70-0",
+    "state-ca4a23f713-1",
+    "state-dd4a99572e-2",
+    "state-e23b3d427f-3",
+    "state-a72e2ef970-4",
+    "state-dc593afd51-5",
+    "state-35f9cb7162-6",
+    "state-4dce41c98c-7",
+    "state-rt-2a2ff8e48b",
+    "state-rt-0d3e957b5f",
+    "state-rt-862ceedf39"
+  ],
+  "transitions": [
+    {
+      "id": "transition-b97f3337858a",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-ca4a23f713-1"
+    },
+    {
+      "id": "transition-f1b5a65424f0",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "scroll",
+        "target": {
+          "strategy": "css",
+          "value": "document"
+        },
+        "label": "scroll:document"
+      },
+      "to": "state-ca4a23f713-1"
+    },
+    {
+      "id": "transition-4714b97edfef",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-dd4a99572e-2"
+    },
+    {
+      "id": "transition-4913a10cf50d",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > div > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-e23b3d427f-3"
+    },
+    {
+      "id": "transition-7c4da70c7dac",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > span.trigger-eRptMM:nth-of-type(1) > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-a72e2ef970-4"
+    },
+    {
+      "id": "transition-690c6aa6835f",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > span.trigger-eRptMM:nth-of-type(2) > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-a72e2ef970-4"
+    },
+    {
+      "id": "transition-b5a96e5113ed",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "focus",
+        "target": {
+          "strategy": "css",
+          "value": "div.workspace-W5Ai9G:nth-of-type(2) > div.homeMessageInput-fQs3jY:nth-of-type(2) > div.messageInputContainer > div.messageInputEditorWrapper:nth-of-type(2) > div.chat-input-v2-container.chat-input-v2-container--has-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-upper-area:nth-of-type(1) > div.chat-input-v2-input-box-wrapper.chat-input-v2-input-box--modern-scroll:nth-of-type(2) > div.chat-input-v2-input-box-editable:nth-of-type(2)"
+        },
+        "label": "focus:div"
+      },
+      "to": "state-dd4a99572e-2"
+    },
+    {
+      "id": "transition-21bdb92d365c",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-editor-part-lower-content:nth-of-type(2) > div.chat-input-v2-editor-part-lower__left:nth-of-type(1) > div.left-l-select:nth-of-type(2) > div.model-select-area > div.model-select-area-model > div > div.core-model-select > button.core-model-select-trigger",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "Auto Mode"
+            }
+          ]
+        },
+        "label": "click:Auto Mode"
+      },
+      "to": "state-dc593afd51-5"
+    },
+    {
+      "id": "transition-9f5acf661dfc",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.chat-input-v2-container.chat-input-v2-container--has-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-editor-part-lower-content:nth-of-type(2) > div.chat-input-v2-editor-part-lower__right:nth-of-type(2) > div.chat-input-v2-slot-toolbar-right > div > span.trigger-eRptMM > span > button.rtcVoicePluginButton"
+        },
+        "label": "click:button"
+      },
+      "to": "state-35f9cb7162-6"
+    },
+    {
+      "id": "transition-0097e7bd48e4",
+      "from": "state-dd4a99572e-2",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.messageInputEditorWrapper:nth-of-type(2) > div.chat-input-v2-container.chat-input-v2-container--has-focus.chat-input-v2-container--empty > div.chat-input-v2-editor-part:nth-of-type(1) > div.chat-input-v2-editor-part-lower-content:nth-of-type(2) > div.chat-input-v2-editor-part-lower__right:nth-of-type(2) > span.wrapper-i89Z4u > span.trigger-eRptMM > span > button.chat-input-v2-send-button.voice-call-mode"
+        },
+        "label": "click:button"
+      },
+      "to": "state-4dce41c98c-7"
+    }
+  ]
+}

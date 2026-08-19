@@ -1,0 +1,24 @@
+{
+  "id": "state-820f30e100-9",
+  "pageId": "page-1",
+  "url": "https://vite.dev/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:a37d0422030fb59dcefa7db2f7dcfcf791bc88bb9122ce1383459b489c3f7799",
+  "title": "Vite | Next Generation Frontend Tooling"
+}

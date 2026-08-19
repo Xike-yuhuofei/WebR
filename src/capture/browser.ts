@@ -12,6 +12,17 @@ export interface BrowserSessionOptions {
   executablePath?: string;
   /** Emit verbose browser logs to stderr. */
   verbose?: boolean;
+  /**
+   * When set, connect to an ALREADY-RUNNING Chrome via CDP instead of
+   * launching a fresh headless instance. Used to capture an authenticated /
+   * login-gated product with the project's Profile Chrome
+   * (`docs/architecture/07-BROWSER-POLICY.md`, CDP `http://[::1]:9222`).
+   *
+   * The captured page is opened in the inspected browser's default context so
+   * it inherits the logged-in session. On close we ONLY close that page —
+   * never the shared browser (owners may have other tabs open).
+   */
+  connectCDP?: string;
 }
 
 export interface BrowserSession {
@@ -23,6 +34,23 @@ export interface BrowserSession {
 }
 
 /**
+ * Deterministic media/color preference shim injected on every captured page so
+ * screenshots are reproducible regardless of the operating system default.
+ */
+function reducedMotionInitScript(): string {
+  return `() => {
+    if ('matchMedia' in window) {
+      const mm = window.matchMedia.bind(window);
+      const reduced = () => ({ matches: true, media: '(prefers-reduced-motion: reduce)' });
+      Object.defineProperty(window, 'matchMedia', {
+        value: (q) => (q === '(prefers-reduced-motion: reduce)' ? reduced() : mm(q)),
+        configurable: true,
+      });
+    }
+  }`;
+}
+
+/**
  * Launch a fresh Chromium session with a clean, deterministic profile.
  * Screenshots/audio/fonts are disabled to keep evidence reproducible.
  */
@@ -30,6 +58,13 @@ export async function launchSession(
   viewport: Viewport,
   options: BrowserSessionOptions = {},
 ): Promise<BrowserSession> {
+  // CDP-connected capture: reuse an already-running authenticated Chrome
+  // (Profile Chrome, `07-BROWSER-POLICY.md`). Needed when the target product
+  // is behind a login that a fresh headless profile cannot see.
+  if (options.connectCDP) {
+    return connectSession(viewport, options);
+  }
+
   const browser = await chromium.launch({
     headless: true,
     executablePath: options.executablePath,
@@ -50,18 +85,7 @@ export async function launchSession(
   });
 
   const page = await context.newPage();
-
-  // Deterministic media playback + fonts for reproducible screenshots.
-  await page.addInitScript(() => {
-    if ('matchMedia' in window) {
-      const mm = window.matchMedia.bind(window);
-      const reduced = () => ({ matches: true, media: '(prefers-reduced-motion: reduce)' });
-      Object.defineProperty(window, 'matchMedia', {
-        value: (q: string) => (q === '(prefers-reduced-motion: reduce)' ? reduced() : mm(q)),
-        configurable: true,
-      });
-    }
-  });
+  await page.addInitScript(reducedMotionInitScript());
 
   const version = await browser.version();
   if (options.verbose) {
@@ -75,6 +99,45 @@ export async function launchSession(
     browserVersion: version,
     close: async () => {
       await browser.close();
+    },
+  };
+}
+
+/**
+ * Connect to an existing Chrome via CDP (e.g. the authenticated Profile Chrome
+ * on `http://[::1]:9222`). Opens a new page in the inspected browser's default
+ * context so the captured page inherits the logged-in session. On close only
+ * the created page is closed; the shared browser and the user's other tabs are
+ * never touched.
+ */
+async function connectSession(
+  viewport: Viewport,
+  options: BrowserSessionOptions,
+): Promise<BrowserSession> {
+  const browser = await chromium.connectOverCDP(options.connectCDP as string);
+  const context = (browser.contexts()[0] ?? (await browser.newContext())) as BrowserContext;
+  const page = await context.newPage();
+  // Size the capture page to the requested viewport (the shared default
+  // context keeps its own offset/device-scale-factor, which is intentional).
+  await page.setViewportSize({ width: viewport.width, height: viewport.height }).catch(() => {});
+  await page.addInitScript(reducedMotionInitScript());
+
+  const version = await browser.version();
+  if (options.verbose) {
+    process.stderr.write(
+      `webr: connected over CDP (${DEFAULT_BROWSER_NAME} ${version}, session reused)\n`,
+    );
+  }
+
+  return {
+    browser,
+    context,
+    page,
+    browserVersion: version,
+    close: async () => {
+      // ONLY the page we opened is closed. Never `browser.close()` — the
+      // inspected Chrome is shared and may own other tabs/sessions.
+      await page.close().catch(() => {});
     },
   };
 }

@@ -182,3 +182,44 @@ export async function fingerprintPage(
   ]);
   return fingerprintString(signals);
 }
+
+/**
+ * Atomic state capture (evidence self-consistency, GOAL TraeWork benchmark).
+ *
+ * Serializes the DOM AND collects the fingerprint signals in the SAME
+ * JavaScript turn, so the frozen `dom.html` and the recorded `fingerprint`
+ * are always mutually consistent. On a live SPA, separate `evaluate` calls
+ * (signals → screenshot → DOM) leave a mutation window: timers/lazy content
+ * can change the DOM between the fingerprint moment and the serialization,
+ * producing a Golden Reference whose DOM contradicts its own fingerprint —
+ * unreproducible by ANY faithful replica. Executing both in one turn closes
+ * the race by construction.
+ *
+ * The collector's source is embedded via `Function.prototype.toString`
+ * (it is self-contained by design); the result carries
+ * `{ dom, title, signals }` for the caller to hash and freeze.
+ */
+export type AtomicStateCapture = (
+  arg: [string, { width: number; height: number }, ScrollPosition],
+) => { dom: string; title: string; signals: string[] };
+
+export function buildAtomicStateCapture(): AtomicStateCapture {
+  const collectorSource = collectFingerprintSignals.toString();
+  const fn = new Function(
+    'arg',
+    `"use strict";
+const [url, viewport, scroll] = arg;
+const dom = document.documentElement.outerHTML;
+const title = document.title;
+const collect = (${collectorSource});
+const signals = collect([url, viewport, scroll]);
+return { dom, title, signals };`,
+  ) as AtomicStateCapture;
+  return fn;
+}
+
+/**
+ * Shared atomic-capture instance. Built once; safe to pass to
+ * `page.evaluate` (Playwright serializes the function source).
+ */
+export const atomicStateCapture = buildAtomicStateCapture();

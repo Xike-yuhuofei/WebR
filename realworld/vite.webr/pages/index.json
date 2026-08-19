@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "url": "https://vitejs.dev",
+      "route": "/",
+      "stateIds": [
+        "state-d5db55b1dd-0",
+        "state-d2473fc766-1",
+        "state-af5ad4b093-2",
+        "state-70a69a533a-3",
+        "state-5f1f1ce654-4",
+        "state-34f5d11b42-5",
+        "state-535e42aa07-6",
+        "state-3183bfc363-7",
+        "state-9d3e1b8270-8",
+        "state-820f30e100-9",
+        "state-16bc487516-10",
+        "state-8c89bf3dc0-11",
+        "state-6dbaaac73b-12",
+        "state-788788d0f1-13",
+        "state-e21dc95151-14",
+        "state-d00b934ee2-15",
+        "state-08e23398d8-16",
+        "state-b10dca98ab-17"
+      ],
+      "title": "Vite | Next Generation Frontend Tooling"
+    }
+  ]
+}

@@ -171,8 +171,16 @@ export type ActionType =
   | 'wait';
 
 export interface ActionTarget {
+  /** Primary locator strategy, e.g. "css" | "text" | "id" | "data-testid" | "aria". */
   strategy: string;
+  /** Primary locator value. */
   value: string;
+  /**
+   * Additional lower-priority locators, ordered most-to-least stable, so a
+   * validator can resolve the target class-agnostically on a rebuilt replica.
+   * Optional, forward-compatible extension (02-EVIDENCE-PACKAGE-SPEC §14).
+   */
+  alternates?: ActionTarget[];
 }
 
 export interface Action {

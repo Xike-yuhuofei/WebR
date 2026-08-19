@@ -1,0 +1,24 @@
+{
+  "id": "state-5f1f1ce654-4",
+  "pageId": "page-1",
+  "url": "https://vite.dev/guide/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:1b5ab8d2f47c03e27c12880ea44fa296edfadeffeaa070d02a2c99d37db61ee0",
+  "title": "Getting Started | Vite"
+}
