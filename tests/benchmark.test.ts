@@ -211,27 +211,19 @@ describe('GOAL-002 — reconstruction + validation with the source offline', () 
       2,
     );
 
-    const nonResizeFailures = report.failures.filter((f) => !f.includes('resize:viewport'));
     const summaryNote = `\n${summary}`;
 
-    // Completion contract: with the source + CDN fully offline, the replica
-    // must pass visual, interactive, responsive, routing and isolation
-    // validation. Every non-`resize` transition failure is a hard regression
-    // (click/hover/scroll/navigate/type must reproduce). The only tolerated
-    // residuals are responsive `resize` adaptive transitions whose destination
-    // still passes its golden STATE screenshot (responsive viewport changes
-    // are authoritative via those state comparisons).
+    // Completion contract (GOAL-003 req 6): with the source + CDN fully
+    // offline, `--profile full` must genuinely succeed — every state and every
+    // transition (incl. responsive `resize`) reproduces, and isolation is
+    // clean. There is NO carve-out for `resize` transitions anymore: the
+    // validator itself returns `success=true` with `transitions.failed=0`.
     expect(report.isolation.passed, `isolation should be clean${summaryNote}`).toBe(true);
     expect(report.failures.filter((f) => f.startsWith('offline-isolation'))).toEqual([]);
-    expect(report.states.failed, `state failures:\n${summary}`).toBe(0);
-    expect(nonResizeFailures, `non-resize transition failures:\n${summary}`).toEqual([]);
-    // Every state reproduced (visual/routing/responsive/isolation are clean).
     expect(report.states.tested).toBeGreaterThanOrEqual(1);
     expect(report.transitions.tested).toBeGreaterThanOrEqual(1);
-    // Responsive resize adaptations remain proven by their state screenshots.
-    const resizeOnly =
-      report.transitions.failed === 0 ||
-      report.failures.every((f) => f.includes('resize:viewport'));
-    expect(resizeOnly, `only resize adaptations allowed to remain${summaryNote}`).toBe(true);
+    expect(report.states.failed, `state failures:\n${summary}`).toBe(0);
+    expect(report.transitions.failed, `transition failures:\n${summary}`).toBe(0);
+    expect(report.success, `full-profile validation must succeed${summaryNote}`).toBe(true);
   }, 300_000);
 });

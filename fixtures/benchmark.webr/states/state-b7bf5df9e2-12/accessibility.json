@@ -1,0 +1,203 @@
+{
+  "nodeCount": 22,
+  "nodes": [
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Verdant",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": "Products",
+      "name": null
+    },
+    {
+      "tag": "ul",
+      "role": "menu",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "All\n            New",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": "menuitem",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "All",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": "menuitem",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "New",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "About",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Contact",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "About",
+      "name": null
+    },
+    {
+      "tag": "a",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Contact",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tablist",
+      "ariaLabel": "Catalog",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Featured\n      Latest\n      Archive",
+      "name": "Catalog"
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Featured",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Latest",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Archive",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tabpanel",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Featured items — six lightly woven basics.",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tabpanel",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Latest items — dropped this week.",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tabpanel",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Archive items — prior seasons.",
+      "name": null
+    },
+    {
+      "tag": "input",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "email"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Send",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Open offer",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "dialog",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Members offer\n      Use code VERDANT10 at checkout.\n      Cl",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Close",
+      "name": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "state-6d77bbeea9-2",
+  "pageId": "page-1",
+  "url": "http://127.0.0.1:59048/about",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:c14269c0250e381cf56f29050b687e213ad5a7e8f831950a8a730f88d76dcb83",
+  "title": "About · Verdant"
+}

@@ -1,0 +1,94 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home · Verdant</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="http://127.0.0.1:59047/cdn/theme.css">
+  <script type="application/json" id="webr-benchmark" data-cdn="http://127.0.0.1:59047">"http://127.0.0.1:59047"</script>
+</head>
+<body class="has-modal">
+  <header class="SiteHeader is-scrolled" id="site-header">
+    <div class="SiteHeader-inner">
+      <a class="Brand" href="/">Verdant</a>
+      <nav class="Nav" aria-label="Primary">
+        <ul class="Nav-list">
+        <li class="Nav-item">
+          <button class="Nav-trigger" aria-haspopup="true" aria-expanded="false" data-menu="products-menu">Products</button>
+          <ul class="Menu" id="products-menu" role="menu">
+            <li><a role="menuitem" href="/products">All</a></li>
+            <li><a role="menuitem" href="/products#new">New</a></li>
+          </ul>
+        </li>
+        <li class="Nav-item"><a class="Nav-link" href="/about">About</a></li>
+        <li class="Nav-item"><a class="Nav-link" href="/contact">Contact</a></li>
+      </ul>
+      </nav>
+      <button class="MenuToggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <span class="MenuToggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="MobileMenu" id="mobile-menu" hidden="">
+    <a class="MobileMenu-link" href="/about">About</a>
+    <a class="MobileMenu-link" href="/contact">Contact</a>
+  </div>
+
+  <main class="Site">
+
+  <section class="Hero">
+    <img class="Hero-img" src="http://127.0.0.1:59047/cdn/logo.svg" alt="Verdant mark" width="64" height="64">
+    <span class="Hero-badge">New season</span>
+    <h1 class="Hero-title">Crafted for the everyday</h1>
+    <p class="Hero-lede">A modern storefront rebuilt quietly, locally, and deterministically.</p>
+  </section>
+
+  <section class="Tabs" data-tabs="">
+    <div class="TabList" role="tablist" aria-label="Catalog">
+      <button class="Tab is-active" role="tab" aria-selected="true" data-tab="featured">Featured</button>
+      <button class="Tab" role="tab" aria-selected="false" data-tab="latest">Latest</button>
+      <button class="Tab" role="tab" aria-selected="false" data-tab="archive">Archive</button>
+    </div>
+    <div class="TabPanel is-active" role="tabpanel" data-panel="featured"><p>Featured items — six lightly woven basics.</p></div>
+    <div class="TabPanel" role="tabpanel" data-panel="latest" hidden=""><p>Latest items — dropped this week.</p></div>
+    <div class="TabPanel" role="tabpanel" data-panel="archive" hidden=""><p>Archive items — prior seasons.</p></div>
+  </section>
+
+  <section class="Widgets">
+    <h2 class="Heading">Live catalog</h2>
+    <div class="Widgets-list" id="widgets" aria-live="polite"><div class="Widget-card"><h3>Ribbed tee</h3><p>Heavy-weight organic cotton.</p></div><div class="Widget-card"><h3>Crew sweatshirt</h3><p>Garment-dyed, fleece-backed.</p></div><div class="Widget-card"><h3>Weekend trousers</h3><p>Relaxed twill, hidden zip.</p></div></div>
+  </section>
+
+  <section class="FormBox">
+    <h2 class="Heading">Get in touch</h2>
+    <form id="contact-form" class="Form" novalidate="">
+      <input id="email-input" name="email" type="email" placeholder="you@example.com" class="Field" style="">
+      <button class="Button Button--primary" type="submit">Send</button>
+    </form>
+    <p class="Form-note" id="form-note" aria-live="polite"></p>
+  </section>
+
+  <section class="ModalBox">
+    <h2 class="Heading">Members</h2>
+    <button class="Button Button--ghost" id="modal-open" type="button">Open offer</button>
+  </section>
+
+  <div class="Modal" id="offer-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="Modal-card">
+      <h2 id="modal-title">Members offer</h2>
+      <p>Use code <strong>VERDANT10</strong> at checkout.</p>
+      <button class="Button Button--neutral" id="modal-close" type="button">Close</button>
+    </div>
+  </div>
+
+  <div class="Tall" aria-hidden="true"></div>
+  </main>
+
+  <footer class="SiteFooter">
+    <p>© Verdant · deterministic offline-first evidence demo</p>
+  </footer>
+
+  <script src="/app.js"></script>
+
+
+</body></html>

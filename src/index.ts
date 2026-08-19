@@ -97,6 +97,14 @@ export {
   type ReplicaBuildOptions,
 } from './reconstruct/adapter.js';
 
+// GOAL-003 — rebuild mode (independent agent reconstruction)
+export {
+  scaffoldRebuildWorkspace,
+  isReusableContentAsset,
+  modeLabel,
+  type ReconstructionMode,
+} from './reconstruct/rebuild.js';
+
 // Phase 6 — offline validator
 export {
   validateReplica,
@@ -105,6 +113,8 @@ export {
   compareStructure,
   structuralSignalsFromDom,
   monitorIsolation,
+  monitorNetworkIsolation,
+  stripCssClasses,
   selectStates,
   selectTransitions,
   observeFingerprint,

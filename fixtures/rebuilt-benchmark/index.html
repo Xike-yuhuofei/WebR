@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home · Verdant</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="wr-Header" id="site-header">
+    <div class="wr-Header-inner">
+      <a class="wr-Header-logo" href="/">Verdant</a>
+      <nav class="wr-Header-navigation" aria-label="Primary">
+        <ul class="wr-Header-list">
+          <li class="wr-Header-item">
+            <button class="wr-Header-trigger" type="button" aria-haspopup="true" aria-expanded="false" data-menu="products-menu">Products</button>
+            <ul class="wr-Menu" id="products-menu" role="menu">
+              <li><a role="menuitem" href="/products">All</a></li>
+              <li><a role="menuitem" href="/products#new">New</a></li>
+            </ul>
+          </li>
+          <li class="wr-Header-item"><a class="wr-Header-link" href="/about">About</a></li>
+          <li class="wr-Header-item"><a class="wr-Header-link" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="wr-MenuToggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="wr-MenuToggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="wr-MobileMenu" id="mobile-menu" hidden>
+    <a class="wr-MobileMenu-link" href="/about">About</a>
+    <a class="wr-MobileMenu-link" href="/contact">Contact</a>
+  </div>
+
+  <main class="wr-Site">
+    <section class="wr-Hero">
+      <img class="wr-Hero-image" src="/cdn/logo.svg" alt="Verdant mark" width="64" height="64" />
+      <span class="wr-Hero-badge">New season</span>
+      <h1 class="wr-Hero-title">Crafted for the everyday</h1>
+      <p class="wr-Hero-lede">A modern storefront rebuilt quietly, locally, and deterministically.</p>
+    </section>
+
+    <section class="wr-Tabs" data-tabs>
+      <div class="wr-Tabs-list" role="tablist" aria-label="Catalog">
+        <button class="wr-Tab is-active" type="button" role="tab" aria-selected="true" data-tab="featured">Featured</button>
+        <button class="wr-Tab" type="button" role="tab" aria-selected="false" data-tab="latest">Latest</button>
+        <button class="wr-Tab" type="button" role="tab" aria-selected="false" data-tab="archive">Archive</button>
+      </div>
+      <div class="wr-Tab-panel is-active" role="tabpanel" data-panel="featured"><p>Featured items — six lightly woven basics.</p></div>
+      <div class="wr-Tab-panel" role="tabpanel" data-panel="latest" hidden><p>Latest items — dropped this week.</p></div>
+      <div class="wr-Tab-panel" role="tabpanel" data-panel="archive" hidden><p>Archive items — prior seasons.</p></div>
+    </section>
+
+    <section class="wr-Widgets">
+      <h2 class="wr-Widgets-heading">Live catalog</h2>
+      <div class="wr-Widgets-list" id="widgets" aria-live="polite">
+        <div class="wr-Widget-card"><h3>Ribbed tee</h3><p>Heavy-weight organic cotton.</p></div>
+        <div class="wr-Widget-card"><h3>Crew sweatshirt</h3><p>Garment-dyed, fleece-backed.</p></div>
+        <div class="wr-Widget-card"><h3>Weekend trousers</h3><p>Relaxed twill, hidden zip.</p></div>
+      </div>
+    </section>
+
+    <section class="wr-FormBox">
+      <h2 class="wr-FormBox-heading">Get in touch</h2>
+      <form id="contact-form" class="wr-Form" novalidate>
+        <input id="email-input" class="wr-Field" name="email" type="email" placeholder="you@example.com" />
+        <button class="wr-Button wr-Button--primary" type="submit">Send</button>
+      </form>
+      <p class="wr-FormBox-note" id="form-note" aria-live="polite"></p>
+    </section>
+
+    <section class="wr-ModalBox">
+      <h2 class="wr-ModalBox-heading">Members</h2>
+      <button class="wr-Button wr-Button--ghost" id="modal-open" type="button">Open offer</button>
+    </section>
+
+    <div class="wr-Modal" id="offer-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="wr-Modal-card">
+        <h2 id="modal-title">Members offer</h2>
+        <p>Use code <strong>VERDANT10</strong> at checkout.</p>
+        <button class="wr-Button wr-Button--neutral" id="modal-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <div class="wr-ScrollSpacer" aria-hidden="true"></div>
+  </main>
+
+  <footer class="wr-Footer">
+    <p>© Verdant · deterministic offline-first evidence demo</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

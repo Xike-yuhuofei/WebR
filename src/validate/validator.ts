@@ -85,6 +85,12 @@ export interface IsolationViolation {
 /**
  * Attach a request monitor that flags any request to the original source
  * origin. Returns collected violations (offline-isolation is a hard failure).
+ *
+ * Retained for a narrow, source-origin-specific check. The validator itself
+ * uses the stricter {@link monitorNetworkIsolation}, because requirement
+ * GOAL-003 is that *any* non-local network access — CDN, third-party fonts,
+ * analytics, arbitrary external APIs — is an offline-isolation violation,
+ * not merely a request to the captured origin.
  */
 export function monitorIsolation(page: Page, sourceOrigin: string): IsolationViolation[] {
   const violations: IsolationViolation[] = [];
@@ -96,6 +102,34 @@ export function monitorIsolation(page: Page, sourceOrigin: string): IsolationVio
       }
     } catch {
       // ignore non-URL requests
+    }
+  });
+  return violations;
+}
+
+/**
+ * Attach a request monitor that flags ANY HTTP(S) request whose origin is not
+ * in `allowedOrigins`. Only the local replica origin is allowed; any external
+ * HTTP(S) request (CDN, fonts, analytics, API, other hosts) is recorded as a
+ * hard failure. Non-HTTP schemes (`data:`, `blob:`, `file:`, `about:`) and
+ * opaque URLs are ignored — they make no network round-trip.
+ */
+export function monitorNetworkIsolation(
+  page: Page,
+  allowedOrigins: ReadonlySet<string>,
+): IsolationViolation[] {
+  const violations: IsolationViolation[] = [];
+  page.on('request', (req) => {
+    const url = req.url();
+    if (!/^https?:/i.test(url)) return; // local/synthetic, no network access
+    try {
+      const u = new URL(url);
+      const origin = u.origin;
+      if (origin && !allowedOrigins.has(origin)) {
+        violations.push({ url, sourceOrigin: origin });
+      }
+    } catch {
+      // ignore malformed URLs
     }
   });
   return violations;
@@ -255,6 +289,12 @@ export interface ValidateOptions {
   port?: number;
   /** Write diff artifacts under this directory (defaults to replica/.webr-diffs). */
   diffDir?: string;
+  /**
+   * Additional HTTP(S) origins allowed during validation. The replica's own
+   * local origin is always allowed; any other origin is an isolation
+   * violation. Tests/local tooling may add explicit localhost origins.
+   */
+  allowedOrigins?: string[];
 }
 
 export const DEFAULT_VALIDATE_OPTIONS: ValidateOptions = {
@@ -425,6 +465,37 @@ function routeEntryId(pkg: EvidencePackage, route: string): string | undefined {
   return entry?.id;
 }
 
+/**
+ * Strip authored class names from a captured CSS selector while preserving
+ * ids, tag names and `:nth-of-type` position. The replay mode matches the
+ * exact selector (original classes are present); a REBUILD replica follows
+ * `05-SOURCE-CONVENTION` (`wr-*` classes), so the same observable element is
+ * resolved by structure instead — id + tag + sibling order must be preserved
+ * by the rebuild, class names must not gate replay.
+ */
+export function stripCssClasses(selector: string): string {
+  // Remove `.ClassName` tokens wherever they appear (attached to a tag, e.g.
+  // `div.SiteHeader-inner`, or chained, e.g. `button.Tab.is-active`). Pseudo
+  // selectors (`:nth-of-type`) begin with `:` and are untouched.
+  return selector.replace(/\.([A-Za-z_][\w-]*)/g, '');
+}
+
+/**
+ * Resolve a captured locator against the live replica, falling back from the
+ * exact selector to its class-stripped structural form.
+ */
+async function resolveLocator(page: Page, selector: string): Promise<string | undefined> {
+  if (!selector) return undefined;
+  try {
+    if ((await page.locator(selector).count()) > 0) return selector;
+    const stripped = stripCssClasses(selector);
+    if (stripped !== selector && (await page.locator(stripped).count()) > 0) return stripped;
+  } catch {
+    // invalid selector: no locator
+  }
+  return undefined;
+}
+
 /** Execute one recorded action on the live replica, targeting `toState` when needed. */
 async function executeAction(
   page: Page,
@@ -432,27 +503,26 @@ async function executeAction(
   toState?: StateRecord,
 ): Promise<boolean> {
   const target = action.target?.value;
+  const locator = await resolveLocator(page, target ?? '');
+  const use = locator ?? target;
   try {
     switch (action.type) {
       case 'click':
-        await page
-          .click(target ?? 'body', { timeout: 3000 })
-          .catch(() => page.click(`text=${target}`, { timeout: 3000 }));
+        if (use) await page.click(use, { timeout: 3000 });
+        else await page.click('body', { timeout: 3000 });
         break;
       case 'hover':
-        await page
-          .hover(target ?? 'body', { timeout: 3000 })
-          .catch(() => page.hover(`text=${target}`, { timeout: 3000 }));
+        if (use) await page.hover(use, { timeout: 3000 });
+        else await page.hover('body', { timeout: 3000 });
         break;
       case 'focus':
-        await page.focus(target ?? 'body');
+        await page.focus(use ?? 'body');
         break;
       case 'type':
         await page
-          .locator(target ?? 'input')
+          .locator(use ?? 'input')
           .first()
-          .fill('WebR test input')
-          .catch(() => page.locator(`text=${target}`).first().fill('WebR test input'));
+          .fill('WebR test input');
         break;
       case 'press':
         await page.keyboard.press(target ?? 'Enter');
@@ -573,7 +643,6 @@ export async function validateReplica(
   options: ValidateOptions = DEFAULT_VALIDATE_OPTIONS,
 ): Promise<ValidationReport> {
   const pkg = await readPackage(evidencePath);
-  const sourceOrigin = pkg.manifest.source.origin;
 
   const report: SerializableReport = {
     success: false,
@@ -602,8 +671,14 @@ export async function validateReplica(
     });
     const page = await context.newPage();
 
-    // Isolation monitor: flag any request to the source origin.
-    const violations = monitorIsolation(page, sourceOrigin);
+    // Offline-isolation monitor: the replica's own local origin is the ONLY
+    // origin allowed to be reached over HTTP(S). Any CDN / font / analytics /
+    // external-API / other-host request is a hard failure (GOAL-003 req 7).
+    const allowedOrigins = new Set<string>([
+      new URL(server.url).origin,
+      ...(options.allowedOrigins ?? []),
+    ]);
+    const violations = monitorNetworkIsolation(page, allowedOrigins);
 
     // Replay transitions on the replica and verify the observable result
     // matches the recorded destination (task 4).
@@ -685,9 +760,13 @@ export async function validateReplica(
     report.isolation.violations = violations;
     report.isolation.passed = violations.length === 0;
     if (!report.isolation.passed) {
+      const origins = [...new Set(violations.map((v) => v.sourceOrigin))].join(', ');
       report.failures.push(
-        `offline-isolation violation: ${violations.length} request(s) to ${sourceOrigin}`,
+        `offline-isolation violation: ${violations.length} non-local HTTP(S) request(s) to ${origins}`,
       );
+      for (const v of violations) {
+        report.warnings.push(`forbidden external request: ${v.url}`);
+      }
     }
 
     // Acceptance: no failures, isolation clean.

@@ -1,0 +1,24 @@
+{
+  "id": "state-6bf0e7991e-17",
+  "pageId": "page-1",
+  "url": "http://127.0.0.1:59048/contact",
+  "viewport": {
+    "width": 720,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:8c6efbbf23b07eb12ac1f201edcce26efe6203cb38ee8b3b23c1dca87e56001d",
+  "title": "Contact · Verdant"
+}

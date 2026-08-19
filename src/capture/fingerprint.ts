@@ -45,10 +45,14 @@ export function collectFingerprintSignals(
   // Compare the *route* (pathname + query), not the origin: the replica runs
   // on a different host/port than the captured source, so an origin-sensitive
   // URL signal could never match between capture and validation.
+  // Trailing slashes are normalized (`/about/` == `/about`) so that the
+  // replica's route URLs (served as `<route>/`) reproduce the same fingerprint
+  // as the captured route (`/about`) — a determinism fix, not a laxity change.
   let route = url;
   try {
     const u = new URL(url);
-    route = u.pathname + u.search;
+    const pathname = u.pathname.replace(/\/+$/, '') || '/';
+    route = pathname + u.search;
   } catch {
     // keep raw url when it cannot be parsed
   }
@@ -139,12 +143,13 @@ export function collectFingerprintSignals(
   signals.push(`aria-hidden:${ariaHidden}`);
   signals.push(`open-dialogs:${dialogs}`);
 
-  // active element (focus)
+  // active element (focus). Identified by tag only: the focused element's
+  // class name is authored-source convention (`wr-*`, `05-SOURCE-CONVENTION`)
+  // rather than observable state, so it must not gate replay parity between a
+  // captured site and an independently rebuilt replica.
   const active = document.activeElement as HTMLElement | null;
   if (active && active !== document.body) {
-    signals.push(
-      `focus:${active.tagName.toLowerCase()}${active.className ? `.${String(active.className).split(' ').join('.')}` : ''}`,
-    );
+    signals.push(`focus:${active.tagName.toLowerCase()}`);
   }
 
   // Input/textarea values: typing must create an observable, distinct state.

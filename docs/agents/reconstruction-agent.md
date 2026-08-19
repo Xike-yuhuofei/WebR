@@ -19,6 +19,37 @@ not change that contract.
 A reconstruction Agent must **never** open, query, or depend on the original
 source origin, its CDN, APIs, fonts, scripts or images after evidence freeze.
 
+## Two reconstruction modes
+
+`webr reconstruct <evidence> --out <path> [--mode replay|rebuild]`
+
+### `replay` (default)
+
+Reuse the captured HTML/CSS/JS to produce a high-fidelity offline replay. This
+is the fastest path when the captured runtime is self-contained; it still
+localizes assets and rewrites the captured DOM so nothing reaches the source
+origin.
+
+### `rebuild` (Independent Agent Reconstruction — GOAL-003)
+
+Create a **truly blank authored-source workspace** for a coding Agent that
+independently re-implements the site from frozen evidence only.
+
+- The workspace contains **no captured DOM** and **no captured runtime**: only
+  a derived `spec.json`, an agent `README.md`, and reused _content_ assets
+  (images / fonts / SVG / video / audio).
+- The Agent must **generate new implementation code**. It may NOT:
+  - copy a captured DOM snapshot as the final HTML;
+  - ship the original JS bundle as the replica runtime;
+  - depend on the original CSS/JS as final implementation deps.
+- Authored source must follow `docs/architecture/05-SOURCE-CONVENTION.md`
+  (`wr-*` classes, `is-*` state classes, `--wr-*` tokens, semantic HTML).
+- The Agent must re-implement: hover menu, modal, tabs, form/input, scroll
+  header, mobile/responsive menu, routes, animation, and API mock/replay.
+- The validator resolves captured actions class-agnostically (id + tag +
+  sibling order), so authored `wr-*` classes replay the same observable
+  interactions recorded from the original classes.
+
 ## Inputs the Agent consumes
 
 Run `webr audit <evidence-path>` first. The Agent should read:
@@ -32,8 +63,9 @@ Run `webr audit <evidence-path>` first. The Agent should read:
 - `transitions/state-graph.json` — the UI State Graph (actions between states).
 - `assets/index.json` — localized assets and their original URLs.
 
-The Reconstruction Spec (`webr reconstruct` derives it) is a convenience view
-of the same facts; the Evidence Package remains the source of truth.
+The Reconstruction Spec (`webr reconstruct --mode rebuild` derives `spec.json`)
+is a convenience view of the same facts; the Evidence Package remains the
+source of truth.
 
 ## Workflow
 
@@ -41,17 +73,27 @@ of the same facts; the Evidence Package remains the source of truth.
    the package is `freeze-ready` (or the human explicitly overrides the gate).
 2. **Inventory.** Read pages, states, and the transition graph. Note the
    viewport(s) and the Golden Reference states that `validate` will check.
-3. **Reconstruct.** Build the replica so that each state's observable behavior
-   (DOM, text, layout, interaction) is reproducible from local evidence.
-   - Map captured assets to local files; never fetch from the source origin.
-   - Keep authored source following `docs/architecture/05-SOURCE-CONVENTION.md`
-     (`wr-` namespaced component classes, `is-` state classes, `--wr-` tokens).
+3. **Reconstruct.** Choose a mode.
+   - `replay` — reuse captured HTML/CSS/JS for a fast high-fidelity offline
+     replay.
+   - `rebuild` — `webr reconstruct <evidence> --out <workspace> --mode rebuild`
+     scaffolds a blank authored-source workspace, then author fresh code
+     (HTML/CSS/JS) so that each state's observable behavior (DOM, text, layout,
+     interaction) is reproducible from local evidence.
+   - Map captured content assets (images/fonts/SVG/video) to local files; never
+     fetch from the source origin.
+   - Keep authored source following
+     `docs/architecture/05-SOURCE-CONVENTION.md` (`wr-` namespaced component
+     classes, `is-` state classes, `--wr-` tokens).
 4. **Self-check isolation.** Ensure no generated page references the source
-   origin. `webr reconstruct` already refuses unlocalized source-origin assets
-   and scans generated HTML; a manual grep for the origin is a good second check.
-5. **Validate.** `webr validate <evidence-path> <replica-path>`. Treat
-   `offline-isolation violation` as a hard failure (exit code 4). Fix replica
-   defects until the configured acceptance policy passes.
+   origin or any external CDN/font/analytics/API. `webr reconstruct` already
+   refuses unlocalized source-origin assets and scans generated HTML; a manual
+   grep for the origin is a good second check.
+5. **Validate.** `webr validate <evidence-path> <replica-path> --profile full`.
+   Any non-local HTTP(S) request -source origin, CDN, fonts, analytics, external
+   APIs- is a hard `offline-isolation violation` (exit code 4). A rebuilt
+   replica passes only when `success=true`, `transitions.failed=0` and every
+   isolation check is clean.
 
 ## Acceptance semantics
 
