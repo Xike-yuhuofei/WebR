@@ -1,0 +1,240 @@
+{
+  "nodes": [
+    "state-d5db55b1dd-0",
+    "state-d2473fc766-1",
+    "state-af5ad4b093-2",
+    "state-70a69a533a-3",
+    "state-5f1f1ce654-4",
+    "state-34f5d11b42-5",
+    "state-535e42aa07-6",
+    "state-3183bfc363-7",
+    "state-9d3e1b8270-8",
+    "state-820f30e100-9",
+    "state-16bc487516-10",
+    "state-8c89bf3dc0-11",
+    "state-6dbaaac73b-12",
+    "state-788788d0f1-13",
+    "state-e21dc95151-14",
+    "state-d00b934ee2-15",
+    "state-08e23398d8-16",
+    "state-b10dca98ab-17"
+  ],
+  "transitions": [
+    {
+      "id": "transition-6f2873da7f5f",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.top-banner.hidden.md\\:block:nth-of-type(1) > a.group.block.relative"
+        }
+      },
+      "to": "state-d2473fc766-1"
+    },
+    {
+      "id": "transition-d6807f61609e",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.top-banner.hidden.md\\:block:nth-of-type(1) > button.absolute.right-2.top-1\\/2"
+        }
+      },
+      "to": "state-af5ad4b093-2"
+    },
+    {
+      "id": "transition-7cf4ef602898",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > a.flex.flex-col.items-start"
+        }
+      },
+      "to": "state-70a69a533a-3"
+    },
+    {
+      "id": "transition-04e3a36c8ac4",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > a.VPLink.link.flex:nth-of-type(1)"
+        }
+      },
+      "to": "state-5f1f1ce654-4"
+    },
+    {
+      "id": "transition-c12be55c6beb",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > a.VPLink.link.flex:nth-of-type(2)"
+        }
+      },
+      "to": "state-34f5d11b42-5"
+    },
+    {
+      "id": "transition-167ecdaa8730",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > a.VPLink.link.flex:nth-of-type(3)"
+        }
+      },
+      "to": "state-535e42aa07-6"
+    },
+    {
+      "id": "transition-aceabef09b31",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > div.VPFlyout.relative.flex:nth-of-type(1) > button.flex.items-center.px-3"
+        }
+      },
+      "to": "state-3183bfc363-7"
+    },
+    {
+      "id": "transition-bd82c330c6cd",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > div.VPFlyout.relative.flex:nth-of-type(2) > button.flex.items-center.px-3"
+        }
+      },
+      "to": "state-9d3e1b8270-8"
+    },
+    {
+      "id": "transition-5764671d8d59",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.lg\\:flex.items-center:nth-of-type(1) > div.VPNavBarSearch > button.VPNavBarSearchButton"
+        }
+      },
+      "to": "state-820f30e100-9"
+    },
+    {
+      "id": "transition-41332d98395b",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPFlyout.relative.flex:nth-of-type(1) > button.flex.items-center.px-3"
+        }
+      },
+      "to": "state-16bc487516-10"
+    },
+    {
+      "id": "transition-beff3aa69f81",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(1)"
+        }
+      },
+      "to": "state-8c89bf3dc0-11"
+    },
+    {
+      "id": "transition-1044cb8f9109",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(2)"
+        }
+      },
+      "to": "state-6dbaaac73b-12"
+    },
+    {
+      "id": "transition-5f719b0db61d",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(3)"
+        }
+      },
+      "to": "state-788788d0f1-13"
+    },
+    {
+      "id": "transition-ad4a7deffae5",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(4)"
+        }
+      },
+      "to": "state-e21dc95151-14"
+    },
+    {
+      "id": "transition-3d92482f814b",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(5)"
+        }
+      },
+      "to": "state-d00b934ee2-15"
+    },
+    {
+      "id": "transition-ee325ec2ff2f",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div:nth-of-type(3) > div > div.wrapper.wrapper--ticks.grid:nth-of-type(2) > div.flex.flex-col.p-10:nth-of-type(1) > div.flex.flex-col.gap-5:nth-of-type(1) > a.flex.items-center.gap-2"
+        }
+      },
+      "to": "state-08e23398d8-16"
+    },
+    {
+      "id": "transition-8b6b7fb55303",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div:nth-of-type(3) > div > div.wrapper.wrapper--ticks.grid:nth-of-type(2) > div.flex.flex-col.p-10:nth-of-type(1) > div.flex.flex-col.gap-5:nth-of-type(1) > div.flex.items-center.gap-5 > a.button.button--primary.inline-block:nth-of-type(1)"
+        }
+      },
+      "to": "state-5f1f1ce654-4"
+    },
+    {
+      "id": "transition-f04916ba4f31",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div:nth-of-type(3) > div > div.wrapper.wrapper--ticks.grid:nth-of-type(2) > div.flex.flex-col.p-10:nth-of-type(1) > div.flex.flex-col.gap-5:nth-of-type(1) > div.flex.items-center.gap-5 > a.button.inline-block.w-fit:nth-of-type(2)"
+        }
+      },
+      "to": "state-b10dca98ab-17"
+    }
+  ]
+}

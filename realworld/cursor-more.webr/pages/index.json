@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "url": "https://cursor.com",
+      "route": "/",
+      "stateIds": [
+        "state-f6cc99729a-0",
+        "state-f6bbc1ec43-1",
+        "state-e7e75cff10-2",
+        "state-0afac2af65-3",
+        "state-8e5d30ec91-4"
+      ],
+      "title": "Vercel Security Checkpoint"
+    }
+  ]
+}

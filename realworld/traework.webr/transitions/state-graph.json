@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    "state-e70d2ccc70-0",
+    "state-e5ea73b5fc-1",
+    "state-ca4a23f713-2",
+    "state-35959843f7-3",
+    "state-4336f50025-4",
+    "state-ddcc608ce4-5",
+    "state-e4955e1abf-6",
+    "state-46764434bf-7",
+    "state-7ef21b8f54-8",
+    "state-85e83c2aad-9",
+    "state-bf4f4f27d1-10",
+    "state-6cbe61d7ed-11",
+    "state-rt-2a2ff8e48b",
+    "state-rt-0d3e957b5f",
+    "state-rt-862ceedf39"
+  ],
+  "transitions": [
+    {
+      "id": "transition-0aa73423e0ee",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-e5ea73b5fc-1"
+    },
+    {
+      "id": "transition-9d6a5629c363",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "scroll",
+        "target": {
+          "strategy": "css",
+          "value": "document"
+        },
+        "label": "scroll:document"
+      },
+      "to": "state-ca4a23f713-2"
+    },
+    {
+      "id": "transition-2fde662fd26d",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.layout-Uytjlx:nth-of-type(2) > div.container-PWdu8_.containerHorizontal-oFtvka > div.content-MYuCbQ:nth-of-type(1) > aside.sidebar-MnFge4 > div.header-L3Opt4:nth-of-type(1) > div:nth-of-type(1) > div > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-35959843f7-3"
+    },
+    {
+      "id": "transition-0e70a91e16c7",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#root > div.layout-Uytjlx:nth-of-type(2) > div.container-PWdu8_.containerHorizontal-oFtvka > div.content-MYuCbQ:nth-of-type(1) > aside.sidebar-MnFge4 > div.header-L3Opt4:nth-of-type(1) > div:nth-of-type(1) > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-4336f50025-4"
+    },
+    {
+      "id": "transition-9ab0c0d3635b",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#root > div.layout-Uytjlx:nth-of-type(2) > div.container-PWdu8_.containerHorizontal-oFtvka > div.content-MYuCbQ:nth-of-type(1) > aside.sidebar-MnFge4 > div.content-iohNf5:nth-of-type(2) > div.modeContainer-lRmzdv:nth-of-type(1) > div.container-NkZPqY > button.tab-UWCly2:nth-of-type(1)",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "Work"
+            }
+          ]
+        },
+        "label": "click:Work"
+      },
+      "to": "state-ddcc608ce4-5"
+    },
+    {
+      "id": "transition-abffdecb0b4a",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#root > div.layout-Uytjlx:nth-of-type(2) > div.container-PWdu8_.containerHorizontal-oFtvka > div.content-MYuCbQ:nth-of-type(1) > aside.sidebar-MnFge4 > div.content-iohNf5:nth-of-type(2) > div.modeContainer-lRmzdv:nth-of-type(1) > div.container-NkZPqY > button.tab-UWCly2:nth-of-type(3)",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "Design"
+            }
+          ]
+        },
+        "label": "click:Design"
+      },
+      "to": "state-e4955e1abf-6"
+    },
+    {
+      "id": "transition-08095a2e8507",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.content-iohNf5:nth-of-type(2) > div.projectsSection-r9LJnA:nth-of-type(3) > div.projectsSectionInner-gI96o8 > div.projectsContent-L_booZ:nth-of-type(1) > div.projectsHeader-QlPhOh:nth-of-type(1) > div.headerActions-yaKBXR > span.wrapper-i89Z4u > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.default-YsNUGN"
+        },
+        "label": "click:button"
+      },
+      "to": "state-46764434bf-7"
+    },
+    {
+      "id": "transition-742a8045b3f0",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "div.layout-Uytjlx:nth-of-type(2) > div.container-PWdu8_.containerHorizontal-oFtvka > div.content-MYuCbQ:nth-of-type(1) > aside.sidebar-MnFge4 > div.footer-oyCOhU:nth-of-type(3) > div.footerContent-Nh11hz > div.accountRoot-rfSEhQ.accountVariantSidebar-I5adBK > span.wrapper-i89Z4u > button.accountTrigger-LVgjxV",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "稀客Pro+"
+            }
+          ]
+        },
+        "label": "click:稀客Pro+"
+      },
+      "to": "state-7ef21b8f54-8"
+    },
+    {
+      "id": "transition-0be9cbc94031",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#root > div.layout-Uytjlx:nth-of-type(2) > div.container-PWdu8_.containerHorizontal-oFtvka > div.content-MYuCbQ:nth-of-type(1) > aside.sidebar-MnFge4 > div.footer-oyCOhU:nth-of-type(3) > div.footerContent-Nh11hz > div.accountRoot-rfSEhQ.accountVariantSidebar-I5adBK > button.accountHostAccessoryButton-M7aOxV",
+          "alternates": [
+            {
+              "strategy": "text",
+              "value": "下载桌面端"
+            }
+          ]
+        },
+        "label": "click:下载桌面端"
+      },
+      "to": "state-85e83c2aad-9"
+    },
+    {
+      "id": "transition-ece24baed949",
+      "from": "state-e70d2ccc70-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        },
+        "label": "resize:viewport"
+      },
+      "to": "state-bf4f4f27d1-10"
+    },
+    {
+      "id": "transition-cf74682291ba",
+      "from": "state-35959843f7-3",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main-container > div.contentWrapper-uQif4g > header.header-OljRTt > div.headerLeft-WxlRG_:nth-of-type(1) > div > span.trigger-eRptMM > button.iconButton-E1p9sI.tertiary-fbtth3.xlarge-D7oSPL"
+        },
+        "label": "click:button"
+      },
+      "to": "state-6cbe61d7ed-11"
+    }
+  ]
+}

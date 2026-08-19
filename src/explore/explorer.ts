@@ -10,6 +10,7 @@ import { sha256Hex } from '../checksum.js';
 import type { ActionType, ScrollPosition, Viewport } from '../contracts.js';
 import type { CapturedStateEvidence, CaptureOptions } from '../capture/collector.js';
 import { collectFingerprintSignals, fingerprintString } from '../capture/fingerprint.js';
+import { routeKeyFor } from '../reconstruct/adapter.js';
 
 export interface ExploreOptions extends CaptureOptions {
   /** Maximum number of distinct states to explore. */
@@ -20,6 +21,14 @@ export interface ExploreOptions extends CaptureOptions {
   maxDepth: number;
   /** Maximum time budget in ms. */
   timeBudgetMs: number;
+  /**
+   * Additional responsive viewports to capture as first-class states of the
+   * entry route (GOAL-005 P0-3). Defaults to the session viewport plus a
+   * mobile width so a responsive Golden Reference always exists.
+   */
+  responsiveViewports?: Viewport[];
+  /** Scroll positions (of the entry char viewport) to capture as states. */
+  scrolledDepths?: ScrollPosition[];
 }
 
 export const DEFAULT_EXPLORE_OPTIONS: ExploreOptions = {
@@ -31,6 +40,11 @@ export const DEFAULT_EXPLORE_OPTIONS: ExploreOptions = {
   fullPage: true,
   computedStyles: true,
   accessibility: true,
+  responsiveViewports: [
+    { width: 1440, height: 900, deviceScaleFactor: 1 },
+    { width: 390, height: 844, deviceScaleFactor: 1 },
+  ],
+  scrolledDepths: [{ x: 0, y: 600 }],
 };
 
 export interface DiscoveredAction {
@@ -58,6 +72,8 @@ export interface ExploreResult {
   warnings: string[];
   exploredCount: number;
   skipped: { reason: string; count: number }[];
+  /** Number of top-level page loads performed (GOAL-006 P1-1 metric). */
+  pageLoads: number;
 }
 
 /** Stable transition id derived from source + action + destination. */
@@ -124,17 +140,75 @@ export async function discoverActions(page: Page): Promise<DiscoveredAction[]> {
       return parts.join(' > ');
     };
 
+    /**
+     * Build a prioritized set of locator strategies for an element so validation
+     * can resolve it class-agnostically on a rebuilt replica. Returns a primary
+     * `{strategy, value}` plus ordered `alternates`.
+     *
+     * `strategy === 'css'` values are safe to pass to `page.click`/`locator` and
+     * survive the validator's class-stripping. `strategy === 'text'` values are
+     * human-readable labels that the validator resolves via `getByText`.
+     */
+    function locatorsFor(
+      el: Element,
+      selector: string,
+    ): {
+      strategy: 'css' | 'text';
+      value: string;
+      alternates?: { strategy: string; value: string }[];
+    } {
+      const alternates: { strategy: string; value: string }[] = [];
+      const push = (s: string, v: string) => {
+        if (v && !alternates.some((a) => a.strategy === s && a.value === v)) {
+          alternates.push({ strategy: s, value: v });
+        }
+      };
+
+      // id (most stable, survives class rename) — CSS
+      const id = (el as HTMLElement).id;
+      if (id) push('css', `#${CSS.escape(id)}`);
+      // data-testid (typical SPA e2e handle) — CSS
+      const testid = el.getAttribute('data-testid');
+      if (testid) push('css', `[data-testid="${CSS.escape(testid)}"]`);
+      // aria-label / name / title — text
+      const label =
+        el.getAttribute('aria-label') ??
+        el.getAttribute('aria-labelledby') ??
+        el.getAttribute('name') ??
+        el.getAttribute('title');
+      if (label) push('text', label);
+      // structural CSS selector (class-bearing; validator strips classes) — CSS
+      if (selector) push('css', selector);
+      // nearest visible text — text (lowest priority)
+      const text = (el.textContent ?? '').trim().replace(/\s+/g, ' ').slice(0, 60);
+      if (text) push('text', text);
+
+      // The most stable candidate becomes the primary locator.
+      const candidates = alternates.splice(0);
+      const primary =
+        candidates[0] ??
+        ({
+          strategy: 'text',
+          value: (el.textContent ?? '').trim().slice(0, 60) || el.tagName.toLowerCase(),
+        } as const);
+      return {
+        strategy: primary.strategy === 'css' ? 'css' : 'text',
+        value: primary.value,
+        alternates: candidates.slice(1).length > 0 ? candidates.slice(1) : undefined,
+      };
+    }
+
     const add = (el: Element, type: ActionType, label?: string) => {
       const selector = stableSelector(el) ?? '';
       const key = type + ':' + selector;
       if (seen.has(key)) return;
       seen.add(key);
-      const target = selector
-        ? { strategy: 'css' as const, value: selector }
-        : {
-            strategy: 'text' as const,
-            value: (el.textContent ?? '').trim().slice(0, 60) || el.tagName.toLowerCase(),
-          };
+      const loc = locatorsFor(el, selector);
+      const st = loc.strategy;
+      const target =
+        st === 'css'
+          ? { strategy: 'css' as const, value: loc.value, alternates: loc.alternates }
+          : { strategy: 'text' as const, value: loc.value, alternates: loc.alternates };
       out.push({
         type,
         target,
@@ -359,6 +433,17 @@ export async function explore(
   states.push(rootState);
   pathTo.set(rootId, []);
 
+  // ---- GOAL-005 P0-3: first-class responsive + scroll states of the entry route.
+  // Capture extra viewports and a scrolled position (deduplicated by
+  // fingerprint) so a responsive Golden Reference and a scroll-dependent state
+  // always exist, even on a non-interactive page. These are real states with
+  // deterministic resize/scroll transitions from the root.
+  if (states.length < options.maxStates) {
+    // Captures responsive/scroll states and appends newly-created states
+    // (and their transitions) to `states`/`transitions`/`pathTo` in place.
+    await captureResponsiveStates(ctx, rootId, states, transitions, pathTo, captureState, options);
+  }
+
   // BFS queue of { id, depth, path }
   interface QueueItem {
     id: string;
@@ -379,6 +464,68 @@ export async function explore(
     }
   };
 
+  // Track a pageLoaded counter so callers/tests can measure that deep route
+  // states are NOT restored by reloading the root and clicking through the
+  // whole navigation chain each time (GOAL-006 P1-1).
+  let pageLoads = 0;
+
+  /**
+   * Establish the context for `current` before discovering/executing actions
+   * (immersive exploration, P1-1).
+   *
+   * Idea: a recorded path is a sequence `[navigate -> /route, hover/click ...]`
+   * where the first step that lands on the target route is a `navigate`.
+   * Restoring that state by reloading the root and re-clicking every link is
+   * wasteful. Instead we navigate directly to the target route's entry URL
+   * (a single top-level load) and replay only the in-route actions that lead
+   * from the route entry to `current`. This keeps restoration deterministic
+   * (each restore starts from a fresh route document) while avoiding repeated
+   * root reloads + re-navigation on multi-route sites.
+   */
+  const establish = async (current: QueueItem): Promise<void> => {
+    await resetViewport();
+    const path = current.path;
+    if (path.length === 0) {
+      // Root state: one fresh root load (no way to avoid it — the page may be
+      // polluted by the previously explored state).
+      await ctx.page
+        .goto(ctx.url, { waitUntil: 'domcontentloaded', timeout: 10_000 })
+        .catch(() => {});
+      pageLoads += 1;
+      return;
+    }
+    const targetRoute = routeKeyFor(stateById(current.id)?.url ?? ctx.url);
+    // Find the first step on the path whose destination lands on the target
+    // route (a `navigate`). Everything after it is an in-route action.
+    const entryIdx = path.findIndex(
+      (s) =>
+        s.action.type === 'navigate' && routeKeyFor(stateById(s.to)?.url ?? '') === targetRoute,
+    );
+    if (entryIdx >= 0) {
+      const entryUrl = stateById(path[entryIdx].to)?.url;
+      if (entryUrl) {
+        // Direct to the route entry, then replay the in-route remainder.
+        await ctx.page
+          .goto(entryUrl, { waitUntil: 'domcontentloaded', timeout: 10_000 })
+          .catch(() => {});
+        pageLoads += 1;
+        await replayPath(ctx.page, path.slice(entryIdx + 1));
+        return;
+      }
+    }
+    // Fallback: root + replay the full recorded path.
+    await ctx.page
+      .goto(ctx.url, { waitUntil: 'domcontentloaded', timeout: 10_000 })
+      .catch(() => {});
+    pageLoads += 1;
+    await replayPath(ctx.page, current.path);
+  };
+
+  // Resolve a state by id (helpers defined later in the module, safe here).
+  const stateByIdLocal = (id: string): CapturedStateEvidence | undefined =>
+    states.find((s) => s.id === id);
+  const stateById = stateByIdLocal;
+
   while (queue.length > 0 && withinBudget()) {
     const current = queue.shift()!;
     if (current.depth >= options.maxDepth) {
@@ -386,14 +533,8 @@ export async function explore(
       continue;
     }
 
-    // Reset to the current state deterministically: navigate back to the root
-    // URL then replay the recorded path is expensive; instead we replay the
-    // path on the same page (navigate to root first).
-    await resetViewport();
-    await ctx.page
-      .goto(ctx.url, { waitUntil: 'domcontentloaded', timeout: 10_000 })
-      .catch(() => {});
-    await replayPath(ctx.page, current.path);
+    // Establish the current state's context (immersive: reuse route session).
+    await establish(current);
 
     const discovered = await discoverActions(ctx.page);
     if (discovered.length === 0) {
@@ -408,12 +549,8 @@ export async function explore(
         break;
       }
 
-      // Return to the current node before each action.
-      await resetViewport();
-      await ctx.page
-        .goto(ctx.url, { waitUntil: 'domcontentloaded', timeout: 10_000 })
-        .catch(() => {});
-      await replayPath(ctx.page, current.path);
+      // Return to the current node before each action (immersive reuse).
+      await establish(current);
 
       const { ok } = await performAction(ctx.page, action);
       if (!ok) {
@@ -500,7 +637,104 @@ export async function explore(
     warnings,
     exploredCount: transitions.length,
     skipped,
+    pageLoads,
   };
+}
+
+/**
+ * GOAL-005 P0-3: capture responsive + scroll states of the entry route as
+ * first-class evidence. For each configured viewport (beyond the root) and
+ * each scrolled depth, set the deterministic context, capture a state, dedupe
+ * by captured fingerprint against existing states, and record a `resize` /
+ * `scroll` transition from the root. Mutates `states`/`transitions`/`pathTo`
+ * in place and returns any newly-created states.
+ */
+async function captureResponsiveStates(
+  ctx: ExploreContext,
+  rootId: string,
+  states: CapturedStateEvidence[],
+  transitions: ExploreTransition[],
+  pathTo: Map<string, ExploreTransition[]>,
+  captureState: (fingerprint: string) => Promise<CapturedStateEvidence>,
+  options: ExploreOptions,
+): Promise<CapturedStateEvidence[]> {
+  const created: CapturedStateEvidence[] = [];
+  const viewports = (options.responsiveViewports ?? []).filter(
+    (v) =>
+      v.width !== ctx.viewport.width ||
+      v.height !== ctx.viewport.height ||
+      v.deviceScaleFactor !== ctx.viewport.deviceScaleFactor,
+  );
+  const depths = options.scrolledDepths ?? [];
+
+  const captureFor = async (
+    viewport: Viewport,
+    scroll: ScrollPosition,
+    actionType: ActionType,
+    fromId: string,
+  ): Promise<void> => {
+    if (states.length >= options.maxStates) return;
+    try {
+      await ctx.page
+        .setViewportSize({ width: viewport.width, height: viewport.height })
+        .catch(() => {});
+      await ctx.page
+        .evaluate(([x, y]) => window.scrollTo(x || 0, y || 0), [scroll.x, scroll.y])
+        .catch(() => {});
+      await ctx.page.waitForTimeout(120);
+      const state = await captureState('');
+      if (!state || !state.fingerprint) return;
+      // Dedupe against existing states by the captured fingerprint.
+      const existing = states.find((s) => s.fingerprint === state.fingerprint);
+      let id: string;
+      if (existing) {
+        id = existing.id;
+      } else {
+        id = state.fingerprint.startsWith('state-')
+          ? state.fingerprint
+          : `state-${sha256Hex(state.fingerprint).slice(0, 10)}-${states.length}`;
+        state.id = id;
+        states.push(state);
+        pathTo.set(id, [{ id: '', from: fromId, action: mkAction(actionType), to: id }]);
+        created.push(state);
+      }
+      // Record a deterministic transition from the source state.
+      const exists = transitions.some(
+        (t) => t.from === fromId && t.action.type === actionType && t.to === id,
+      );
+      if (!exists) {
+        const act = mkAction(actionType);
+        transitions.push({
+          id: transitionId(fromId, actionType, act.target.value, id),
+          from: fromId,
+          action: act,
+          to: id,
+        });
+      }
+    } catch {
+      // best-effort: skip a viewport if the resize/scroll fails
+    }
+  };
+
+  const mkAction = (
+    type: ActionType,
+  ): DiscoveredAction & { target: { strategy: 'css'; value: string } } =>
+    type === 'resize'
+      ? { type, target: { strategy: 'css', value: 'viewport' }, label: 'resize:viewport' }
+      : { type, target: { strategy: 'css', value: 'document' }, label: 'scroll:document' };
+
+  for (const vp of viewports) {
+    await captureFor(vp, { x: 0, y: 0 }, 'resize', rootId);
+    for (const depth of depths) {
+      await captureFor(vp, depth, 'scroll', rootId);
+    }
+  }
+  // Restore the root viewport/scroll so later BFS steps start deterministically.
+  await ctx.page
+    .setViewportSize({ width: ctx.viewport.width, height: ctx.viewport.height })
+    .catch(() => {});
+  await ctx.page.evaluate(() => window.scrollTo(0, 0)).catch(() => {});
+  return created;
 }
 
 /** Replay a recorded path of actions on the current page. */

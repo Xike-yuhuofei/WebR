@@ -28,11 +28,35 @@ Baseline behavior:
 
 The command may access the source website.
 
-Example:
+For a login-gated / authenticated product, capture may connect to an
+already-running authenticated Chrome via CDP instead of launching the frozen
+headless-clean profile:
 
 ```bash
-webr capture https://example.com --out ./example.webr
+webr capture https://work.trae.cn/ --out ./traework.webr --cdp
 ```
+
+`--cdp [url]` uses the project's Profile Chrome (`07-BROWSER-POLICY.md`, default
+`http://[::1]:9222`). The captured page is opened in the inspected browser's
+default context (inheriting its logged-in session); on completion only the
+captured page is closed — the shared browser and the operator's other tabs are
+never closed. This is an authenticated-capture path; it does not replace the
+frozen deterministic headless default for non-authenticated targets.
+
+Capture also accepts bounded-exploration controls for reproducible benchmarks:
+
+```bash
+webr capture <url> --out <path> --max-states 16 --max-transitions 24 \
+  --max-depth 3 --time-budget 150000 --no-fullpage --viewport 1440x900
+```
+
+- `--max-states` / `--max-transitions` / `--max-depth` bound the State Explorer.
+- `--time-budget <ms>` bounds exploration wall-clock time.
+- `--no-fullpage` skips full-page screenshots (expensive on tall real pages).
+- `--viewport WxH` overrides the capture viewport.
+
+Full-page screenshots and responsive/scroll first-class states remain the
+defaults; these flags only tighten them for large, slow targets.
 
 ## 3. `webr audit`
 

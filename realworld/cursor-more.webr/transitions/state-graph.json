@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    "state-f6cc99729a-0",
+    "state-f6bbc1ec43-1",
+    "state-e7e75cff10-2",
+    "state-0afac2af65-3",
+    "state-8e5d30ec91-4"
+  ],
+  "transitions": [
+    {
+      "id": "transition-ff8878475df0",
+      "from": "state-f6cc99729a-0",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        }
+      },
+      "to": "state-f6bbc1ec43-1"
+    },
+    {
+      "id": "transition-562cc9943dc4",
+      "from": "state-f6bbc1ec43-1",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        }
+      },
+      "to": "state-e7e75cff10-2"
+    },
+    {
+      "id": "transition-bbf946d5c0f1",
+      "from": "state-e7e75cff10-2",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        }
+      },
+      "to": "state-0afac2af65-3"
+    },
+    {
+      "id": "transition-64a376b6223e",
+      "from": "state-0afac2af65-3",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        }
+      },
+      "to": "state-8e5d30ec91-4"
+    },
+    {
+      "id": "transition-7885ebe8181d",
+      "from": "state-8e5d30ec91-4",
+      "action": {
+        "type": "resize",
+        "target": {
+          "strategy": "css",
+          "value": "viewport"
+        }
+      },
+      "to": "state-8e5d30ec91-4"
+    }
+  ]
+}

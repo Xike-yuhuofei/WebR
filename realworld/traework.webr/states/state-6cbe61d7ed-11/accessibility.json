@@ -1,0 +1,167 @@
+{
+  "nodeCount": 18,
+  "nodes": [
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tablist",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "WorkCodeDesign",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Work",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Code",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Design",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "稀客Pro+",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "下载桌面端",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "下载桌面端",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "textbox",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "添加文件及更多",
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": null,
+      "name": "添加文件及更多"
+    },
+    {
+      "tag": "input",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "调用插件",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "调用插件"
+    },
+    {
+      "tag": "button",
+      "role": "combobox",
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": "Auto Mode",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tooltip",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "隐藏任务栏⌘B",
+      "name": null
+    }
+  ]
+}

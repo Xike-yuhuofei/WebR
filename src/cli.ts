@@ -28,6 +28,18 @@ interface CliOptions {
   out?: string;
   mode?: 'replay' | 'rebuild';
   profile?: 'smoke' | 'standard' | 'full';
+  /* CDP endpoint for authenticated capture, or true to use the policy default. */
+  cdp?: string | boolean;
+  maxStates?: number;
+  maxTransitions?: number;
+  maxDepth?: number;
+  timeBudgetMs?: number;
+  fullPage?: boolean;
+  viewport?: string;
+  /** Multi-route capture: true (default 5 pages) or a max-page count. */
+  follow?: boolean | number;
+  /** Extra same-origin routes to capture as pages (repeatable). */
+  route?: string[];
   args: string[];
 }
 
@@ -56,6 +68,19 @@ Options:
   --mode <m>    Reconstruction mode: replay (default) or rebuild
   --profile <p> Validation profile: smoke, standard (default) or full
                 (validate only)
+  --cdp [url]   Capture via an authenticated Chrome over CDP instead of the
+                frozen headless-clean profile. Defaults to the Profile Chrome
+                policy endpoint (http://[::1]:9222). Capture only.
+  --max-states <n>      Capture exploration limit (capture only)
+  --max-transitions <n> Capture transition budget (capture only)
+  --max-depth <n>       Capture exploration depth budget (capture only)
+  --time-budget <ms>    Capture wall-clock budget (capture only)
+  --no-fullpage         Skip full-page screenshots (capture only)
+  --viewport WxH        Override capture viewport, e.g. 1440x900 (capture only)
+  --follow [pages]      Capture bounded internal same-origin routes in addition
+                        to the entry route (default 5, capture only)
+  --route <url>         Capture an extra same-origin route as a page (repeatable,
+                        capture only)
 
 Modes:
   replay   Reuse captured HTML/CSS/JS to produce a high-fidelity offline replay.
@@ -121,6 +146,71 @@ function parseArgs(argv: string[]): CliOptions {
           throw new Error('--profile must be smoke, standard or full');
         }
         opts.profile = v as 'smoke' | 'standard' | 'full';
+        break;
+      }
+      case '--cdp': {
+        // Peek without consuming: when the next token is another option
+        // (e.g. `--cdp --route <url>`), it must NOT be swallowed as the value.
+        const v = argv[i + 1];
+        if (v !== undefined && !v.startsWith('-')) {
+          opts.cdp = v;
+          i += 1;
+        } else {
+          opts.cdp = true; // default policy endpoint
+        }
+        break;
+      }
+      case '--max-states': {
+        const v = argv[++i];
+        if (v === undefined || !/^\d+$/.test(v)) throw new Error('--max-states requires a number');
+        opts.maxStates = parseInt(v, 10);
+        break;
+      }
+      case '--max-transitions': {
+        const v = argv[++i];
+        if (v === undefined || !/^\d+$/.test(v))
+          throw new Error('--max-transitions requires a number');
+        opts.maxTransitions = parseInt(v, 10);
+        break;
+      }
+      case '--max-depth': {
+        const v = argv[++i];
+        if (v === undefined || !/^\d+$/.test(v)) throw new Error('--max-depth requires a number');
+        opts.maxDepth = parseInt(v, 10);
+        break;
+      }
+      case '--time-budget': {
+        const v = argv[++i];
+        if (v === undefined || !/^\d+$/.test(v))
+          throw new Error('--time-budget requires a number (ms)');
+        opts.timeBudgetMs = parseInt(v, 10);
+        break;
+      }
+      case '--no-fullpage':
+        opts.fullPage = false;
+        break;
+      case '--viewport': {
+        const v = argv[++i];
+        if (v === undefined || !/^\d{2,5}x\d{2,5}$/.test(v))
+          throw new Error('--viewport requires WxH (e.g. 1440x900)');
+        opts.viewport = v;
+        break;
+      }
+      case '--route': {
+        const v = argv[++i];
+        if (v === undefined) throw new Error('--route requires a URL');
+        opts.route = opts.route ?? [];
+        opts.route.push(v);
+        break;
+      }
+      case '--follow': {
+        const v = argv[i + 1];
+        if (v !== undefined && /^\d+$/.test(v)) {
+          opts.follow = parseInt(v, 10);
+          i += 1;
+        } else {
+          opts.follow = true;
+        }
         break;
       }
       default:
@@ -208,7 +298,32 @@ async function runCapture(url: string, opts: CliOptions): Promise<number> {
   }
   try {
     const { capturePackage } = await import('./capture/capture.js');
-    const outcome = await capturePackage({ url, out, verbose: opts.verbose });
+    const connectCDP =
+      opts.cdp === true ? 'http://[::1]:9222' : typeof opts.cdp === 'string' ? opts.cdp : undefined;
+    const viewport = opts.viewport
+      ? (([w, h]) => ({ width: Number(w), height: Number(h), deviceScaleFactor: 1 }))(
+          opts.viewport.split('x'),
+        )
+      : undefined;
+    const outcome = await capturePackage({
+      url,
+      out,
+      verbose: opts.verbose,
+      connectCDP,
+      ...(opts.maxStates !== undefined ? { maxStates: opts.maxStates } : {}),
+      ...(opts.maxTransitions !== undefined ? { maxTransitions: opts.maxTransitions } : {}),
+      ...(opts.maxDepth !== undefined ? { maxDepth: opts.maxDepth } : {}),
+      ...(opts.timeBudgetMs !== undefined ? { timeBudgetMs: opts.timeBudgetMs } : {}),
+      ...(opts.fullPage !== undefined ? { fullPage: opts.fullPage } : {}),
+      ...(viewport ? { viewport } : {}),
+      ...(opts.follow !== undefined
+        ? {
+            followInternalLinks:
+              typeof opts.follow === 'number' ? { maxPages: opts.follow, maxDepth: 1 } : true,
+          }
+        : {}),
+      ...(opts.route !== undefined && opts.route.length > 0 ? { routes: opts.route } : {}),
+    });
     if (opts.json) {
       process.stdout.write(
         JSON.stringify({

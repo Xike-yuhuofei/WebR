@@ -130,11 +130,35 @@ export async function auditPackage(
     } catch {
       continue;
     }
-    // Scan src/href references pointing at the source origin.
-    const refs = dom.matchAll(/(?:src|href)=["']([^"']+)["']/g);
-    for (const m of refs) {
-      const ref = m[1];
+    // Scan src/href references pointing at the source origin. We only treat
+    // *fetched resources* as unresolved external dependencies — images,
+    // scripts, stylesheets, fonts, media, iframes and CSS/JS fetch targets.
+    // Navigation links (`<a href>`, `area`, `link[rel=alternate|canonical|
+    // sitemap]`) are routing metadata, not resources, so they never block
+    // freeze (GOAL-005 P0-4).
+    const refMatch =
+      /<([a-zA-Z][a-zA-Z0-9]*)\b([^>]*?)\s(?:src|href|data|poster)=["']([^"']+)["']/gi;
+    for (const m of dom.matchAll(refMatch)) {
+      const tag = m[1].toLowerCase();
+      const attrs = m[2];
+      const ref = m[3];
       if (!ref.startsWith('http://') && !ref.startsWith('https://')) continue;
+      // Navigation / metadata: never a resource dependency.
+      if (tag === 'a' || tag === 'area') continue;
+      if (tag === 'link') {
+        const relMatch = /rel=["']([^"']*)["']/i.exec(attrs);
+        const rel = (relMatch?.[1] ?? '').toLowerCase().split(/\s+/);
+        const resourceRel =
+          rel.includes('stylesheet') ||
+          rel.includes('preload') ||
+          rel.includes('modulepreload') ||
+          rel.includes('prefetch') ||
+          rel.includes('icon') ||
+          rel.includes('apple-touch-icon') ||
+          rel.includes('manifest');
+        // rel alternates/canonical/sitemap/shortlink/author/etc. are metadata.
+        if (!resourceRel) continue;
+      }
       try {
         const u = new URL(ref);
         if (externalOrigin && u.origin === externalOrigin) {

@@ -29,11 +29,13 @@ export {
   PackageNotFoundError,
   PackageReadError,
   PackageInvalidError,
+  CaptureBlockedError,
 } from './errors.js';
 export { runCli, EXIT_CODES } from './cli.js';
 
 // Phase 2/3 — capture + state explorer
 export { capturePackage, type CaptureConfig, type CaptureOutcome } from './capture/capture.js';
+export { discoverInternalRoutes } from './capture/capture.js';
 export {
   launchSession,
   type BrowserSession,
@@ -42,9 +44,13 @@ export {
 export {
   observeResponses,
   isLocalizableAsset,
+  isTracker,
+  assetKind,
+  classifyStateHealth,
   createHarCollector,
   waitForPageReady,
   routeOf,
+  type StateHealth,
   type CaptureOptions,
   type CapturedStateEvidence,
   type CapturedAsset,
@@ -57,6 +63,9 @@ export {
   fingerprintString,
   fingerprintPage,
   collectFingerprintSignals,
+  atomicStateCapture,
+  buildAtomicStateCapture,
+  type AtomicStateCapture,
 } from './capture/fingerprint.js';
 export { writePackage, assetId, assetLocalPath, type WrittenPackage } from './capture/writer.js';
 export {
@@ -93,6 +102,8 @@ export {
   captureIndex,
   groupStatesByRoute,
   mimeTypeFor,
+  outlineFromDom,
+  targetsFromDomMinimal,
   type ReconstructionSpec,
   type ReplicaBuildOptions,
 } from './reconstruct/adapter.js';
@@ -115,14 +126,17 @@ export {
   monitorIsolation,
   monitorNetworkIsolation,
   stripCssClasses,
+  resolveTarget,
   selectStates,
   selectTransitions,
   observeFingerprint,
   findPath,
   establishState,
   replayTransitionVerify,
+  executeAction,
   renderValidationReport,
   reportToJson,
+  type ActionOutcome,
   DEFAULT_VALIDATE_OPTIONS,
   DEFAULT_VISUAL_OPTIONS,
   type ValidationReport,
@@ -130,6 +144,8 @@ export {
   type ValidateOptions,
   type VisualComparison,
   type VisualOptions,
+  type Rectangle,
+  type TransitionTrace,
   type StructuralComparison,
   type IsolationViolation,
   type ReplicaServer,

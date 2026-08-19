@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    "state-f260d6d80f-0",
+    "state-e70eb0e663-1"
+  ],
+  "transitions": [
+    {
+      "id": "transition-9f6193303a50",
+      "from": "state-f260d6d80f-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#site-header > div.relative.z-2.container > div.hidden.lg\\:block:nth-of-type(2) > nav.absolute.top-1\\/2.left-1\\/2 > ul.flex.items-center.justify-center > li.relative:nth-of-type(2) > a.nav__btn"
+        }
+      },
+      "to": "state-e70eb0e663-1"
+    },
+    {
+      "id": "transition-9d82cb8f7c4a",
+      "from": "state-f260d6d80f-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#site-header > div.relative.z-2.container > div.hidden.lg\\:block:nth-of-type(2) > nav.absolute.top-1\\/2.left-1\\/2 > ul.flex.items-center.justify-center > li:nth-of-type(4) > a.nav__link"
+        }
+      },
+      "to": "state-e70eb0e663-1"
+    },
+    {
+      "id": "transition-760c7dee8031",
+      "from": "state-f260d6d80f-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#main > section.section.bg-theme-bg.text-theme-text:nth-of-type(1) > div.container > div.text-left.mb-v2\\.5.max-w-prose:nth-of-type(1) > div.flex.justify-start.gap-x-g1 > div.hidden.md\\:block:nth-of-type(2) > a.btn.btn--secondary"
+        }
+      },
+      "to": "state-e70eb0e663-1"
+    },
+    {
+      "id": "transition-24be4688a54d",
+      "from": "state-f260d6d80f-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#demo-window-cursor-ide > div.border-theme-border-02.relative.flex:nth-of-type(1) > div.-mr-1.flex.items-center:nth-of-type(3) > button.text-theme-text-sec.hover\\:bg-theme-bg-hover.inline-flex:nth-of-type(2)"
+        }
+      },
+      "to": "state-e70eb0e663-1"
+    }
+  ]
+}

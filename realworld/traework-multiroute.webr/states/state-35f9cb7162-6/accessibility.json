@@ -1,0 +1,122 @@
+{
+  "nodeCount": 13,
+  "nodes": [
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Close",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Close"
+    },
+    {
+      "tag": "div",
+      "role": "textbox",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "添加文件及更多",
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": null,
+      "name": "添加文件及更多"
+    },
+    {
+      "tag": "input",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "调用插件",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "调用插件"
+    },
+    {
+      "tag": "button",
+      "role": "combobox",
+      "ariaLabel": null,
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": "Auto Mode",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "选择仓库（可选）",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "默认环境",
+      "name": null
+    }
+  ]
+}

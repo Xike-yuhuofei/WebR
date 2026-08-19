@@ -12,7 +12,7 @@ import { extname, join, resolve } from 'node:path';
 import { lookup } from './mime.js';
 import { chromium, type Browser, type Page } from 'playwright';
 import { readPackage } from '../packageIO.js';
-import type { EvidencePackage, StateRecord, Transition } from '../contracts.js';
+import type { EvidencePackage, StateRecord, Transition, ActionTarget } from '../contracts.js';
 import { routeKeyFor, captureIndex } from '../reconstruct/adapter.js';
 import { collectFingerprintSignals, fingerprintString } from '../capture/fingerprint.js';
 import pixelmatch from 'pixelmatch';
@@ -156,6 +156,28 @@ export interface VisualOptions {
   threshold: number;
   /** Max allowed anti-aliasing/dithering tolerance passed to pixelmatch. */
   pixelmatchThreshold: number;
+  /**
+   * Optional regions (in the normalized comparison canvas) to exclude from the
+   * diff — e.g. animation cradles, live counters, cursor/caret regions. Pixels
+   * inside a mask are forced identical on both images before comparing, so
+   * they never count toward diffRatio. Optional; does not loosen the default.
+   */
+  mask?: Rectangle[];
+  /**
+   * Optional per-content-class acceptance threshold. When a caller tags the
+   * comparison with a `contentClass`, this lookup may tighten/loosen that
+   * class's threshold explicitly. The GLOBAL default `threshold` is unchanged
+   * (never loosened). Optional.
+   */
+  thresholdsByClass?: Record<string, number>;
+}
+
+/** Axis-aligned rectangular region (CSS pixel coordinates) used for masking. */
+export interface Rectangle {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
 }
 
 export const DEFAULT_VISUAL_OPTIONS: VisualOptions = {
@@ -190,12 +212,18 @@ function resizePng(src: PNG, w: number, h: number): PNG {
 
 /**
  * Compare two PNG buffers and write a diff PNG. Returns comparison metrics.
+ *
+ * Masking (P2-1): any pixel inside a configured mask region is copied from
+ * `expected` to `actual` before the diff, so it cannot contribute to
+ * `diffRatio`. This lets callers exclude animation cradles / live counters /
+ * cursors without loosening the global threshold.
  */
 export async function compareScreenshots(
   expectedPng: Buffer,
   actualPng: Buffer,
   diffOutPath: string,
   options: VisualOptions,
+  contentClass?: string,
 ): Promise<Omit<VisualComparison, 'stateId' | 'expectedPath' | 'actualPath'>> {
   const expectedRaw = PNG.sync.read(expectedPng);
   const actualRaw = PNG.sync.read(actualPng);
@@ -212,18 +240,41 @@ export async function compareScreenshots(
   const { dirname } = await import('node:path');
   await mkdir(dirname(diffOutPath), { recursive: true });
 
+  // Apply masks: force masked pixels identical so they never count as a diff.
+  for (const rect of options.mask ?? []) {
+    const x0 = Math.max(0, Math.floor(rect.x));
+    const y0 = Math.max(0, Math.floor(rect.y));
+    const x1 = Math.min(width, Math.ceil(rect.x + rect.width));
+    const y1 = Math.min(height, Math.ceil(rect.y + rect.height));
+    for (let y = y0; y < y1; y++) {
+      for (let x = x0; x < x1; x++) {
+        const i = (y * width + x) * 4;
+        actual.data[i] = expected.data[i];
+        actual.data[i + 1] = expected.data[i + 1];
+        actual.data[i + 2] = expected.data[i + 2];
+        actual.data[i + 3] = expected.data[i + 3];
+      }
+    }
+  }
+
   const diffPixels = pixelmatch(expected.data, actual.data, diff.data, width, height, {
     threshold: options.pixelmatchThreshold,
   });
   await import('node:fs/promises').then((fs) => fs.writeFile(diffOutPath, PNG.sync.write(diff)));
   const totalPixels = width * height;
   const diffRatio = totalPixels > 0 ? diffPixels / totalPixels : 1;
+  // Per-content-class threshold is an explicit caller choice; the GLOBAL default
+  // threshold is never loosened. When no class mapping applies, use `threshold`.
+  const effectiveThreshold =
+    contentClass && options.thresholdsByClass?.[contentClass] !== undefined
+      ? options.thresholdsByClass![contentClass]
+      : options.threshold;
   return {
     diffPixels,
     totalPixels,
     diffRatio,
     diffPath: diffOutPath,
-    passed: diffRatio <= options.threshold,
+    passed: diffRatio <= effectiveThreshold,
   };
 }
 
@@ -295,6 +346,13 @@ export interface ValidateOptions {
    * violation. Tests/local tooling may add explicit localhost origins.
    */
   allowedOrigins?: string[];
+  /**
+   * When true, collect a per-transition replay trace and write it to
+   * `<diffDir>/replay-trace.json` (GOAL-007 P2-4, V-8). Off by default for
+   * backward compatibility; the report's `traces` field is populated only when
+   * enabled.
+   */
+  captureTraces?: boolean;
 }
 
 export const DEFAULT_VALIDATE_OPTIONS: ValidateOptions = {
@@ -311,6 +369,17 @@ export interface StructuralComparison {
   passed: boolean;
 }
 
+/** Per-transition replay trace (GOAL-007 P2-4, V-8). */
+export interface TransitionTrace {
+  transitionId: string;
+  from: string;
+  to: string;
+  type: string;
+  targetValue: string;
+  passed: boolean;
+  detail: string;
+}
+
 export interface ValidationReport {
   success: boolean;
   profile: ValidationProfile;
@@ -321,6 +390,8 @@ export interface ValidationReport {
   structural: { comparisons: StructuralComparison[] };
   failures: string[];
   warnings: string[];
+  /** Per-transition replay traces when `captureTraces` is enabled (P2-4). */
+  traces?: TransitionTrace[];
 }
 
 interface SerializableReport {
@@ -333,6 +404,7 @@ interface SerializableReport {
   structural: { comparisons: StructuralComparison[] };
   failures: string[];
   warnings: string[];
+  traces?: TransitionTrace[];
 }
 
 /** Select the state ids to test for a profile. */
@@ -481,30 +553,83 @@ export function stripCssClasses(selector: string): string {
 }
 
 /**
- * Resolve a captured locator against the live replica, falling back from the
- * exact selector to its class-stripped structural form.
+ * Resolve a captured target, trying its primary locator and ordered
+ * alternates so that a REBUILD replica (whose authored class names differ
+ * from the captured `wr-*`/vendor classes) can still be targeted. Resolution
+ * order is stable-first: id → data-testid → aria/text → structural CSS
+ * (class-stripped last). Returns a locator usable by Playwright.
  */
-async function resolveLocator(page: Page, selector: string): Promise<string | undefined> {
-  if (!selector) return undefined;
-  try {
-    if ((await page.locator(selector).count()) > 0) return selector;
-    const stripped = stripCssClasses(selector);
-    if (stripped !== selector && (await page.locator(stripped).count()) > 0) return stripped;
-  } catch {
-    // invalid selector: no locator
+export async function resolveTarget(
+  page: Page,
+  target: { strategy?: string; value?: string; alternates?: ActionTarget[] } | undefined,
+): Promise<string | undefined> {
+  if (!target || !target.value) return undefined;
+  const candidates: ActionTarget[] = [
+    { strategy: target.strategy ?? '', value: target.value },
+    ...(target.alternates ?? []),
+  ];
+  for (const c of candidates) {
+    const locator = await resolveCandidate(page, c);
+    if (locator) return locator;
   }
   return undefined;
 }
 
-/** Execute one recorded action on the live replica, targeting `toState` when needed. */
-async function executeAction(
+/** Resolve a single candidate locator against the live replica. */
+async function resolveCandidate(page: Page, candidate: ActionTarget): Promise<string | undefined> {
+  const { strategy, value } = candidate;
+  if (!value) return undefined;
+  try {
+    if (strategy === 'text') {
+      const loc = page.getByText(value, { exact: false }).first();
+      if ((await loc.count()) > 0) return `text=${value}`; // text engine for page.click
+    } else if (strategy === 'css' || strategy === 'id' || strategy === 'data-testid') {
+      const count = await page.locator(value).count();
+      if (count > 0) return value;
+      const stripped = stripCssClasses(value);
+      if (stripped !== value && (await page.locator(stripped).count()) > 0) return stripped;
+    } else {
+      if ((await page.locator(value).count()) > 0) return value;
+    }
+  } catch {
+    // invalid locator: try next candidate
+  }
+  return undefined;
+}
+
+/** Outcome of executing a recorded action — granular diagnostics (P1-4). */
+export interface ActionOutcome {
+  ok: boolean;
+  /** Why the action failed, for structured reporting. */
+  reason?: 'locator-unresolved' | 'execution-error' | void;
+  /** Detail message. */
+  detail?: string;
+}
+
+/**
+ * Execute one recorded action on the live replica, targeting `toState` when
+ * needed. Returns granular diagnostics: whether the locator resolved, and
+ * whether the action executed successfully. This lets validation distinguish
+ * "locator could not be resolved on the replica" (a rebuild/evidence gap) from
+ * "the action ran but produced the wrong observable result".
+ */
+export async function executeAction(
   page: Page,
   action: Transition['action'],
   toState?: StateRecord,
-): Promise<boolean> {
+): Promise<ActionOutcome> {
   const target = action.target?.value;
-  const locator = await resolveLocator(page, target ?? '');
-  const use = locator ?? target;
+  const resolved = await resolveTarget(page, action.target);
+  const use = resolved;
+  if (target && !use && !['scroll', 'resize', 'navigate', 'press'].includes(action.type)) {
+    // A locator-bearing action that cannot resolve its target: report it as a
+    // locator failure rather than a generic execution error.
+    return {
+      ok: false,
+      reason: 'locator-unresolved',
+      detail: `${action.type}:${action.target?.strategy}:${action.target?.value}`,
+    };
+  }
   try {
     switch (action.type) {
       case 'click':
@@ -542,12 +667,20 @@ async function executeAction(
           );
         break;
       default:
-        return false;
+        return {
+          ok: false,
+          reason: 'execution-error',
+          detail: `unsupported action ${action.type}`,
+        };
     }
     await page.waitForTimeout(120);
-    return true;
-  } catch {
-    return false;
+    return { ok: true };
+  } catch (err) {
+    return {
+      ok: false,
+      reason: 'execution-error',
+      detail: `${action.type}:${(err as Error).message}`,
+    };
   }
 }
 
@@ -580,8 +713,12 @@ export async function establishState(
   if (!path) throw new Error(`no transition path from ${entry} to ${stateId}`);
   for (const step of path) {
     const to = stateById(pkg, step.to);
-    const ok = await executeAction(page, step.action, to);
-    if (!ok) throw new Error(`transition ${step.id} action failed during context setup`);
+    const outcome = await executeAction(page, step.action, to);
+    if (!outcome.ok) {
+      throw new Error(
+        `transition ${step.id} action failed during context setup (${outcome.reason ?? 'execution-error'}): ${outcome.detail ?? ''}`,
+      );
+    }
     await page.waitForTimeout(100);
   }
   await scrollTo(page, target.scroll.x, target.scroll.y);
@@ -611,9 +748,15 @@ export async function replayTransitionVerify(
   if (!from || !to) return { passed: false, detail: 'missing from/to state' };
   // Establish the from-state context via real interactions.
   await establishState(page, serverUrl, pkg, t.from);
-  const ok = await executeAction(page, t.action, to);
-  if (!ok) {
-    return { passed: false, detail: 'action failed to execute' };
+  const outcome = await executeAction(page, t.action, to);
+  if (!outcome.ok) {
+    return {
+      passed: false,
+      detail:
+        outcome.reason === 'locator-unresolved'
+          ? `locator-unresolved: cannot resolve ${outcome.detail} on the replica`
+          : `action-execution-error: ${outcome.detail ?? ''} (${t.action.type}:${t.action.target?.value ?? ''})`,
+    };
   }
   await page.waitForTimeout(150);
   // Reproduce the recorded destination context (viewport/scroll) so a
@@ -683,6 +826,7 @@ export async function validateReplica(
     // Replay transitions on the replica and verify the observable result
     // matches the recorded destination (task 4).
     const transitions = selectTransitions(pkg, options.profile);
+    const traces: TransitionTrace[] = [];
     for (const t of transitions) {
       report.transitions.tested += 1;
       try {
@@ -693,9 +837,27 @@ export async function validateReplica(
           report.transitions.failed += 1;
           report.failures.push(`transition ${t.id}: ${outcome.detail}`);
         }
+        traces.push({
+          transitionId: t.id,
+          from: t.from,
+          to: t.to,
+          type: t.action.type,
+          targetValue: t.action.target?.value ?? '',
+          passed: outcome.passed,
+          detail: outcome.detail,
+        });
       } catch (err) {
         report.transitions.failed += 1;
         report.failures.push(`transition ${t.id} failed: ${(err as Error).message}`);
+        traces.push({
+          transitionId: t.id,
+          from: t.from,
+          to: t.to,
+          type: t.action.type,
+          targetValue: t.action.target?.value ?? '',
+          passed: false,
+          detail: (err as Error).message,
+        });
       }
     }
 
@@ -767,6 +929,17 @@ export async function validateReplica(
       for (const v of violations) {
         report.warnings.push(`forbidden external request: ${v.url}`);
       }
+    }
+
+    // GOAL-007 P2-4: persist per-transition replay traces when requested.
+    if (options.captureTraces) {
+      report.traces = traces;
+      const { writeFile } = await import('node:fs/promises');
+      await writeFile(
+        join(diffDir, 'replay-trace.json'),
+        JSON.stringify(traces, null, 2) + '\n',
+        'utf8',
+      );
     }
 
     // Acceptance: no failures, isolation clean.

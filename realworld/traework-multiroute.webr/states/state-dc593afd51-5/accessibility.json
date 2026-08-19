@@ -1,0 +1,293 @@
+{
+  "nodeCount": 32,
+  "nodes": [
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "textbox",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "添加文件及更多",
+      "ariaExpanded": "false",
+      "ariaHidden": null,
+      "text": null,
+      "name": "添加文件及更多"
+    },
+    {
+      "tag": "input",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "调用插件",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "调用插件"
+    },
+    {
+      "tag": "button",
+      "role": "combobox",
+      "ariaLabel": null,
+      "ariaExpanded": "true",
+      "ariaHidden": null,
+      "text": "Auto Mode",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "选择仓库（可选）",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "默认环境",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "listbox",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "[data-radix-select-viewport]{scrollbar-width:none;-ms-overfl",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "presentation",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "内置模型Auto ModeSeed-2.1-Pro0.77xSeed-2.1-Turbo会员2.5折0.10xSeed-",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "group",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "内置模型Auto ModeSeed-2.1-Pro0.77xSeed-2.1-Turbo会员2.5折0.10xSeed-",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Seed-2.1-Pro0.77x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Seed-2.1-Turbo会员2.5折0.10x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Seed-Code会员2.5折0.03x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "GLM-5.3专属补贴0.40x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "GLM-5.2专属补贴0.40x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "GLM-5.10.83x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "GLM-50.70x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "DeepSeek-V4-Pro 正式版0.50x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "DeepSeek-V4-Pro0.50x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "DeepSeek-V4-Flash 正式版0.08x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "DeepSeek-V4-Flash0.08x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Kimi-K31.65x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Kimi-K2.7-Code0.62x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Kimi-K2.60.69x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "MiniMax-M30.26x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Qwen3.8-Max1.50x",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "option",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "Qwen3.7-Plus0.25x",
+      "name": null
+    }
+  ]
+}

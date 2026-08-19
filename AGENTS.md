@@ -11,6 +11,7 @@ Before starting any implementation work, read these canonical documents in order
 5. `docs/architecture/04-VALIDATION-CONTRACT.md`
 6. `docs/architecture/05-SOURCE-CONVENTION.md`
 7. `docs/architecture/06-IMPLEMENTATION-ROADMAP.md`
+8. `docs/architecture/07-BROWSER-POLICY.md`
 
 ## Rules
 
@@ -22,4 +23,6 @@ Before starting any implementation work, read these canonical documents in order
 - Prefer stable data contracts before feature implementation.
 - Every implementation phase must include automated tests for its acceptance criteria.
 - When repository code conflicts with a frozen decision, preserve the frozen decision and report the conflict.
+- Any WebR activity that needs a live web page MUST use the specified Profile Chrome per `docs/architecture/07-BROWSER-POLICY.md`. Default Chrome, temporary profiles, headless browsers, and other profiles are forbidden.
+- The realtime-debug-workflow (`docs/agents/realtime-debug-workflow.md`) is on-demand only and must not change the default `Capture → Audit → Reconstruct → Validate` flow or the stable CLI surface.
 - Keep agent prompts task-scoped; durable project knowledge belongs in the repository documentation.

@@ -37,6 +37,8 @@ export interface CapturedStateEvidence {
     accessibility?: Record<string, unknown>;
     har?: Record<string, unknown>;
   };
+  /** Golden-Reference health classification (see {@link classifyStateHealth}). */
+  health?: StateHealth;
   /** Fingerprint covering DOM structure + computed behavior, see `fingerprint.ts`. */
   fingerprint: string;
 }
@@ -84,6 +86,66 @@ export interface ResponseObservation {
   headers: Record<string, string>;
 }
 
+// ---------------------------------------------------------------------------
+// Golden-Reference validity gate (GOAL-005 P0-2)
+// ---------------------------------------------------------------------------
+
+/**
+ * Classification of a captured page snapshot's usefulness as a Golden
+ * Reference. A header/gate can reject or warn when a captured state is a
+ * known error boundary, a security/challenge page, or effectively empty, so a
+ * useless screenshot is never silently frozen as authoritative evidence.
+ */
+export type StateHealth = 'ok' | 'error' | 'challenge' | 'empty';
+
+/** Error-boundary markers seen on real-world sites (Next.js, generic mains). */
+const ERROR_MARKERS = [
+  'something went wrong',
+  'application error',
+  'an unexpected error',
+  'page failed to load',
+  'error boundary',
+  'unhandled runtime error',
+];
+
+/** Security / anti-bot / challenge markers. */
+const CHALLENGE_MARKERS = [
+  'security check',
+  'verify you are human',
+  'checkpoint',
+  'attention required',
+  'challenge',
+  'access denied',
+  'verification required',
+];
+
+/**
+ * Classify captured DOM + title for Golden-Reference validity. Pure and
+ * deterministic so it can be tested and reused across capture/audit.
+ * Conservative: strips markup, lowercases, and matches known markers.
+ * A page with no visible text at all is classified `empty`.
+ */
+export function classifyStateHealth(dom: string, title?: string): StateHealth {
+  const text = (dom || '')
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+  const combined = `${title ?? ''} ${text}`;
+
+  if (CHALLENGE_MARKERS.some((m) => combined.includes(m))) return 'challenge';
+  if (ERROR_MARKERS.some((m) => combined.includes(m))) return 'error';
+
+  // Visible body text below a small threshold indicates a hollow/loaded-failed
+  // page. Only body (after stripping scripts/styles) counts.
+  const visibleText = text.split(' ').filter(Boolean);
+  if (visibleText.length === 0) return 'empty';
+
+  return 'ok';
+}
+
 /**
  * Attach a network listener that records static-resource responses so the
  * writer can localize them. Returns a teardown function.
@@ -112,24 +174,71 @@ export function observeResponses(
 }
 
 /**
+ * Domain/path heuristics for third-party analytics / tracking / ad beacons.
+ * These are NOT content: localizing them into the evidence package would
+ * (a) bloat the package with dead code and (b) confuse "content asset" vs
+ * "runtime/telemetry" semantics. Since the reconstructed replica must not ping
+ * them anyway, we never localize them (GOAL-006 P1-3).
+ */
+const TRACKER_HOST_RE =
+  /(^|[./])(googletagmanager\.com|gtag|google-analytics\.com|googlesyndication\.com|doubleclick\.net|facebook\.com|connect\.facebook\.net|fbcdn\.net|snapchat\.com|snap\.licdn\.com|linkedin\.com|tiktok\.com|tiktokcdn|analytics\.tiktok|redditstatic\.com|alb\.reddit\.com|mixpanel\.com|segment\.com|amplitude\.com|hotjar\.com|fullstory\.com|clarity\.ms|ghostery|scorecardresearch\.com|newrelic\.com|apis\.google\.com\/.*\/gtm|analytics\.|track\.|beacon\.|log\.|pixel\.|statsig\.|vercel\.com\/_vercel|vwo\.com|optimizely\.com|criteo\.com|taboola\.|outbrain\.com|adroll\.com|quantserve\.com)/i;
+
+/**
+ * True when a 2xx body-bearing response is clearly a third-party tracking /
+ * analytics / ad beacon and therefore should NOT be localized as content.
+ */
+export function isTracker(obs: ResponseObservation): boolean {
+  try {
+    const u = new URL(obs.url);
+    const host = u.hostname.toLowerCase();
+    const path = u.pathname.toLowerCase();
+    // Script/beacon resource types that only report telemetry.
+    if (TRACKER_HOST_RE.test(host) || TRACKER_HOST_RE.test(`${host}${path}`)) return true;
+    // Obvious beacon pixels: 1x1 gif/png requests from known ad networks.
+    if (
+      /pixel|beacon|pageview|events\.js?$|fbevents|insight|t\.js$|i18n\/pixel|feedback\.js$|rp\.gif|li\.lms/i.test(
+        path,
+      )
+    ) {
+      return true;
+    }
+  } catch {
+    return false;
+  }
+  return false;
+}
+
+/**
+ * Classify a captured resource as `content` (localize) or `tracker`
+ * (discard), combining fetch intent with the tracker heuristic. Separated from
+ * {@link isLocalizableAsset} so the decision is testable independently.
+ */
+export function assetKind(obs: ResponseObservation): 'content' | 'tracker' {
+  return isTracker(obs) ? 'tracker' : 'content';
+}
+
+/**
  * Decide whether a response should be localized as a package asset.
  *
- * Localizes any body-bearing 2xx resource so the reconstruction can run fully
- * offline: same-origin static assets, cross-origin/CDN assets (stylesheets,
- * images, fonts, scripts), and JSON/API payloads. This is what makes it safe
- * to disconnect the source *and* the CDN origins after capture.
+ * Localizes any body-bearing 2xx content resource so the reconstruction can
+ * run fully offline: same-origin static assets, cross-origin/CDN assets
+ * (stylesheets, images, fonts, scripts), and JSON/API payloads. This is what
+ * makes it safe to disconnect the source *and* the CDN origins after capture.
  *
  * We deliberately exclude:
  *   - data: URIs (inline, nothing to fetch separately);
  *   - `text/html` documents (the main document is kept as state DOM, and
  *     other HTML documents are content, not reusable resources);
- *   - empty bodies and non-2xx responses.
+ *   - empty bodies and non-2xx responses;
+ *   - third-party analytics / tracking / ad beacons that are never content
+ *     (GOAL-006 P1-3).
  */
 export function isLocalizableAsset(obs: ResponseObservation): boolean {
   if (!obs.body || obs.body.length === 0) return false;
   if (obs.url.startsWith('data:')) return false;
   if (obs.status < 200 || obs.status >= 300) return false;
   if (obs.mimeType === 'text/html') return false;
+  if (isTracker(obs)) return false;
   try {
     new URL(obs.url);
   } catch {

@@ -1,0 +1,4224 @@
+{
+  "format": "webr-reconstruction-spec",
+  "version": "1.0.0",
+  "source": {
+    "origin": "https://vitejs.dev",
+    "entryUrl": "https://vitejs.dev"
+  },
+  "pages": [
+    {
+      "id": "page-1",
+      "route": "/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "entryState": "state-d5db55b1dd-0",
+      "states": [
+        "state-d5db55b1dd-0",
+        "state-d2473fc766-1",
+        "state-af5ad4b093-2",
+        "state-70a69a533a-3",
+        "state-5f1f1ce654-4",
+        "state-34f5d11b42-5",
+        "state-535e42aa07-6",
+        "state-3183bfc363-7",
+        "state-9d3e1b8270-8",
+        "state-820f30e100-9",
+        "state-16bc487516-10",
+        "state-8c89bf3dc0-11",
+        "state-6dbaaac73b-12",
+        "state-788788d0f1-13",
+        "state-e21dc95151-14",
+        "state-d00b934ee2-15",
+        "state-08e23398d8-16",
+        "state-b10dca98ab-17"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "state-08e23398d8-16",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:fac390baff48e75bd01dfad9b5492b08138584c408cac69ef81623356deef4e0"
+    },
+    {
+      "id": "state-16bc487516-10",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:ca89fc9d48a3e8f8b439deab4f5ae768fe1991733d97cf20071384e206b1be0b"
+    },
+    {
+      "id": "state-3183bfc363-7",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:ac00547b30065d8413da91b4a4b77f887d781343ecdf64ad78c80b2ba44a64cc"
+    },
+    {
+      "id": "state-34f5d11b42-5",
+      "url": "https://vite.dev/config/",
+      "title": "Configuring Vite | Vite",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:d3d10ce24b0f047fddce21899f844cebb9680a08f2f18d1dfb2fc203d86d09fa"
+    },
+    {
+      "id": "state-535e42aa07-6",
+      "url": "https://vite.dev/plugins/",
+      "title": "Plugins | Vite",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:3899cbb7c88f59ce541a88134e6d2ab0e46802a23453569bb4a1689eea016971"
+    },
+    {
+      "id": "state-5f1f1ce654-4",
+      "url": "https://vite.dev/guide/",
+      "title": "Getting Started | Vite",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:1b5ab8d2f47c03e27c12880ea44fa296edfadeffeaa070d02a2c99d37db61ee0"
+    },
+    {
+      "id": "state-6dbaaac73b-12",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:e2241211ff34841435a9b92466ed98fdf783a496da25b2eac0687f1c1244742e"
+    },
+    {
+      "id": "state-70a69a533a-3",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:82d58c4ab503affb848cbc9767a26cbd77b82d2b4fd41900d7925b5a4bceef28"
+    },
+    {
+      "id": "state-788788d0f1-13",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:78c061e54d0006d8013dd9e109f08208c1351ed5fd0cb909fa593061922373b6"
+    },
+    {
+      "id": "state-820f30e100-9",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:a37d0422030fb59dcefa7db2f7dcfcf791bc88bb9122ce1383459b489c3f7799"
+    },
+    {
+      "id": "state-8c89bf3dc0-11",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:2cfd7599089e2bd4d0059f83c8b698b63c908bc60e6fc792138456291e7c5bac"
+    },
+    {
+      "id": "state-9d3e1b8270-8",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:1b949d03e1b0da5c373d4128b398c3d57d2234e7cf5f843d012122f31b1c70d2"
+    },
+    {
+      "id": "state-af5ad4b093-2",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:0410d931a4891283d550123c6fcb8578c177dab42504e2fa5e946bd6c432b9b7"
+    },
+    {
+      "id": "state-b10dca98ab-17",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:cdfbfac132e53fb68b3455833a8d70d02d4946b419bbd9afa9cccabed911b638"
+    },
+    {
+      "id": "state-d00b934ee2-15",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:ffb313da2775a1d0c4815fda3d42797f8c60a9c59bc0b89cea1578cfae35a941"
+    },
+    {
+      "id": "state-d2473fc766-1",
+      "url": "https://vite.dev/blog/cloudflare-supports-vite",
+      "title": "Cloudflare supports Vite's mission | Vite",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:ea9d1c23cbfcd223968fc60f4d254461e02c3394589c5ac5d35bcf3d71227f26"
+    },
+    {
+      "id": "state-d5db55b1dd-0",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:664c2725c73674110fc5a525e4fa2c6afd73810df3a6508b86985c59ac501e70"
+    },
+    {
+      "id": "state-e21dc95151-14",
+      "url": "https://vite.dev/",
+      "title": "Vite | Next Generation Frontend Tooling",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "artifacts": {
+        "screenshot": "screenshot.png",
+        "dom": "dom.html"
+      },
+      "fingerprint": "sha256:6d37b348347cf4987906508a86067085052830648836d774c6a54ef172442422"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "transition-6f2873da7f5f",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.top-banner.hidden.md\\:block:nth-of-type(1) > a.group.block.relative"
+        }
+      },
+      "to": "state-d2473fc766-1"
+    },
+    {
+      "id": "transition-d6807f61609e",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.top-banner.hidden.md\\:block:nth-of-type(1) > button.absolute.right-2.top-1\\/2"
+        }
+      },
+      "to": "state-af5ad4b093-2"
+    },
+    {
+      "id": "transition-7cf4ef602898",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > a.flex.flex-col.items-start"
+        }
+      },
+      "to": "state-70a69a533a-3"
+    },
+    {
+      "id": "transition-04e3a36c8ac4",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > a.VPLink.link.flex:nth-of-type(1)"
+        }
+      },
+      "to": "state-5f1f1ce654-4"
+    },
+    {
+      "id": "transition-c12be55c6beb",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > a.VPLink.link.flex:nth-of-type(2)"
+        }
+      },
+      "to": "state-34f5d11b42-5"
+    },
+    {
+      "id": "transition-167ecdaa8730",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > a.VPLink.link.flex:nth-of-type(3)"
+        }
+      },
+      "to": "state-535e42aa07-6"
+    },
+    {
+      "id": "transition-aceabef09b31",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > div.VPFlyout.relative.flex:nth-of-type(1) > button.flex.items-center.px-3"
+        }
+      },
+      "to": "state-3183bfc363-7"
+    },
+    {
+      "id": "transition-bd82c330c6cd",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.gap-10.self-stretch:nth-of-type(1) > div.hidden.lg\\:flex.items-center > nav.VPNavBarMenu > div.VPFlyout.relative.flex:nth-of-type(2) > button.flex.items-center.px-3"
+        }
+      },
+      "to": "state-9d3e1b8270-8"
+    },
+    {
+      "id": "transition-5764671d8d59",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.lg\\:flex.items-center:nth-of-type(1) > div.VPNavBarSearch > button.VPNavBarSearchButton"
+        }
+      },
+      "to": "state-820f30e100-9"
+    },
+    {
+      "id": "transition-41332d98395b",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPFlyout.relative.flex:nth-of-type(1) > button.flex.items-center.px-3"
+        }
+      },
+      "to": "state-16bc487516-10"
+    },
+    {
+      "id": "transition-beff3aa69f81",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(1)"
+        }
+      },
+      "to": "state-8c89bf3dc0-11"
+    },
+    {
+      "id": "transition-1044cb8f9109",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(2)"
+        }
+      },
+      "to": "state-6dbaaac73b-12"
+    },
+    {
+      "id": "transition-5f719b0db61d",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(3)"
+        }
+      },
+      "to": "state-788788d0f1-13"
+    },
+    {
+      "id": "transition-ad4a7deffae5",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(4)"
+        }
+      },
+      "to": "state-e21dc95151-14"
+    },
+    {
+      "id": "transition-3d92482f814b",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div.relative.w-full.z-50:nth-of-type(2) > header.wrapper.px-6.py-5 > div.flex.items-center.gap-2:nth-of-type(2) > div.hidden.xl\\:flex.items-center:nth-of-type(3) > div.VPSocialLinks.VPNavBarSocialLinks:nth-of-type(2) > a.VPSocialLink.no-icon:nth-of-type(5)"
+        }
+      },
+      "to": "state-d00b934ee2-15"
+    },
+    {
+      "id": "transition-ee325ec2ff2f",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div:nth-of-type(3) > div > div.wrapper.wrapper--ticks.grid:nth-of-type(2) > div.flex.flex-col.p-10:nth-of-type(1) > div.flex.flex-col.gap-5:nth-of-type(1) > a.flex.items-center.gap-2"
+        }
+      },
+      "to": "state-08e23398d8-16"
+    },
+    {
+      "id": "transition-8b6b7fb55303",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div:nth-of-type(3) > div > div.wrapper.wrapper--ticks.grid:nth-of-type(2) > div.flex.flex-col.p-10:nth-of-type(1) > div.flex.flex-col.gap-5:nth-of-type(1) > div.flex.items-center.gap-5 > a.button.button--primary.inline-block:nth-of-type(1)"
+        }
+      },
+      "to": "state-5f1f1ce654-4"
+    },
+    {
+      "id": "transition-f04916ba4f31",
+      "from": "state-d5db55b1dd-0",
+      "action": {
+        "type": "click",
+        "target": {
+          "strategy": "css",
+          "value": "#app > div.marketing-layout > div:nth-of-type(3) > div > div.wrapper.wrapper--ticks.grid:nth-of-type(2) > div.flex.flex-col.p-10:nth-of-type(1) > div.flex.flex-col.gap-5:nth-of-type(1) > div.flex.items-center.gap-5 > a.button.inline-block.w-fit:nth-of-type(2)"
+        }
+      },
+      "to": "state-b10dca98ab-17"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-6e1b95014781",
+      "originalUrl": "https://vite.dev/assets/chunks/Footer.MN1RXfe7.js",
+      "localPath": "assets/files/Footer.MN1RXfe7-9e707a5efd.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-5c5a76695336",
+      "originalUrl": "https://vite.dev/assets/app.BUacc2DC.js",
+      "localPath": "assets/files/app.BUacc2DC-e82ef1d854.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-61db95c0ee85",
+      "originalUrl": "https://vite.dev/assets/index.md.akSARI4V.lean.js",
+      "localPath": "assets/files/index.md.akSARI4V.lean-6d888cfc9e.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-48a95945de67",
+      "originalUrl": "https://vite.dev/assets/chunks/assets.qdzaMdnh.js",
+      "localPath": "assets/files/assets.qdzaMdnh-90540da631.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-4a470ad0d07b",
+      "originalUrl": "https://vite.dev/assets/style.CmI5DoxJ.css",
+      "localPath": "assets/files/style.CmI5DoxJ-35ed250bed.css",
+      "mimeType": "text/css"
+    },
+    {
+      "id": "asset-1953f53dfe6f",
+      "originalUrl": "https://vite.dev/assets/footer-background.BIgtbvhx.jpg",
+      "localPath": "assets/files/footer-background.BIgtbvhx-350ec1e53d.jpg",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "id": "asset-00aac4cc7576",
+      "originalUrl": "https://vite.dev/assets/vite-dark.D2ACe7TL.svg",
+      "localPath": "assets/files/vite-dark.D2ACe7TL-1ed7fd2e8a.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-1c10bdd20fbe",
+      "originalUrl": "https://vite.dev/assets/vite-light.t8GCa_VF.svg",
+      "localPath": "assets/files/vite-light.t8GCa_VF-4529cda6e4.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-aca7c55107ee",
+      "originalUrl": "https://vite.dev/assets/chunks/theme.Da__8GEi.js",
+      "localPath": "assets/files/theme.Da__8GEi-d411df8964.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-9fe0801c946b",
+      "originalUrl": "https://vite.dev/assets/chunks/framework.BTiPPQh6.js",
+      "localPath": "assets/files/framework.BTiPPQh6-ad2864a524.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-54f271a99740",
+      "originalUrl": "https://vite.dev/assets/vite-by-voidzero.D7bblMgo.png",
+      "localPath": "assets/files/vite-by-voidzero.D7bblMgo-b34f512c3b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-67450b754a48",
+      "originalUrl": "https://vite.dev/assets/primary-button-background.CHnwvuqy.jpg",
+      "localPath": "assets/files/primary-button-background.CHnwvuqy-503cd5c19a.jpg",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "id": "asset-03c10c335bdc",
+      "originalUrl": "https://vite.dev/assets/vite-featurepanel-4-background.Bnx0RZk-.jpg",
+      "localPath": "assets/files/vite-featurepanel-4-background.Bnx0RZk--cee0401118.jpg",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "id": "asset-bbda47ae9e66",
+      "originalUrl": "https://vite.dev/trusted-by/stripe.svg",
+      "localPath": "assets/files/stripe-16127d400f.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-0ce45b10076f",
+      "originalUrl": "https://vite.dev/trusted-by/openai.svg",
+      "localPath": "assets/files/openai-5a28b637ff.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-c22901a15a0d",
+      "originalUrl": "https://vite.dev/trusted-by/shopify.svg",
+      "localPath": "assets/files/shopify-d36c6c94c3.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-4b7906a82270",
+      "originalUrl": "https://vite.dev/trusted-by/clickup.svg",
+      "localPath": "assets/files/clickup-9ba5482cfd.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-4c2222eafb9d",
+      "originalUrl": "https://vite.dev/trusted-by/linear.svg",
+      "localPath": "assets/files/linear-6b8c0756d1.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-2cc208c1692b",
+      "originalUrl": "https://vite.dev/assets/vite-featurepanel-4-terminal.BRnxuy_J.svg",
+      "localPath": "assets/files/vite-featurepanel-4-terminal.BRnxuy_J-8fce58a0a9.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-a8a06c623c52",
+      "originalUrl": "https://vite.dev/assets/vite-featurepanel-2-terminal.ChpAU6sR.png",
+      "localPath": "assets/files/vite-featurepanel-2-terminal.ChpAU6sR-a4222a1075.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4cf139a7a6c3",
+      "originalUrl": "https://vite.dev/assets/APK-Protocol-Medium.C7Mq9oGh.woff2",
+      "localPath": "assets/files/APK-Protocol-Medium.C7Mq9oGh-57dbf2861d.woff2",
+      "mimeType": "font/woff2"
+    },
+    {
+      "id": "asset-7f80b2f90493",
+      "originalUrl": "https://vite.dev/assets/vite-typed-api.B7gyuuaS.svg",
+      "localPath": "assets/files/vite-typed-api.B7gyuuaS-d2dfa31a5b.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-5d140d3257b0",
+      "originalUrl": "https://vite.dev/assets/KHTekaMono-Regular.CiZ9ZkmZ.woff2",
+      "localPath": "assets/files/KHTekaMono-Regular.CiZ9ZkmZ-767a225cb3.woff2",
+      "mimeType": "font/woff2"
+    },
+    {
+      "id": "asset-81bce8c60c00",
+      "originalUrl": "https://vite.dev/trusted-by/wiz.svg",
+      "localPath": "assets/files/wiz-12eb69a547.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-b0feaff521a4",
+      "originalUrl": "https://vite.dev/assets/vite-featurepanel-1-background.BHnDg8j4.jpg",
+      "localPath": "assets/files/vite-featurepanel-1-background.BHnDg8j4-3f97e5edd9.jpg",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "id": "asset-f2c25ea7be7b",
+      "originalUrl": "https://vite.dev/assets/KHTekaMono-Medium.CxAWoJPq.woff2",
+      "localPath": "assets/files/KHTekaMono-Medium.CxAWoJPq-2b046aaee7.woff2",
+      "mimeType": "font/woff2"
+    },
+    {
+      "id": "asset-2d5c7fc61598",
+      "originalUrl": "https://vite.dev/assets/vite-featurepanel-1-terminal.CQVUoUSU.svg",
+      "localPath": "assets/files/vite-featurepanel-1-terminal.CQVUoUSU-dc037264ea.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-b3324b9969c0",
+      "originalUrl": "https://vite.dev/assets/vite-ci.rfkpyz0p.svg",
+      "localPath": "assets/files/vite-ci.rfkpyz0p-8f67411a8c.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-7e83a4484024",
+      "originalUrl": "https://vite.dev/assets/vite-ssr-support.DvdwoLgL.png",
+      "localPath": "assets/files/vite-ssr-support.DvdwoLgL-3ec91bd84f.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-502ada239e91",
+      "originalUrl": "https://vite.dev/assets/inter-roman-latin.Di8DUHzh.woff2",
+      "localPath": "assets/files/inter-roman-latin.Di8DUHzh-f7ab715caa.woff2",
+      "mimeType": "font/woff2"
+    },
+    {
+      "id": "asset-bd428b1447d5",
+      "originalUrl": "https://vite.dev/assets/primary-button-background.Bjk7gn3x.jpg",
+      "localPath": "assets/files/primary-button-background.Bjk7gn3x-28bb267156.jpg",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "id": "asset-609bc1480a1d",
+      "originalUrl": "https://vite.dev/assets/641_x_629_vite_masthead.CJXD3cz6.riv",
+      "localPath": "assets/files/641_x_629_vite_masthead.CJXD3cz6-0056dd989b.riv",
+      "mimeType": "application/octet-stream"
+    },
+    {
+      "id": "asset-ee177edf7270",
+      "originalUrl": "https://vite.dev/assets/rive.BagEuNN0.wasm",
+      "localPath": "assets/files/rive.BagEuNN0-f99097e604.wasm",
+      "mimeType": "application/wasm"
+    },
+    {
+      "id": "asset-19009a7ae113",
+      "originalUrl": "blob:https://vite.dev/782e2874-33a1-4d05-bd7d-4c3bb1db7322",
+      "localPath": "assets/files/782e2874-33a1-4d05-bd7d-4c3bb1db7322-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9e4fc8c5bef8",
+      "originalUrl": "blob:https://vite.dev/d380cfee-6415-4621-a5b0-a412834569d5",
+      "localPath": "assets/files/d380cfee-6415-4621-a5b0-a412834569d5-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ea16c68413f2",
+      "originalUrl": "blob:https://vite.dev/2c381900-11b3-4b54-a891-7a5175ed5855",
+      "localPath": "assets/files/2c381900-11b3-4b54-a891-7a5175ed5855-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1fd4e03cf35f",
+      "originalUrl": "blob:https://vite.dev/a798eba3-c3af-405b-8ebf-de0650303e3f",
+      "localPath": "assets/files/a798eba3-c3af-405b-8ebf-de0650303e3f-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b7ff2ce4c984",
+      "originalUrl": "blob:https://vite.dev/1d74f3c7-f214-4022-8b37-18f3d0c118d8",
+      "localPath": "assets/files/1d74f3c7-f214-4022-8b37-18f3d0c118d8-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f68246880262",
+      "originalUrl": "blob:https://vite.dev/7aeb4456-655d-4c65-9ec6-f9d64aec48ef",
+      "localPath": "assets/files/7aeb4456-655d-4c65-9ec6-f9d64aec48ef-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-60527d462bfe",
+      "originalUrl": "blob:https://vite.dev/c4659071-655c-4363-a4e0-9aa89c1634f6",
+      "localPath": "assets/files/c4659071-655c-4363-a4e0-9aa89c1634f6-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4d943cd3652e",
+      "originalUrl": "blob:https://vite.dev/490f44e1-2084-45a3-acb5-2188835f1750",
+      "localPath": "assets/files/490f44e1-2084-45a3-acb5-2188835f1750-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f95c6fe3c614",
+      "originalUrl": "https://vite.dev/assets/blog_cloudflare-supports-vite.md.0c6bDo4J.js",
+      "localPath": "assets/files/blog_cloudflare-supports-vite.md.0c6bDo4J-2f3782a301.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-cbb6d21ee56f",
+      "originalUrl": "https://vite.dev/assets/guide_index.md.CeAU8j59.js",
+      "localPath": "assets/files/guide_index.md.CeAU8j59-707a732e9c.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-6c8146d82860",
+      "originalUrl": "https://vite.dev/assets/plugins_index.md.B-iwb_cF.js",
+      "localPath": "assets/files/plugins_index.md.B-iwb_cF-6fae187724.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-1568317bce2c",
+      "originalUrl": "https://vite.dev/assets/config_index.md.B3zeI11E.js",
+      "localPath": "assets/files/config_index.md.B3zeI11E-2b2cc17f94.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-db25a63e4b7c",
+      "originalUrl": "https://vite.dev/assets/563_x_420_rich_features.Gwgw8IXl.riv",
+      "localPath": "assets/files/563_x_420_rich_features.Gwgw8IXl-1415885df4.riv",
+      "mimeType": "application/octet-stream"
+    },
+    {
+      "id": "asset-b81688c26281",
+      "originalUrl": "https://vite.dev/assets/640_x_300_flexible_plugin.DzLLIuId.riv",
+      "localPath": "assets/files/640_x_300_flexible_plugin.DzLLIuId-92f48fecdf.riv",
+      "mimeType": "application/octet-stream"
+    },
+    {
+      "id": "asset-de53d252bdfb",
+      "originalUrl": "blob:https://vite.dev/7d9d9198-c752-490f-815c-d27183de0c20",
+      "localPath": "assets/files/7d9d9198-c752-490f-815c-d27183de0c20-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-732297db0bec",
+      "originalUrl": "blob:https://vite.dev/dfcdaf80-bf67-4a12-927e-23ca22a1672a",
+      "localPath": "assets/files/dfcdaf80-bf67-4a12-927e-23ca22a1672a-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-51cfbd39ffbc",
+      "originalUrl": "blob:https://vite.dev/3311f01e-83cb-4c0b-98d0-4c2c814447e0",
+      "localPath": "assets/files/3311f01e-83cb-4c0b-98d0-4c2c814447e0-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b2510e5a4fa3",
+      "originalUrl": "blob:https://vite.dev/0d256f3f-05f9-49a1-935d-858a91478920",
+      "localPath": "assets/files/0d256f3f-05f9-49a1-935d-858a91478920-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-844b2b38e31b",
+      "originalUrl": "blob:https://vite.dev/9202f874-3998-456c-86fa-0770fccb35df",
+      "localPath": "assets/files/9202f874-3998-456c-86fa-0770fccb35df-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ba050f9e1ab7",
+      "originalUrl": "blob:https://vite.dev/3b42fa4a-12e1-4194-b47f-4ea67442d28e",
+      "localPath": "assets/files/3b42fa4a-12e1-4194-b47f-4ea67442d28e-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4d860d5efe24",
+      "originalUrl": "blob:https://vite.dev/a06f1bfe-586d-4770-b572-fc72525604a8",
+      "localPath": "assets/files/a06f1bfe-586d-4770-b572-fc72525604a8-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ae0cd8404d96",
+      "originalUrl": "blob:https://vite.dev/e9050d2e-aae4-40d2-b77f-cd7fcf92788f",
+      "localPath": "assets/files/e9050d2e-aae4-40d2-b77f-cd7fcf92788f-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-69a74990d260",
+      "originalUrl": "blob:https://vite.dev/dfde1673-c42f-4fbd-89ef-394899183c8a",
+      "localPath": "assets/files/dfde1673-c42f-4fbd-89ef-394899183c8a-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a93025e7b017",
+      "originalUrl": "blob:https://vite.dev/e6088653-dcb8-4243-855b-6b1773a1ee3d",
+      "localPath": "assets/files/e6088653-dcb8-4243-855b-6b1773a1ee3d-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3be4df807800",
+      "originalUrl": "blob:https://vite.dev/0afa0f32-968e-47e3-98d2-576b24bd6bec",
+      "localPath": "assets/files/0afa0f32-968e-47e3-98d2-576b24bd6bec-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f113dfed786a",
+      "originalUrl": "blob:https://vite.dev/555af550-dcf4-4d03-aaf7-5ec4db0b8e33",
+      "localPath": "assets/files/555af550-dcf4-4d03-aaf7-5ec4db0b8e33-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d7910b54cef6",
+      "originalUrl": "blob:https://vite.dev/1553a53b-3cfe-461d-838c-c721cd23c040",
+      "localPath": "assets/files/1553a53b-3cfe-461d-838c-c721cd23c040-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-384c736f0578",
+      "originalUrl": "blob:https://vite.dev/88c6a8ec-a8d1-4e8d-acb5-d891c728e2e9",
+      "localPath": "assets/files/88c6a8ec-a8d1-4e8d-acb5-d891c728e2e9-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a09d80b3116a",
+      "originalUrl": "blob:https://vite.dev/6ecd5f88-133e-4876-8579-77b67208d232",
+      "localPath": "assets/files/6ecd5f88-133e-4876-8579-77b67208d232-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ab974f95c696",
+      "originalUrl": "blob:https://vite.dev/eb53d7e2-ef90-4c14-b289-bf9a784cd7a6",
+      "localPath": "assets/files/eb53d7e2-ef90-4c14-b289-bf9a784cd7a6-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cfffe84f3199",
+      "originalUrl": "https://sponsors.vite.dev/sponsors.json",
+      "localPath": "assets/files/sponsors-28cf1ab311.json",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-0c271a83ff0e",
+      "originalUrl": "https://api.iconify.design/lucide.json?icons=languages%2Csearch%2Cx",
+      "localPath": "assets/files/lucide-279688f7f2.json",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-72f5c28f53d5",
+      "originalUrl": "https://api.iconify.design/simple-icons.json?icons=bluesky%2Cdiscord%2Cgithub%2Cmastodon%2Cx",
+      "localPath": "assets/files/simple-icons-39a240c227.json",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-9eba9919013e",
+      "originalUrl": "https://sponsors.vite.dev/images/catalyst.svg",
+      "localPath": "assets/files/catalyst-101ba1fc66.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-be0f795f81fd",
+      "originalUrl": "https://sponsors.vite.dev/images/follower24.svg",
+      "localPath": "assets/files/follower24-774af7aab3.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-198b809cfb05",
+      "originalUrl": "https://sponsors.vite.dev/images/mojam.svg",
+      "localPath": "assets/files/mojam-30afe208ba.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-49ad08e9a37b",
+      "originalUrl": "https://sponsors.vite.dev/images/bolt.svg",
+      "localPath": "assets/files/bolt-64bce70c9f.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-d659cf351ac2",
+      "originalUrl": "https://sponsors.vite.dev/images/greptile.png",
+      "localPath": "assets/files/greptile-ef1bf9cdf0.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-355e5a2c55ae",
+      "originalUrl": "https://sponsors.vite.dev/images/zephyr_cloud.png",
+      "localPath": "assets/files/zephyr_cloud-52b5891a8e.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b280294eeb46",
+      "originalUrl": "https://sponsors.vite.dev/images/storyblok.png",
+      "localPath": "assets/files/storyblok-a28f4b0acd.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1dff7b8bc3f3",
+      "originalUrl": "https://sponsors.vite.dev/images/convex.svg",
+      "localPath": "assets/files/convex-a747ddd906.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-ad3db034bd69",
+      "originalUrl": "https://sponsors.vite.dev/images/handsontable.svg",
+      "localPath": "assets/files/handsontable-5c85f06ee5.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-aab403a84e86",
+      "originalUrl": "https://sponsors.vite.dev/images/transloadit.png",
+      "localPath": "assets/files/transloadit-ad908fb5da.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-40ba5735234b",
+      "originalUrl": "https://sponsors.vite.dev/images/coderabbit.png",
+      "localPath": "assets/files/coderabbit-845077c4f2.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8f6c0d999771",
+      "originalUrl": "https://sponsors.vite.dev/images/railway.svg",
+      "localPath": "assets/files/railway-f282039087.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-40f4d55aafa6",
+      "originalUrl": "https://sponsors.vite.dev/images/nx.svg",
+      "localPath": "assets/files/nx-d0c1eb0f22.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-cf64a9d988f5",
+      "originalUrl": "https://sponsors.vite.dev/images/nuxtlabs.svg",
+      "localPath": "assets/files/nuxtlabs-fb3c89d5f6.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-7b4713994d38",
+      "originalUrl": "https://sponsors.vite.dev/images/mux.svg",
+      "localPath": "assets/files/mux-f4d78ff7de.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-5140c017ee15",
+      "originalUrl": "https://sponsors.vite.dev/images/sanity.svg",
+      "localPath": "assets/files/sanity-9bb5054b71.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-e8a4ce95155a",
+      "originalUrl": "https://sponsors.vite.dev/images/serpapi.png",
+      "localPath": "assets/files/serpapi-57f272f468.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-600fbc96e76b",
+      "originalUrl": "https://avatars.githubusercontent.com/u/107723282?u=2639caa14ce293a0b6202c5766a40bb99ac9697e&v=4",
+      "localPath": "assets/files/107723282-570a45995d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5a4424ae38f2",
+      "originalUrl": "https://images.opencollective.com/hirefortuna/b1906f3/logo/460.png",
+      "localPath": "assets/files/460-48e2c0a83e.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cc158a523b4e",
+      "originalUrl": "https://images.opencollective.com/bairesdev/48bb773/logo/460.png",
+      "localPath": "assets/files/460-05c195aef6.png",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-97b5674de037",
+      "originalUrl": "blob:https://vite.dev/1d338bb1-14b4-4d31-be05-6e4c8bad69de",
+      "localPath": "assets/files/1d338bb1-14b4-4d31-be05-6e4c8bad69de-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6147b2438dc8",
+      "originalUrl": "blob:https://vite.dev/e6bb73e7-f645-49aa-9ea8-52e3a1c5c2f9",
+      "localPath": "assets/files/e6bb73e7-f645-49aa-9ea8-52e3a1c5c2f9-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f5b79d168595",
+      "originalUrl": "blob:https://vite.dev/7d3935f2-f712-47b3-8a64-8b16feb5732d",
+      "localPath": "assets/files/7d3935f2-f712-47b3-8a64-8b16feb5732d-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-97f21024f741",
+      "originalUrl": "blob:https://vite.dev/c5113ee3-c467-4e2f-8bf7-cb7341d68bec",
+      "localPath": "assets/files/c5113ee3-c467-4e2f-8bf7-cb7341d68bec-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a967646d6ab2",
+      "originalUrl": "blob:https://vite.dev/eba68875-76df-45c0-a53b-c45ca4fb5f50",
+      "localPath": "assets/files/eba68875-76df-45c0-a53b-c45ca4fb5f50-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-83e38db99ca3",
+      "originalUrl": "blob:https://vite.dev/3822f5ea-a286-4fb1-a65f-ca6feab4e88e",
+      "localPath": "assets/files/3822f5ea-a286-4fb1-a65f-ca6feab4e88e-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f778dbb70826",
+      "originalUrl": "blob:https://vite.dev/aa68e0dd-5baa-473a-ab45-6f48e5106799",
+      "localPath": "assets/files/aa68e0dd-5baa-473a-ab45-6f48e5106799-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-776133898577",
+      "originalUrl": "blob:https://vite.dev/146c44f0-a962-4d0a-bb43-cd564687e96e",
+      "localPath": "assets/files/146c44f0-a962-4d0a-bb43-cd564687e96e-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b676582b1d29",
+      "originalUrl": "blob:https://vite.dev/0e09102d-0c03-4fea-bf13-3f8e4a12e92d",
+      "localPath": "assets/files/0e09102d-0c03-4fea-bf13-3f8e4a12e92d-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-965064f310ee",
+      "originalUrl": "blob:https://vite.dev/e8a7c412-7939-4acf-928e-5514a8eea70e",
+      "localPath": "assets/files/e8a7c412-7939-4acf-928e-5514a8eea70e-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ef6b43c34939",
+      "originalUrl": "blob:https://vite.dev/b5fe6dd1-8c3e-4325-89e8-bff10ef19e33",
+      "localPath": "assets/files/b5fe6dd1-8c3e-4325-89e8-bff10ef19e33-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-69bd75244bf8",
+      "originalUrl": "blob:https://vite.dev/6adef0c1-4d8b-49b5-bb52-8754d2e306cb",
+      "localPath": "assets/files/6adef0c1-4d8b-49b5-bb52-8754d2e306cb-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cc41ea8c25ac",
+      "originalUrl": "blob:https://vite.dev/20498565-f715-4363-bd8a-a8d5b01a983f",
+      "localPath": "assets/files/20498565-f715-4363-bd8a-a8d5b01a983f-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d32b605f0ef7",
+      "originalUrl": "blob:https://vite.dev/5a7f5400-6ab0-4e33-ae59-9eeea6e6db70",
+      "localPath": "assets/files/5a7f5400-6ab0-4e33-ae59-9eeea6e6db70-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-788b03e66cc5",
+      "originalUrl": "blob:https://vite.dev/86efea37-9e52-413e-865d-c08741431535",
+      "localPath": "assets/files/86efea37-9e52-413e-865d-c08741431535-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-aeb3b68c2255",
+      "originalUrl": "blob:https://vite.dev/41880822-4a37-498b-8a1c-f4dbb33b2325",
+      "localPath": "assets/files/41880822-4a37-498b-8a1c-f4dbb33b2325-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-12b8fabe542f",
+      "originalUrl": "blob:https://vite.dev/185b80e2-916b-4a84-94b5-641028bbc0bd",
+      "localPath": "assets/files/185b80e2-916b-4a84-94b5-641028bbc0bd-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2aea1333ff5e",
+      "originalUrl": "blob:https://vite.dev/d4c54f2b-712b-4dac-a449-fd64be691d71",
+      "localPath": "assets/files/d4c54f2b-712b-4dac-a449-fd64be691d71-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bfbb060d3b91",
+      "originalUrl": "blob:https://vite.dev/18887153-1208-4287-96d7-28e843b574e1",
+      "localPath": "assets/files/18887153-1208-4287-96d7-28e843b574e1-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4378a54e3604",
+      "originalUrl": "blob:https://vite.dev/f1205a95-a9c4-4110-8fd2-af69dd9524e9",
+      "localPath": "assets/files/f1205a95-a9c4-4110-8fd2-af69dd9524e9-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f11798531c39",
+      "originalUrl": "blob:https://vite.dev/a6b6b620-9882-4ce9-b800-a4c8f872aa3c",
+      "localPath": "assets/files/a6b6b620-9882-4ce9-b800-a4c8f872aa3c-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fcccca0ad34a",
+      "originalUrl": "blob:https://vite.dev/7a7fc186-5be9-486d-8def-b28ef51af6f2",
+      "localPath": "assets/files/7a7fc186-5be9-486d-8def-b28ef51af6f2-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fcbc086ada28",
+      "originalUrl": "blob:https://vite.dev/cf3bf6ef-5b9c-4900-ad20-922966b91630",
+      "localPath": "assets/files/cf3bf6ef-5b9c-4900-ad20-922966b91630-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-49acd1635db0",
+      "originalUrl": "blob:https://vite.dev/7359f9da-8371-44a5-8057-a2ea15235fd7",
+      "localPath": "assets/files/7359f9da-8371-44a5-8057-a2ea15235fd7-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ab0ec97bacb1",
+      "originalUrl": "https://vite.dev/assets/viteconf.Dvk5Ghxu.svg",
+      "localPath": "assets/files/viteconf.Dvk5Ghxu-cdbc528d37.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-f6021f546a38",
+      "originalUrl": "https://vite.dev/assets/inter-italic-latin.C2AdPX0b.woff2",
+      "localPath": "assets/files/inter-italic-latin.C2AdPX0b-3570e65005.woff2",
+      "mimeType": "font/woff2"
+    },
+    {
+      "id": "asset-7ff35548ce8b",
+      "originalUrl": "https://vite.dev/assets/APK-Protocol-Semi-Bold.CC2BASA5.woff2",
+      "localPath": "assets/files/APK-Protocol-Semi-Bold.CC2BASA5-46093cdb76.woff2",
+      "mimeType": "font/woff2"
+    },
+    {
+      "id": "asset-96a1582ac11b",
+      "originalUrl": "https://vite.dev/assets/blog_cloudflare-supports-vite.md.0c6bDo4J.lean.js",
+      "localPath": "assets/files/blog_cloudflare-supports-vite.md.0c6bDo4J.lean-cd70e58093.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-57039edd919d",
+      "originalUrl": "https://vite.dev/assets/chunks/ui-custom.CLc0StMt.js",
+      "localPath": "assets/files/ui-custom.CLc0StMt-e0bf8bebe1.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-82f71a73cc14",
+      "originalUrl": "https://sponsors.vite.dev/images/voidzero.svg",
+      "localPath": "assets/files/voidzero-5b43e90f41.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-3e8f90ca21fd",
+      "originalUrl": "https://vite.dev/assets/team.md.BNtTC8sv.js",
+      "localPath": "assets/files/team.md.BNtTC8sv-bf43ade3a5.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-48ad004f9cc8",
+      "originalUrl": "https://vite.dev/assets/index.md.akSARI4V.js",
+      "localPath": "assets/files/index.md.akSARI4V-79f660b04f.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-689e177b3cbb",
+      "originalUrl": "https://cdn.carbonads.com/carbon.js?serve=CEBIEK3N&placement=vitejsdev",
+      "localPath": "assets/files/carbon-bc2a8ebdbc.js",
+      "mimeType": "text/javascript"
+    },
+    {
+      "id": "asset-89105c66acf3",
+      "originalUrl": "blob:https://vite.dev/09790482-bb8e-4ca7-b8be-c5bf756b3189",
+      "localPath": "assets/files/09790482-bb8e-4ca7-b8be-c5bf756b3189-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-54798195e2b3",
+      "originalUrl": "blob:https://vite.dev/bc846d29-fbc9-4d48-80a4-b022c9a05422",
+      "localPath": "assets/files/bc846d29-fbc9-4d48-80a4-b022c9a05422-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ef59a3b6e1f4",
+      "originalUrl": "blob:https://vite.dev/26692682-2e01-4b72-ac85-5fb55e4d4207",
+      "localPath": "assets/files/26692682-2e01-4b72-ac85-5fb55e4d4207-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-36c6737f15f6",
+      "originalUrl": "blob:https://vite.dev/69e8335f-4781-4f94-b32d-cf8ce1c46767",
+      "localPath": "assets/files/69e8335f-4781-4f94-b32d-cf8ce1c46767-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ebc54d2779bb",
+      "originalUrl": "blob:https://vite.dev/9494a408-f08d-4314-b0f0-2807449ba0b7",
+      "localPath": "assets/files/9494a408-f08d-4314-b0f0-2807449ba0b7-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ce9139a79437",
+      "originalUrl": "blob:https://vite.dev/2b1715e5-6380-4657-be99-693644e2e138",
+      "localPath": "assets/files/2b1715e5-6380-4657-be99-693644e2e138-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4b06a637361e",
+      "originalUrl": "blob:https://vite.dev/d150bd6d-0682-48a6-9b1b-b97dda54eded",
+      "localPath": "assets/files/d150bd6d-0682-48a6-9b1b-b97dda54eded-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ff1c7028acb4",
+      "originalUrl": "blob:https://vite.dev/cafbf3d3-07bf-4ea2-b649-e9f2bb8991a6",
+      "localPath": "assets/files/cafbf3d3-07bf-4ea2-b649-e9f2bb8991a6-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5687109991a4",
+      "originalUrl": "blob:https://vite.dev/8515ffa2-fbc0-43da-a9a1-8bbf04504499",
+      "localPath": "assets/files/8515ffa2-fbc0-43da-a9a1-8bbf04504499-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b370ab9865d7",
+      "originalUrl": "blob:https://vite.dev/7e31428e-cfdb-4075-b293-68818cb4423d",
+      "localPath": "assets/files/7e31428e-cfdb-4075-b293-68818cb4423d-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6947696db40e",
+      "originalUrl": "blob:https://vite.dev/6a99af99-136b-47c9-b190-5c3e7b84c5af",
+      "localPath": "assets/files/6a99af99-136b-47c9-b190-5c3e7b84c5af-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c23ec7806ab1",
+      "originalUrl": "blob:https://vite.dev/5539d2bf-ff97-463b-9145-2480acb6f76c",
+      "localPath": "assets/files/5539d2bf-ff97-463b-9145-2480acb6f76c-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-93547f2ac605",
+      "originalUrl": "blob:https://vite.dev/cced2fe5-efa0-4e60-98f3-d362e04d0392",
+      "localPath": "assets/files/cced2fe5-efa0-4e60-98f3-d362e04d0392-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b1b1a760d7f1",
+      "originalUrl": "blob:https://vite.dev/b890fa10-0d36-4175-af33-6b5805ed50e2",
+      "localPath": "assets/files/b890fa10-0d36-4175-af33-6b5805ed50e2-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8996e3b8c18e",
+      "originalUrl": "blob:https://vite.dev/c13b1c4a-c204-4b9e-a7fd-c21ed913d833",
+      "localPath": "assets/files/c13b1c4a-c204-4b9e-a7fd-c21ed913d833-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d2c9a1cf265d",
+      "originalUrl": "blob:https://vite.dev/a42d22e2-015e-45e4-80d3-ccb60c972b67",
+      "localPath": "assets/files/a42d22e2-015e-45e4-80d3-ccb60c972b67-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8b386f31cbb9",
+      "originalUrl": "blob:https://vite.dev/135d87cc-250b-48e5-83fa-5b7ad2b4ccbf",
+      "localPath": "assets/files/135d87cc-250b-48e5-83fa-5b7ad2b4ccbf-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3c124d6344eb",
+      "originalUrl": "blob:https://vite.dev/b70770c6-dabf-4b5f-8646-e61c90f22a71",
+      "localPath": "assets/files/b70770c6-dabf-4b5f-8646-e61c90f22a71-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fdf4f8edc5ef",
+      "originalUrl": "blob:https://vite.dev/8e4254a5-736b-4776-8100-91aae52d5ab1",
+      "localPath": "assets/files/8e4254a5-736b-4776-8100-91aae52d5ab1-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3eeefb887411",
+      "originalUrl": "blob:https://vite.dev/afadee91-b58f-439f-8ebe-37671ab67cd0",
+      "localPath": "assets/files/afadee91-b58f-439f-8ebe-37671ab67cd0-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4ff034a36dd0",
+      "originalUrl": "blob:https://vite.dev/66635c1a-9fc9-4820-87c9-7ef75e3b78a9",
+      "localPath": "assets/files/66635c1a-9fc9-4820-87c9-7ef75e3b78a9-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fb1d7963b0ff",
+      "originalUrl": "blob:https://vite.dev/179c40a5-87a0-40e1-872a-28eff652530c",
+      "localPath": "assets/files/179c40a5-87a0-40e1-872a-28eff652530c-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-80a39807080a",
+      "originalUrl": "blob:https://vite.dev/066342c1-c2e4-4e31-b79e-e3a27eedde78",
+      "localPath": "assets/files/066342c1-c2e4-4e31-b79e-e3a27eedde78-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fa2fde274589",
+      "originalUrl": "blob:https://vite.dev/2623ea2b-3345-4e5c-923b-4e77c5abbab3",
+      "localPath": "assets/files/2623ea2b-3345-4e5c-923b-4e77c5abbab3-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-76c34fca22e1",
+      "originalUrl": "blob:https://vite.dev/0ef83bc3-e9a5-4458-a459-7d1b2d2d102c",
+      "localPath": "assets/files/0ef83bc3-e9a5-4458-a459-7d1b2d2d102c-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5c96455e6e95",
+      "originalUrl": "blob:https://vite.dev/25849611-7757-4fc4-9a65-258322fa3f76",
+      "localPath": "assets/files/25849611-7757-4fc4-9a65-258322fa3f76-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e99c919f59fe",
+      "originalUrl": "blob:https://vite.dev/0ced9f83-1423-41ea-8b16-9390852d77dc",
+      "localPath": "assets/files/0ced9f83-1423-41ea-8b16-9390852d77dc-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-878b46b3a0de",
+      "originalUrl": "blob:https://vite.dev/6977f485-4322-40dd-9dc0-c8bb3bbfaac4",
+      "localPath": "assets/files/6977f485-4322-40dd-9dc0-c8bb3bbfaac4-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d2b775517371",
+      "originalUrl": "blob:https://vite.dev/d5b9fd23-14fb-4e9f-976a-6c925b99b48b",
+      "localPath": "assets/files/d5b9fd23-14fb-4e9f-976a-6c925b99b48b-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2ae9cfd51924",
+      "originalUrl": "blob:https://vite.dev/be75b85b-5d0d-4a72-b642-63acc320b9f4",
+      "localPath": "assets/files/be75b85b-5d0d-4a72-b642-63acc320b9f4-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-22131d87bad1",
+      "originalUrl": "blob:https://vite.dev/5a2e7a64-8268-4c74-9971-3c5ac0d5b845",
+      "localPath": "assets/files/5a2e7a64-8268-4c74-9971-3c5ac0d5b845-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-35cc415ac111",
+      "originalUrl": "blob:https://vite.dev/f328ed91-5bc4-4f00-9480-450db789b6c9",
+      "localPath": "assets/files/f328ed91-5bc4-4f00-9480-450db789b6c9-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-04d552be0558",
+      "originalUrl": "blob:https://vite.dev/a7d93a72-25ed-4fd1-9924-2455312e1bbc",
+      "localPath": "assets/files/a7d93a72-25ed-4fd1-9924-2455312e1bbc-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-456673a74857",
+      "originalUrl": "blob:https://vite.dev/f6d791cd-841c-4e68-9c9f-4e49ae945091",
+      "localPath": "assets/files/f6d791cd-841c-4e68-9c9f-4e49ae945091-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-91e5fccf0e84",
+      "originalUrl": "blob:https://vite.dev/57c28019-0d3a-4088-b0e1-72ec12ae693e",
+      "localPath": "assets/files/57c28019-0d3a-4088-b0e1-72ec12ae693e-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ad4a375988c0",
+      "originalUrl": "blob:https://vite.dev/0fe459f5-2d24-448a-bac1-9661ae3f25f8",
+      "localPath": "assets/files/0fe459f5-2d24-448a-bac1-9661ae3f25f8-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c992af95b695",
+      "originalUrl": "blob:https://vite.dev/0b5b19f2-b7a2-4796-b9ef-390d71c135be",
+      "localPath": "assets/files/0b5b19f2-b7a2-4796-b9ef-390d71c135be-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c8ecb6088a7c",
+      "originalUrl": "blob:https://vite.dev/1e721ff1-eb16-46ce-b01e-be0e926a6316",
+      "localPath": "assets/files/1e721ff1-eb16-46ce-b01e-be0e926a6316-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-600852a194a7",
+      "originalUrl": "blob:https://vite.dev/ae971f87-ec58-4b74-b45b-7833bd567b42",
+      "localPath": "assets/files/ae971f87-ec58-4b74-b45b-7833bd567b42-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-19f9b37b2781",
+      "originalUrl": "blob:https://vite.dev/ba952a26-c1a8-4fe5-b2c9-a5cd01ee4e81",
+      "localPath": "assets/files/ba952a26-c1a8-4fe5-b2c9-a5cd01ee4e81-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a25e592960b4",
+      "originalUrl": "blob:https://vite.dev/9209745a-010a-4fb8-ba1d-b4c329131a46",
+      "localPath": "assets/files/9209745a-010a-4fb8-ba1d-b4c329131a46-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-63f8d10f155c",
+      "originalUrl": "blob:https://vite.dev/66075038-c4c2-438f-897d-12f24f7c2072",
+      "localPath": "assets/files/66075038-c4c2-438f-897d-12f24f7c2072-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-38747cf45f35",
+      "originalUrl": "blob:https://vite.dev/f3a69ffc-5d6d-4c5c-88b7-7fa7b5a5f3a1",
+      "localPath": "assets/files/f3a69ffc-5d6d-4c5c-88b7-7fa7b5a5f3a1-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1318a32c1f93",
+      "originalUrl": "blob:https://vite.dev/6766f035-1339-47c8-874e-6ca32a8db1ae",
+      "localPath": "assets/files/6766f035-1339-47c8-874e-6ca32a8db1ae-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-846a2e5eb74e",
+      "originalUrl": "blob:https://vite.dev/dc8b456c-9aa6-481a-9c54-7a715fe901e5",
+      "localPath": "assets/files/dc8b456c-9aa6-481a-9c54-7a715fe901e5-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2a50ae8c4025",
+      "originalUrl": "blob:https://vite.dev/a8acd27b-7da9-488a-aec1-b221f7de0458",
+      "localPath": "assets/files/a8acd27b-7da9-488a-aec1-b221f7de0458-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8e8b751b5918",
+      "originalUrl": "blob:https://vite.dev/830d9db1-0d58-4938-a010-2e2c89318e79",
+      "localPath": "assets/files/830d9db1-0d58-4938-a010-2e2c89318e79-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ff3ce5855ce7",
+      "originalUrl": "blob:https://vite.dev/9a54dee6-110b-465d-8121-7dc8030e10f3",
+      "localPath": "assets/files/9a54dee6-110b-465d-8121-7dc8030e10f3-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b6ffc11aeeff",
+      "originalUrl": "blob:https://vite.dev/845d4a2d-9161-4877-9f7a-1fd1f50a7de6",
+      "localPath": "assets/files/845d4a2d-9161-4877-9f7a-1fd1f50a7de6-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-73f575605007",
+      "originalUrl": "blob:https://vite.dev/09f58592-a02e-4aac-a01e-2304ae422ba1",
+      "localPath": "assets/files/09f58592-a02e-4aac-a01e-2304ae422ba1-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5b705db1e783",
+      "originalUrl": "blob:https://vite.dev/8d7f7a9d-6790-4398-acc9-bc0750f8f655",
+      "localPath": "assets/files/8d7f7a9d-6790-4398-acc9-bc0750f8f655-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-65fb3411867a",
+      "originalUrl": "blob:https://vite.dev/45a2be32-f7be-413c-b0e4-18c0866d6bb9",
+      "localPath": "assets/files/45a2be32-f7be-413c-b0e4-18c0866d6bb9-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-521c7b399f78",
+      "originalUrl": "blob:https://vite.dev/0b9e009c-8a45-49bd-a468-917c5958dc8e",
+      "localPath": "assets/files/0b9e009c-8a45-49bd-a468-917c5958dc8e-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-85aca1597953",
+      "originalUrl": "blob:https://vite.dev/21e3d6ac-25f7-4b0b-b985-1fc0e3d14b67",
+      "localPath": "assets/files/21e3d6ac-25f7-4b0b-b985-1fc0e3d14b67-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-dbcc42cf4419",
+      "originalUrl": "blob:https://vite.dev/b074347a-035b-4dd7-b2b0-a6e5b5227a93",
+      "localPath": "assets/files/b074347a-035b-4dd7-b2b0-a6e5b5227a93-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-65e8bf308c99",
+      "originalUrl": "blob:https://vite.dev/895a81f9-e47b-4eda-a1c3-6111ffc21eb1",
+      "localPath": "assets/files/895a81f9-e47b-4eda-a1c3-6111ffc21eb1-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c7337f986207",
+      "originalUrl": "blob:https://vite.dev/e0a2310e-3384-4da3-94b0-5ce63b16bb66",
+      "localPath": "assets/files/e0a2310e-3384-4da3-94b0-5ce63b16bb66-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bcabcb5e7cd9",
+      "originalUrl": "blob:https://vite.dev/d6f3abcb-9ca1-4e4b-bec0-eca37ff256b7",
+      "localPath": "assets/files/d6f3abcb-9ca1-4e4b-bec0-eca37ff256b7-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9e269e8405f4",
+      "originalUrl": "blob:https://vite.dev/906b583d-0aab-4a6c-93e5-ec27a5c072be",
+      "localPath": "assets/files/906b583d-0aab-4a6c-93e5-ec27a5c072be-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ca7828dc61a4",
+      "originalUrl": "blob:https://vite.dev/50ea0db7-14f4-44fa-aa56-9dc45f1bb56b",
+      "localPath": "assets/files/50ea0db7-14f4-44fa-aa56-9dc45f1bb56b-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cfd5d2fb3254",
+      "originalUrl": "blob:https://vite.dev/f258b857-2eaa-4cf8-b36e-9ea4754a5e49",
+      "localPath": "assets/files/f258b857-2eaa-4cf8-b36e-9ea4754a5e49-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-077d04b7e978",
+      "originalUrl": "blob:https://vite.dev/d8bf472a-10bf-48f9-9e9d-293abe23f162",
+      "localPath": "assets/files/d8bf472a-10bf-48f9-9e9d-293abe23f162-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bdfe25709cf3",
+      "originalUrl": "blob:https://vite.dev/8de6b833-4d81-4220-ab93-478762646a17",
+      "localPath": "assets/files/8de6b833-4d81-4220-ab93-478762646a17-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a9d4006ad377",
+      "originalUrl": "blob:https://vite.dev/f356dbb9-4b81-4ddf-9642-10c877ce42a2",
+      "localPath": "assets/files/f356dbb9-4b81-4ddf-9642-10c877ce42a2-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e9f31d39d044",
+      "originalUrl": "blob:https://vite.dev/ceac45f3-9961-4f9f-b60d-4604fafdd68e",
+      "localPath": "assets/files/ceac45f3-9961-4f9f-b60d-4604fafdd68e-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-df0b1c96dedf",
+      "originalUrl": "blob:https://vite.dev/2a7c5603-de11-4ba2-928e-e99b48ebc796",
+      "localPath": "assets/files/2a7c5603-de11-4ba2-928e-e99b48ebc796-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-990c1d7fe5f9",
+      "originalUrl": "blob:https://vite.dev/bc1a2b4c-48a7-45ae-8fab-6a876c3dcf72",
+      "localPath": "assets/files/bc1a2b4c-48a7-45ae-8fab-6a876c3dcf72-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-85849afb315d",
+      "originalUrl": "blob:https://vite.dev/846e69a8-94f0-47a9-a101-a2a6af1c769e",
+      "localPath": "assets/files/846e69a8-94f0-47a9-a101-a2a6af1c769e-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-54109ae5f230",
+      "originalUrl": "blob:https://vite.dev/ab2e5bb9-1def-4b8c-aac3-fec6684cbeab",
+      "localPath": "assets/files/ab2e5bb9-1def-4b8c-aac3-fec6684cbeab-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bf550f8ca546",
+      "originalUrl": "blob:https://vite.dev/39404277-ec11-41f5-9eaf-bd9a9156c7fa",
+      "localPath": "assets/files/39404277-ec11-41f5-9eaf-bd9a9156c7fa-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-518cde6999bc",
+      "originalUrl": "blob:https://vite.dev/b1b1ea63-67c2-4b2a-b113-284a84734f33",
+      "localPath": "assets/files/b1b1ea63-67c2-4b2a-b113-284a84734f33-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3e3171712158",
+      "originalUrl": "blob:https://vite.dev/21659250-5464-4654-9baa-4c74a18eec3f",
+      "localPath": "assets/files/21659250-5464-4654-9baa-4c74a18eec3f-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cb45747fd2e8",
+      "originalUrl": "https://vite.dev/assets/voice.BpPsJoey.svg",
+      "localPath": "assets/files/voice.BpPsJoey-9ad675b87b.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "id": "asset-b93701c2bd66",
+      "originalUrl": "https://vite.dev/vite.mp3",
+      "localPath": "assets/files/vite-0772b678c9.mp3",
+      "mimeType": "audio/mpeg"
+    },
+    {
+      "id": "asset-e4bf2eb3b7ce",
+      "originalUrl": "https://vite.dev/assets/guide_cli.md.AjkFapY8.js",
+      "localPath": "assets/files/guide_cli.md.AjkFapY8-36f5934673.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-195226685ef5",
+      "originalUrl": "https://vite.dev/assets/guide_philosophy.md.B0diJqyd.js",
+      "localPath": "assets/files/guide_philosophy.md.B0diJqyd-a8d27837df.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-51c152d50ddb",
+      "originalUrl": "https://vite.dev/assets/guide_performance.md.CAXCq44b.js",
+      "localPath": "assets/files/guide_performance.md.CAXCq44b-7af5d03904.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-4881ad99204a",
+      "originalUrl": "https://vite.dev/assets/guide_api-plugin.md.CjBF3XUJ.js",
+      "localPath": "assets/files/guide_api-plugin.md.CjBF3XUJ-9fedfdff50.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ee730a948d7e",
+      "originalUrl": "https://vite.dev/assets/guide_features.md.D172d652.js",
+      "localPath": "assets/files/guide_features.md.D172d652-4cb027e764.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-218646048bdf",
+      "originalUrl": "https://vite.dev/assets/changes_index.md.Dego5Glr.js",
+      "localPath": "assets/files/changes_index.md.Dego5Glr-0dd4e5bb6e.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-f0002f67ebe7",
+      "originalUrl": "https://vite.dev/assets/guide_troubleshooting.md.DIpvxGDg.js",
+      "localPath": "assets/files/guide_troubleshooting.md.DIpvxGDg-0d1e6b30ed.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-802e029f176a",
+      "originalUrl": "https://vite.dev/assets/guide_static-deploy.md.CCyiVEo0.js",
+      "localPath": "assets/files/guide_static-deploy.md.CCyiVEo0-ec57e4ffa9.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-f79531957866",
+      "originalUrl": "https://vite.dev/assets/guide_why.md.BVU0fSVr.js",
+      "localPath": "assets/files/guide_why.md.BVU0fSVr-ae64f08128.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ec04f211e7f0",
+      "originalUrl": "https://vite.dev/assets/guide_backend-integration.md.BAo91dMr.js",
+      "localPath": "assets/files/guide_backend-integration.md.BAo91dMr-d7fe28bde8.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-b913a593ac2c",
+      "originalUrl": "https://vite.dev/assets/guide_api-hmr.md.1a6NqHhn.js",
+      "localPath": "assets/files/guide_api-hmr.md.1a6NqHhn-d1c6453270.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-7611f8cfebc7",
+      "originalUrl": "https://vite.dev/assets/guide_ssr.md.CGV35xIG.js",
+      "localPath": "assets/files/guide_ssr.md.CGV35xIG-0150f164e8.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-48b607f62a2b",
+      "originalUrl": "https://vite.dev/assets/guide_migration.md.JsiQHR6s.js",
+      "localPath": "assets/files/guide_migration.md.JsiQHR6s-b563d89d65.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-7fad8593fb99",
+      "originalUrl": "https://vite.dev/assets/guide_build.md.Cso2AUFA.js",
+      "localPath": "assets/files/guide_build.md.Cso2AUFA-53d8695065.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-c09e08342c6b",
+      "originalUrl": "https://vite.dev/assets/guide_dep-pre-bundling.md.DDW34OhR.js",
+      "localPath": "assets/files/guide_dep-pre-bundling.md.DDW34OhR-f3e5aad087.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-d43dbdf91d00",
+      "originalUrl": "https://vite.dev/assets/guide_env-and-mode.md.D8B-mMMI.js",
+      "localPath": "assets/files/guide_env-and-mode.md.D8B-mMMI-6e9f9bbcec.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ec1328b40054",
+      "originalUrl": "https://vite.dev/assets/guide_api-javascript.md.BoY_h691.js",
+      "localPath": "assets/files/guide_api-javascript.md.BoY_h691-77d8eb5326.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-a708f752da36",
+      "originalUrl": "https://vite.dev/assets/guide_using-plugins.md.BXtcd9qx.js",
+      "localPath": "assets/files/guide_using-plugins.md.BXtcd9qx-cea555105a.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-8aaf09a6f03f",
+      "originalUrl": "https://vite.dev/assets/guide_assets.md.-_qHWd44.js",
+      "localPath": "assets/files/guide_assets.md.-_qHWd44-522709cae0.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-e6d1c162a4b2",
+      "originalUrl": "https://srv.carbonads.net/ads/CEBIEK3N.json?segment=placement:vitejsdev",
+      "localPath": "assets/files/CEBIEK3N-2b34bf125e.json",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-a3da4cf19537",
+      "originalUrl": "https://srv.carbonads.net/ads/CK7DT53I.json?segment=placement:vitejsdev",
+      "localPath": "assets/files/CK7DT53I-9da1985cd9.json",
+      "mimeType": "application/json"
+    },
+    {
+      "id": "asset-b8f453f73ed7",
+      "originalUrl": "blob:https://vite.dev/9baa016c-4bfe-4cd6-b4ae-d012ef8dfaeb",
+      "localPath": "assets/files/9baa016c-4bfe-4cd6-b4ae-d012ef8dfaeb-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-82e28d6bd526",
+      "originalUrl": "blob:https://vite.dev/d1ae135e-4ab8-4772-8dfc-796a22998f87",
+      "localPath": "assets/files/d1ae135e-4ab8-4772-8dfc-796a22998f87-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-44c63c922df8",
+      "originalUrl": "blob:https://vite.dev/cc98fed8-ebb2-406e-9b79-2faa135ce994",
+      "localPath": "assets/files/cc98fed8-ebb2-406e-9b79-2faa135ce994-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c2193ba4d9b8",
+      "originalUrl": "blob:https://vite.dev/3925ae72-4901-49ee-9128-1335d959ed49",
+      "localPath": "assets/files/3925ae72-4901-49ee-9128-1335d959ed49-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-820f4b190712",
+      "originalUrl": "blob:https://vite.dev/78c10b5c-d4e8-433b-8dfe-4ef5c5ebf066",
+      "localPath": "assets/files/78c10b5c-d4e8-433b-8dfe-4ef5c5ebf066-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5edb0c05cddd",
+      "originalUrl": "blob:https://vite.dev/26afae3f-b444-48c3-aa10-0c8c38f4e2c6",
+      "localPath": "assets/files/26afae3f-b444-48c3-aa10-0c8c38f4e2c6-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-18b6f98b5f14",
+      "originalUrl": "blob:https://vite.dev/5baf1c9b-2941-454a-8cfa-88fe59534ba3",
+      "localPath": "assets/files/5baf1c9b-2941-454a-8cfa-88fe59534ba3-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-aea633cf7ec4",
+      "originalUrl": "blob:https://vite.dev/051f0ad0-e790-403c-bbf5-e343225f8408",
+      "localPath": "assets/files/051f0ad0-e790-403c-bbf5-e343225f8408-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-92da4fdad738",
+      "originalUrl": "blob:https://vite.dev/91fb9472-7f16-43a8-a71c-e2472ba30071",
+      "localPath": "assets/files/91fb9472-7f16-43a8-a71c-e2472ba30071-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d818d2807f08",
+      "originalUrl": "blob:https://vite.dev/e5ae6436-5344-44ba-87e1-00ac8023dc48",
+      "localPath": "assets/files/e5ae6436-5344-44ba-87e1-00ac8023dc48-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4e47d55476b1",
+      "originalUrl": "blob:https://vite.dev/5bd661a7-a921-4b5d-9e5b-db69c1250a3d",
+      "localPath": "assets/files/5bd661a7-a921-4b5d-9e5b-db69c1250a3d-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8fd0dc583a2b",
+      "originalUrl": "blob:https://vite.dev/0d4884d9-5653-4fd1-91c1-778501bcdf5e",
+      "localPath": "assets/files/0d4884d9-5653-4fd1-91c1-778501bcdf5e-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-38c9b6191783",
+      "originalUrl": "blob:https://vite.dev/c5a00adb-247f-4c40-9c61-0501617cbb94",
+      "localPath": "assets/files/c5a00adb-247f-4c40-9c61-0501617cbb94-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3280722ce1ff",
+      "originalUrl": "blob:https://vite.dev/e8b74b88-5841-4b64-8a98-b117102659a4",
+      "localPath": "assets/files/e8b74b88-5841-4b64-8a98-b117102659a4-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4bbbe2ddf72b",
+      "originalUrl": "blob:https://vite.dev/134bd539-68e8-43a7-8dfb-dd813923abf6",
+      "localPath": "assets/files/134bd539-68e8-43a7-8dfb-dd813923abf6-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3677f083fa98",
+      "originalUrl": "blob:https://vite.dev/9ad25e49-d88f-4074-9f8f-e271b70b2628",
+      "localPath": "assets/files/9ad25e49-d88f-4074-9f8f-e271b70b2628-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5e725fe40d67",
+      "originalUrl": "blob:https://vite.dev/b741cd5f-0d13-4604-8e4b-e63d3c4e4966",
+      "localPath": "assets/files/b741cd5f-0d13-4604-8e4b-e63d3c4e4966-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-728d26f35860",
+      "originalUrl": "blob:https://vite.dev/76e4c8df-e581-481c-a19e-7e7009a24524",
+      "localPath": "assets/files/76e4c8df-e581-481c-a19e-7e7009a24524-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6b7c0a385543",
+      "originalUrl": "blob:https://vite.dev/59a8c15d-014f-453c-8c0a-618f7cd3092c",
+      "localPath": "assets/files/59a8c15d-014f-453c-8c0a-618f7cd3092c-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-379e56ed258c",
+      "originalUrl": "blob:https://vite.dev/935885b1-8e23-47e8-9d25-ea7e0417aea9",
+      "localPath": "assets/files/935885b1-8e23-47e8-9d25-ea7e0417aea9-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ce10e3fb1bf9",
+      "originalUrl": "blob:https://vite.dev/193a906d-0b94-4258-b871-be03096e8703",
+      "localPath": "assets/files/193a906d-0b94-4258-b871-be03096e8703-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-536938459299",
+      "originalUrl": "blob:https://vite.dev/bc9dfba4-bc1c-46d8-b049-e29b2d0cb258",
+      "localPath": "assets/files/bc9dfba4-bc1c-46d8-b049-e29b2d0cb258-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c3349bbdaada",
+      "originalUrl": "blob:https://vite.dev/181d4be8-d191-4f59-80de-b134f2f790d7",
+      "localPath": "assets/files/181d4be8-d191-4f59-80de-b134f2f790d7-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4b486c5a3735",
+      "originalUrl": "blob:https://vite.dev/f50228ed-e5b0-4e52-9ede-575691833ea3",
+      "localPath": "assets/files/f50228ed-e5b0-4e52-9ede-575691833ea3-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-da30df841bec",
+      "originalUrl": "https://vite.dev/assets/config_dep-optimization-options.md.ClmsHX8k.js",
+      "localPath": "assets/files/config_dep-optimization-options.md.ClmsHX8k-8b3ae89b00.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-924ecea265e6",
+      "originalUrl": "https://vite.dev/assets/config_shared-options.md.DZKBS274.js",
+      "localPath": "assets/files/config_shared-options.md.DZKBS274-9a4732f496.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-31fb39a0886e",
+      "originalUrl": "https://vite.dev/assets/config_worker-options.md.Bu86Rp4P.js",
+      "localPath": "assets/files/config_worker-options.md.Bu86Rp4P-29c658c07e.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-5c687d648257",
+      "originalUrl": "https://vite.dev/assets/config_server-options.md.D6kEBJg3.js",
+      "localPath": "assets/files/config_server-options.md.D6kEBJg3-fd939df465.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-f3a870454a86",
+      "originalUrl": "https://vite.dev/assets/config_ssr-options.md.C-Ep2y0u.js",
+      "localPath": "assets/files/config_ssr-options.md.C-Ep2y0u-f08e474608.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-3bbcad1395d4",
+      "originalUrl": "https://vite.dev/assets/config_build-options.md.omvglDt8.js",
+      "localPath": "assets/files/config_build-options.md.omvglDt8-812994948d.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-434143680f63",
+      "originalUrl": "https://vite.dev/assets/config_preview-options.md.CrWamkic.js",
+      "localPath": "assets/files/config_preview-options.md.CrWamkic-9d86736ad9.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-a32cd23dbfc0",
+      "originalUrl": "https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10207075&he=&hph=&gv=[ORDER_VALUE]&orderId=[ORDER_ID]&ec=[EVENT_CATEGORY]&ea=fire&el=[EVENT_LABEL]",
+      "localPath": "assets/files/spp-0e4b1e428a.pl",
+      "mimeType": "image/gif"
+    },
+    {
+      "id": "asset-31248ea47843",
+      "originalUrl": "https://secure.adnxs.com/bounce?%2Fpx%3Fid%3D1777282%26t%3D2",
+      "localPath": "assets/files/bounce-4b5b6b15c6",
+      "mimeType": "image/gif"
+    },
+    {
+      "id": "asset-a82cb48091eb",
+      "originalUrl": "https://secure.adnxs.com/bounce?%2Fseg%3Fadd%3D37012073%26t%3D2",
+      "localPath": "assets/files/bounce-4b5b6b15c6",
+      "mimeType": "image/gif"
+    },
+    {
+      "id": "asset-d6a5c07d3208",
+      "originalUrl": "https://cnv.event.prod.bidr.io/log/cnv?tag_id=3503&buzz_key=dsp&value=&account_id=79&order=%5BORDER%5D&ord=%5BCACHEBUSTER%5D&_bee_ppp=1",
+      "localPath": "assets/files/cnv-dcecab1355",
+      "mimeType": "image/gif"
+    },
+    {
+      "id": "asset-23aa1f211999",
+      "originalUrl": "https://segment.prod.bidr.io/associate-segment?buzz_key=dsp&segment_key=dsp-19102&_bee_ppp=1",
+      "localPath": "assets/files/associate-segment-dcecab1355",
+      "mimeType": "image/gif"
+    },
+    {
+      "id": "asset-22d036a04ccc",
+      "originalUrl": "blob:https://vite.dev/b54c0d7d-70e2-4cc2-a103-76953f2dd7c7",
+      "localPath": "assets/files/b54c0d7d-70e2-4cc2-a103-76953f2dd7c7-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-45744b45b137",
+      "originalUrl": "blob:https://vite.dev/a8d676c4-2f00-440f-bf44-aeb897ed2dd2",
+      "localPath": "assets/files/a8d676c4-2f00-440f-bf44-aeb897ed2dd2-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-518737b59a9c",
+      "originalUrl": "blob:https://vite.dev/a8b73c03-257a-4ff0-b3b1-9f09e56170ac",
+      "localPath": "assets/files/a8b73c03-257a-4ff0-b3b1-9f09e56170ac-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-abbfe3b320bd",
+      "originalUrl": "blob:https://vite.dev/b3588d4a-dd4a-4402-a604-c4d02e6a9f65",
+      "localPath": "assets/files/b3588d4a-dd4a-4402-a604-c4d02e6a9f65-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9c8b30db7e63",
+      "originalUrl": "blob:https://vite.dev/77ae9a21-df44-4239-90b0-fef2ffc31c33",
+      "localPath": "assets/files/77ae9a21-df44-4239-90b0-fef2ffc31c33-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6a3ac09db0a5",
+      "originalUrl": "blob:https://vite.dev/97cf3117-4051-4c10-ac76-c849ff020d30",
+      "localPath": "assets/files/97cf3117-4051-4c10-ac76-c849ff020d30-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-95f5366e52c6",
+      "originalUrl": "blob:https://vite.dev/20ab809c-8eba-4c90-a03f-99ae3ab40e53",
+      "localPath": "assets/files/20ab809c-8eba-4c90-a03f-99ae3ab40e53-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-04517c1c2233",
+      "originalUrl": "blob:https://vite.dev/a4012275-5c65-4bfc-a05e-373ef643e698",
+      "localPath": "assets/files/a4012275-5c65-4bfc-a05e-373ef643e698-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4f75e0186032",
+      "originalUrl": "blob:https://vite.dev/7ec77a15-05fa-4d06-820b-3241176f9292",
+      "localPath": "assets/files/7ec77a15-05fa-4d06-820b-3241176f9292-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-16499e1733a5",
+      "originalUrl": "blob:https://vite.dev/00a21cb4-369c-4a37-8677-2372bd89cbbc",
+      "localPath": "assets/files/00a21cb4-369c-4a37-8677-2372bd89cbbc-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d45bc6e57efe",
+      "originalUrl": "blob:https://vite.dev/ca1f1394-3a6b-461e-a239-f1ac5ed6bedf",
+      "localPath": "assets/files/ca1f1394-3a6b-461e-a239-f1ac5ed6bedf-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bb1b9cf47e96",
+      "originalUrl": "blob:https://vite.dev/9bc4576e-9c2d-4c10-8c45-7aae1b043844",
+      "localPath": "assets/files/9bc4576e-9c2d-4c10-8c45-7aae1b043844-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ad9b001437e1",
+      "originalUrl": "blob:https://vite.dev/c7a6574b-fce0-4b33-bef5-733852782342",
+      "localPath": "assets/files/c7a6574b-fce0-4b33-bef5-733852782342-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c540e97ee1de",
+      "originalUrl": "blob:https://vite.dev/0c242456-b027-4c0c-a602-bc97a45055bf",
+      "localPath": "assets/files/0c242456-b027-4c0c-a602-bc97a45055bf-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a6b353325b07",
+      "originalUrl": "blob:https://vite.dev/171d06bb-9d34-4c96-9f07-d03889cd4eca",
+      "localPath": "assets/files/171d06bb-9d34-4c96-9f07-d03889cd4eca-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-688f6bae952f",
+      "originalUrl": "blob:https://vite.dev/785fdd15-6a41-475c-8b6d-2114b9f606b6",
+      "localPath": "assets/files/785fdd15-6a41-475c-8b6d-2114b9f606b6-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5f77b7009f85",
+      "originalUrl": "blob:https://vite.dev/64951337-f7c6-426b-8c0e-02c54cb4f656",
+      "localPath": "assets/files/64951337-f7c6-426b-8c0e-02c54cb4f656-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f8e3e963ce73",
+      "originalUrl": "blob:https://vite.dev/2e0dca60-de07-4899-870e-d7a6c9f76896",
+      "localPath": "assets/files/2e0dca60-de07-4899-870e-d7a6c9f76896-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c155ef97d267",
+      "originalUrl": "blob:https://vite.dev/90bf0b78-4aa5-4bdc-a292-c53f343e24a7",
+      "localPath": "assets/files/90bf0b78-4aa5-4bdc-a292-c53f343e24a7-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7042e66fbf51",
+      "originalUrl": "blob:https://vite.dev/9cf53f11-b89b-41a5-a162-df5aa57de6ed",
+      "localPath": "assets/files/9cf53f11-b89b-41a5-a162-df5aa57de6ed-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d9292532a95c",
+      "originalUrl": "blob:https://vite.dev/51ae5b20-408a-462f-b7bf-ca2ff7e4b66e",
+      "localPath": "assets/files/51ae5b20-408a-462f-b7bf-ca2ff7e4b66e-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-889495c62b0a",
+      "originalUrl": "blob:https://vite.dev/98246d45-af75-49ef-9845-4566ab2a427d",
+      "localPath": "assets/files/98246d45-af75-49ef-9845-4566ab2a427d-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f00131180b58",
+      "originalUrl": "blob:https://vite.dev/050a41ab-bc05-4c27-9f60-223ad09b8fb7",
+      "localPath": "assets/files/050a41ab-bc05-4c27-9f60-223ad09b8fb7-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-eb28187318dc",
+      "originalUrl": "blob:https://vite.dev/9d1c7634-e73d-4b34-9049-2049ec765a4e",
+      "localPath": "assets/files/9d1c7634-e73d-4b34-9049-2049ec765a4e-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a9acb67305fd",
+      "originalUrl": "blob:https://vite.dev/810b3d60-6826-44f9-a7eb-2ac3050281fd",
+      "localPath": "assets/files/810b3d60-6826-44f9-a7eb-2ac3050281fd-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3025b2e7cb4c",
+      "originalUrl": "blob:https://vite.dev/e1292844-ffa1-44d9-b31e-f384fd476ffa",
+      "localPath": "assets/files/e1292844-ffa1-44d9-b31e-f384fd476ffa-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9f698634b483",
+      "originalUrl": "blob:https://vite.dev/1b11f344-ea43-4f2f-9ac8-55169d2074b2",
+      "localPath": "assets/files/1b11f344-ea43-4f2f-9ac8-55169d2074b2-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8e77f45e6933",
+      "originalUrl": "blob:https://vite.dev/4b1950cf-0aa7-4973-833c-5d849b533ced",
+      "localPath": "assets/files/4b1950cf-0aa7-4973-833c-5d849b533ced-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-378df5d2886c",
+      "originalUrl": "blob:https://vite.dev/cd42ff52-69f5-406b-be8c-12602c7ba441",
+      "localPath": "assets/files/cd42ff52-69f5-406b-be8c-12602c7ba441-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-81e2c8646419",
+      "originalUrl": "blob:https://vite.dev/41ab66d0-c393-44ab-9d79-50abd5e0bde8",
+      "localPath": "assets/files/41ab66d0-c393-44ab-9d79-50abd5e0bde8-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d2e882e43d36",
+      "originalUrl": "blob:https://vite.dev/0891c9e1-4573-4aee-aeb3-b822fd4ef605",
+      "localPath": "assets/files/0891c9e1-4573-4aee-aeb3-b822fd4ef605-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a2f9b5eb66fe",
+      "originalUrl": "blob:https://vite.dev/7fd4fc2a-8a4a-417e-9f50-5e91d07b7fa0",
+      "localPath": "assets/files/7fd4fc2a-8a4a-417e-9f50-5e91d07b7fa0-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-48dbfca65658",
+      "originalUrl": "blob:https://vite.dev/b203f602-b55b-4895-a63d-7fcc6819c5f0",
+      "localPath": "assets/files/b203f602-b55b-4895-a63d-7fcc6819c5f0-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a305466a85bc",
+      "originalUrl": "blob:https://vite.dev/883ead62-1b6e-48aa-8142-ff70aadcdd21",
+      "localPath": "assets/files/883ead62-1b6e-48aa-8142-ff70aadcdd21-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3a47f6dee89b",
+      "originalUrl": "blob:https://vite.dev/28baf556-9420-46e7-9282-0f1aef4ca3d1",
+      "localPath": "assets/files/28baf556-9420-46e7-9282-0f1aef4ca3d1-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-68bd7085f0de",
+      "originalUrl": "blob:https://vite.dev/70e5d678-05dc-428f-bb34-abdf3fd9749e",
+      "localPath": "assets/files/70e5d678-05dc-428f-bb34-abdf3fd9749e-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-849ee058ca51",
+      "originalUrl": "blob:https://vite.dev/c803317e-5320-4562-ab69-d1ab631e89e2",
+      "localPath": "assets/files/c803317e-5320-4562-ab69-d1ab631e89e2-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-56a204676834",
+      "originalUrl": "blob:https://vite.dev/84ed6278-a143-4175-a846-5462506c7fb0",
+      "localPath": "assets/files/84ed6278-a143-4175-a846-5462506c7fb0-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6a785d584dd3",
+      "originalUrl": "blob:https://vite.dev/fe68a4d2-b967-48c6-815b-b4f3676da5b8",
+      "localPath": "assets/files/fe68a4d2-b967-48c6-815b-b4f3676da5b8-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-522050048fdd",
+      "originalUrl": "blob:https://vite.dev/2169ba9e-cbb7-43cb-ba74-71ad02f6518f",
+      "localPath": "assets/files/2169ba9e-cbb7-43cb-ba74-71ad02f6518f-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-84127e60df96",
+      "originalUrl": "blob:https://vite.dev/2b10d36e-7bdb-452e-8d4e-a6170c549fce",
+      "localPath": "assets/files/2b10d36e-7bdb-452e-8d4e-a6170c549fce-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-52ea3a7c2bba",
+      "originalUrl": "blob:https://vite.dev/84a3f4a7-2518-4f8b-9f50-5cdaf34400fd",
+      "localPath": "assets/files/84a3f4a7-2518-4f8b-9f50-5cdaf34400fd-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-01cdaaf5f80f",
+      "originalUrl": "blob:https://vite.dev/9c6a23aa-93c0-4bac-9ee9-4a42d45b5e0d",
+      "localPath": "assets/files/9c6a23aa-93c0-4bac-9ee9-4a42d45b5e0d-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6bb1de47f53a",
+      "originalUrl": "blob:https://vite.dev/561b65a6-338b-4354-a682-4f56beab60d1",
+      "localPath": "assets/files/561b65a6-338b-4354-a682-4f56beab60d1-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f0758eed1fd0",
+      "originalUrl": "blob:https://vite.dev/49a80776-fc90-4a4d-a43a-8abe35a75dd1",
+      "localPath": "assets/files/49a80776-fc90-4a4d-a43a-8abe35a75dd1-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-0ec0bbf25ede",
+      "originalUrl": "blob:https://vite.dev/9015a2ad-b610-45d0-859f-4d759b1215fc",
+      "localPath": "assets/files/9015a2ad-b610-45d0-859f-4d759b1215fc-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-78d8f4e5a126",
+      "originalUrl": "blob:https://vite.dev/563ad0b2-9c1c-46e4-83fe-363c8af13f44",
+      "localPath": "assets/files/563ad0b2-9c1c-46e4-83fe-363c8af13f44-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ec24b6fcae5d",
+      "originalUrl": "blob:https://vite.dev/b429d394-c3ca-4490-844e-9161973f0ace",
+      "localPath": "assets/files/b429d394-c3ca-4490-844e-9161973f0ace-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6526bbfe9908",
+      "originalUrl": "https://vite.dev/assets/releases.md.CobURJ8Z.js",
+      "localPath": "assets/files/releases.md.CobURJ8Z-5987013bf6.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-79e84c762031",
+      "originalUrl": "https://vite.dev/assets/blog.md.DeNlFd7-.js",
+      "localPath": "assets/files/blog.md.DeNlFd7--93b3e6ffa2.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-ae9ad897d8db",
+      "originalUrl": "https://vite.dev/assets/acknowledgements.md.BbMeDGzD.js",
+      "localPath": "assets/files/acknowledgements.md.BbMeDGzD-33b1bcd813.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-a501551eafeb",
+      "originalUrl": "blob:https://vite.dev/821a598d-417a-42d8-a83b-71478cf92a5e",
+      "localPath": "assets/files/821a598d-417a-42d8-a83b-71478cf92a5e-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7c484e2d6db1",
+      "originalUrl": "blob:https://vite.dev/ed2ff2c6-a461-49ca-a9e5-c21241c9147f",
+      "localPath": "assets/files/ed2ff2c6-a461-49ca-a9e5-c21241c9147f-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bd6e8bbe1ad5",
+      "originalUrl": "blob:https://vite.dev/6ca435b0-8a41-4a6b-adb8-5ac605b52c52",
+      "localPath": "assets/files/6ca435b0-8a41-4a6b-adb8-5ac605b52c52-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5f188691b440",
+      "originalUrl": "blob:https://vite.dev/993290f3-13d3-4c96-bbd9-f659288e9e5d",
+      "localPath": "assets/files/993290f3-13d3-4c96-bbd9-f659288e9e5d-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-794fb128fbce",
+      "originalUrl": "blob:https://vite.dev/04a00ccc-48b8-4ab2-a5cb-907bdc9b6267",
+      "localPath": "assets/files/04a00ccc-48b8-4ab2-a5cb-907bdc9b6267-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7d23d0f00bda",
+      "originalUrl": "blob:https://vite.dev/b3c7159d-6e3a-46f9-a5e2-e90fcbce2d81",
+      "localPath": "assets/files/b3c7159d-6e3a-46f9-a5e2-e90fcbce2d81-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-30b68d05836a",
+      "originalUrl": "blob:https://vite.dev/84cf2393-b687-4c10-a5ca-a9f26ea81354",
+      "localPath": "assets/files/84cf2393-b687-4c10-a5ca-a9f26ea81354-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3b7ddf181faf",
+      "originalUrl": "blob:https://vite.dev/72ed0d17-9274-4413-9d9b-70f34770931e",
+      "localPath": "assets/files/72ed0d17-9274-4413-9d9b-70f34770931e-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-93474f3c331d",
+      "originalUrl": "blob:https://vite.dev/f21c286f-1330-4b1f-a951-01bca99dbc57",
+      "localPath": "assets/files/f21c286f-1330-4b1f-a951-01bca99dbc57-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2792450dc971",
+      "originalUrl": "blob:https://vite.dev/40966b95-ea92-47b1-bbc5-fc3eeb42b513",
+      "localPath": "assets/files/40966b95-ea92-47b1-bbc5-fc3eeb42b513-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cba21cb179a4",
+      "originalUrl": "blob:https://vite.dev/653495a2-c23c-4df1-bdbd-bfb97872a98f",
+      "localPath": "assets/files/653495a2-c23c-4df1-bdbd-bfb97872a98f-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7c1e62c88125",
+      "originalUrl": "blob:https://vite.dev/43b30469-52b4-4471-936d-4b0a04881417",
+      "localPath": "assets/files/43b30469-52b4-4471-936d-4b0a04881417-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-217d59c9da16",
+      "originalUrl": "blob:https://vite.dev/88e2177c-c4d9-461f-8dd3-45dd0f0301a0",
+      "localPath": "assets/files/88e2177c-c4d9-461f-8dd3-45dd0f0301a0-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e1a01a1560f1",
+      "originalUrl": "blob:https://vite.dev/ddbe11e6-eb74-4579-890d-b21f83641957",
+      "localPath": "assets/files/ddbe11e6-eb74-4579-890d-b21f83641957-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3a7c2becb651",
+      "originalUrl": "blob:https://vite.dev/93bdbcc2-40ff-43d3-adb3-f072a9bfcc6c",
+      "localPath": "assets/files/93bdbcc2-40ff-43d3-adb3-f072a9bfcc6c-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d0b8a25109c2",
+      "originalUrl": "blob:https://vite.dev/a6b8a5ad-281f-4a6c-9b5c-b53a1227d11e",
+      "localPath": "assets/files/a6b8a5ad-281f-4a6c-9b5c-b53a1227d11e-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e848eb28b354",
+      "originalUrl": "blob:https://vite.dev/bf07ba7a-5896-4f0a-8c3d-9c8cb1e1834b",
+      "localPath": "assets/files/bf07ba7a-5896-4f0a-8c3d-9c8cb1e1834b-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6f7911ca7b29",
+      "originalUrl": "blob:https://vite.dev/6d26b6a8-e6a5-4050-ab99-8d8e5ddfff24",
+      "localPath": "assets/files/6d26b6a8-e6a5-4050-ab99-8d8e5ddfff24-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f54d484747c6",
+      "originalUrl": "blob:https://vite.dev/32ae9ccc-c26c-4f55-8581-ed22ef5eab4f",
+      "localPath": "assets/files/32ae9ccc-c26c-4f55-8581-ed22ef5eab4f-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-00f73f32d328",
+      "originalUrl": "blob:https://vite.dev/1e27cf44-b44f-4ac4-bc17-68412efe8d7d",
+      "localPath": "assets/files/1e27cf44-b44f-4ac4-bc17-68412efe8d7d-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7c1ea848caa1",
+      "originalUrl": "blob:https://vite.dev/d860f44b-ce47-400c-aad8-3047c01c3aaa",
+      "localPath": "assets/files/d860f44b-ce47-400c-aad8-3047c01c3aaa-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-283bf157f405",
+      "originalUrl": "blob:https://vite.dev/3f5e04ee-6f6a-42bf-a1cf-ab11ec5e28ca",
+      "localPath": "assets/files/3f5e04ee-6f6a-42bf-a1cf-ab11ec5e28ca-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-0263eff9a468",
+      "originalUrl": "blob:https://vite.dev/a4deaf73-88f6-4a0e-887e-1151701007b8",
+      "localPath": "assets/files/a4deaf73-88f6-4a0e-887e-1151701007b8-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7fc93784cbf6",
+      "originalUrl": "blob:https://vite.dev/9a3c44f3-dceb-4ab3-9844-da9e1a7fc9bb",
+      "localPath": "assets/files/9a3c44f3-dceb-4ab3-9844-da9e1a7fc9bb-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-84397491c433",
+      "originalUrl": "blob:https://vite.dev/2bbf4049-5e30-46a9-83fe-47fa9b3528a0",
+      "localPath": "assets/files/2bbf4049-5e30-46a9-83fe-47fa9b3528a0-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4159943e84e1",
+      "originalUrl": "blob:https://vite.dev/4b503835-f83f-4748-b664-e26295efbce4",
+      "localPath": "assets/files/4b503835-f83f-4748-b664-e26295efbce4-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6c20a47da27d",
+      "originalUrl": "blob:https://vite.dev/b2fddfb7-f63e-44f0-b781-db822c62ca9d",
+      "localPath": "assets/files/b2fddfb7-f63e-44f0-b781-db822c62ca9d-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b132cc496002",
+      "originalUrl": "blob:https://vite.dev/aa9ce02d-f58d-48dd-bd87-ed0c0b44492b",
+      "localPath": "assets/files/aa9ce02d-f58d-48dd-bd87-ed0c0b44492b-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-59cb43e661aa",
+      "originalUrl": "blob:https://vite.dev/18a42e98-f20d-4858-9567-d0ac402c1f9a",
+      "localPath": "assets/files/18a42e98-f20d-4858-9567-d0ac402c1f9a-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-87964ad5239e",
+      "originalUrl": "blob:https://vite.dev/af4f7fad-195d-4880-b9b8-e01e6134864e",
+      "localPath": "assets/files/af4f7fad-195d-4880-b9b8-e01e6134864e-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3a6e4daae016",
+      "originalUrl": "blob:https://vite.dev/dadf9c5f-4b7b-4a5a-87b8-d092f32d6e64",
+      "localPath": "assets/files/dadf9c5f-4b7b-4a5a-87b8-d092f32d6e64-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4152a71f449a",
+      "originalUrl": "blob:https://vite.dev/3cfa2036-77cf-42ff-b127-a2a8c465cf77",
+      "localPath": "assets/files/3cfa2036-77cf-42ff-b127-a2a8c465cf77-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f44c7a3ba1f7",
+      "originalUrl": "blob:https://vite.dev/5120b327-a1e9-4364-9540-4805976258f2",
+      "localPath": "assets/files/5120b327-a1e9-4364-9540-4805976258f2-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-91917ab093b9",
+      "originalUrl": "blob:https://vite.dev/5ab7bcda-0c90-4316-a2ff-8bfa75e11704",
+      "localPath": "assets/files/5ab7bcda-0c90-4316-a2ff-8bfa75e11704-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6983e33797ff",
+      "originalUrl": "blob:https://vite.dev/90c5a134-2663-4af2-8d8c-be9b472d29f7",
+      "localPath": "assets/files/90c5a134-2663-4af2-8d8c-be9b472d29f7-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e03647b76344",
+      "originalUrl": "blob:https://vite.dev/2a18186f-aa98-4d45-a9e4-69ae81f5f065",
+      "localPath": "assets/files/2a18186f-aa98-4d45-a9e4-69ae81f5f065-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-60bb24b3b19f",
+      "originalUrl": "blob:https://vite.dev/94b4ebc9-36a0-4649-a9e9-3171e69a4e17",
+      "localPath": "assets/files/94b4ebc9-36a0-4649-a9e9-3171e69a4e17-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-28d3e71e472d",
+      "originalUrl": "blob:https://vite.dev/08ddab6b-f075-489a-88a5-d7f679e817f5",
+      "localPath": "assets/files/08ddab6b-f075-489a-88a5-d7f679e817f5-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cd91a9bdb419",
+      "originalUrl": "blob:https://vite.dev/9bf302ea-f754-43c5-ac69-4dd7384d63d9",
+      "localPath": "assets/files/9bf302ea-f754-43c5-ac69-4dd7384d63d9-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-638eb9d5b5c0",
+      "originalUrl": "blob:https://vite.dev/d2ffc52b-97fc-4c7d-94b6-529372c66f86",
+      "localPath": "assets/files/d2ffc52b-97fc-4c7d-94b6-529372c66f86-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c3f1dbb91d0a",
+      "originalUrl": "blob:https://vite.dev/62a30094-b1f0-46e5-bac5-508a1a896dff",
+      "localPath": "assets/files/62a30094-b1f0-46e5-bac5-508a1a896dff-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-27605d9cc053",
+      "originalUrl": "blob:https://vite.dev/3d0d3335-77c1-4e31-8164-7db5e58fea2b",
+      "localPath": "assets/files/3d0d3335-77c1-4e31-8164-7db5e58fea2b-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8464f33b7381",
+      "originalUrl": "blob:https://vite.dev/78f601fe-fee5-4266-91bb-11229c63ba71",
+      "localPath": "assets/files/78f601fe-fee5-4266-91bb-11229c63ba71-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9eff7fa4e730",
+      "originalUrl": "blob:https://vite.dev/10687d97-493b-41e9-ac85-8643e1cb0123",
+      "localPath": "assets/files/10687d97-493b-41e9-ac85-8643e1cb0123-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2bc3356c8649",
+      "originalUrl": "blob:https://vite.dev/30f90ed1-c43e-4ba6-86a3-7f2072e6f1eb",
+      "localPath": "assets/files/30f90ed1-c43e-4ba6-86a3-7f2072e6f1eb-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3b4c7a99cadd",
+      "originalUrl": "blob:https://vite.dev/e2c795f9-89fb-4c5b-a870-9acdd6897bec",
+      "localPath": "assets/files/e2c795f9-89fb-4c5b-a870-9acdd6897bec-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-374f63ae6f32",
+      "originalUrl": "blob:https://vite.dev/5b538858-9059-4507-8045-9edf9c225bd1",
+      "localPath": "assets/files/5b538858-9059-4507-8045-9edf9c225bd1-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fe193107751a",
+      "originalUrl": "blob:https://vite.dev/484dbb35-a43e-4ef8-a330-4f2c0737e1ba",
+      "localPath": "assets/files/484dbb35-a43e-4ef8-a330-4f2c0737e1ba-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-de75683f02e5",
+      "originalUrl": "https://vite.dev/assets/chunks/VPLocalSearchBox.BCpw4wCt.js",
+      "localPath": "assets/files/VPLocalSearchBox.BCpw4wCt-7f2f2efe25.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-fc366dda8d6c",
+      "originalUrl": "https://vite.dev/assets/chunks/@localSearchIndex.CzydKcd2.js",
+      "localPath": "assets/files/-localSearchIndex.CzydKcd2-d270aa703f.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-78ea7d3d7e16",
+      "originalUrl": "https://vite.dev/assets/chunks/@localSearchIndexroot.BArjGdNy.js",
+      "localPath": "assets/files/-localSearchIndexroot.BArjGdNy-6a29626146.js",
+      "mimeType": "application/javascript"
+    },
+    {
+      "id": "asset-d14be1aedbc7",
+      "originalUrl": "blob:https://vite.dev/ad740702-8a9c-4ebd-92aa-d01af6d1ee11",
+      "localPath": "assets/files/ad740702-8a9c-4ebd-92aa-d01af6d1ee11-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-25eacbff2a2c",
+      "originalUrl": "blob:https://vite.dev/7bf43ccb-b0ae-4759-a060-37d09f179347",
+      "localPath": "assets/files/7bf43ccb-b0ae-4759-a060-37d09f179347-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8d5fe8e46a00",
+      "originalUrl": "blob:https://vite.dev/8abd7941-d86b-4b6d-a70e-78386d3915a8",
+      "localPath": "assets/files/8abd7941-d86b-4b6d-a70e-78386d3915a8-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c396ea45e968",
+      "originalUrl": "blob:https://vite.dev/28e7d554-dc83-41ff-a85a-b85aaa8d1671",
+      "localPath": "assets/files/28e7d554-dc83-41ff-a85a-b85aaa8d1671-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1ae831e66309",
+      "originalUrl": "blob:https://vite.dev/f4ff6707-4cd0-494c-bde8-9b8b5e78704c",
+      "localPath": "assets/files/f4ff6707-4cd0-494c-bde8-9b8b5e78704c-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fe4460ee812c",
+      "originalUrl": "blob:https://vite.dev/b8dc660b-493b-441c-aee4-dd4b79c0701b",
+      "localPath": "assets/files/b8dc660b-493b-441c-aee4-dd4b79c0701b-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2ee911e6481c",
+      "originalUrl": "blob:https://vite.dev/45c4d327-c65a-4ed5-a276-db72bdd46919",
+      "localPath": "assets/files/45c4d327-c65a-4ed5-a276-db72bdd46919-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2748034e984d",
+      "originalUrl": "blob:https://vite.dev/3d0604ed-ed9b-443a-8b47-4572d904c1f5",
+      "localPath": "assets/files/3d0604ed-ed9b-443a-8b47-4572d904c1f5-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a3b8dacd7450",
+      "originalUrl": "blob:https://vite.dev/dd98190f-d56a-4070-aec9-0f4c23f28be3",
+      "localPath": "assets/files/dd98190f-d56a-4070-aec9-0f4c23f28be3-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b57e329d97d4",
+      "originalUrl": "blob:https://vite.dev/6be3ce36-ef6c-4841-85de-336a7379141d",
+      "localPath": "assets/files/6be3ce36-ef6c-4841-85de-336a7379141d-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3df8afc14168",
+      "originalUrl": "blob:https://vite.dev/93a390ed-447c-4faa-950c-1a7d50bcaca2",
+      "localPath": "assets/files/93a390ed-447c-4faa-950c-1a7d50bcaca2-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cdc941260d40",
+      "originalUrl": "blob:https://vite.dev/1efbc9ff-cb97-46e7-93ab-ef4f5c1501a1",
+      "localPath": "assets/files/1efbc9ff-cb97-46e7-93ab-ef4f5c1501a1-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cff3ce721fc1",
+      "originalUrl": "blob:https://vite.dev/430c7819-93ff-4279-9ab2-5be42220c713",
+      "localPath": "assets/files/430c7819-93ff-4279-9ab2-5be42220c713-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-52c63f8a0a3e",
+      "originalUrl": "blob:https://vite.dev/2b4ad275-ccb9-4dcd-ba52-b8ee5e83a1a5",
+      "localPath": "assets/files/2b4ad275-ccb9-4dcd-ba52-b8ee5e83a1a5-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b6651a0331fe",
+      "originalUrl": "blob:https://vite.dev/2ee0162a-3974-4582-affe-7f38b93aa062",
+      "localPath": "assets/files/2ee0162a-3974-4582-affe-7f38b93aa062-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f774df497244",
+      "originalUrl": "blob:https://vite.dev/83309532-b225-41fb-ac87-c38835358c05",
+      "localPath": "assets/files/83309532-b225-41fb-ac87-c38835358c05-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-418e8c1a38d7",
+      "originalUrl": "blob:https://vite.dev/cd272802-b028-4110-8fb3-7d74f0622846",
+      "localPath": "assets/files/cd272802-b028-4110-8fb3-7d74f0622846-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-506ea89dfdea",
+      "originalUrl": "blob:https://vite.dev/b3c907ee-5764-49f8-9754-64e1117f25a2",
+      "localPath": "assets/files/b3c907ee-5764-49f8-9754-64e1117f25a2-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-32290a787feb",
+      "originalUrl": "blob:https://vite.dev/6b1e5c28-9e55-47f1-b861-c97809e2a5cd",
+      "localPath": "assets/files/6b1e5c28-9e55-47f1-b861-c97809e2a5cd-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-177b0f8a7d25",
+      "originalUrl": "blob:https://vite.dev/b78c4572-349a-4f0f-83e5-f98f3d36285a",
+      "localPath": "assets/files/b78c4572-349a-4f0f-83e5-f98f3d36285a-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8c11b5a7c9d9",
+      "originalUrl": "blob:https://vite.dev/36faad4b-9c26-4049-9a78-ce6c9f115399",
+      "localPath": "assets/files/36faad4b-9c26-4049-9a78-ce6c9f115399-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-aa7cb3043743",
+      "originalUrl": "blob:https://vite.dev/5a10fff7-5b96-4dca-96d0-819f352612c3",
+      "localPath": "assets/files/5a10fff7-5b96-4dca-96d0-819f352612c3-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-63b71a602b97",
+      "originalUrl": "blob:https://vite.dev/b9f8902c-82c7-481c-b803-c551b43bb07a",
+      "localPath": "assets/files/b9f8902c-82c7-481c-b803-c551b43bb07a-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-62d6d0d7dc51",
+      "originalUrl": "blob:https://vite.dev/b08a6556-c0b3-415f-a18b-5fac21f4c27a",
+      "localPath": "assets/files/b08a6556-c0b3-415f-a18b-5fac21f4c27a-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f0bbc5755d07",
+      "originalUrl": "blob:https://vite.dev/32ecbaf4-8bc5-4dbe-8c71-2fd498540fee",
+      "localPath": "assets/files/32ecbaf4-8bc5-4dbe-8c71-2fd498540fee-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5c411ff08acb",
+      "originalUrl": "blob:https://vite.dev/7a635158-2c5a-4cb3-b53b-8cc86ff77e32",
+      "localPath": "assets/files/7a635158-2c5a-4cb3-b53b-8cc86ff77e32-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ddcfff5d5c7d",
+      "originalUrl": "blob:https://vite.dev/71a6c3a2-c1ed-4521-a96c-7659a595933d",
+      "localPath": "assets/files/71a6c3a2-c1ed-4521-a96c-7659a595933d-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3c1d77c9b3e1",
+      "originalUrl": "blob:https://vite.dev/715ab0de-42fc-43b1-b326-3f7db8c27bde",
+      "localPath": "assets/files/715ab0de-42fc-43b1-b326-3f7db8c27bde-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-dc6ed78b418f",
+      "originalUrl": "blob:https://vite.dev/31f9bb66-e9ee-4612-adf7-2b3e5bacb08a",
+      "localPath": "assets/files/31f9bb66-e9ee-4612-adf7-2b3e5bacb08a-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8317c023aa2e",
+      "originalUrl": "blob:https://vite.dev/4fce02d0-d0b1-43e8-9f18-5c398022d1a0",
+      "localPath": "assets/files/4fce02d0-d0b1-43e8-9f18-5c398022d1a0-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-60b0a236c9d8",
+      "originalUrl": "blob:https://vite.dev/228bf1a8-b77d-4ecc-aa5c-e4c438a31570",
+      "localPath": "assets/files/228bf1a8-b77d-4ecc-aa5c-e4c438a31570-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d36c0ddf8fa2",
+      "originalUrl": "blob:https://vite.dev/82e7aa52-3506-4fbc-a125-86a9af4fbef2",
+      "localPath": "assets/files/82e7aa52-3506-4fbc-a125-86a9af4fbef2-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9ceeb5a5a80e",
+      "originalUrl": "blob:https://vite.dev/ebc167d0-1b50-4c7f-b4a4-319ae49dea40",
+      "localPath": "assets/files/ebc167d0-1b50-4c7f-b4a4-319ae49dea40-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7a4e4782fabd",
+      "originalUrl": "blob:https://vite.dev/63f20a62-ae00-4ab3-ad39-b6dbd8f52818",
+      "localPath": "assets/files/63f20a62-ae00-4ab3-ad39-b6dbd8f52818-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cf1f61f5028f",
+      "originalUrl": "blob:https://vite.dev/784d04f8-a661-44bb-8f12-7a1b3af23f62",
+      "localPath": "assets/files/784d04f8-a661-44bb-8f12-7a1b3af23f62-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1aa071fe430f",
+      "originalUrl": "blob:https://vite.dev/1babd34d-62b8-49d3-bff1-65cbefc465e4",
+      "localPath": "assets/files/1babd34d-62b8-49d3-bff1-65cbefc465e4-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-09fec35ac111",
+      "originalUrl": "blob:https://vite.dev/0ffa7dfd-67e0-43e0-8bb3-276bc64fbf84",
+      "localPath": "assets/files/0ffa7dfd-67e0-43e0-8bb3-276bc64fbf84-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-561b9efa9d8b",
+      "originalUrl": "blob:https://vite.dev/14a56c91-0e1a-4c88-a234-079398e04fe1",
+      "localPath": "assets/files/14a56c91-0e1a-4c88-a234-079398e04fe1-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4d367d270070",
+      "originalUrl": "blob:https://vite.dev/cadcfe02-c4bc-4fd8-80d7-9ba44fbaf144",
+      "localPath": "assets/files/cadcfe02-c4bc-4fd8-80d7-9ba44fbaf144-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5ac05254e326",
+      "originalUrl": "blob:https://vite.dev/e1dcdb23-9698-4412-9995-132661374883",
+      "localPath": "assets/files/e1dcdb23-9698-4412-9995-132661374883-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-85ba70752b27",
+      "originalUrl": "blob:https://vite.dev/b451f300-b25f-4c4c-81ff-8f54cd0696bc",
+      "localPath": "assets/files/b451f300-b25f-4c4c-81ff-8f54cd0696bc-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-62cb57173bfe",
+      "originalUrl": "blob:https://vite.dev/87239966-dffe-49ef-8de0-2cd3a6d686fe",
+      "localPath": "assets/files/87239966-dffe-49ef-8de0-2cd3a6d686fe-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9cac8ef33449",
+      "originalUrl": "blob:https://vite.dev/f6690f2f-eebf-4f02-af38-3a27c02d6241",
+      "localPath": "assets/files/f6690f2f-eebf-4f02-af38-3a27c02d6241-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-03f818c43088",
+      "originalUrl": "blob:https://vite.dev/47acb64c-b7a2-4985-b70d-91618b3a1736",
+      "localPath": "assets/files/47acb64c-b7a2-4985-b70d-91618b3a1736-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-df13e9ae87e7",
+      "originalUrl": "blob:https://vite.dev/c22b4f54-daab-470d-8df3-063b3cd5c2cd",
+      "localPath": "assets/files/c22b4f54-daab-470d-8df3-063b3cd5c2cd-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e9ce35da7578",
+      "originalUrl": "blob:https://vite.dev/a5a76e6c-5ad9-45db-ab30-5f10af89c4b3",
+      "localPath": "assets/files/a5a76e6c-5ad9-45db-ab30-5f10af89c4b3-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-92b11ca500d1",
+      "originalUrl": "blob:https://vite.dev/7545929d-1d46-4582-9257-957619c1118c",
+      "localPath": "assets/files/7545929d-1d46-4582-9257-957619c1118c-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8f131ede04e1",
+      "originalUrl": "blob:https://vite.dev/74a88fef-7557-491f-a8a7-2bcf4d3b8557",
+      "localPath": "assets/files/74a88fef-7557-491f-a8a7-2bcf4d3b8557-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-83e71b8bba9e",
+      "originalUrl": "blob:https://vite.dev/80bfb015-fc88-4dd1-934d-ebc69ec16120",
+      "localPath": "assets/files/80bfb015-fc88-4dd1-934d-ebc69ec16120-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a149ae479321",
+      "originalUrl": "blob:https://vite.dev/4806318a-0faf-4365-a4ea-969ff19d338e",
+      "localPath": "assets/files/4806318a-0faf-4365-a4ea-969ff19d338e-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d522e21abc4f",
+      "originalUrl": "blob:https://vite.dev/dee0c44a-de8c-435d-afd5-45a2dbe1cc04",
+      "localPath": "assets/files/dee0c44a-de8c-435d-afd5-45a2dbe1cc04-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-09a557dfa5ca",
+      "originalUrl": "blob:https://vite.dev/23b68959-44d7-428f-8141-c01ae140cf74",
+      "localPath": "assets/files/23b68959-44d7-428f-8141-c01ae140cf74-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1206fb4ade91",
+      "originalUrl": "blob:https://vite.dev/d577f113-7f23-44bc-8787-98cc1c599586",
+      "localPath": "assets/files/d577f113-7f23-44bc-8787-98cc1c599586-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1244c2ff0fbc",
+      "originalUrl": "blob:https://vite.dev/f5410cad-9bed-4f9a-946f-5b7b4fa57aa8",
+      "localPath": "assets/files/f5410cad-9bed-4f9a-946f-5b7b4fa57aa8-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-103402b26926",
+      "originalUrl": "blob:https://vite.dev/471e9402-66dc-4a59-a5a2-b65aa4b9346e",
+      "localPath": "assets/files/471e9402-66dc-4a59-a5a2-b65aa4b9346e-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-47ba7080d263",
+      "originalUrl": "blob:https://vite.dev/9a605137-af78-4bd3-bd75-50e4182b8630",
+      "localPath": "assets/files/9a605137-af78-4bd3-bd75-50e4182b8630-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6e6a9d2f5580",
+      "originalUrl": "blob:https://vite.dev/adaad475-3f75-4278-ace1-0bf4e5dd564f",
+      "localPath": "assets/files/adaad475-3f75-4278-ace1-0bf4e5dd564f-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3780b0ec19cb",
+      "originalUrl": "blob:https://vite.dev/0e66727b-5bd0-48c2-9cc0-380dc7eb7a6f",
+      "localPath": "assets/files/0e66727b-5bd0-48c2-9cc0-380dc7eb7a6f-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7bd7868b6cc4",
+      "originalUrl": "blob:https://vite.dev/ebf2d51a-b503-4e8d-8961-416fd3d18c08",
+      "localPath": "assets/files/ebf2d51a-b503-4e8d-8961-416fd3d18c08-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9dbdfad3215e",
+      "originalUrl": "blob:https://vite.dev/6316eaf6-4e40-4479-b3ed-5e5edbdc87f8",
+      "localPath": "assets/files/6316eaf6-4e40-4479-b3ed-5e5edbdc87f8-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1475ae6dd43d",
+      "originalUrl": "blob:https://vite.dev/2830ecc2-4def-41e5-ac26-bb6abe4b3d55",
+      "localPath": "assets/files/2830ecc2-4def-41e5-ac26-bb6abe4b3d55-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7b2b10ac62fe",
+      "originalUrl": "blob:https://vite.dev/49cd1136-7279-4b1f-894a-b61f1b554629",
+      "localPath": "assets/files/49cd1136-7279-4b1f-894a-b61f1b554629-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6009c26d83b4",
+      "originalUrl": "blob:https://vite.dev/c3688661-ca3f-4353-8a60-1a8014c44042",
+      "localPath": "assets/files/c3688661-ca3f-4353-8a60-1a8014c44042-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7dc9c7ac4084",
+      "originalUrl": "blob:https://vite.dev/8d715604-0f71-4a96-a490-69f3198fd2f8",
+      "localPath": "assets/files/8d715604-0f71-4a96-a490-69f3198fd2f8-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d7877ebd30d2",
+      "originalUrl": "blob:https://vite.dev/98f3ef24-0286-49a9-9d74-78352294bc6f",
+      "localPath": "assets/files/98f3ef24-0286-49a9-9d74-78352294bc6f-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-818690e833e9",
+      "originalUrl": "blob:https://vite.dev/5e3cf4ec-335e-4a24-8260-cac252f9b621",
+      "localPath": "assets/files/5e3cf4ec-335e-4a24-8260-cac252f9b621-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fcd6f456b85b",
+      "originalUrl": "blob:https://vite.dev/a13184ea-0afb-4a4c-a684-bc86e1fe22da",
+      "localPath": "assets/files/a13184ea-0afb-4a4c-a684-bc86e1fe22da-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-235f8b674c24",
+      "originalUrl": "blob:https://vite.dev/a8c2e26f-9187-4b7d-b622-15a6e10acde3",
+      "localPath": "assets/files/a8c2e26f-9187-4b7d-b622-15a6e10acde3-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4ad15969cbcf",
+      "originalUrl": "blob:https://vite.dev/614cad5e-b6d6-4707-845f-c298a14a6f8a",
+      "localPath": "assets/files/614cad5e-b6d6-4707-845f-c298a14a6f8a-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-78505ac88fef",
+      "originalUrl": "blob:https://vite.dev/42337b2c-006f-42df-b5d3-16c570c2ad36",
+      "localPath": "assets/files/42337b2c-006f-42df-b5d3-16c570c2ad36-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cee4e9c1cce9",
+      "originalUrl": "blob:https://vite.dev/d749a8d5-c3e9-4d84-80bb-7892ba2af8cd",
+      "localPath": "assets/files/d749a8d5-c3e9-4d84-80bb-7892ba2af8cd-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-29f67c757078",
+      "originalUrl": "blob:https://vite.dev/232901c4-b236-4d55-b999-f5dca78ec4b5",
+      "localPath": "assets/files/232901c4-b236-4d55-b999-f5dca78ec4b5-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ba53afaefb72",
+      "originalUrl": "blob:https://vite.dev/e57775bc-aee5-489b-ac2d-b5a20d46c160",
+      "localPath": "assets/files/e57775bc-aee5-489b-ac2d-b5a20d46c160-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cd00e65a6c1b",
+      "originalUrl": "blob:https://vite.dev/964b512c-601a-4742-8146-896f7455238f",
+      "localPath": "assets/files/964b512c-601a-4742-8146-896f7455238f-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c017ab7de3a5",
+      "originalUrl": "blob:https://vite.dev/16b0654e-91d8-426b-9b30-86f8e7fe02c5",
+      "localPath": "assets/files/16b0654e-91d8-426b-9b30-86f8e7fe02c5-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9dae926bd86c",
+      "originalUrl": "blob:https://vite.dev/bde1fcd9-267c-4e8f-b568-3666f37cf2dc",
+      "localPath": "assets/files/bde1fcd9-267c-4e8f-b568-3666f37cf2dc-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f852013e4878",
+      "originalUrl": "blob:https://vite.dev/05856435-6c1f-4e02-a9dc-45fe2e498219",
+      "localPath": "assets/files/05856435-6c1f-4e02-a9dc-45fe2e498219-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9255223e27af",
+      "originalUrl": "blob:https://vite.dev/5ed4ebc3-1185-4737-ab3b-75f51f403f2e",
+      "localPath": "assets/files/5ed4ebc3-1185-4737-ab3b-75f51f403f2e-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-856e3ee893c5",
+      "originalUrl": "blob:https://vite.dev/1ba43251-e0a2-4acf-9436-f38e84540969",
+      "localPath": "assets/files/1ba43251-e0a2-4acf-9436-f38e84540969-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7199af58831c",
+      "originalUrl": "blob:https://vite.dev/905c9bbc-5c7a-4ed5-9475-2c1e2c5b84bc",
+      "localPath": "assets/files/905c9bbc-5c7a-4ed5-9475-2c1e2c5b84bc-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8c688740ef70",
+      "originalUrl": "blob:https://vite.dev/40a328af-f052-4a7c-971d-1bea2bcaaa02",
+      "localPath": "assets/files/40a328af-f052-4a7c-971d-1bea2bcaaa02-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-98cafc95e1aa",
+      "originalUrl": "blob:https://vite.dev/ef4ae128-5835-443c-af6c-0d1b14a62dc2",
+      "localPath": "assets/files/ef4ae128-5835-443c-af6c-0d1b14a62dc2-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e78eed87b7bd",
+      "originalUrl": "blob:https://vite.dev/3845a864-6456-44dc-823e-dae9b1de2c21",
+      "localPath": "assets/files/3845a864-6456-44dc-823e-dae9b1de2c21-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ca4ba2a31cdd",
+      "originalUrl": "blob:https://vite.dev/e5af8a01-4c8c-4382-ada4-5a3cb74bbf80",
+      "localPath": "assets/files/e5af8a01-4c8c-4382-ada4-5a3cb74bbf80-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9ca0660c95b8",
+      "originalUrl": "blob:https://vite.dev/a983414c-1694-462f-bfb3-dd293d954da7",
+      "localPath": "assets/files/a983414c-1694-462f-bfb3-dd293d954da7-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-68c8726deda1",
+      "originalUrl": "blob:https://vite.dev/e061399a-df8c-40d8-ab53-b410add68741",
+      "localPath": "assets/files/e061399a-df8c-40d8-ab53-b410add68741-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-db4221958323",
+      "originalUrl": "blob:https://vite.dev/08a71d4c-e768-4ae8-a680-2bace83ffa98",
+      "localPath": "assets/files/08a71d4c-e768-4ae8-a680-2bace83ffa98-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-33987e7b16fb",
+      "originalUrl": "blob:https://vite.dev/a3853cdd-8790-4960-a592-8771e041bed5",
+      "localPath": "assets/files/a3853cdd-8790-4960-a592-8771e041bed5-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-be0bbada8bd8",
+      "originalUrl": "blob:https://vite.dev/ab6ddc0f-7fd5-43e0-9699-93d30abdb750",
+      "localPath": "assets/files/ab6ddc0f-7fd5-43e0-9699-93d30abdb750-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c5ffb507f9e0",
+      "originalUrl": "blob:https://vite.dev/d811f932-58a9-47bd-a3a7-24db4e841f06",
+      "localPath": "assets/files/d811f932-58a9-47bd-a3a7-24db4e841f06-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8a13c4427bc2",
+      "originalUrl": "blob:https://vite.dev/a525b819-ec1c-4eac-82d8-1c94adc38671",
+      "localPath": "assets/files/a525b819-ec1c-4eac-82d8-1c94adc38671-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-07f8e6fae667",
+      "originalUrl": "blob:https://vite.dev/f70223c9-8eea-4da8-8a7c-3dd5a0e20852",
+      "localPath": "assets/files/f70223c9-8eea-4da8-8a7c-3dd5a0e20852-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a631675fa7a2",
+      "originalUrl": "blob:https://vite.dev/9d20826b-0987-4135-bbd8-e5df35173986",
+      "localPath": "assets/files/9d20826b-0987-4135-bbd8-e5df35173986-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fd43ffdb5426",
+      "originalUrl": "blob:https://vite.dev/23a7b03e-8276-4701-a6a1-d8522fd3cb21",
+      "localPath": "assets/files/23a7b03e-8276-4701-a6a1-d8522fd3cb21-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4cb235aa53f7",
+      "originalUrl": "blob:https://vite.dev/de203717-8bc2-487d-82d1-2683353d444b",
+      "localPath": "assets/files/de203717-8bc2-487d-82d1-2683353d444b-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ca0df1dddcc4",
+      "originalUrl": "blob:https://vite.dev/e4e6f196-c27b-4212-85ac-001c2ba0cce9",
+      "localPath": "assets/files/e4e6f196-c27b-4212-85ac-001c2ba0cce9-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2d231e3ec803",
+      "originalUrl": "blob:https://vite.dev/122b2fec-f1de-44c5-8c95-ef7049649791",
+      "localPath": "assets/files/122b2fec-f1de-44c5-8c95-ef7049649791-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8f024e3bc6f8",
+      "originalUrl": "blob:https://vite.dev/9d0edf30-b7b2-4dcb-a80c-804d8395122b",
+      "localPath": "assets/files/9d0edf30-b7b2-4dcb-a80c-804d8395122b-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e326474a4323",
+      "originalUrl": "blob:https://vite.dev/2da4129c-1f76-413a-a795-8e1133ae9e50",
+      "localPath": "assets/files/2da4129c-1f76-413a-a795-8e1133ae9e50-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-dee00ce45dfa",
+      "originalUrl": "blob:https://vite.dev/4b082076-86ad-4144-95d4-30dc438181bb",
+      "localPath": "assets/files/4b082076-86ad-4144-95d4-30dc438181bb-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1d239709f8a5",
+      "originalUrl": "blob:https://vite.dev/62665898-bbbd-4230-893c-46d372f6f181",
+      "localPath": "assets/files/62665898-bbbd-4230-893c-46d372f6f181-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-dd31f4135b97",
+      "originalUrl": "blob:https://vite.dev/6e31e725-4645-4df0-acb7-d5ce53b33eaf",
+      "localPath": "assets/files/6e31e725-4645-4df0-acb7-d5ce53b33eaf-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d37b72d8a1b5",
+      "originalUrl": "blob:https://vite.dev/8be06080-fb44-4d9d-80fc-7d9bfc7172aa",
+      "localPath": "assets/files/8be06080-fb44-4d9d-80fc-7d9bfc7172aa-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5757524e7308",
+      "originalUrl": "blob:https://vite.dev/865d6042-1162-4ad5-a8e7-373a75ca295c",
+      "localPath": "assets/files/865d6042-1162-4ad5-a8e7-373a75ca295c-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-12b1dc3a3dbe",
+      "originalUrl": "blob:https://vite.dev/744a15a3-9b7d-4b7a-8d29-6a03ed75d3e5",
+      "localPath": "assets/files/744a15a3-9b7d-4b7a-8d29-6a03ed75d3e5-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5811757688a0",
+      "originalUrl": "blob:https://vite.dev/76079238-da11-408b-8865-33fcb2e77869",
+      "localPath": "assets/files/76079238-da11-408b-8865-33fcb2e77869-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-33c279cdb82c",
+      "originalUrl": "blob:https://vite.dev/cf9a9684-bd4f-4c6a-8377-a2e9fad5a943",
+      "localPath": "assets/files/cf9a9684-bd4f-4c6a-8377-a2e9fad5a943-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e5e33d5ac8f2",
+      "originalUrl": "blob:https://vite.dev/46009e2c-5d89-4911-8843-fd8714301a11",
+      "localPath": "assets/files/46009e2c-5d89-4911-8843-fd8714301a11-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9ec0f689cef3",
+      "originalUrl": "blob:https://vite.dev/9133d2d5-5409-4ef4-82fa-030e8ab93840",
+      "localPath": "assets/files/9133d2d5-5409-4ef4-82fa-030e8ab93840-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2de3c37231df",
+      "originalUrl": "blob:https://vite.dev/02959e72-a1f6-4515-8b23-8e19daa18548",
+      "localPath": "assets/files/02959e72-a1f6-4515-8b23-8e19daa18548-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f85fced04c04",
+      "originalUrl": "blob:https://vite.dev/d3c642f3-e9f2-44f1-a0fb-cbf10e7c58df",
+      "localPath": "assets/files/d3c642f3-e9f2-44f1-a0fb-cbf10e7c58df-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c93cc519bcb6",
+      "originalUrl": "blob:https://vite.dev/ed5ca889-e635-4768-9bb7-6934164ccf02",
+      "localPath": "assets/files/ed5ca889-e635-4768-9bb7-6934164ccf02-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ca93393e2e59",
+      "originalUrl": "blob:https://vite.dev/fe7b36f1-7c8a-4bb5-b2ce-d491d7c3cb97",
+      "localPath": "assets/files/fe7b36f1-7c8a-4bb5-b2ce-d491d7c3cb97-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-caf6b2869651",
+      "originalUrl": "blob:https://vite.dev/05c8e632-5a9e-447e-bb96-288298c505e6",
+      "localPath": "assets/files/05c8e632-5a9e-447e-bb96-288298c505e6-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a98e6ef6789c",
+      "originalUrl": "blob:https://vite.dev/5ef37a88-0a51-4ca9-ad78-f69b8c356774",
+      "localPath": "assets/files/5ef37a88-0a51-4ca9-ad78-f69b8c356774-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-18fe8aaf4aab",
+      "originalUrl": "blob:https://vite.dev/878bdf13-7f48-4837-9143-54b26a5dd120",
+      "localPath": "assets/files/878bdf13-7f48-4837-9143-54b26a5dd120-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-12aea259fe8e",
+      "originalUrl": "blob:https://vite.dev/84523ce6-5107-4f8d-99d1-78e22c9e251a",
+      "localPath": "assets/files/84523ce6-5107-4f8d-99d1-78e22c9e251a-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ec28a8c58412",
+      "originalUrl": "blob:https://vite.dev/4060408b-1d40-4e18-bd0a-d631f93db60a",
+      "localPath": "assets/files/4060408b-1d40-4e18-bd0a-d631f93db60a-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3ce9d0706267",
+      "originalUrl": "blob:https://vite.dev/e0d63eb6-22f4-4caf-8207-9848c5d13aab",
+      "localPath": "assets/files/e0d63eb6-22f4-4caf-8207-9848c5d13aab-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-37f356f7a780",
+      "originalUrl": "blob:https://vite.dev/c4b9b9ed-14b6-44de-ba59-2227f6db3aab",
+      "localPath": "assets/files/c4b9b9ed-14b6-44de-ba59-2227f6db3aab-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9c0c098ebc56",
+      "originalUrl": "blob:https://vite.dev/38c2637d-18c1-4346-8c34-a8b2490b1f53",
+      "localPath": "assets/files/38c2637d-18c1-4346-8c34-a8b2490b1f53-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-586643356a23",
+      "originalUrl": "blob:https://vite.dev/b523ca75-aba8-43c6-994a-ab1f41c2d7ea",
+      "localPath": "assets/files/b523ca75-aba8-43c6-994a-ab1f41c2d7ea-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-269bb8630ae3",
+      "originalUrl": "blob:https://vite.dev/a556829b-db99-4a4b-bbde-d9d50b942734",
+      "localPath": "assets/files/a556829b-db99-4a4b-bbde-d9d50b942734-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-870dff294839",
+      "originalUrl": "blob:https://vite.dev/b8c35b18-ce6d-42e0-87c2-dba0b00950cb",
+      "localPath": "assets/files/b8c35b18-ce6d-42e0-87c2-dba0b00950cb-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4a94234521cd",
+      "originalUrl": "blob:https://vite.dev/e4ec3c2e-dbe3-4e1f-9bc3-c05e5ad0c740",
+      "localPath": "assets/files/e4ec3c2e-dbe3-4e1f-9bc3-c05e5ad0c740-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b72cf9b80198",
+      "originalUrl": "blob:https://vite.dev/0115db0d-a867-4d1c-94ba-34d29ca39262",
+      "localPath": "assets/files/0115db0d-a867-4d1c-94ba-34d29ca39262-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1251bbf72931",
+      "originalUrl": "blob:https://vite.dev/56b4e57d-ed2f-4b32-b24f-0f5d1bab8369",
+      "localPath": "assets/files/56b4e57d-ed2f-4b32-b24f-0f5d1bab8369-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-02fa234423f3",
+      "originalUrl": "blob:https://vite.dev/2b6eb0f2-52c9-44bb-bba3-3d93bf92b757",
+      "localPath": "assets/files/2b6eb0f2-52c9-44bb-bba3-3d93bf92b757-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-24a0c1c35cc0",
+      "originalUrl": "blob:https://vite.dev/5618db65-be17-491e-9d30-f7a0ce863d86",
+      "localPath": "assets/files/5618db65-be17-491e-9d30-f7a0ce863d86-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-aef945933af5",
+      "originalUrl": "blob:https://vite.dev/d793a322-8275-43c7-b443-175853549b82",
+      "localPath": "assets/files/d793a322-8275-43c7-b443-175853549b82-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bc21f7cfa7cd",
+      "originalUrl": "blob:https://vite.dev/3adbbef4-3076-4953-b9ad-d3263850bb28",
+      "localPath": "assets/files/3adbbef4-3076-4953-b9ad-d3263850bb28-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-734f252044f2",
+      "originalUrl": "blob:https://vite.dev/2a715d00-ffa8-4964-b78e-8adc5057da83",
+      "localPath": "assets/files/2a715d00-ffa8-4964-b78e-8adc5057da83-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-530546c6ab25",
+      "originalUrl": "blob:https://vite.dev/eee14ead-520d-4151-b378-4b2033f5cebe",
+      "localPath": "assets/files/eee14ead-520d-4151-b378-4b2033f5cebe-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-114400233bcf",
+      "originalUrl": "blob:https://vite.dev/8b763611-6da3-45ea-8fb9-f857a7027fb9",
+      "localPath": "assets/files/8b763611-6da3-45ea-8fb9-f857a7027fb9-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-cb4425c236b2",
+      "originalUrl": "blob:https://vite.dev/0259a041-c0aa-4bb2-87b8-d07cd4bb8ba5",
+      "localPath": "assets/files/0259a041-c0aa-4bb2-87b8-d07cd4bb8ba5-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c8782f72438a",
+      "originalUrl": "blob:https://vite.dev/a81bc98c-48ff-4455-8a51-2e797ce9122d",
+      "localPath": "assets/files/a81bc98c-48ff-4455-8a51-2e797ce9122d-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1fe32eccf0f3",
+      "originalUrl": "blob:https://vite.dev/aa28a7d4-a2cf-41e3-9285-e2be9b67acb7",
+      "localPath": "assets/files/aa28a7d4-a2cf-41e3-9285-e2be9b67acb7-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b0be537c8357",
+      "originalUrl": "blob:https://vite.dev/e837b208-cf65-4d79-97f9-2ea3d9a364bc",
+      "localPath": "assets/files/e837b208-cf65-4d79-97f9-2ea3d9a364bc-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4a5083e2588c",
+      "originalUrl": "blob:https://vite.dev/08ee9a52-553a-495e-be19-aa892977f0a5",
+      "localPath": "assets/files/08ee9a52-553a-495e-be19-aa892977f0a5-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-89b0df5580d0",
+      "originalUrl": "blob:https://vite.dev/360123ec-5b86-48db-916b-361e7eaf924b",
+      "localPath": "assets/files/360123ec-5b86-48db-916b-361e7eaf924b-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-4569ce58cc13",
+      "originalUrl": "blob:https://vite.dev/1de94d24-6afd-4628-87b1-086c546853ad",
+      "localPath": "assets/files/1de94d24-6afd-4628-87b1-086c546853ad-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e37b42b465f6",
+      "originalUrl": "blob:https://vite.dev/88adaad4-7496-4e82-b694-c2428a7a5099",
+      "localPath": "assets/files/88adaad4-7496-4e82-b694-c2428a7a5099-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-206800d03f33",
+      "originalUrl": "blob:https://vite.dev/ac088561-0eee-480e-87cf-4238188d54b5",
+      "localPath": "assets/files/ac088561-0eee-480e-87cf-4238188d54b5-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-97cf7b3dba69",
+      "originalUrl": "blob:https://vite.dev/7f19d30b-cbd4-4ccc-af6e-c1de5295e3a7",
+      "localPath": "assets/files/7f19d30b-cbd4-4ccc-af6e-c1de5295e3a7-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9c1a367ec902",
+      "originalUrl": "blob:https://vite.dev/5e9d5ac6-78c7-47e7-9da1-669e98fb98a2",
+      "localPath": "assets/files/5e9d5ac6-78c7-47e7-9da1-669e98fb98a2-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-13d83bcadc9e",
+      "originalUrl": "blob:https://vite.dev/49404224-8919-4f5e-8959-497af59e6dc2",
+      "localPath": "assets/files/49404224-8919-4f5e-8959-497af59e6dc2-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8d76915f54ed",
+      "originalUrl": "blob:https://vite.dev/1db9a27e-3572-4daa-9b40-99b39415d5cb",
+      "localPath": "assets/files/1db9a27e-3572-4daa-9b40-99b39415d5cb-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-0ac2e4ec0e0c",
+      "originalUrl": "blob:https://vite.dev/406980ee-e74e-4720-ac78-ca7a1aa2f2ee",
+      "localPath": "assets/files/406980ee-e74e-4720-ac78-ca7a1aa2f2ee-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7370d2e9bcb4",
+      "originalUrl": "blob:https://vite.dev/753503cc-b441-4861-8b25-bc923d83fe77",
+      "localPath": "assets/files/753503cc-b441-4861-8b25-bc923d83fe77-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-debf9e8fe3ac",
+      "originalUrl": "blob:https://vite.dev/298df34f-dac4-445b-8610-79c2e140b594",
+      "localPath": "assets/files/298df34f-dac4-445b-8610-79c2e140b594-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c17a1f802e9d",
+      "originalUrl": "blob:https://vite.dev/c09e1cf1-3bff-4ab5-b7ee-82d170c1a299",
+      "localPath": "assets/files/c09e1cf1-3bff-4ab5-b7ee-82d170c1a299-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c12f0ee8f62f",
+      "originalUrl": "blob:https://vite.dev/d7f5e74b-5965-43c2-8fef-f1f7cd93fae4",
+      "localPath": "assets/files/d7f5e74b-5965-43c2-8fef-f1f7cd93fae4-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-96dd8f20f3cd",
+      "originalUrl": "blob:https://vite.dev/f4af990c-a55c-4424-ad99-331a004224e2",
+      "localPath": "assets/files/f4af990c-a55c-4424-ad99-331a004224e2-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bb2378f0b627",
+      "originalUrl": "blob:https://vite.dev/c752b6c7-360e-459e-af3e-5ed38ee78e84",
+      "localPath": "assets/files/c752b6c7-360e-459e-af3e-5ed38ee78e84-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-748dbe0cf87c",
+      "originalUrl": "blob:https://vite.dev/5f1d2958-8b87-4a77-8da9-a5c261168de2",
+      "localPath": "assets/files/5f1d2958-8b87-4a77-8da9-a5c261168de2-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-0f60c590b0c6",
+      "originalUrl": "blob:https://vite.dev/b71e3c7f-7230-41fa-8680-56699800127b",
+      "localPath": "assets/files/b71e3c7f-7230-41fa-8680-56699800127b-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a8c8a04041d3",
+      "originalUrl": "blob:https://vite.dev/96943c87-789c-4ed9-b11b-b1d9e44df982",
+      "localPath": "assets/files/96943c87-789c-4ed9-b11b-b1d9e44df982-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1477504529c7",
+      "originalUrl": "blob:https://vite.dev/c7101ed4-d2c2-42b7-a03c-b83e6be9168a",
+      "localPath": "assets/files/c7101ed4-d2c2-42b7-a03c-b83e6be9168a-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-48ff1b23cf6a",
+      "originalUrl": "blob:https://vite.dev/fa3f4e2f-eca7-4093-b42a-c6f6b1342dd0",
+      "localPath": "assets/files/fa3f4e2f-eca7-4093-b42a-c6f6b1342dd0-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f81a32a23c6e",
+      "originalUrl": "blob:https://vite.dev/e1797f45-e65a-410e-a32b-8f3f949821a9",
+      "localPath": "assets/files/e1797f45-e65a-410e-a32b-8f3f949821a9-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ddb585e48838",
+      "originalUrl": "blob:https://vite.dev/3669c97f-3011-4907-8099-3770c7e65ba3",
+      "localPath": "assets/files/3669c97f-3011-4907-8099-3770c7e65ba3-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-171f0e4eed3d",
+      "originalUrl": "blob:https://vite.dev/1fea69c9-5094-4314-853f-80b4036598b5",
+      "localPath": "assets/files/1fea69c9-5094-4314-853f-80b4036598b5-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f519a019855b",
+      "originalUrl": "blob:https://vite.dev/f2bf34bd-cccf-4931-a94a-5677ea8598aa",
+      "localPath": "assets/files/f2bf34bd-cccf-4931-a94a-5677ea8598aa-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-51ed5382df4d",
+      "originalUrl": "blob:https://vite.dev/907f5326-a8b6-4deb-b254-ddcae2306086",
+      "localPath": "assets/files/907f5326-a8b6-4deb-b254-ddcae2306086-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-86c27441817e",
+      "originalUrl": "blob:https://vite.dev/48afde03-9121-4eef-a10c-464f1294833b",
+      "localPath": "assets/files/48afde03-9121-4eef-a10c-464f1294833b-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b29756d2512d",
+      "originalUrl": "blob:https://vite.dev/9352b859-88b4-478d-8cc7-73823f7e6c4e",
+      "localPath": "assets/files/9352b859-88b4-478d-8cc7-73823f7e6c4e-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-67487ba3ed80",
+      "originalUrl": "blob:https://vite.dev/a9e6519f-6b1a-4666-8902-7273474c6cce",
+      "localPath": "assets/files/a9e6519f-6b1a-4666-8902-7273474c6cce-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a723fe1bb2b7",
+      "originalUrl": "blob:https://vite.dev/74261bff-8cc7-42b8-a4da-8b239e71b27b",
+      "localPath": "assets/files/74261bff-8cc7-42b8-a4da-8b239e71b27b-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ca324ccbe427",
+      "originalUrl": "blob:https://vite.dev/23c49ade-2125-4233-b7aa-07979ca1b0c9",
+      "localPath": "assets/files/23c49ade-2125-4233-b7aa-07979ca1b0c9-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-56ac0f5f27ea",
+      "originalUrl": "blob:https://vite.dev/7e36c3bd-83cd-4f07-b253-cb0cb43c0069",
+      "localPath": "assets/files/7e36c3bd-83cd-4f07-b253-cb0cb43c0069-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-72d0b1e3d820",
+      "originalUrl": "blob:https://vite.dev/66338b2c-0e23-4195-9c03-da242a1bd7a8",
+      "localPath": "assets/files/66338b2c-0e23-4195-9c03-da242a1bd7a8-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-af38e3ddec5d",
+      "originalUrl": "blob:https://vite.dev/6f46ddc9-136b-4dea-a4d0-ade927fc4f8b",
+      "localPath": "assets/files/6f46ddc9-136b-4dea-a4d0-ade927fc4f8b-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-83929c8ba44e",
+      "originalUrl": "blob:https://vite.dev/5003382a-a4d4-4cce-a745-99cc98dacfac",
+      "localPath": "assets/files/5003382a-a4d4-4cce-a745-99cc98dacfac-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b01399c4407c",
+      "originalUrl": "blob:https://vite.dev/2b483a9e-2640-4c44-ba58-0745b04d8c29",
+      "localPath": "assets/files/2b483a9e-2640-4c44-ba58-0745b04d8c29-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bb246b6b86c2",
+      "originalUrl": "blob:https://vite.dev/3baf9794-7bf6-47bc-afbd-87af9ac4d1de",
+      "localPath": "assets/files/3baf9794-7bf6-47bc-afbd-87af9ac4d1de-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-55a3eff983f7",
+      "originalUrl": "blob:https://vite.dev/0c2f1017-2406-4468-9947-4058ad17effa",
+      "localPath": "assets/files/0c2f1017-2406-4468-9947-4058ad17effa-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-733579bc47eb",
+      "originalUrl": "blob:https://vite.dev/af6905e3-a8f4-4b0c-b28a-5013400b3605",
+      "localPath": "assets/files/af6905e3-a8f4-4b0c-b28a-5013400b3605-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-43eb756c2c50",
+      "originalUrl": "blob:https://vite.dev/9acf9d3a-8e9d-47fd-9072-a3eec5e05591",
+      "localPath": "assets/files/9acf9d3a-8e9d-47fd-9072-a3eec5e05591-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f889a62aedb2",
+      "originalUrl": "blob:https://vite.dev/2ac4eacd-0f63-452b-91d9-646eb911f3c5",
+      "localPath": "assets/files/2ac4eacd-0f63-452b-91d9-646eb911f3c5-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-083513afb9d2",
+      "originalUrl": "blob:https://vite.dev/8f8c60d9-2f28-46b2-87fb-ae8db07991d1",
+      "localPath": "assets/files/8f8c60d9-2f28-46b2-87fb-ae8db07991d1-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-85e8f56b5e93",
+      "originalUrl": "blob:https://vite.dev/933062d8-3e0e-410c-ae58-b1ae6dad69ca",
+      "localPath": "assets/files/933062d8-3e0e-410c-ae58-b1ae6dad69ca-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fd8bf1049983",
+      "originalUrl": "blob:https://vite.dev/4df43408-e98f-46e2-bc3a-d5cc9f70c700",
+      "localPath": "assets/files/4df43408-e98f-46e2-bc3a-d5cc9f70c700-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b90e14ca7850",
+      "originalUrl": "blob:https://vite.dev/a982565c-88b0-4b24-a0d5-a90891485b8a",
+      "localPath": "assets/files/a982565c-88b0-4b24-a0d5-a90891485b8a-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2493a37baefc",
+      "originalUrl": "blob:https://vite.dev/deba6371-ec6d-4c83-b4dd-5f280678bf00",
+      "localPath": "assets/files/deba6371-ec6d-4c83-b4dd-5f280678bf00-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bc1fb3045fef",
+      "originalUrl": "blob:https://vite.dev/ff994004-9bf1-4b30-93f3-4a3716eadd2b",
+      "localPath": "assets/files/ff994004-9bf1-4b30-93f3-4a3716eadd2b-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-84f41462ff57",
+      "originalUrl": "blob:https://vite.dev/61624d30-e556-45ba-a101-3c92dfde1733",
+      "localPath": "assets/files/61624d30-e556-45ba-a101-3c92dfde1733-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-7b8d53c704e8",
+      "originalUrl": "blob:https://vite.dev/a76bb820-817c-47f1-861d-f902f0650438",
+      "localPath": "assets/files/a76bb820-817c-47f1-861d-f902f0650438-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-deb4afe94c95",
+      "originalUrl": "blob:https://vite.dev/dca7d9be-02b8-42fe-9583-ae7045226ca0",
+      "localPath": "assets/files/dca7d9be-02b8-42fe-9583-ae7045226ca0-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f63d0cb8f469",
+      "originalUrl": "blob:https://vite.dev/2c8e9309-1c30-4633-a833-6d7b61335d3f",
+      "localPath": "assets/files/2c8e9309-1c30-4633-a833-6d7b61335d3f-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-2c32f0e5f204",
+      "originalUrl": "blob:https://vite.dev/74b94c1a-f8aa-44ba-a674-865859f57178",
+      "localPath": "assets/files/74b94c1a-f8aa-44ba-a674-865859f57178-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d85e158d3513",
+      "originalUrl": "blob:https://vite.dev/cb5a7689-805c-47f5-b3ea-d36aa812b2c5",
+      "localPath": "assets/files/cb5a7689-805c-47f5-b3ea-d36aa812b2c5-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-850b80dcd60d",
+      "originalUrl": "blob:https://vite.dev/1b72e67b-510b-4b78-95df-63302bcbada8",
+      "localPath": "assets/files/1b72e67b-510b-4b78-95df-63302bcbada8-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-51d9d00383cc",
+      "originalUrl": "blob:https://vite.dev/1aad494b-57ad-4ef7-8dea-be8f48a1442a",
+      "localPath": "assets/files/1aad494b-57ad-4ef7-8dea-be8f48a1442a-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a65e4f76ddf4",
+      "originalUrl": "blob:https://vite.dev/b5a3e337-84dd-4c3f-a3e4-fa653c27c5c7",
+      "localPath": "assets/files/b5a3e337-84dd-4c3f-a3e4-fa653c27c5c7-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e25ef6599d31",
+      "originalUrl": "blob:https://vite.dev/555cbe13-67de-4649-a672-f33d8303aef5",
+      "localPath": "assets/files/555cbe13-67de-4649-a672-f33d8303aef5-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9d308a295548",
+      "originalUrl": "blob:https://vite.dev/d025e621-be6d-41ef-a821-93806a0ef5bd",
+      "localPath": "assets/files/d025e621-be6d-41ef-a821-93806a0ef5bd-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b6d8b96bc52d",
+      "originalUrl": "blob:https://vite.dev/add752f0-6c9e-49ad-ad48-ebab81861acb",
+      "localPath": "assets/files/add752f0-6c9e-49ad-ad48-ebab81861acb-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-33c22eb65178",
+      "originalUrl": "blob:https://vite.dev/a3d33396-da8e-4e3d-9daf-11041e5cf4ff",
+      "localPath": "assets/files/a3d33396-da8e-4e3d-9daf-11041e5cf4ff-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3f2fed943c74",
+      "originalUrl": "blob:https://vite.dev/aef3f6de-3a37-442d-a927-a7b1bf07e882",
+      "localPath": "assets/files/aef3f6de-3a37-442d-a927-a7b1bf07e882-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e509da2a5fc2",
+      "originalUrl": "blob:https://vite.dev/38581699-179b-47cb-8393-8577b9d3bcda",
+      "localPath": "assets/files/38581699-179b-47cb-8393-8577b9d3bcda-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-82bc56bcb242",
+      "originalUrl": "blob:https://vite.dev/0c4947e2-802a-43f4-b5da-b03826c6634e",
+      "localPath": "assets/files/0c4947e2-802a-43f4-b5da-b03826c6634e-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-bb1f92dd8ec6",
+      "originalUrl": "blob:https://vite.dev/12986bf0-848f-4ff7-bf79-eaa14975c2b3",
+      "localPath": "assets/files/12986bf0-848f-4ff7-bf79-eaa14975c2b3-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6847da5aea70",
+      "originalUrl": "blob:https://vite.dev/40d06db7-4cfb-4d71-856a-7c9c69e9ad15",
+      "localPath": "assets/files/40d06db7-4cfb-4d71-856a-7c9c69e9ad15-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8ccf95e72f3a",
+      "originalUrl": "blob:https://vite.dev/747788ee-197c-4fed-8270-dd5944a53399",
+      "localPath": "assets/files/747788ee-197c-4fed-8270-dd5944a53399-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fa4c15150c32",
+      "originalUrl": "blob:https://vite.dev/bac7fae6-a63b-4217-9225-48805af1fb6f",
+      "localPath": "assets/files/bac7fae6-a63b-4217-9225-48805af1fb6f-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-49f91e52b731",
+      "originalUrl": "blob:https://vite.dev/539974e0-638e-4061-a1d4-e21578b49f6a",
+      "localPath": "assets/files/539974e0-638e-4061-a1d4-e21578b49f6a-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d649845aafea",
+      "originalUrl": "blob:https://vite.dev/26bac411-dcb9-4ef7-82b2-9bebbf97ab2e",
+      "localPath": "assets/files/26bac411-dcb9-4ef7-82b2-9bebbf97ab2e-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-270ad3aa9a6f",
+      "originalUrl": "blob:https://vite.dev/f257e866-6493-46d9-805f-f2153b9251e7",
+      "localPath": "assets/files/f257e866-6493-46d9-805f-f2153b9251e7-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a5c8bf3073e5",
+      "originalUrl": "blob:https://vite.dev/cafec8bd-6e58-467b-a09e-f2deaaf96f9f",
+      "localPath": "assets/files/cafec8bd-6e58-467b-a09e-f2deaaf96f9f-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-69a5008bacab",
+      "originalUrl": "blob:https://vite.dev/8bb05144-dd32-4aad-8f5f-28898faadbac",
+      "localPath": "assets/files/8bb05144-dd32-4aad-8f5f-28898faadbac-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e886c0d003eb",
+      "originalUrl": "blob:https://vite.dev/eebc5171-051e-41ea-bccc-8820aa0880a7",
+      "localPath": "assets/files/eebc5171-051e-41ea-bccc-8820aa0880a7-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8409076efb49",
+      "originalUrl": "blob:https://vite.dev/94040b0a-8aab-436b-8e8b-400cbf427be8",
+      "localPath": "assets/files/94040b0a-8aab-436b-8e8b-400cbf427be8-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-1576c9567b02",
+      "originalUrl": "blob:https://vite.dev/b0db42f0-bd11-4741-b7ff-be3aeb4cd296",
+      "localPath": "assets/files/b0db42f0-bd11-4741-b7ff-be3aeb4cd296-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a81d7a7e9028",
+      "originalUrl": "blob:https://vite.dev/2eee0fe9-8d1b-4ab5-8a65-75a47c519bea",
+      "localPath": "assets/files/2eee0fe9-8d1b-4ab5-8a65-75a47c519bea-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6e5762813632",
+      "originalUrl": "blob:https://vite.dev/04619cb6-4523-42ae-a066-22d407cee19b",
+      "localPath": "assets/files/04619cb6-4523-42ae-a066-22d407cee19b-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d5e5fb61af2b",
+      "originalUrl": "blob:https://vite.dev/7d8d72b9-44b5-4ca3-bd1c-b7f6afb4d0df",
+      "localPath": "assets/files/7d8d72b9-44b5-4ca3-bd1c-b7f6afb4d0df-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c9df57f37d83",
+      "originalUrl": "blob:https://vite.dev/792e5c26-5afa-4f7e-9279-6e028927eac6",
+      "localPath": "assets/files/792e5c26-5afa-4f7e-9279-6e028927eac6-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3d836a9381ea",
+      "originalUrl": "blob:https://vite.dev/417025b4-16c1-4628-a257-af7d62068381",
+      "localPath": "assets/files/417025b4-16c1-4628-a257-af7d62068381-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3d2a416074ec",
+      "originalUrl": "blob:https://vite.dev/99171f1c-3e70-4e64-9a1f-995d2321933f",
+      "localPath": "assets/files/99171f1c-3e70-4e64-9a1f-995d2321933f-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5c0d2a14b890",
+      "originalUrl": "blob:https://vite.dev/183330dd-846a-481c-b43c-c1d7b9f0cb11",
+      "localPath": "assets/files/183330dd-846a-481c-b43c-c1d7b9f0cb11-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3da327209baa",
+      "originalUrl": "blob:https://vite.dev/b8d56bbb-6f19-4705-b1b4-d05dd9bd6f82",
+      "localPath": "assets/files/b8d56bbb-6f19-4705-b1b4-d05dd9bd6f82-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-0cfef22fc369",
+      "originalUrl": "blob:https://vite.dev/ad990374-aed1-444b-b9d4-f5d7470a545a",
+      "localPath": "assets/files/ad990374-aed1-444b-b9d4-f5d7470a545a-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a9d08a7f53d5",
+      "originalUrl": "blob:https://vite.dev/b6fbe6ad-9e18-4f55-9be5-5bd20996d8fd",
+      "localPath": "assets/files/b6fbe6ad-9e18-4f55-9be5-5bd20996d8fd-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-439d68a92af5",
+      "originalUrl": "blob:https://vite.dev/83b4c48e-79fd-4047-83a7-416528a2b954",
+      "localPath": "assets/files/83b4c48e-79fd-4047-83a7-416528a2b954-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-273c352f4ce6",
+      "originalUrl": "blob:https://vite.dev/f3fb3be6-bab0-433d-b8f8-81e0a47f94a7",
+      "localPath": "assets/files/f3fb3be6-bab0-433d-b8f8-81e0a47f94a7-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-dd5d1b8d887e",
+      "originalUrl": "blob:https://vite.dev/799b4051-644d-4ebf-9910-b6a1194fa510",
+      "localPath": "assets/files/799b4051-644d-4ebf-9910-b6a1194fa510-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9f1a0721bfb4",
+      "originalUrl": "blob:https://vite.dev/5d68576a-f5eb-494f-9e7c-616e5a4730c1",
+      "localPath": "assets/files/5d68576a-f5eb-494f-9e7c-616e5a4730c1-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c71b3410775c",
+      "originalUrl": "blob:https://vite.dev/028ba353-e938-4089-a030-f1371d346607",
+      "localPath": "assets/files/028ba353-e938-4089-a030-f1371d346607-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-8b087371869b",
+      "originalUrl": "blob:https://vite.dev/820a5888-9594-45d1-843c-b795f77155e6",
+      "localPath": "assets/files/820a5888-9594-45d1-843c-b795f77155e6-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a33cb8f80d8c",
+      "originalUrl": "blob:https://vite.dev/902b4b67-e10e-4eea-ae12-c743d60ecb04",
+      "localPath": "assets/files/902b4b67-e10e-4eea-ae12-c743d60ecb04-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e0028df9399a",
+      "originalUrl": "blob:https://vite.dev/1df754da-6785-4023-9bd2-9da940e662ba",
+      "localPath": "assets/files/1df754da-6785-4023-9bd2-9da940e662ba-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-0dc372ed8ec4",
+      "originalUrl": "blob:https://vite.dev/06ad88b6-5813-400b-b76b-862dc5bad47e",
+      "localPath": "assets/files/06ad88b6-5813-400b-b76b-862dc5bad47e-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-e1a48b589d4e",
+      "originalUrl": "blob:https://vite.dev/4793745c-26e0-4176-a9c5-c1788e9148d5",
+      "localPath": "assets/files/4793745c-26e0-4176-a9c5-c1788e9148d5-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c5c70458f528",
+      "originalUrl": "blob:https://vite.dev/1ec9f693-1719-40c2-a082-273a84e99db2",
+      "localPath": "assets/files/1ec9f693-1719-40c2-a082-273a84e99db2-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-d1979c7ed67f",
+      "originalUrl": "blob:https://vite.dev/228bb7da-33d0-452d-995b-d27729b67b10",
+      "localPath": "assets/files/228bb7da-33d0-452d-995b-d27729b67b10-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5f65165b743c",
+      "originalUrl": "blob:https://vite.dev/74943f2b-68e6-462d-b7fe-8fb6dcd1a6d5",
+      "localPath": "assets/files/74943f2b-68e6-462d-b7fe-8fb6dcd1a6d5-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f60779eed677",
+      "originalUrl": "blob:https://vite.dev/d6712949-10f6-4ff4-b1d5-5730778202c9",
+      "localPath": "assets/files/d6712949-10f6-4ff4-b1d5-5730778202c9-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-717fb2c13650",
+      "originalUrl": "blob:https://vite.dev/80d83ae4-c351-405c-9f66-76372495549f",
+      "localPath": "assets/files/80d83ae4-c351-405c-9f66-76372495549f-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-add9568093a9",
+      "originalUrl": "blob:https://vite.dev/f29827dd-569f-41e0-bb00-304e3653ba1a",
+      "localPath": "assets/files/f29827dd-569f-41e0-bb00-304e3653ba1a-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-89f7ff4bc2d7",
+      "originalUrl": "blob:https://vite.dev/875a087d-1b20-46db-a67f-c63f9bedfa74",
+      "localPath": "assets/files/875a087d-1b20-46db-a67f-c63f9bedfa74-afe05f8d89",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-50787ab16173",
+      "originalUrl": "blob:https://vite.dev/4e9bd321-7887-42fb-9c48-861de43f3c42",
+      "localPath": "assets/files/4e9bd321-7887-42fb-9c48-861de43f3c42-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-604fcac2e65e",
+      "originalUrl": "blob:https://vite.dev/b214c556-ec5c-488f-940b-2cd58fa36831",
+      "localPath": "assets/files/b214c556-ec5c-488f-940b-2cd58fa36831-c2f53bb3f9",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-f89a76d738b5",
+      "originalUrl": "blob:https://vite.dev/57c7fefe-8e63-45d7-869b-48eedbfc3ba6",
+      "localPath": "assets/files/57c7fefe-8e63-45d7-869b-48eedbfc3ba6-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-eac91847891a",
+      "originalUrl": "blob:https://vite.dev/62887300-1cf0-48d5-933b-895989530d40",
+      "localPath": "assets/files/62887300-1cf0-48d5-933b-895989530d40-52130f290f",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-ef6048c1b365",
+      "originalUrl": "blob:https://vite.dev/c5ec2f01-751a-472f-a227-a45add83ce7e",
+      "localPath": "assets/files/c5ec2f01-751a-472f-a227-a45add83ce7e-b8d7158d95",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9c5dd7826bc6",
+      "originalUrl": "blob:https://vite.dev/2454bc24-f430-421f-b55e-5fc00caa7c22",
+      "localPath": "assets/files/2454bc24-f430-421f-b55e-5fc00caa7c22-0268189d66",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-aed8427b052c",
+      "originalUrl": "blob:https://vite.dev/183695b7-169a-47cd-ba49-c23222c95af4",
+      "localPath": "assets/files/183695b7-169a-47cd-ba49-c23222c95af4-9fc5f831b4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a29e6c59972b",
+      "originalUrl": "blob:https://vite.dev/99f7ff4d-e989-4f87-ada8-e6c88f9d8fa7",
+      "localPath": "assets/files/99f7ff4d-e989-4f87-ada8-e6c88f9d8fa7-e34fe00f82",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-75c69c05fcf2",
+      "originalUrl": "blob:https://vite.dev/88b7d3b5-b5df-4b65-ab3a-be42a5f3132f",
+      "localPath": "assets/files/88b7d3b5-b5df-4b65-ab3a-be42a5f3132f-a9c1d30185",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-a2579aa61f6b",
+      "originalUrl": "blob:https://vite.dev/2eb4edcc-f6e1-4096-a8b3-bccbb536e7b3",
+      "localPath": "assets/files/2eb4edcc-f6e1-4096-a8b3-bccbb536e7b3-16e19128db",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-be02e527fa58",
+      "originalUrl": "blob:https://vite.dev/065d5cf0-a1af-4ff3-8a0d-bc5e8a4d9096",
+      "localPath": "assets/files/065d5cf0-a1af-4ff3-8a0d-bc5e8a4d9096-be5ee049d1",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-c3a84757b175",
+      "originalUrl": "blob:https://vite.dev/16a3a321-5e4c-4cb7-829c-1cf41692e491",
+      "localPath": "assets/files/16a3a321-5e4c-4cb7-829c-1cf41692e491-05efe73439",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-3c049c7af427",
+      "originalUrl": "blob:https://vite.dev/cadaf27b-4d2a-4761-8d73-37d29eb56a51",
+      "localPath": "assets/files/cadaf27b-4d2a-4761-8d73-37d29eb56a51-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-958a507e82bc",
+      "originalUrl": "blob:https://vite.dev/a9eadf1e-d786-49b7-a1ee-514ef3ec27ae",
+      "localPath": "assets/files/a9eadf1e-d786-49b7-a1ee-514ef3ec27ae-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-32150454fcdf",
+      "originalUrl": "blob:https://vite.dev/a58d916d-cf10-4c1a-a8cd-549956bcdc17",
+      "localPath": "assets/files/a58d916d-cf10-4c1a-a8cd-549956bcdc17-d667300e46",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6e6ff4cceabd",
+      "originalUrl": "blob:https://vite.dev/7070e3a5-1c2d-4ef7-a866-bebdb4d25560",
+      "localPath": "assets/files/7070e3a5-1c2d-4ef7-a866-bebdb4d25560-66339f0ad3",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-9a558df0879e",
+      "originalUrl": "blob:https://vite.dev/a792305c-3a7a-4f08-89e9-64821842e64c",
+      "localPath": "assets/files/a792305c-3a7a-4f08-89e9-64821842e64c-45066737b5",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-531a789efa23",
+      "originalUrl": "blob:https://vite.dev/d2321e8c-6d84-4a17-9e0f-0e1eeea78818",
+      "localPath": "assets/files/d2321e8c-6d84-4a17-9e0f-0e1eeea78818-8bc3e30684",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-83536c98eaf9",
+      "originalUrl": "blob:https://vite.dev/74dce322-4b30-42b7-9ea6-7a61328a58ca",
+      "localPath": "assets/files/74dce322-4b30-42b7-9ea6-7a61328a58ca-95bd4852f4",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-fb780f0c55b3",
+      "originalUrl": "blob:https://vite.dev/939de791-da3b-45be-b914-610add98d283",
+      "localPath": "assets/files/939de791-da3b-45be-b914-610add98d283-d8b77753e2",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-6ecdfa5689b2",
+      "originalUrl": "blob:https://vite.dev/3add0aa1-610f-406f-91ab-e64d706991d6",
+      "localPath": "assets/files/3add0aa1-610f-406f-91ab-e64d706991d6-303e46b1d7",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-75368eddaaee",
+      "originalUrl": "blob:https://vite.dev/274e8d2c-68ae-4bab-a889-0f4dd5a12d84",
+      "localPath": "assets/files/274e8d2c-68ae-4bab-a889-0f4dd5a12d84-27aa152e7d",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-b6fd5ecc5567",
+      "originalUrl": "blob:https://vite.dev/f82d98e5-c1f3-480c-894a-4b513aa9f719",
+      "localPath": "assets/files/f82d98e5-c1f3-480c-894a-4b513aa9f719-997832c36b",
+      "mimeType": "image/png"
+    },
+    {
+      "id": "asset-5abf8fb1e70d",
+      "originalUrl": "blob:https://vite.dev/dc422030-19f9-44b9-a136-b8b7d63f72e0",
+      "localPath": "assets/files/dc422030-19f9-44b9-a136-b8b7d63f72e0-afe05f8d89",
+      "mimeType": "image/png"
+    }
+  ]
+}

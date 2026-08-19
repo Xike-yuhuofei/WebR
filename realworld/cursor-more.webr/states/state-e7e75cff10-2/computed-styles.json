@@ -1,0 +1,80 @@
+{
+  "html": {
+    "color": "rgb(0, 0, 0)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "font-family": "Times",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "normal",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "margin": "0px",
+    "padding": "0px",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "0px"
+  },
+  "body": {
+    "color": "rgb(102, 102, 102)",
+    "background-color": "rgb(255, 255, 255)",
+    "font-family": "-apple-system, \"system-ui\", \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+    "font-size": "22.4px",
+    "font-weight": "400",
+    "line-height": "34.72px",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "margin": "0px",
+    "padding": "0px",
+    "border-color": "rgb(102, 102, 102)",
+    "border-radius": "0px"
+  },
+  "main": {
+    "color": "rgb(102, 102, 102)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "font-family": "-apple-system, \"system-ui\", \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+    "font-size": "22.4px",
+    "font-weight": "400",
+    "line-height": "34.72px",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "margin": "323.516px 25.2344px",
+    "padding": "16px 32px",
+    "border-color": "rgb(102, 102, 102)",
+    "border-radius": "0px"
+  },
+  "footer": {
+    "color": "rgb(102, 102, 102)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "font-family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+    "font-size": "12px",
+    "font-weight": "200",
+    "line-height": "16px",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "margin": "0px",
+    "padding": "24px 12px",
+    "border-color": "rgb(102, 102, 102)",
+    "border-radius": "0px"
+  },
+  "a": {
+    "color": "rgb(0, 112, 243)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "font-family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+    "font-size": "12px",
+    "font-weight": "200",
+    "line-height": "16px",
+    "display": "inline",
+    "visibility": "visible",
+    "opacity": "1",
+    "margin": "0px",
+    "padding": "0px",
+    "border-color": "rgb(0, 112, 243)",
+    "border-radius": "0px"
+  },
+  "_interactiveClasses": {
+    "fix-text": "fix-text"
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Config | Vite</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="wr-App">
+      <header class="wr-Header">
+        <div class="wr-Header-inner wr-Container">
+          <a class="wr-Header-brand" href="/index.html">
+            <img class="wr-Header-logo" src="../assets/files/vite-light.t8GCa_VF-4529cda6e4.svg" alt="Vite" />
+            <span>Config</span>
+          </a>
+          <nav class="wr-Header-nav">
+            <a class="wr-Header-link" href="/guide">Guide</a>
+            <a class="wr-Header-link" href="/config">Config</a>
+            <a class="wr-Header-link" href="/plugins">Plugins</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="wr-Section wr-Container wr-Container--narrow">
+        <h1>Config</h1>
+        <h2>Configuring Vite</h2>
+        <p>When running vite from the command line, Vite will automatically try to resolve a config file named vite.config.js inside the project root.</p>
+        <h2>Config Intellisense</h2>
+        <p>Vite ships with TypeScript typings for full editor IntelliSense.</p>
+        <h2>Conditional Config</h2>
+        <p>If the config needs to conditionally determine options based on command, mode or target, it can export a function.</p>
+        <h2>Async Config</h2>
+        <p>The config file can export a promise, allowing asynchronous config resolution.</p>
+        <h2>Using Environment Variables in Config</h2>
+        <p>Environment variables can be loaded with a loadEnv helper.</p>
+        <h2>Debugging the Config File in VS Code</h2>
+        <p>Breakpoints in the config file can be debugged with the VS Code debugger.</p>
+      </main>
+
+      <footer class="wr-Footer">
+        <div class="wr-Footer-bottom wr-Container">
+          <p>&copy; Vite — Free &amp; open source. MIT Licensed.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../app.js" defer></script>
+  </body>
+</html>

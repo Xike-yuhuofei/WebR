@@ -1,0 +1,1397 @@
+{
+  "assets": [
+    {
+      "id": "asset-68a440e2ca4f",
+      "originalUrl": "chrome-extension://bpoadfkcbjbfhfodiogcnhhhpibjhbnh/content_main.js",
+      "localPath": "assets/files/content_main-dbeb075e65.js",
+      "mimeType": "text/javascript",
+      "sha256": "dbeb075e653e9ddd3fe09a55bbd6ee7c530aef0a7920669cbdcab49724bca3c1"
+    },
+    {
+      "id": "asset-c652208475b9",
+      "originalUrl": "chrome-extension://bpoadfkcbjbfhfodiogcnhhhpibjhbnh/default_config.content.json",
+      "localPath": "assets/files/default_config.content-d21eb79d3d.json",
+      "mimeType": "application/json",
+      "sha256": "d21eb79d3d4ddfbf527359872955dfe3b1f900d3a09797fb445efb63fab6895b"
+    },
+    {
+      "id": "asset-796cd369d958",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/argus-builder-strategy.1ab070bc.js",
+      "localPath": "assets/files/argus-builder-strategy.1ab070bc-e76d3ddb62.js",
+      "mimeType": "application/javascript",
+      "sha256": "e76d3ddb62bc5b899743779b8e6f15e9e56d9b5018520bb7482b899be0009cc9"
+    },
+    {
+      "id": "asset-aa0c71b65b13",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-router.f0336b25.js",
+      "localPath": "assets/files/lib-router.f0336b25-ac540f784d.js",
+      "mimeType": "application/javascript",
+      "sha256": "ac540f784dca07dfd81cc0d6d7a7817d4b7603e64847917298b6e1a4f8b14dbd"
+    },
+    {
+      "id": "asset-9fa53f40ab36",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/680.c6d3cdc1.css",
+      "localPath": "assets/files/680.c6d3cdc1-f1148a127f.css",
+      "mimeType": "text/css",
+      "sha256": "f1148a127fb1c6310436c48bff3ccb54eeb0cb5a001909f39ca829868f9a8129"
+    },
+    {
+      "id": "asset-5148060f0938",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-framer-motion.c1a1b34e.js",
+      "localPath": "assets/files/lib-framer-motion.c1a1b34e-eb46bb1765.js",
+      "mimeType": "application/javascript",
+      "sha256": "eb46bb176531ab09b8cc74577ccddb2dfc2426075662b9e6d4c8c6f528496ceb"
+    },
+    {
+      "id": "asset-b5e2fa9a4c46",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/6326.f458c28f.css",
+      "localPath": "assets/files/6326.f458c28f-1446933a0a.css",
+      "mimeType": "text/css",
+      "sha256": "1446933a0a6e87a59d03d38b5e6cc7e74f3b9655ef9195448e7e390ca9449841"
+    },
+    {
+      "id": "asset-a31a8729b04a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/main.7398b986.css",
+      "localPath": "assets/files/main.7398b986-be70391e49.css",
+      "mimeType": "text/css",
+      "sha256": "be70391e49120200af93b78fc27c7cd883908f6a97a1053c6c2dcea215f8f4eb"
+    },
+    {
+      "id": "asset-9af3a498af87",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-axios.758f5b0e.js",
+      "localPath": "assets/files/lib-axios.758f5b0e-e1be5eb07c.js",
+      "mimeType": "application/javascript",
+      "sha256": "e1be5eb07c7843185954f4362d1ca17379feb8bec197e233211c67e7f9a1c169"
+    },
+    {
+      "id": "asset-c4f632e2c3dc",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/1426.1b8a058b.js",
+      "localPath": "assets/files/1426.1b8a058b-1141e5dbd3.js",
+      "mimeType": "application/javascript",
+      "sha256": "1141e5dbd3159f691fe3ab1b6704d3ca055834b9af68fe4edc5d9e9e33d1d1d3"
+    },
+    {
+      "id": "asset-6836cec38d7b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-polyfill.39b78bfb.js",
+      "localPath": "assets/files/lib-polyfill.39b78bfb-31bd8a60fa.js",
+      "mimeType": "application/javascript",
+      "sha256": "31bd8a60fa505fba595983b7cdfe617192adc5fc367e54351608ed6a3f395cae"
+    },
+    {
+      "id": "asset-e0f9fd0e6a65",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/lib-react.5174bd9e.js",
+      "localPath": "assets/files/lib-react.5174bd9e-e7c5a38351.js",
+      "mimeType": "application/javascript",
+      "sha256": "e7c5a38351c8746310de8cb08c658a24975b6aee7e40b2fec71fa341e5fc032f"
+    },
+    {
+      "id": "asset-660008a2276b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/6056.846a47d3.js",
+      "localPath": "assets/files/6056.846a47d3-f3fd3ea7b5.js",
+      "mimeType": "application/javascript",
+      "sha256": "f3fd3ea7b5fc45abb4b7732c98479c0f12d4d1ead17113001c88865c03f1683c"
+    },
+    {
+      "id": "asset-034ab89043a3",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/680.7945c0fe.js",
+      "localPath": "assets/files/680.7945c0fe-193ff0e2fb.js",
+      "mimeType": "application/javascript",
+      "sha256": "193ff0e2fbfc4d5eee79536103f14a1d6921acc3c931b194f4fcbb33f7af961e"
+    },
+    {
+      "id": "asset-b65d05ede1ed",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/1357.18c1fb2d.js",
+      "localPath": "assets/files/1357.18c1fb2d-ae7d657f93.js",
+      "mimeType": "application/javascript",
+      "sha256": "ae7d657f938375e8eaaf50694005967f5c525abeb8b3474845ce6203b0afeb58"
+    },
+    {
+      "id": "asset-666b117fd660",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/main.2e4cc764.js",
+      "localPath": "assets/files/main.2e4cc764-4eb484f48f.js",
+      "mimeType": "application/javascript",
+      "sha256": "4eb484f48f36210b8692aadbcb98911fb193604326749ca8be4ca01577f647c9"
+    },
+    {
+      "id": "asset-97cee450e9a8",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/6326.fb5c3692.js",
+      "localPath": "assets/files/6326.fb5c3692-8a8a85348d.js",
+      "mimeType": "application/javascript",
+      "sha256": "8a8a85348d96acbf87b54312133c1a30774d74a128d17ea0fa0b22166c55ac3f"
+    },
+    {
+      "id": "asset-c8875206c90b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/7614.6420d7a9.css",
+      "localPath": "assets/files/7614.6420d7a9-d7bdd017c6.css",
+      "mimeType": "text/css",
+      "sha256": "d7bdd017c6260084d0dc4d2cda04a8ec2262fbc6e34987eb05eb5a7bb60db704"
+    },
+    {
+      "id": "asset-f46ea69753d2",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/8317.51ac482a.css",
+      "localPath": "assets/files/8317.51ac482a-2a9dc28e29.css",
+      "mimeType": "text/css",
+      "sha256": "2a9dc28e297d4fe48ab01b710815622809374097a54c26ea7d8335d2639e0342"
+    },
+    {
+      "id": "asset-2fcc93d53b2c",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/7839.fb095fac.css",
+      "localPath": "assets/files/7839.fb095fac-622fc71080.css",
+      "mimeType": "text/css",
+      "sha256": "622fc7108008e2aaa4e347bd354660e749fe007367414a80c1ccc42543a7dee1"
+    },
+    {
+      "id": "asset-1ab503b1823f",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/8682.bc73944e.js",
+      "localPath": "assets/files/8682.bc73944e-616046d133.js",
+      "mimeType": "application/javascript",
+      "sha256": "616046d133ffbef48214a2049a62db1f5f7c05412dcc398d5a78dfd06ef9f7d3"
+    },
+    {
+      "id": "asset-35cb1820d2fa",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7614.46ad1e19.js",
+      "localPath": "assets/files/7614.46ad1e19-9382207087.js",
+      "mimeType": "application/javascript",
+      "sha256": "938220708721297696969817b8b7624258cbc663fbe2863cd96c9914d9b7d2a6"
+    },
+    {
+      "id": "asset-8a99c67fe40e",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/6074.b64afe01.js",
+      "localPath": "assets/files/6074.b64afe01-273cc56c2c.js",
+      "mimeType": "application/javascript",
+      "sha256": "273cc56c2c49588c9d11b87395e808a6cdfa7285dda8526f13ca57f9932f157e"
+    },
+    {
+      "id": "asset-5b598a129c3d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/4575.3b35873a.js",
+      "localPath": "assets/files/4575.3b35873a-466fd1588c.js",
+      "mimeType": "application/javascript",
+      "sha256": "466fd1588c3a48db8e98103499b4413db364007c528beccb5843cc80501482ba"
+    },
+    {
+      "id": "asset-67829607650d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7839.dc74cbda.js",
+      "localPath": "assets/files/7839.dc74cbda-3a89294b60.js",
+      "mimeType": "application/javascript",
+      "sha256": "3a89294b601f480f465bb5a3433fbfcda030693796ae97aadbdbab7a87c3c306"
+    },
+    {
+      "id": "asset-830f1d80d78b",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/8203.34de4ecf.js",
+      "localPath": "assets/files/8203.34de4ecf-bc41e64fa7.js",
+      "mimeType": "application/javascript",
+      "sha256": "bc41e64fa776a4baddbf525ecfefb2afe94d8044142de82d3ec6d12f3fcaa586"
+    },
+    {
+      "id": "asset-ec904d9cb4a7",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1693.1f3804c0.js",
+      "localPath": "assets/files/1693.1f3804c0-5091bebd6a.js",
+      "mimeType": "application/javascript",
+      "sha256": "5091bebd6a51a5d134d024e54d7ba71fb1632f3e72d5219a4918afb75aa95398"
+    },
+    {
+      "id": "asset-e5af6a50af6a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7774.8f4f6a98.js",
+      "localPath": "assets/files/7774.8f4f6a98-97bb0a15c0.js",
+      "mimeType": "application/javascript",
+      "sha256": "97bb0a15c0e7322507e6e3b8f948c19a0b7189d3fb16b3a343b1618b53147b84"
+    },
+    {
+      "id": "asset-ff65b331a52c",
+      "originalUrl": "https://starling.zijieapi.com/check_and_get_text/b6cbdbd05b0a11f1aa88adcf24691eff/normal/trae-work?lang=zh,zh&version=1787131132023645000",
+      "localPath": "assets/files/trae-work-8387c79320",
+      "mimeType": "application/json",
+      "sha256": "8387c793204d6b8c315717347fced997d3015e4c15fecb95b1f12183b24721f6"
+    },
+    {
+      "id": "asset-ad3db8927423",
+      "originalUrl": "https://work.trae.cn/icon-192.png",
+      "localPath": "assets/files/icon-192-c98dd31ad2.png",
+      "mimeType": "image/png",
+      "sha256": "c98dd31ad2e19d53f0cf6fe20fe0bf759a367b7159ee64de231d1de51bc6e333"
+    },
+    {
+      "id": "asset-c9381e135cbb",
+      "originalUrl": "https://work.trae.cn/ttwid/check/",
+      "localPath": "assets/files/check-69f8c71132",
+      "mimeType": "application/json",
+      "sha256": "69f8c71132e9748cafffdf2f7ea83d839a17a70333f5d9d21ad4c29cb65c88e6"
+    },
+    {
+      "id": "asset-41ddcfa4aaf8",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/4653.17fbf6d6.css",
+      "localPath": "assets/files/4653.17fbf6d6-f217c301cc.css",
+      "mimeType": "text/css",
+      "sha256": "f217c301ccf25596c931823facecf983eedee4d0319df3d99bf2e545c8b188c9"
+    },
+    {
+      "id": "asset-f87e89148a5d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7379.676ada39.js",
+      "localPath": "assets/files/7379.676ada39-4fa95f17dc.js",
+      "mimeType": "application/javascript",
+      "sha256": "4fa95f17dc059aa4888490ae0f10bcc953bc67010eea528537721c0958d2c274"
+    },
+    {
+      "id": "asset-955b760e89a2",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/page.c5ae03e8.css",
+      "localPath": "assets/files/page.c5ae03e8-bed362fc48.css",
+      "mimeType": "text/css",
+      "sha256": "bed362fc4814c7abbf168d27267367f173f6822023e24f73d7c35632307e077f"
+    },
+    {
+      "id": "asset-4c9d9468572c",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5271.5b615c32.js",
+      "localPath": "assets/files/5271.5b615c32-5d7362dd07.js",
+      "mimeType": "application/javascript",
+      "sha256": "5d7362dd0775284303b307a5b29e8b6dd63eccf539574413acc64d67590e4acd"
+    },
+    {
+      "id": "asset-7b736c588a47",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/lib-arco-icons.c53070d6.js",
+      "localPath": "assets/files/lib-arco-icons.c53070d6-29361409d9.js",
+      "mimeType": "application/javascript",
+      "sha256": "29361409d94a9a6a5787096f88329386779cf978b2fdd1cdcbf0a89d0f4f96ac"
+    },
+    {
+      "id": "asset-22226c342eec",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5833.897c6cb1.js",
+      "localPath": "assets/files/5833.897c6cb1-1d6c721476.js",
+      "mimeType": "application/javascript",
+      "sha256": "1d6c7214762b18f66921668dc8b7366f532bed287717e16efc3b9270b54b1c28"
+    },
+    {
+      "id": "asset-381c09fc47bf",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/5736.491bd799.js",
+      "localPath": "assets/files/5736.491bd799-668db19853.js",
+      "mimeType": "application/javascript",
+      "sha256": "668db19853bc6a66b1f788a239f9207df42a2a6e5412d299f9110c1f3c785da2"
+    },
+    {
+      "id": "asset-ce5851e68da5",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/581.4925287a.js",
+      "localPath": "assets/files/581.4925287a-ddfc3c0b07.js",
+      "mimeType": "application/javascript",
+      "sha256": "ddfc3c0b07a9cf9249e821fa30fc6f99c15ba15de8c6f95478c22524da28dde2"
+    },
+    {
+      "id": "asset-6c5227348cb0",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1854.922104c0.js",
+      "localPath": "assets/files/1854.922104c0-4e545d14ce.js",
+      "mimeType": "application/javascript",
+      "sha256": "4e545d14ce1fd5b005eccf2ce3fbc1d0af91b61407660f89e458a6cf113890bd"
+    },
+    {
+      "id": "asset-b910bb814de9",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/6036.9a65274c.css",
+      "localPath": "assets/files/6036.9a65274c-799f575817.css",
+      "mimeType": "text/css",
+      "sha256": "799f575817bbc383d06fa55f11bff5a8b24d31a1b445f56a655f4cf8275d5932"
+    },
+    {
+      "id": "asset-60fd89b8ef71",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/7618.af8d05c6.css",
+      "localPath": "assets/files/7618.af8d05c6-6f7bbaabcc.css",
+      "mimeType": "text/css",
+      "sha256": "6f7bbaabccf738f585b555751b9f8fbb73aa4d2e2e22a561cc5253c830444122"
+    },
+    {
+      "id": "asset-646ecd0dfa92",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/6036.d878ab4d.js",
+      "localPath": "assets/files/6036.d878ab4d-a14a932d09.js",
+      "mimeType": "application/javascript",
+      "sha256": "a14a932d0948265830e442a7cbd722231db78e19f098b171c5574b71910ac229"
+    },
+    {
+      "id": "asset-d768ac745acd",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7618.4a4a8e8b.js",
+      "localPath": "assets/files/7618.4a4a8e8b-743e649e2c.js",
+      "mimeType": "application/javascript",
+      "sha256": "743e649e2cd3b99a40913a8e8b8ff04f55e73c70690b5c6b359e49726e614d3f"
+    },
+    {
+      "id": "asset-4b24cf5211cc",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/page.19f802d8.js",
+      "localPath": "assets/files/page.19f802d8-98fd775c51.js",
+      "mimeType": "application/javascript",
+      "sha256": "98fd775c5183003831bc4cbfb3ae395233d825470667d57a9bbd056d7b23afd9"
+    },
+    {
+      "id": "asset-9d66d7ebdb95",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/9646.5415a429.js",
+      "localPath": "assets/files/9646.5415a429-a680ad6a82.js",
+      "mimeType": "application/javascript",
+      "sha256": "a680ad6a8263dabe17434c1b7e30fe94eaf974f7fcdb897385271d56293885e2"
+    },
+    {
+      "id": "asset-6524dc7d4747",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/CheckLogin",
+      "localPath": "assets/files/CheckLogin-0154d981b1",
+      "mimeType": "application/json",
+      "sha256": "0154d981b1fe0baa1dd938cb0e40da237485b38e33ca3c6878bc03ad8d9aedb2"
+    },
+    {
+      "id": "asset-a502adcc2b8a",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/common/GetUserToken",
+      "localPath": "assets/files/GetUserToken-3f771be08b",
+      "mimeType": "application/json",
+      "sha256": "3f771be08b8d6eb1ba87cca2c2562df96b777318f0e1d6eb7ce4c4594c76ada3"
+    },
+    {
+      "id": "asset-07c6a234b613",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/GetUserInfo",
+      "localPath": "assets/files/GetUserInfo-96923f9b89",
+      "mimeType": "application/json",
+      "sha256": "96923f9b89522776bef3fe39060916a48fdecec3b79fc4c41c7119ae3efbd81c"
+    },
+    {
+      "id": "asset-77a82056ae01",
+      "originalUrl": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.16.7.js",
+      "localPath": "assets/files/common-monitors.1.16.7-61ee8e97bb.js",
+      "mimeType": "application/javascript",
+      "sha256": "61ee8e97bb39b7968ab148e85b025b6e12974fcad0b3c71f73b3e6a1e68a12d2"
+    },
+    {
+      "id": "asset-a386a7d86e86",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/explorer",
+      "localPath": "assets/files/explorer-d0e616707c",
+      "mimeType": "application/json",
+      "sha256": "d0e616707c89476c95563f32169590a5c0a58a7ad7a1f209bfa3491445c6c4a8"
+    },
+    {
+      "id": "asset-d744e44ede95",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/frontier/access_key",
+      "localPath": "assets/files/access_key-87a31ebb34",
+      "mimeType": "application/json",
+      "sha256": "87a31ebb342d09499f895652d5973e3b0750eabf2ef83d10f8bf8f02852dcbba"
+    },
+    {
+      "id": "asset-96397e16c97d",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions?page_size=100&mode=work",
+      "localPath": "assets/files/chat_sessions-605c46145b",
+      "mimeType": "application/json",
+      "sha256": "605c46145b1016e713c42d32db5f335196f422e4124af970212fb720b2e96818"
+    },
+    {
+      "id": "asset-c3cf3353b2f9",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions?page_size=100&mode=design",
+      "localPath": "assets/files/chat_sessions-605c46145b",
+      "mimeType": "application/json",
+      "sha256": "605c46145b1016e713c42d32db5f335196f422e4124af970212fb720b2e96818"
+    },
+    {
+      "id": "asset-0fc66bd8bc22",
+      "originalUrl": "https://abtestvm.bytedance.com/service/2/abtest_config/",
+      "localPath": "assets/files/abtest_config-970d3a2577",
+      "mimeType": "application/json",
+      "sha256": "970d3a2577b1a17e16173dc921a0076be2392b62bbb52711d444ebd666bd89f6"
+    },
+    {
+      "id": "asset-2a5857a02c80",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions?page_size=100&mode=code",
+      "localPath": "assets/files/chat_sessions-605c46145b",
+      "mimeType": "application/json",
+      "sha256": "605c46145b1016e713c42d32db5f335196f422e4124af970212fb720b2e96818"
+    },
+    {
+      "id": "asset-3820f23cd1f9",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/7108.a4f717bc.js",
+      "localPath": "assets/files/7108.a4f717bc-fb912a721e.js",
+      "mimeType": "application/javascript",
+      "sha256": "fb912a721e55445e2bb2219d6c4715593407b1288bebab5032d5bbc21086034b"
+    },
+    {
+      "id": "asset-c81afea47e80",
+      "originalUrl": "https://p3-passport.byteacctimg.com/img/user-avatar/faf9eaa6ff86f4156dd1414ab7f2544a~128x128.image",
+      "localPath": "assets/files/faf9eaa6ff86f4156dd1414ab7f2544a-128x128-6ba8804e2d.image",
+      "mimeType": "image/png",
+      "sha256": "6ba8804e2d723ab42bf17ce734189adcc52c36aa3d3c44fd0f45cfe68edc1e69"
+    },
+    {
+      "id": "asset-c60e93eac9d3",
+      "originalUrl": "https://api.trae.cn/trae/api/v2/pay/web_user_pay_status",
+      "localPath": "assets/files/web_user_pay_status-60b1531f5a",
+      "mimeType": "application/json",
+      "sha256": "60b1531f5a22fad49ca491514f04bcc6aa53a21db96bc5fff3a360ba0415356d"
+    },
+    {
+      "id": "asset-175d72da2e10",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/models?functions=solo_agent_remote%2Csolo_work_remote%2Csolo_design_remote&show_custom_model=true",
+      "localPath": "assets/files/models-8de18ceb1d",
+      "mimeType": "application/json",
+      "sha256": "8de18ceb1da1bbe007c63e7a7112866d48315adbc73afa08e33f99b3ce2e98ce"
+    },
+    {
+      "id": "asset-542912dcedce",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/GetThirdPartyToken",
+      "localPath": "assets/files/GetThirdPartyToken-a7dfeb4dfe",
+      "mimeType": "application/json",
+      "sha256": "a7dfeb4dfe47266e0e2aee2d363770a5a5d6b20da7fafc9db7da61783cea42c4"
+    },
+    {
+      "id": "asset-1730f6e1bcf6",
+      "originalUrl": "https://mon.zijieapi.com/monitor_web/settings/browser-settings?bid=solo_web&store=1",
+      "localPath": "assets/files/browser-settings-bd141ddde0",
+      "mimeType": "application/json",
+      "sha256": "bd141ddde0a7463e76d8ae4f149b0ed196295800c7a716b9a0f7c2950e6732e0"
+    },
+    {
+      "id": "asset-014cd164e2bd",
+      "originalUrl": "https://api.trae.cn/icube/api/v1/native/version/trae/cn/latest",
+      "localPath": "assets/files/latest-d642cb5a8f",
+      "mimeType": "application/json",
+      "sha256": "d642cb5a8fdf05ba052075393ffa250d30068e0dcd597b8083c62d4711a2588c"
+    },
+    {
+      "id": "asset-32fa3ea0bedc",
+      "originalUrl": "https://api.trae.cn/trae/api/v2/pay/web_user_ent_usage",
+      "localPath": "assets/files/web_user_ent_usage-879fbc5b3f",
+      "mimeType": "application/json",
+      "sha256": "879fbc5b3ff2ed6dd47b9adbeb3a3e4d6ddf4db4ce8bfc4674b406e3567b99ca"
+    },
+    {
+      "id": "asset-010ffacaebcf",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/pinned?page_size=100&mode=work",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json",
+      "sha256": "5f8103cd29b791540e5d6aa94a72e7e95bc30cdf9ec2acdd21d02d36b9350d80"
+    },
+    {
+      "id": "asset-08ef01104e39",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks?page_size=100&hide_empty=true",
+      "localPath": "assets/files/scheduled_tasks-605c46145b",
+      "mimeType": "application/json",
+      "sha256": "605c46145b1016e713c42d32db5f335196f422e4124af970212fb720b2e96818"
+    },
+    {
+      "id": "asset-8cd36236cc6e",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions/pinned?page_size=100&mode=code",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json",
+      "sha256": "5f8103cd29b791540e5d6aa94a72e7e95bc30cdf9ec2acdd21d02d36b9350d80"
+    },
+    {
+      "id": "asset-64fbdefebcc1",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/glm-v3-light.svg",
+      "localPath": "assets/files/glm-v3-light-676dbd2f8e.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "676dbd2f8e3ea12689a827a31ffd5afc1466fec20ef4a7a8ac97fd0a8378a4d8"
+    },
+    {
+      "id": "asset-8cd64c75e1e2",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/doubao.svg",
+      "localPath": "assets/files/doubao-063a993f66.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "063a993f66ec822c9fabe94a821fcb72e592cc2cc38551bfa5f775451a1e5b4a"
+    },
+    {
+      "id": "asset-4c8c93b01d3f",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/deepseek.svg",
+      "localPath": "assets/files/deepseek-70bb958c3b.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "70bb958c3b22686e602a20a212f0794f3359d7452b3c223ccb29b250b0cf3993"
+    },
+    {
+      "id": "asset-ccc9dcaa7cac",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/kimi-v2-light.svg",
+      "localPath": "assets/files/kimi-v2-light-c27e105a17.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "c27e105a17c127a9472dc5691c9b18d0fadb5c54e8587b37619c4c5b9aafceca"
+    },
+    {
+      "id": "asset-9c9f1b244fb4",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/minimax-light.svg",
+      "localPath": "assets/files/minimax-light-2d85a52292.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "2d85a52292928a1d553df7e46ca2c57db6c3e868cfde316d8568f24dd6b759f8"
+    },
+    {
+      "id": "asset-9230896d66b4",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/model/qwen_light.svg",
+      "localPath": "assets/files/qwen_light-72902c6af0.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "72902c6af0e882d7cf6e44705fc52b718dac2535737ef5e1bdde0e01049c423e"
+    },
+    {
+      "id": "asset-ddbe2415753a",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/pinned?page_size=100&mode=code",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json",
+      "sha256": "5f8103cd29b791540e5d6aa94a72e7e95bc30cdf9ec2acdd21d02d36b9350d80"
+    },
+    {
+      "id": "asset-c56c4910a72f",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions/pinned?page_size=100&mode=design",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json",
+      "sha256": "5f8103cd29b791540e5d6aa94a72e7e95bc30cdf9ec2acdd21d02d36b9350d80"
+    },
+    {
+      "id": "asset-ad99e6bfcb05",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/chat_sessions/pinned?page_size=100&mode=work",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json",
+      "sha256": "5f8103cd29b791540e5d6aa94a72e7e95bc30cdf9ec2acdd21d02d36b9350d80"
+    },
+    {
+      "id": "asset-de5e145e033e",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/pinned?page_size=100&mode=design",
+      "localPath": "assets/files/pinned-5f8103cd29",
+      "mimeType": "application/json",
+      "sha256": "5f8103cd29b791540e5d6aa94a72e7e95bc30cdf9ec2acdd21d02d36b9350d80"
+    },
+    {
+      "id": "asset-27553c1b1335",
+      "originalUrl": "https://api.trae.cn/cloudide/api/v3/trae/GetLoginGuidanceForBytedance",
+      "localPath": "assets/files/GetLoginGuidanceForBytedance-1e5d061dff",
+      "mimeType": "application/json",
+      "sha256": "1e5d061dff8d93afaf6882df295836c4191403e97dfc28ae3c13a060f64a40c4"
+    },
+    {
+      "id": "asset-fe3dae89ac83",
+      "originalUrl": "https://mcs.zijieapi.com/list?aid=932203&sdk_version=5.3.9&device_platform=web",
+      "localPath": "assets/files/list-948190a15a",
+      "mimeType": "application/json",
+      "sha256": "948190a15ae7d94bc1d62d16316370c5365c520310b32a4e3719a93d9a05f78f"
+    },
+    {
+      "id": "asset-bbe22c94cb7c",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/code-light-v1.png",
+      "localPath": "assets/files/code-light-v1-28a671831a.png",
+      "mimeType": "image/png",
+      "sha256": "28a671831a3530a31e71174ea07ae37ee11be72cc1531b5b59fd22fd179d4195"
+    },
+    {
+      "id": "asset-daa8a9f6d7cd",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/normal-code-dark-v1.png",
+      "localPath": "assets/files/normal-code-dark-v1-a5966d6fec.png",
+      "mimeType": "image/png",
+      "sha256": "a5966d6fec525693e2b96024012b04c594336d951811b2ec9db45ccb16567621"
+    },
+    {
+      "id": "asset-4d838b89b34e",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/golden-code-dark-v1.png",
+      "localPath": "assets/files/golden-code-dark-v1-1e5640ac9b.png",
+      "mimeType": "image/png",
+      "sha256": "1e5640ac9bf74185a0324aea9d94901a1172a64587d0db6c9f14962accc9345f"
+    },
+    {
+      "id": "asset-98dafca03d46",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/code-dark-v1.png",
+      "localPath": "assets/files/code-dark-v1-9f53f08a4a.png",
+      "mimeType": "image/png",
+      "sha256": "9f53f08a4a982f649eba4681f7955e0018216d6ae96537a0575410496f6d4639"
+    },
+    {
+      "id": "asset-659b76cb1d4a",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/golden-code-light-v1.png",
+      "localPath": "assets/files/golden-code-light-v1-91098d4721.png",
+      "mimeType": "image/png",
+      "sha256": "91098d4721b0b944da125ec163f241e2d70f0c7223b5e1ac4ac15e90f2e89e81"
+    },
+    {
+      "id": "asset-b7887d07b9ba",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo-code-modal/normal-code-light-v1.png",
+      "localPath": "assets/files/normal-code-light-v1-cf147b516c.png",
+      "mimeType": "image/png",
+      "sha256": "cf147b516cde1267dc7e6182ffe90e278d7d323b16e9e4f540c44da16b17790b"
+    },
+    {
+      "id": "asset-679ee1a362d1",
+      "originalUrl": "https://api.trae.ai/icube/api/v1/native/version/trae/cn/latest",
+      "localPath": "assets/files/latest-1db635aab8",
+      "mimeType": "application/json",
+      "sha256": "1db635aab86253ce117a83fd231f38e5fcbbfeeb79218d6792be469fc054198d"
+    },
+    {
+      "id": "asset-fb76f8b9d8f1",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/native/config/query?productCode=SOLO_Web&packageType=prod&uid=3991694265563584",
+      "localPath": "assets/files/query-9b78b72e26",
+      "mimeType": "application/json",
+      "sha256": "9b78b72e269859f95cdf24606cc00e370d04cf945463608e875a5976b6eccead"
+    },
+    {
+      "id": "asset-1549629371a3",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/environments?source=chat&page_size=30",
+      "localPath": "assets/files/environments-fceb0bda6d",
+      "mimeType": "application/json",
+      "sha256": "fceb0bda6dca05a8d84559494c36e5c187bf1c859ca76d9888f34a3cd24131fe"
+    },
+    {
+      "id": "asset-f66e1a664f7d",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/registries?product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/registries-b3807b92ce",
+      "mimeType": "application/json",
+      "sha256": "b3807b92ce41c09916ab77866c7278b268e9dfdf67d866646717a9aee015b674"
+    },
+    {
+      "id": "asset-f61da128fbe1",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/notifications/count?platform=Web&language=zh-cn",
+      "localPath": "assets/files/count-003ba13d6f",
+      "mimeType": "application/json",
+      "sha256": "003ba13d6fe076114ed246998049c47f64b96c8f46d0fc86c38e6178f0f03d42"
+    },
+    {
+      "id": "asset-13fb933d0b9e",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/skill/list?product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/list-0ef59f9807",
+      "mimeType": "application/json",
+      "sha256": "0ef59f98078d29e068c5351d309a2f7fd99e8da42e919a76c6630f20624fdd2e"
+    },
+    {
+      "id": "asset-73edb85a2f3d",
+      "originalUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/privacy/query",
+      "localPath": "assets/files/query-6751add5c9",
+      "mimeType": "application/json",
+      "sha256": "6751add5c91555f8ff7f2c76054aa2001c44616e1a3a8ac7e8acb454f03588f2"
+    },
+    {
+      "id": "asset-74907b697ab1",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/recommended?product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/recommended-0a4b74dbc2",
+      "mimeType": "application/json",
+      "sha256": "0a4b74dbc2aa577e6b0da374362a89649683c8e2384d6e8c0fd91a686f1001ec"
+    },
+    {
+      "id": "asset-6fa29718bbf0",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/categories?registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/categories-3710906523",
+      "mimeType": "application/json",
+      "sha256": "3710906523e8465b6cec53e1650a4fe372040a1d98bfb101f93d67b0ec3aa218"
+    },
+    {
+      "id": "asset-f719fabb2d1a",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/plugins?page_size=50&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/plugins-e06acd7222",
+      "mimeType": "application/json",
+      "sha256": "e06acd72223c02f1f9d27076e45b3c9a545ac67707b7b914c06c625fcaed5333"
+    },
+    {
+      "id": "asset-c374811946aa",
+      "originalUrl": "https://api.trae.cn/trae/api/v2/ug/activity/info",
+      "localPath": "assets/files/info-0fcbb8feb6",
+      "mimeType": "application/json",
+      "sha256": "0fcbb8feb6aa1d31373de92d9cea84109c8c436169685c6676c4703660151e4d"
+    },
+    {
+      "id": "asset-655c36b49c17",
+      "originalUrl": "https://agent-sandbox-bj-c1-gw.trae.cn/explorer/direct/slash/list?git_repo=",
+      "localPath": "assets/files/list-920c2c4f69",
+      "mimeType": "application/json",
+      "sha256": "920c2c4f69ee190b9b7ff8286368aa754b25dd98e7b77f9b30ae77759f580fa7"
+    },
+    {
+      "id": "asset-654b2a52a7dc",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/list?page_size=200&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/list-95c70f70c7",
+      "mimeType": "application/json",
+      "sha256": "95c70f70c78e3f62f9becc640826cec0b10464565e5da3a129661a29c27ea61f"
+    },
+    {
+      "id": "asset-cfcf7d5d92f4",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1001/62d25e0e-333e-4ddd-887a-3307c010b0f5/icons/37ae07b0-3cbb-48fd-bb5d-862a9c8fd055.svg",
+      "localPath": "assets/files/37ae07b0-3cbb-48fd-bb5d-862a9c8fd055-34060ab325.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "34060ab3259f8cb4b34091f53ec99e7ceb532872abc59147cc8cd9c5399b2b05"
+    },
+    {
+      "id": "asset-825342a35b87",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1001/42ef9a5d-9586-4445-93e8-37155ac24caa/icons/fc261b07-e620-4811-835c-517b4dc4a03c.svg",
+      "localPath": "assets/files/fc261b07-e620-4811-835c-517b4dc4a03c-e4d042f68b.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "e4d042f68bb73f26965cfd3b539953eb18b73a99c56b0d92cae425f728cd11ba"
+    },
+    {
+      "id": "asset-3ce6dcf37fda",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/9a2783e4-0fee-4dfe-a558-bc49ad963c75/icons/1dcefd8b-65a9-4bd7-a59e-a9302d8ca1e3.svg",
+      "localPath": "assets/files/1dcefd8b-65a9-4bd7-a59e-a9302d8ca1e3-7227f69f4d.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "7227f69f4d14634f754ca49f5e808017c399a3103a8e287eb62a31674a3efaef"
+    },
+    {
+      "id": "asset-acef0e462352",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=62d25e0e-333e-4ddd-887a-3307c010b0f5&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-91919925fb",
+      "mimeType": "application/json",
+      "sha256": "91919925fb61fdc6259b5913f00c94a0248a18a56d593a75e3b5e7773ac382f2"
+    },
+    {
+      "id": "asset-8f3403e700b7",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=42ef9a5d-9586-4445-93e8-37155ac24caa&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-156aee25d4",
+      "mimeType": "application/json",
+      "sha256": "156aee25d4f906f3d4ad64eac59dea3787f72fda429c986fa112071341877679"
+    },
+    {
+      "id": "asset-de7002647b25",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&version=0.1.1&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json",
+      "sha256": "bd70f1584271e3bb972505568c6c55c01d99cc597b4f9771a85fd070dbbfeadc"
+    },
+    {
+      "id": "asset-b61c180c1cad",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=4d072205-c47e-425e-acab-2fed2b8ba16f&version=0.0.2&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-4c76607f7f",
+      "mimeType": "application/json",
+      "sha256": "4c76607f7f147804b2db063a68793b295123ce0634f7f4973865df3864028b11"
+    },
+    {
+      "id": "asset-e05cd9b472de",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6614a267-48fb-485f-8758-fea6136602f8&version=1.0.4&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-c96542e7c3",
+      "mimeType": "application/json",
+      "sha256": "c96542e7c34ac6087948be557db9c4a048fc7fcb215899f411d6b018f777552b"
+    },
+    {
+      "id": "asset-af2f82564d74",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=df05c328-ffe2-4352-bae8-8192187fb72e&version=0.3.0&registry=trae-remote-official&product_name=web&chat_mode=code&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-54275555e0",
+      "mimeType": "application/json",
+      "sha256": "54275555e0f279b14a2b1e2e245ee1cc34f490681acd9e055427f438b72264c6"
+    },
+    {
+      "id": "asset-08b81144139e",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1344.e3f7c445.js",
+      "localPath": "assets/files/1344.e3f7c445-3f28eda966.js",
+      "mimeType": "application/javascript",
+      "sha256": "3f28eda966629208b0d4f64aba67a6bf1d119405754b37d84ab34365a362491c"
+    },
+    {
+      "id": "asset-9d91de7df1a6",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/mf/manifest?code=templates_mf",
+      "localPath": "assets/files/manifest-2ae1c96d59",
+      "mimeType": "application/json",
+      "sha256": "2ae1c96d5992c8c5d5ba6a967a115af346fc78b6dfb894095940df78e9b3a30b"
+    },
+    {
+      "id": "asset-bc14498052b7",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/css/6713.3b358a22.css",
+      "localPath": "assets/files/6713.3b358a22-2c836d8c03.css",
+      "mimeType": "text/css",
+      "sha256": "2c836d8c032b4ec92552ac52f4bce0015b41b27596dd07c4065b41e82d9ad155"
+    },
+    {
+      "id": "asset-dc58953e6ca3",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/js/templates_mf.560fdb6d.js",
+      "localPath": "assets/files/templates_mf.560fdb6d-36293572e7.js",
+      "mimeType": "application/javascript",
+      "sha256": "36293572e7ba2c59a563d206d0a821f7942c1c63a2477852cd43c61dab165235"
+    },
+    {
+      "id": "asset-ad8f674425f1",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/css/async/__federation_expose_index.4fb3b149.css",
+      "localPath": "assets/files/__federation_expose_index.4fb3b149-4401ec7e5b.css",
+      "mimeType": "text/css",
+      "sha256": "4401ec7e5b015a71b8c3d7dab7fcf5169d023257813f1166d5c0dac50e94fe06"
+    },
+    {
+      "id": "asset-1103e157da7d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/js/async/__federation_expose_index.2e2755ee.js",
+      "localPath": "assets/files/__federation_expose_index.2e2755ee-389c3dc086.js",
+      "mimeType": "application/javascript",
+      "sha256": "389c3dc086aa0fee567ad5c4857ec49fbdc3928714a4b36c85dbdd7276d30d11"
+    },
+    {
+      "id": "asset-8e29bbfe287d",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-web-mf/1.0.0.13/trae-templates/static/js/async/5450.7fa2ec9d.js",
+      "localPath": "assets/files/5450.7fa2ec9d-55a3646500.js",
+      "mimeType": "application/javascript",
+      "sha256": "55a364650014e5fba328302783d3edf8cde70c737bc914290275a70aa0b5fb7a"
+    },
+    {
+      "id": "asset-c4de316b12b7",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/suggestions/list",
+      "localPath": "assets/files/list-9798e0dd7c",
+      "mimeType": "application/json",
+      "sha256": "9798e0dd7c3d1039217ba1953442fc7b034f30d016f137b1e7f78a5f6a0d810d"
+    },
+    {
+      "id": "asset-301b83028a85",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/suggestions/scenes",
+      "localPath": "assets/files/scenes-d8ea0cd331",
+      "mimeType": "application/json",
+      "sha256": "d8ea0cd331f75fd2d751d94cd59a193f5004b6d3a821e9a81487a60a1429a5aa"
+    },
+    {
+      "id": "asset-6e0eb11373d3",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/d2882ad2-c245-4be5-b997-444532cdce7a/icons/abc6ad48-9c88-4116-89b3-f862820f778a.svg",
+      "localPath": "assets/files/abc6ad48-9c88-4116-89b3-f862820f778a-9ece4492a2.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "9ece4492a25f0a395907e48fb0d3a11ad97baf181e01a384ffd11a4228b92014"
+    },
+    {
+      "id": "asset-372f1aef9ee3",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&product_name=web&chat_mode=work&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json",
+      "sha256": "bd70f1584271e3bb972505568c6c55c01d99cc597b4f9771a85fd070dbbfeadc"
+    },
+    {
+      "id": "asset-f53110f59793",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6fc62685-87cb-449d-a642-e5888aed32bc&product_name=web&chat_mode=work&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-5a924a0b63",
+      "mimeType": "application/json",
+      "sha256": "5a924a0b639760f90e16477f193ac4b9e71f68e122df903cb80871f2534729b6"
+    },
+    {
+      "id": "asset-99f009ff5f6f",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/6fc62685-87cb-449d-a642-e5888aed32bc/icons/b8509b16-6b96-41ad-a0b3-ab933af6ee95.svg",
+      "localPath": "assets/files/b8509b16-6b96-41ad-a0b3-ab933af6ee95-a26a25facd.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "a26a25facd763111854a7008ef1366ca6bb477c2a70210e313c624bfd12ecd51"
+    },
+    {
+      "id": "asset-c41fb3bb47b2",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/skill/list?product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/list-0ef59f9807",
+      "mimeType": "application/json",
+      "sha256": "0ef59f98078d29e068c5351d309a2f7fd99e8da42e919a76c6630f20624fdd2e"
+    },
+    {
+      "id": "asset-c54e5ab4b194",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/registries?product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/registries-b3807b92ce",
+      "mimeType": "application/json",
+      "sha256": "b3807b92ce41c09916ab77866c7278b268e9dfdf67d866646717a9aee015b674"
+    },
+    {
+      "id": "asset-1296591bc90a",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/plugins?page_size=50&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/plugins-e06acd7222",
+      "mimeType": "application/json",
+      "sha256": "e06acd72223c02f1f9d27076e45b3c9a545ac67707b7b914c06c625fcaed5333"
+    },
+    {
+      "id": "asset-a993ca639769",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=a67f6585-e2a1-4c6e-982d-d0d8d645ad84&product_name=web&chat_mode=work&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-c970890d24",
+      "mimeType": "application/json",
+      "sha256": "c970890d2454fe6e4e46039715505d59ab5a0a31c80dcebbb5d4311a09caf464"
+    },
+    {
+      "id": "asset-df882f011b5d",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/plugins/1/a67f6585-e2a1-4c6e-982d-d0d8d645ad84/icons/f6516339-8caf-45b0-a0d7-0e1ea4107e7b.svg",
+      "localPath": "assets/files/f6516339-8caf-45b0-a0d7-0e1ea4107e7b-05080768d2.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "05080768d296dc3ae030054ea708d2a73496ee43f7c9fa3020f06af06b3e169c"
+    },
+    {
+      "id": "asset-7ce89e17a0ea",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/recommended?product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/recommended-0a4b74dbc2",
+      "mimeType": "application/json",
+      "sha256": "0a4b74dbc2aa577e6b0da374362a89649683c8e2384d6e8c0fd91a686f1001ec"
+    },
+    {
+      "id": "asset-46b42e04e189",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/categories?registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/categories-3710906523",
+      "mimeType": "application/json",
+      "sha256": "3710906523e8465b6cec53e1650a4fe372040a1d98bfb101f93d67b0ec3aa218"
+    },
+    {
+      "id": "asset-5be8e5fe14a1",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/list?page_size=200&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/list-95c70f70c7",
+      "mimeType": "application/json",
+      "sha256": "95c70f70c78e3f62f9becc640826cec0b10464565e5da3a129661a29c27ea61f"
+    },
+    {
+      "id": "asset-419d35852ef5",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=42ef9a5d-9586-4445-93e8-37155ac24caa&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-156aee25d4",
+      "mimeType": "application/json",
+      "sha256": "156aee25d4f906f3d4ad64eac59dea3787f72fda429c986fa112071341877679"
+    },
+    {
+      "id": "asset-0311deecd09e",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=4d072205-c47e-425e-acab-2fed2b8ba16f&version=0.0.2&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-4c76607f7f",
+      "mimeType": "application/json",
+      "sha256": "4c76607f7f147804b2db063a68793b295123ce0634f7f4973865df3864028b11"
+    },
+    {
+      "id": "asset-2c7e869d545d",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6614a267-48fb-485f-8758-fea6136602f8&version=1.0.4&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-c96542e7c3",
+      "mimeType": "application/json",
+      "sha256": "c96542e7c34ac6087948be557db9c4a048fc7fcb215899f411d6b018f777552b"
+    },
+    {
+      "id": "asset-344316a76606",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=62d25e0e-333e-4ddd-887a-3307c010b0f5&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-91919925fb",
+      "mimeType": "application/json",
+      "sha256": "91919925fb61fdc6259b5913f00c94a0248a18a56d593a75e3b5e7773ac382f2"
+    },
+    {
+      "id": "asset-075500bed2c2",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&version=0.1.1&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json",
+      "sha256": "bd70f1584271e3bb972505568c6c55c01d99cc597b4f9771a85fd070dbbfeadc"
+    },
+    {
+      "id": "asset-c47e0d576122",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=df05c328-ffe2-4352-bae8-8192187fb72e&version=0.3.0&registry=trae-remote-official&product_name=web&chat_mode=work&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-54275555e0",
+      "mimeType": "application/json",
+      "sha256": "54275555e0f279b14a2b1e2e245ee1cc34f490681acd9e055427f438b72264c6"
+    },
+    {
+      "id": "asset-1f323b2ff053",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/design_spec_output_darkmode@3x.b9ac4e66.png",
+      "localPath": "assets/files/design_spec_output_darkmode-3x.b9ac4e66-7243b7a37a.png",
+      "mimeType": "image/png",
+      "sha256": "7243b7a37a4bfc4a8382fa1fcfd178317176869f01e27b9b79733f06501a4d5d"
+    },
+    {
+      "id": "asset-9beba1a64110",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/design_concept_draft_darkmode@3x.44490403.png",
+      "localPath": "assets/files/design_concept_draft_darkmode-3x.44490403-772f08ee25.png",
+      "mimeType": "image/png",
+      "sha256": "772f08ee2511767e9c83ad32a30e571a9bd2d9cddfa609ef8039e7f5d1e6887f"
+    },
+    {
+      "id": "asset-58497520b0fe",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/design_style_explore_darkmode@3x.da878da1.png",
+      "localPath": "assets/files/design_style_explore_darkmode-3x.da878da1-46f808fa74.png",
+      "mimeType": "image/png",
+      "sha256": "46f808fa7465736be7b4609f402a8883d4cfec29b66b7ed141fe88240c824897"
+    },
+    {
+      "id": "asset-1d593fea33b1",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/plugins?page_size=50&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/plugins-e06acd7222",
+      "mimeType": "application/json",
+      "sha256": "e06acd72223c02f1f9d27076e45b3c9a545ac67707b7b914c06c625fcaed5333"
+    },
+    {
+      "id": "asset-5dce138aa8e0",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/categories?registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/categories-3710906523",
+      "mimeType": "application/json",
+      "sha256": "3710906523e8465b6cec53e1650a4fe372040a1d98bfb101f93d67b0ec3aa218"
+    },
+    {
+      "id": "asset-8c6868a1826c",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/list?page_size=200&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/list-95c70f70c7",
+      "mimeType": "application/json",
+      "sha256": "95c70f70c78e3f62f9becc640826cec0b10464565e5da3a129661a29c27ea61f"
+    },
+    {
+      "id": "asset-11d28b8c6b27",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/recommended?product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/recommended-0a4b74dbc2",
+      "mimeType": "application/json",
+      "sha256": "0a4b74dbc2aa577e6b0da374362a89649683c8e2384d6e8c0fd91a686f1001ec"
+    },
+    {
+      "id": "asset-284904c3e2aa",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=df05c328-ffe2-4352-bae8-8192187fb72e&version=0.3.0&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-54275555e0",
+      "mimeType": "application/json",
+      "sha256": "54275555e0f279b14a2b1e2e245ee1cc34f490681acd9e055427f438b72264c6"
+    },
+    {
+      "id": "asset-599b88be4d61",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=4d072205-c47e-425e-acab-2fed2b8ba16f&version=0.0.2&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-4c76607f7f",
+      "mimeType": "application/json",
+      "sha256": "4c76607f7f147804b2db063a68793b295123ce0634f7f4973865df3864028b11"
+    },
+    {
+      "id": "asset-cdcf43f2004d",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=6614a267-48fb-485f-8758-fea6136602f8&version=1.0.4&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-c96542e7c3",
+      "mimeType": "application/json",
+      "sha256": "c96542e7c34ac6087948be557db9c4a048fc7fcb215899f411d6b018f777552b"
+    },
+    {
+      "id": "asset-ee4da288c560",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=9a2783e4-0fee-4dfe-a558-bc49ad963c75&version=0.1.1&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-bd70f15842",
+      "mimeType": "application/json",
+      "sha256": "bd70f1584271e3bb972505568c6c55c01d99cc597b4f9771a85fd070dbbfeadc"
+    },
+    {
+      "id": "asset-aa91f291876e",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=42ef9a5d-9586-4445-93e8-37155ac24caa&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-156aee25d4",
+      "mimeType": "application/json",
+      "sha256": "156aee25d4f906f3d4ad64eac59dea3787f72fda429c986fa112071341877679"
+    },
+    {
+      "id": "asset-f743bc559feb",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/detail?plugin_id=62d25e0e-333e-4ddd-887a-3307c010b0f5&version=1.0.1&registry=trae-remote-official&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/detail-91919925fb",
+      "mimeType": "application/json",
+      "sha256": "91919925fb61fdc6259b5913f00c94a0248a18a56d593a75e3b5e7773ac382f2"
+    },
+    {
+      "id": "asset-f9cb617206b8",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/design_libraries",
+      "localPath": "assets/files/design_libraries-266b89c7a9",
+      "mimeType": "application/json",
+      "sha256": "266b89c7a966f12ae6aef03548a4f0a29658d12862dd691c8c99ab927c4f8fef"
+    },
+    {
+      "id": "asset-feb744c87107",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/plugin/registries?product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/registries-b3807b92ce",
+      "mimeType": "application/json",
+      "sha256": "b3807b92ce41c09916ab77866c7278b268e9dfdf67d866646717a9aee015b674"
+    },
+    {
+      "id": "asset-9902c8aa7a3d",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/skill/list?product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/list-0ef59f9807",
+      "mimeType": "application/json",
+      "sha256": "0ef59f98078d29e068c5351d309a2f7fd99e8da42e919a76c6630f20624fdd2e"
+    },
+    {
+      "id": "asset-0f8d787901aa",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/1665.8d56dae7.js",
+      "localPath": "assets/files/1665.8d56dae7-60af43a3f8.js",
+      "mimeType": "application/javascript",
+      "sha256": "60af43a3f8247ca7c9ad10d88f7de60fc6bc04f46d2c8612bd4b7f6577690656"
+    },
+    {
+      "id": "asset-14c43ad76714",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/mf/manifest?code=cashier_mf",
+      "localPath": "assets/files/manifest-f572bc7734",
+      "mimeType": "application/json",
+      "sha256": "f572bc773489f3c89f87f36353fa2554e1ff7ca1dd72d38727fd3d02f816ce85"
+    },
+    {
+      "id": "asset-8258509c521e",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/dist-mf/cashier/0.3.3/static/css/async/__federation_expose_index.8703c583.css",
+      "localPath": "assets/files/__federation_expose_index.8703c583-b51d93eece.css",
+      "mimeType": "text/css",
+      "sha256": "b51d93eecebd29358376a91630cc1d63c262ebdd83a384d39a10ac8023fa10c8"
+    },
+    {
+      "id": "asset-5257426a21f7",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/dist-mf/cashier/0.3.3/static/js/cashier_mf.2959f818.js",
+      "localPath": "assets/files/cashier_mf.2959f818-4ce5a67bc4.js",
+      "mimeType": "application/javascript",
+      "sha256": "4ce5a67bc42c0334af9d44a26158e473d1e54f1362095a37ec9f879b9dfe3b95"
+    },
+    {
+      "id": "asset-c8dbd8d0cc58",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/dist-mf/cashier/0.3.3/static/js/async/311.44353e58.js",
+      "localPath": "assets/files/311.44353e58-849e08c67b.js",
+      "mimeType": "application/javascript",
+      "sha256": "849e08c67b22776c4fa3b0c8d39231cdbccb26e93cf9815fd7b07b1f7fe12446"
+    },
+    {
+      "id": "asset-340585ffb151",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/dist-mf/cashier/0.3.3/static/js/async/__federation_expose_index.8efc87d9.js",
+      "localPath": "assets/files/__federation_expose_index.8efc87d9-28a126ec67.js",
+      "mimeType": "application/javascript",
+      "sha256": "28a126ec67329cad59f274ec35ed0e9496331081c24eafd4abb93b9d6d75b3aa"
+    },
+    {
+      "id": "asset-c78bcce51b61",
+      "originalUrl": "https://lf-c-flwb.bytetos.com/obj/rc-client-security/web/glue/1.0.0.66/sdk-glue.js",
+      "localPath": "assets/files/sdk-glue-68ef8fc29b.js",
+      "mimeType": "application/javascript",
+      "sha256": "68ef8fc29b3c23e1e89d2e2c2026d6b1ee4b3c83b8bca43fa44bd2047a0b169e"
+    },
+    {
+      "id": "asset-e31e1d28cfd2",
+      "originalUrl": "https://lf-c-flwb.bytetos.com/obj/rc-client-security/web/stable/1.0.1.20/bdms.js",
+      "localPath": "assets/files/bdms-404998cad0.js",
+      "mimeType": "application/javascript",
+      "sha256": "404998cad03b4f905b07cfc1b9e2971b1cae6fbe70b6c05e658a375693d17139"
+    },
+    {
+      "id": "asset-c6f1b216e0c6",
+      "originalUrl": "https://api.trae.cn/trae/api/v2/pay/cn_credits_billing_status",
+      "localPath": "assets/files/cn_credits_billing_status-9a20fbeef0",
+      "mimeType": "application/json",
+      "sha256": "9a20fbeef0b1fc4bb4544e7863176c43609d15b53814669a4daf55711d952f40"
+    },
+    {
+      "id": "asset-3d5667fbadd6",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/image/download-trae-work-dark.cd7b200c.png",
+      "localPath": "assets/files/download-trae-work-dark.cd7b200c-f7e0406f8c.png",
+      "mimeType": "image/png",
+      "sha256": "f7e0406f8c6abec82e17c3147c7deabcb77869825c19089e4a0f3d1cfbe6fcb3"
+    },
+    {
+      "id": "asset-15dec20560a7",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/marketplace/page.b9fbfc9d.css",
+      "localPath": "assets/files/page.b9fbfc9d-bb5effcf56.css",
+      "mimeType": "text/css",
+      "sha256": "bb5effcf56b63ca26386a4836bdede0a7ac736c3a8777d2a839c773c3abc0199"
+    },
+    {
+      "id": "asset-c3a38dcf623a",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/marketplace/page.e09f7c08.js",
+      "localPath": "assets/files/page.e09f7c08-d910111776.js",
+      "mimeType": "application/javascript",
+      "sha256": "d910111776ff7625e02ecde24e1e35086501a992400bbb5656e917b90469ed70"
+    },
+    {
+      "id": "asset-207186ed9271",
+      "originalUrl": "https://api.trae.com.cn/extensions/api/-/recommendation/config?slot_name=plugin_home_banner&product_name=web&chat_mode=design&package_type=prod&client_version=1.0.0.2827",
+      "localPath": "assets/files/config-c0b99f010e",
+      "mimeType": "application/json",
+      "sha256": "c0b99f010e1cfe3533fbabdd6a72e39d194f00a02854fd01e4b12b2ad52087fe"
+    },
+    {
+      "id": "asset-0d0bfc06b435",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/automation/page.fe8e3aed.css",
+      "localPath": "assets/files/page.fe8e3aed-5a5be85bb3.css",
+      "mimeType": "text/css",
+      "sha256": "5a5be85bb385663a43636c30f7691e0eee2124b0a4b6d653f1aa793b7e918f13"
+    },
+    {
+      "id": "asset-4341c10d52f2",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/automation/page.8c75b03a.js",
+      "localPath": "assets/files/page.8c75b03a-1103efad24.js",
+      "mimeType": "application/javascript",
+      "sha256": "1103efad2459ca9c76dd6b96ed7779334d225fba7e82881a3ec07652c7e70cfa"
+    },
+    {
+      "id": "asset-082be992947a",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks?page_size=100",
+      "localPath": "assets/files/scheduled_tasks-605c46145b",
+      "mimeType": "application/json",
+      "sha256": "605c46145b1016e713c42d32db5f335196f422e4124af970212fb720b2e96818"
+    },
+    {
+      "id": "asset-ed34370b14ce",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_task_templates?page_size=50&enabled=true",
+      "localPath": "assets/files/scheduled_task_templates-24b2e20f82",
+      "mimeType": "application/json",
+      "sha256": "24b2e20f82fccb0b3111ee5fcfa677d5ab0a2f6cf6273e048efd7f7b5d9299f4"
+    },
+    {
+      "id": "asset-101390e6ab4b",
+      "originalUrl": "https://work.trae.cn/api/remote/v1/scheduled_tasks/unlogin_notice",
+      "localPath": "assets/files/unlogin_notice-3da00f1756",
+      "mimeType": "application/json",
+      "sha256": "3da00f17568b28d9d4471362a5ec10654b3093752ddde24e87216a034ef3f165"
+    },
+    {
+      "id": "asset-3a2f5a3bb69f",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/2_dark.svg",
+      "localPath": "assets/files/2_dark-91664e85e5.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "91664e85e50e47057a78dffa649d1c6c3cde6fe00fd5ae36544776d678bb6c14"
+    },
+    {
+      "id": "asset-84e425df948b",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/1_dark.svg",
+      "localPath": "assets/files/1_dark-307484826e.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "307484826edefc65fc5bdaa16d072994aa7835ef8e24244b5882d4eb90a8f008"
+    },
+    {
+      "id": "asset-c151e3485686",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/3_dark.svg",
+      "localPath": "assets/files/3_dark-dbcbee3253.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "dbcbee3253865c3fb4abf6acc6b81bd8c2244c0efd8977df47c0db4db93cbc2d"
+    },
+    {
+      "id": "asset-423c64b68078",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/4_dark.svg",
+      "localPath": "assets/files/4_dark-9a2c078db1.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "9a2c078db195787ba2ffd45757d2be36971f5b98a3ae6bc1f5780b1c7202fe73"
+    },
+    {
+      "id": "asset-081ded30ccac",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/6_dark.svg",
+      "localPath": "assets/files/6_dark-1807b8d7f0.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "1807b8d7f0f551a07312bacdc1b87b462567a212199543ccfcaada06360b24a8"
+    },
+    {
+      "id": "asset-5f7294905c75",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/7_dark.svg",
+      "localPath": "assets/files/7_dark-9255eadfba.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "9255eadfbae333c430104d3bc03bdde4f5d7b11276704819af08115b6028514d"
+    },
+    {
+      "id": "asset-ae135af41942",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/8_dark.svg",
+      "localPath": "assets/files/8_dark-00d861c9d7.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "00d861c9d75b1c2d3717ca352838f3b88478e1216f4e4ba62c8542582dd31d08"
+    },
+    {
+      "id": "asset-dfe81f59287d",
+      "originalUrl": "https://p11-market.byteimg.com/tos-cn-i-17oceyzymr/scheduled_task_templates/icons/9_dark.svg",
+      "localPath": "assets/files/9_dark-02a5429ab4.svg",
+      "mimeType": "image/svg+xml",
+      "sha256": "02a5429ab4c5eda0d7fcb3edca0132c68c39527af744840cd9afd8d01f002cd8"
+    },
+    {
+      "id": "asset-a434bd84debf",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/css/async/templates/page.ea11037b.css",
+      "localPath": "assets/files/page.ea11037b-a4a68ee089.css",
+      "mimeType": "text/css",
+      "sha256": "a4a68ee089f7c7f59cecb7e78b3f4cbe9308c3745924d0a81e1ca6f472a81df5"
+    },
+    {
+      "id": "asset-1d490286977c",
+      "originalUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/goofy_deploy_edenx/ide/trae-mono/static/js/async/templates/page.104c8bce.js",
+      "localPath": "assets/files/page.104c8bce-21fb62f891.js",
+      "mimeType": "application/javascript",
+      "sha256": "21fb62f8916736af0eef018959bc52a11441670c1a2a840bd4c7667d8a592dec"
+    },
+    {
+      "id": "asset-ffae146be03e",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/nev-brand-competitive-monitoring/zh/bg_dc4b8d9498789ef2.png",
+      "localPath": "assets/files/bg_dc4b8d9498789ef2-dc4b8d9498.png",
+      "mimeType": "image/png",
+      "sha256": "dc4b8d9498789ef2944bcfc716d4123157ad0a1bc1dc703c7932d5a69ff2aed9"
+    },
+    {
+      "id": "asset-0e917dbd8745",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/inside-starship/zh/bg_47b70b7dfc16657e.png",
+      "localPath": "assets/files/bg_47b70b7dfc16657e-47b70b7dfc.png",
+      "mimeType": "image/png",
+      "sha256": "47b70b7dfc16657e53b7676c2844bc2c3863b17c7080b28498420d6492f9298e"
+    },
+    {
+      "id": "asset-e444b9f4d277",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/wang-hong-fields-medal/zh/bg_f81fd731b4d534cd.png",
+      "localPath": "assets/files/bg_f81fd731b4d534cd-f81fd731b4.png",
+      "mimeType": "image/png",
+      "sha256": "f81fd731b4d534cd5fe984e1ebdff26287f44ad3f87202735df428a4c601c631"
+    },
+    {
+      "id": "asset-7a74ad12befa",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/catl-2026e-forecast-update/zh/bg_5c01a8cfed4ed485.png",
+      "localPath": "assets/files/bg_5c01a8cfed4ed485-5c01a8cfed.png",
+      "mimeType": "image/png",
+      "sha256": "5c01a8cfed4ed4858c6587d1ade3ca7e73c3909ee45ff337e6b7a68faa9e32a1"
+    },
+    {
+      "id": "asset-2cef329fe5a9",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/spider-man-movie-recap/zh/bg_2080f5766849e776.png",
+      "localPath": "assets/files/bg_2080f5766849e776-2080f57668.png",
+      "mimeType": "image/png",
+      "sha256": "2080f5766849e776e36ddcc52f14321e1f467a4bbcf05aabd77e75ef2272310b"
+    },
+    {
+      "id": "asset-28a5f1a453ac",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/snow-mountain-picture-book-poster/zh/bg_ee0911defb3972c1.jpg",
+      "localPath": "assets/files/bg_ee0911defb3972c1-ee0911defb.jpg",
+      "mimeType": "image/jpeg",
+      "sha256": "ee0911defb3972c12dfaffc4347f2ef17d901ca77126e96211aced0c988d7da4"
+    },
+    {
+      "id": "asset-56e2569fbc34",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/us-patent-stability-analysis/zh/bg_373fb6940a93b3d6.png",
+      "localPath": "assets/files/bg_373fb6940a93b3d6-373fb6940a.png",
+      "mimeType": "image/png",
+      "sha256": "373fb6940a93b3d6227c95ae56a56eabcffb77ca1ab090d9963a1b1cf202d517"
+    },
+    {
+      "id": "asset-a5f312a270ee",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/surreal-horse-fashion-editorial/zh/bg_786c5e7682fcac39.jpg",
+      "localPath": "assets/files/bg_786c5e7682fcac39-786c5e7682.jpg",
+      "mimeType": "image/jpeg",
+      "sha256": "786c5e7682fcac3968409f06a9c60d78e506b409fe27d3526ed314ea41fcf46c"
+    },
+    {
+      "id": "asset-252fb935ade8",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/fabric-quilt-pineapple/zh/bg_d8f4981938bc8425.jpg",
+      "localPath": "assets/files/bg_d8f4981938bc8425-d8f4981938.jpg",
+      "mimeType": "image/jpeg",
+      "sha256": "d8f4981938bc84251202e6df8c1d454013673664a84d205e0872ff9143a27d51"
+    },
+    {
+      "id": "asset-121165d52319",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/warm-companion-chat-app/zh/bg_3baff6375b2dd8b1.png",
+      "localPath": "assets/files/bg_3baff6375b2dd8b1-3baff6375b.png",
+      "mimeType": "image/png",
+      "sha256": "3baff6375b2dd8b1438eb530f3203a9d1e04a4cdb9821eaf7c6a08d66094ab6a"
+    },
+    {
+      "id": "asset-982062a6a301",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/cosmic-collage-poster/zh/bg_3437bb2f03af4080.png",
+      "localPath": "assets/files/bg_3437bb2f03af4080-3437bb2f03.png",
+      "mimeType": "image/png",
+      "sha256": "3437bb2f03af40802d29ab4f767ba0ed5f63cd59f4fdd5c5ee543115938e4b20"
+    },
+    {
+      "id": "asset-1d405c13f112",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/coffee-landscape-poster/zh/bg_081dc3459d1aa655.png",
+      "localPath": "assets/files/bg_081dc3459d1aa655-081dc3459d.png",
+      "mimeType": "image/png",
+      "sha256": "081dc3459d1aa655ea645e22aed98710cdf6380bd4f4c945496d007659046867"
+    },
+    {
+      "id": "asset-870b9632559d",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/vocational-training-quality/zh/bg_24c1c7febe350356.png",
+      "localPath": "assets/files/bg_24c1c7febe350356-24c1c7febe.png",
+      "mimeType": "image/png",
+      "sha256": "24c1c7febe350356b2be29e6a5b8834c1d8ed05bee59be9ede2b7d03155a6f31"
+    },
+    {
+      "id": "asset-0c03a4869b55",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/quanzhou-intangible-heritage-trip/zh/bg_da0322673a6d02fe.png",
+      "localPath": "assets/files/bg_da0322673a6d02fe-da0322673a.png",
+      "mimeType": "image/png",
+      "sha256": "da0322673a6d02fe2c0e504981f24d981ab8429bb953a7b4ff9be2e4af0f0e63"
+    },
+    {
+      "id": "asset-b7e3838f966d",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/streetwear-city-look/zh/bg_117e3ec2efa0dc66.webp",
+      "localPath": "assets/files/bg_117e3ec2efa0dc66-117e3ec2ef.webp",
+      "mimeType": "image/webp",
+      "sha256": "117e3ec2efa0dc6630785b23c49a8644ff334c7254e8b8e79c39539d2050ea75"
+    },
+    {
+      "id": "asset-fd4968f4dcc9",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/ai-model-vendor-comparison/zh/bg_4235fcf8753a2088.png",
+      "localPath": "assets/files/bg_4235fcf8753a2088-4235fcf875.png",
+      "mimeType": "image/png",
+      "sha256": "4235fcf8753a20889b9305f50542d5737e1ebf97f6c4471bc849536144655a8c"
+    },
+    {
+      "id": "asset-01ad0021671f",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/qinghai-lake-7-day-road-trip/zh/bg_1b3ac51fc931c3d0.png",
+      "localPath": "assets/files/bg_1b3ac51fc931c3d0-1b3ac51fc9.png",
+      "mimeType": "image/png",
+      "sha256": "1b3ac51fc931c3d082375c031b9065b67dda7124a8bd6ef3611e4d6596f96827"
+    },
+    {
+      "id": "asset-3fddef58b3b8",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/templates/favorites",
+      "localPath": "assets/files/favorites-3a0aa1aebf",
+      "mimeType": "application/json",
+      "sha256": "3a0aa1aebf48753ddc49ddbba6225335150595830f0cd8460679f42fde390219"
+    },
+    {
+      "id": "asset-64a687d5e197",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/templates/list",
+      "localPath": "assets/files/list-3755417144",
+      "mimeType": "application/json",
+      "sha256": "3755417144f29d320d2c2ce724e2e7f92222fae1a370777f1446a61fab7c31e8"
+    },
+    {
+      "id": "asset-35d1fba1da44",
+      "originalUrl": "https://api.trae.com.cn/icube/api/v1/templates/scenes",
+      "localPath": "assets/files/scenes-861cf799b7",
+      "mimeType": "application/json",
+      "sha256": "861cf799b703cd6201de14187002f0b1fc955ab8b09b19900a5fd7a167b5a720"
+    },
+    {
+      "id": "asset-ffaf661ad9f9",
+      "originalUrl": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae/showcase2/patent-prior-design-evidence/zh/bg_525c33abbab03701.png",
+      "localPath": "assets/files/bg_525c33abbab03701-525c33abba.png",
+      "mimeType": "image/png",
+      "sha256": "525c33abbab03701f96ad7b1cdceb55e2a15cba4a3dc488d2a60049cd445ff6b"
+    }
+  ]
+}

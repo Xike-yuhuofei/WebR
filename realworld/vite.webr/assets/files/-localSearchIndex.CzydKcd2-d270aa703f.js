@@ -1,0 +1,1 @@
+import{o as e}from"./framework.BTiPPQh6.js";var t={root:()=>e(()=>import(`./@localSearchIndexroot.BArjGdNy.js`),[])};export{t as default};

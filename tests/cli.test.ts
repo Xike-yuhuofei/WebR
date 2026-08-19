@@ -62,6 +62,86 @@ describe('CLI — global options', () => {
   });
 });
 
+describe('CLI — capture flags (authenticated CDP + bounded exploration)', () => {
+  it('documents --cdp and the exploration controls in help', async () => {
+    const { out } = await run(['--help']);
+    expect(out.stdout).toContain('--cdp');
+    expect(out.stdout).toContain('--max-states');
+    expect(out.stdout).toContain('--max-transitions');
+    expect(out.stdout).toContain('--max-depth');
+    expect(out.stdout).toContain('--time-budget');
+    expect(out.stdout).toContain('--no-fullpage');
+    expect(out.stdout).toContain('--viewport');
+  });
+
+  it('rejects malformed capture flag values with exit 2', async () => {
+    // --viewport must be WxH.
+    const a = await run([
+      'capture',
+      'https://example.com',
+      '--out',
+      '/tmp/x.webr',
+      '--viewport',
+      'bogus',
+    ]);
+    expect(a.code).toBe(EXIT_CODES.invalidArguments);
+    // --max-states must be numeric.
+    const b = await run([
+      'capture',
+      'https://example.com',
+      '--out',
+      '/tmp/x.webr',
+      '--max-states',
+      'many',
+    ]);
+    expect(b.code).toBe(EXIT_CODES.invalidArguments);
+    // unknown option still rejected.
+    const c = await run(['capture', 'https://example.com', '--out', '/tmp/x.webr', '--frob']);
+    expect(c.code).toBe(EXIT_CODES.invalidArguments);
+  });
+
+  it('accepts --cdp without an explicit URL (defaults to the Profile Chrome endpoint)', async () => {
+    // Parses as valid args; capture still requires --out, so it stops at
+    // argument validation (exit 2) without contacting any browser.
+    const missingOut = await run(['capture', 'https://work.trae.cn/', '--cdp']);
+    expect(missingOut.code).toBe(EXIT_CODES.invalidArguments);
+  });
+
+  it('--cdp with a URL is accepted as a value, not treated as an option token', async () => {
+    const out = await run([
+      'capture',
+      'https://work.trae.cn/',
+      '--out',
+      '/tmp/t.webr',
+      '--cdp',
+      'http://127.0.0.1:1',
+    ]);
+    // Connection to a closed port fails fast → command failure (1), not arg
+    // parsing failure (2), proving the URL was consumed as the option value.
+    expect(out.code).toBe(EXIT_CODES.commandFailure);
+  });
+
+  it('does NOT swallow the next flag after a valueless --cdp (regression: --cdp --route <url>)', async () => {
+    // Previously `--cdp` unconditionally consumed the following token, so
+    // `--cdp --route <url>` ate `--route` and silently turned `<url>` into a
+    // positional arg (dropped). The route must now be parsed as a flag; the
+    // malformed route value check proves the parser reached it.
+    const { code, out } = await run([
+      'capture',
+      'https://work.trae.cn/',
+      '--out',
+      '/tmp/t.webr',
+      '--cdp',
+      '--route',
+      'https://work.trae.cn/marketplace',
+      '--max-states',
+      'bogus',
+    ]);
+    expect(code).toBe(EXIT_CODES.invalidArguments);
+    expect(out.stderr).toContain('--max-states');
+  });
+});
+
 describe('CLI — the four commands exist with documented help', () => {
   it('lists all four commands in help output', async () => {
     const { out } = await run(['--help']);

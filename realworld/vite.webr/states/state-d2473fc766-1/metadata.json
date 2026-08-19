@@ -1,0 +1,24 @@
+{
+  "id": "state-d2473fc766-1",
+  "pageId": "page-1",
+  "url": "https://vite.dev/blog/cloudflare-supports-vite",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:ea9d1c23cbfcd223968fc60f4d254461e02c3394589c5ac5d35bcf3d71227f26",
+  "title": "Cloudflare supports Vite's mission | Vite"
+}

@@ -1,0 +1,14 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "url": "https://cursor.com",
+      "route": "/",
+      "stateIds": [
+        "state-f260d6d80f-0",
+        "state-e70eb0e663-1"
+      ],
+      "title": "AI Coding Agent for Building Ambitious Software | Cursor"
+    }
+  ]
+}

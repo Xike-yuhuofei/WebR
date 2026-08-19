@@ -75,6 +75,37 @@ describe('GOAL-003 — rebuild workspace scaffold', () => {
     }
   });
 
+  it('writes an enriched spec: per-state outline + interactive targets (P2-2)', async () => {
+    const pkg = await readPackage(EVIDENCE);
+    const spec = buildReconstructionSpec(pkg);
+    const ws = await temp('webr-rebuild-enrich-');
+    await scaffoldRebuildWorkspace(spec, EVIDENCE, ws);
+
+    // The Agent-facing spec must be enriched with DOM-derived structure.
+    const written = JSON.parse(await readFile(join(ws, 'spec.json'), 'utf8'));
+    const statesWithDom = pkg.states.filter((s) => s.artifacts.dom);
+    expect(written.states.length).toBe(pkg.states.length);
+    for (const s of statesWithDom) {
+      const record = written.states.find((x) => x.id === s.id);
+      // Enrichment is best-effort; assert shape when present.
+      if (!record) continue;
+      if (record.outline !== undefined) {
+        expect(typeof record.outline.headings).toBe('object');
+      }
+    }
+    // The benchmark fixture's captured states carry real DOM → enrichment must
+    // populate outline/targets on at least one state.
+    const withDom = pkg.states.filter((s) => s.artifacts.dom);
+    expect(withDom.length).toBeGreaterThan(0);
+    const enriched = written.states.filter(
+      (x) => x.outline !== undefined || (x.targets ?? []).length > 0,
+    );
+    expect(enriched.length).toBeGreaterThan(0);
+    // A captured DOM with visible headings should yield a non-empty outline.
+    const firstOutline = written.states.find((x) => x.outline && x.outline.headings.length > 0);
+    expect(firstOutline).toBeDefined();
+  });
+
   it('isReusableContentAsset allows content but not runtime', () => {
     expect(isReusableContentAsset({ mimeType: 'image/svg+xml', localPath: 'svg/x.svg' })).toBe(
       true,

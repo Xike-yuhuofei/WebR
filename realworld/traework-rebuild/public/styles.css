@@ -1,0 +1,771 @@
+/*
+ * TraeWork replica stylesheet (authored for the WebR production benchmark).
+ * Reproduces the captured three-column layout and visual system from frozen
+ * evidence using --wr-* tokens and wr-* component classes (05-SOURCE-CONVENTION).
+ */
+
+:root {
+  --wr-bg: #f2f2f4;
+  --wr-surface: #ffffff;
+  --wr-surface-2: #f6f6f7;
+  --wr-line: #e5e5e8;
+  --wr-ink: #1f1f24;
+  --wr-ink-2: #74747e;
+  --wr-rail-bg: #f7f7f8;
+  --wr-rail-line: #e8e8ec;
+  --wr-accent: #4c6ef5;
+  --wr-brand: #0066ff;
+  --wr-radius: 8px;
+  --wr-sidebar-w: 248px;
+  --wr-header-h: 44px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: var(--wr-bg);
+  color: var(--wr-ink);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+svg {
+  display: block;
+}
+.wr-Root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- Layout shell ---------- */
+.wr-Layout,
+.wr-Container,
+.wr-Content {
+  height: 100%;
+}
+.wr-Container--horizontal {
+  display: flex;
+  min-width: 0;
+}
+.wr-Content {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+.wr-Main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--wr-surface);
+}
+.wr-SplitHandle {
+  width: 1px;
+  background: var(--wr-rail-line);
+  cursor: col-resize;
+}
+
+/* ---------- Sidebar (left column) ---------- */
+.wr-Sidebar {
+  width: var(--wr-sidebar-w);
+  flex: 0 0 var(--wr-sidebar-w);
+  display: flex;
+  flex-direction: column;
+  background: var(--wr-rail-bg);
+  border-right: 1px solid var(--wr-rail-line);
+  overflow: hidden;
+}
+.wr-SidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  min-height: 40px;
+}
+.wr-SidebarHeaderRight {
+  flex: 1;
+}
+.wr-Trigger {
+  display: inline-flex;
+}
+.wr-TriggerGroup {
+  display: inline-flex;
+}
+.wr-IconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--wr-ink-2);
+  border-radius: var(--wr-radius);
+}
+.wr-IconButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--wr-ink);
+}
+.wr-IconBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.wr-IconBox svg {
+  width: 18px;
+  height: 18px;
+  color: currentColor;
+}
+
+/* mode tabs (Work / Code / Design) */
+.wr-ModeContent {
+  padding: 0 8px;
+}
+.wr-ModeContainer {
+  padding: 2px 0 8px;
+}
+.wr-TabBar {
+  position: relative;
+  display: flex;
+  gap: 2px;
+}
+.wr-TabIndicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--indicator-left, 56px);
+  width: var(--indicator-width, 71px);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: var(--wr-radius);
+}
+.wr-Tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  color: var(--wr-ink-2);
+  padding: 5px 8px;
+  border-radius: var(--wr-radius);
+  font-size: 12.5px;
+}
+.wr-Tab .wr-TabIcon {
+  display: inline-flex;
+}
+.wr-Tab .wr-TabIcon svg {
+  width: 15px;
+  height: 15px;
+  color: currentColor;
+}
+.wr-Tab.is-active {
+  color: var(--wr-ink);
+  font-weight: 500;
+}
+
+/* primary nav */
+.wr-PrimarySection {
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.wr-NavItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border-radius: var(--wr-radius);
+  color: var(--wr-ink-2);
+}
+.wr-NavItem:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--wr-ink);
+}
+.wr-NavItem.is-active {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--wr-ink);
+}
+.wr-NavItemIcon {
+  display: inline-flex;
+}
+.wr-NavItemIcon svg {
+  width: 17px;
+  height: 17px;
+  color: currentColor;
+}
+.wr-NavItemText {
+  font-size: 13px;
+  flex: 1;
+}
+.wr-Hotkey {
+  display: inline-flex;
+  gap: 2px;
+}
+.wr-Key {
+  font-size: 11px;
+  color: var(--wr-ink-2);
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 0 4px;
+  line-height: 18px;
+}
+
+/* projects / task list */
+.wr-ProjectsSection {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  overflow: hidden;
+}
+.wr-ProjectsSectionInner {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.wr-ProjectsContent {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.wr-ProjectsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px 4px;
+}
+.wr-ProjectsHeading {
+  font-size: 12px;
+  color: var(--wr-ink-2);
+}
+.wr-ProjectsHeaderActions {
+  display: flex;
+}
+.wr-TaskListCollapsible {
+  overflow: hidden auto;
+}
+.wr-TaskListCollapsibleInner {
+  padding: 4px 0;
+}
+.wr-ProjectsEmpty {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0 6px;
+  color: var(--wr-ink-2);
+}
+.wr-ProjectsEmpty svg {
+  width: 40px;
+  height: 40px;
+  color: currentColor;
+  opacity: 0.6;
+}
+.wr-ProjectsEmptyText {
+  display: block;
+  text-align: center;
+  color: var(--wr-ink-2);
+  font-size: 12px;
+  padding-bottom: 12px;
+}
+.wr-FileTreeWrapper {
+  flex: 1;
+}
+
+/* sidebar footer / account */
+.wr-SidebarFooter {
+  border-top: 1px solid var(--wr-rail-line);
+  padding: 8px;
+}
+.wr-SidebarFooterContent {
+  display: flex;
+  flex-direction: column;
+}
+.wr-AccountRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.wr-AccountTrigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: var(--wr-radius);
+  text-align: left;
+}
+.wr-AccountTrigger:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.wr-AccountTriggerAvatar img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: block;
+}
+.wr-AccountTriggerName {
+  font-size: 12.5px;
+}
+.wr-AccountTriggerMembership {
+  margin-left: auto;
+}
+.wr-AccountBrandTag {
+  font-size: 10px;
+  color: #9a7b2d;
+  background: rgba(198, 164, 78, 0.16);
+  border-radius: 5px;
+  padding: 0 5px;
+  line-height: 16px;
+}
+.wr-AccountAccessoryButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  color: var(--wr-ink-2);
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: var(--wr-radius);
+  text-align: left;
+}
+.wr-AccountAccessoryButton svg {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+}
+
+/* ---------- Center column ---------- */
+.wr-ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+.wr-ChannelContainerCentered {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.wr-CenterHeader {
+  height: var(--wr-header-h);
+  flex: 0 0 var(--wr-header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  border-bottom: 1px solid var(--wr-line);
+}
+.wr-CenterHeaderCenter {
+  flex: 1;
+}
+.wr-CenterHeaderRight {
+  display: flex;
+}
+.wr-Button {
+  border: none;
+  border-radius: var(--wr-radius);
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--wr-ink);
+}
+.wr-Button--secondary {
+  background: var(--wr-surface-2);
+  border: 1px solid var(--wr-line);
+}
+.wr-Button--large {
+  font-size: 13px;
+}
+.wr-ButtonLabelContent {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.wr-ButtonLabelText {
+  font-size: 13px;
+}
+.wr-ButtonLabelContent svg {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+}
+
+/* workspace + welcome title */
+.wr-Workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden auto;
+}
+.wr-WelcomeTitleWrapper {
+  padding: 8vh 0 24px;
+  text-align: center;
+}
+.wr-AnimationContainer {
+  display: inline-block;
+}
+.wr-MainTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.wr-TitleIcon {
+  display: inline-flex;
+}
+.wr-TitleIcon svg {
+  width: 28px;
+  height: 28px;
+}
+.wr-TitleText {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.wr-WithTraeText {
+  font-size: 13px;
+  color: var(--wr-ink-2);
+  border-left: 1px solid var(--wr-line);
+  padding-left: 8px;
+}
+.wr-WithTraeInner {
+  font-size: 13px;
+}
+
+/* chat input card */
+.wr-HomeMessageInput {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px 10px;
+}
+.wr-MessageInputContainer {
+  position: relative;
+}
+.wr-MessageInputToastContainer {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+.wr-MessageInputEditorWrapper {
+  background: var(--wr-surface);
+  border: 1px solid var(--wr-line);
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(24, 24, 40, 0.07);
+  padding: 12px 14px;
+}
+.wr-ChatInput {
+  display: flex;
+  flex-direction: column;
+}
+.wr-ChatInputUpperArea {
+  display: flex;
+  flex-direction: column;
+}
+.wr-ChatInputSlotHeader {
+  min-height: 0;
+}
+.wr-ChatInputInputBoxWrapper {
+  position: relative;
+  min-height: 56px;
+}
+.wr-ChatInputPlaceholder {
+  position: absolute;
+  inset: 0;
+  color: var(--wr-ink-2);
+  font-size: 14px;
+  pointer-events: none;
+}
+.wr-ChatInputEditable {
+  position: relative;
+  min-height: 56px;
+  outline: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.wr-ChatInputParagraph {
+  margin: 0;
+  min-height: 1em;
+}
+
+/* chat input lower bar */
+.wr-ChatInputLowerContent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+}
+.wr-ChatInputLowerLeft {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+.wr-ChatInputLeftBar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.wr-MessageInputToolbarIconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: var(--wr-ink-2);
+  border-radius: 6px;
+}
+.wr-MessageInputToolbarIconBtn svg {
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+.wr-MessageInputPluginToolbar {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: var(--wr-ink-2);
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+.wr-MessageInputPluginToolbarIconWrapper {
+  display: inline-flex;
+}
+.wr-MessageInputPluginToolbarIconWrapper svg {
+  width: 15px;
+  height: 15px;
+  color: currentColor;
+}
+
+/* model select */
+.wr-ChatInputLeftSelect {
+  margin-left: 4px;
+}
+.wr-ModelSelectArea {
+  display: flex;
+}
+.wr-ModelSelectAreaModel {
+  display: flex;
+}
+.wr-ModelSelect {
+  display: flex;
+}
+.wr-ModelSelectTrigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--wr-ink-2);
+  font-size: 12.5px;
+}
+.wr-ModelSelectTriggerValue {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.wr-ModelSelectTriggerArrow {
+  display: inline-flex;
+}
+.wr-ModelSelectTriggerArrow svg {
+  width: 12px;
+  height: 12px;
+  color: currentColor;
+}
+
+/* right side of lower bar */
+.wr-ChatInputLowerRight {
+  display: flex;
+  align-items: center;
+}
+.wr-ChatInputToolbarRight {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.wr-VoicePluginButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: var(--wr-ink-2);
+  border-radius: 6px;
+}
+.wr-VoicePluginButton svg {
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+.wr-SendButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--wr-brand);
+  color: #fff;
+  border-radius: 8px;
+}
+.wr-SendButton:disabled {
+  background: rgba(0, 102, 255, 0.35);
+}
+.wr-SendButton svg {
+  width: 15px;
+  height: 15px;
+  color: currentColor;
+}
+.wr-ChatInputSlotOverlay {
+  height: 0;
+  overflow: hidden;
+}
+
+/* input bar (repo / env) */
+.wr-InputBarContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.wr-InputBarLeft {
+  display: flex;
+  align-items: center;
+}
+.wr-InputBarButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: var(--wr-surface-2);
+  border: 1px solid var(--wr-line);
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12.5px;
+  color: var(--wr-ink);
+}
+.wr-InputBarButton:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.wr-InputBarButtonIcon {
+  display: inline-flex;
+}
+.wr-InputBarButtonIcon svg {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+}
+.wr-InputBarButtonContent {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12.5px;
+  color: var(--wr-ink-2);
+  background: var(--wr-surface-2);
+  border: 1px solid var(--wr-line);
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+.wr-InputBarButtonArrow svg {
+  width: 12px;
+  height: 12px;
+  color: currentColor;
+}
+
+/* showcase chips */
+.wr-ShowcaseWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 16px;
+}
+.wr-ShowcaseSection {
+  display: flex;
+}
+.wr-ChipContainer {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wr-Chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--wr-line);
+  background: var(--wr-surface);
+  border-radius: 999px;
+  padding: 5px 12px 5px 8px;
+  font-size: 12.5px;
+  color: var(--wr-ink);
+}
+.wr-ChipIcon {
+  display: inline-flex;
+}
+.wr-ChipIcon svg {
+  width: 15px;
+  height: 15px;
+  color: currentColor;
+}
+.wr-ChipText {
+  font-size: 12.5px;
+}
+
+/* portals / extension container (observable DOM artifacts; empty and
+   therefore invisible by content, not by display rules) */
+.wr-ModelSelectPortal {
+  height: 0;
+  overflow: hidden;
+}
+#immersive-translate-browser-popup {
+  all: initial;
+}
+
+/* ---------- Responsive breakpoints (three-column five-state) ---------- */
+@media (max-width: 900px) {
+  .wr-Sidebar {
+    width: 190px;
+    flex-basis: 190px;
+  }
+}
+@media (max-width: 700px) {
+  .wr-Sidebar {
+    display: none;
+  }
+  .wr-SplitHandle {
+    display: none;
+  }
+}

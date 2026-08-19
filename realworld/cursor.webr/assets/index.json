@@ -1,0 +1,1257 @@
+{
+  "assets": [
+    {
+      "id": "asset-a092a9741292",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/1112828ec2c13661-s.p.17_qw44._rch-.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/1112828ec2c13661-s.p.17_qw44._rch--4b833d8ce7.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "4b833d8ce706a334bf1349ac9e8a424d2754604bdc412ee1ea0ae75e1379ea92"
+    },
+    {
+      "id": "asset-7bfb1ea0e92c",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/84a2306e77cafc81-s.p.07ukck2wwk475.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/84a2306e77cafc81-s.p.07ukck2wwk475-a30702089e.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "a30702089e10a3f6b7c78c481dd59ee05d0ea77dac4a484146ae6a62be0acb22"
+    },
+    {
+      "id": "asset-f690f09e08e7",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/6a9fa677ec1bbd33-s.p.0b-vepe81ylt2.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/6a9fa677ec1bbd33-s.p.0b-vepe81ylt2-5c3360f843.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "5c3360f8439a1a3f48e8b58fcb6f3a3cbaaa76488a1b846acfe1e3b623c0562f"
+    },
+    {
+      "id": "asset-21423ca958cd",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/345c85a432359eed-s.p.0az0.9544w3d6.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/345c85a432359eed-s.p.0az0.9544w3d6-7a7ce1a34f.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "7a7ce1a34f3e9944fe88fc61abbc93b6db383afa2b90815fd7ccea456fbce4e5"
+    },
+    {
+      "id": "asset-48fb476d1587",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/CursorDisplay_Medium.p.0usrutooo~rjf.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/CursorDisplay_Medium.p.0usrutooo-rjf-045d5e1d5d.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "045d5e1d5d4350f5fc927fb49432221a8610a828a9f79cc6b8dfd42ff211b97e"
+    },
+    {
+      "id": "asset-66d925da88ad",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/9be384ea93fe3f49-s.p.05qlfybzfat._.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/9be384ea93fe3f49-s.p.05qlfybzfat._-bd9a619227.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "bd9a6192274f8f2f3ce31cd3d2cae5ebe32e2fa86fc7c4f60a3c28556e496d56"
+    },
+    {
+      "id": "asset-f3514398c95d",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/ac372c80b3e400a1-s.p.00d4mwnv9pnmj.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/ac372c80b3e400a1-s.p.00d4mwnv9pnmj-557b2ebbaa.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "557b2ebbaa821105e39de764e480f0bc8641993863c8133fdecdfb85bf69fcc7"
+    },
+    {
+      "id": "asset-d8c498545220",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/8e451580e5e95631-s.p.0put2--9ix-3p.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/8e451580e5e95631-s.p.0put2--9ix-3p-d4ae5188a6.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "d4ae5188a65370ecfe28f42293bbee8297cfd5712c6aadfdb270d48f2bcd88b0"
+    },
+    {
+      "id": "asset-3b0e44ee534b",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/346e8051f901134e.p.0o1dbgwxcty-b.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/346e8051f901134e.p.0o1dbgwxcty-b-0077bd5045.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "0077bd5045a699e2d26d1fc5a6071f865ec0698ba419cad62ce9465b59b6d47c"
+    },
+    {
+      "id": "asset-2ae9edd77512",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/4ee71d90e0f663bd.p.0_4wfesx-21w2.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/4ee71d90e0f663bd.p.0_4wfesx-21w2-d2761541b3.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "d2761541b314509e02df3539cd35fc712954a48a50f4e0ab424dde817c699c2a"
+    },
+    {
+      "id": "asset-49b28c6848aa",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/BerkeleyMono_Oblique.p.0ljxuk9ar7~k_.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/BerkeleyMono_Oblique.p.0ljxuk9ar7-k_-2faa15c427.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "2faa15c4271fa3d5a919606fe5e6cdb6d586df78897e3c2b712b085c364ead36"
+    },
+    {
+      "id": "asset-1b8f48d322ba",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/CursorGothic_Regular-s.p.05-84umc_47y9.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/CursorGothic_Regular-s.p.05-84umc_47y9-8c871be81e.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "8c871be81e3b01ee9c89b2d3fdd9b0a608eb172203dceda0a99da590f2cfcb49"
+    },
+    {
+      "id": "asset-1ad50cab7531",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/f30fd2e485acf1bc-s.p.0_qs2mjxez25z.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/f30fd2e485acf1bc-s.p.0_qs2mjxez25z-7bb29c58ea.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "7bb29c58eadc0f0c7b704f5fce2490d10cb62efa55797a09c9b8f91b3b54cb34"
+    },
+    {
+      "id": "asset-a14f0132eb32",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/e4505858a30c79c2.p.093j32h9etvau.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/e4505858a30c79c2.p.093j32h9etvau-68fd4b247d.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "68fd4b247dde89984ee835d99953d235e4927be2b1b732ad81173b519869cee8"
+    },
+    {
+      "id": "asset-7fc92142d8d5",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0tn9u.u_q3umr.css?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0tn9u.u_q3umr-8e8af81937.css",
+      "mimeType": "text/css",
+      "sha256": "8e8af81937e43a6a6d038d3ad987e7aff0182f702e258e5ac10f4d6a2473898b"
+    },
+    {
+      "id": "asset-67ecb0348457",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/a523ad25754b11ff-s.p.07ej8ox7wb60j.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/a523ad25754b11ff-s.p.07ej8ox7wb60j-d04f44613e.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "d04f44613eb8cce1613f0b31dc5de9050b6695c5c80e6c01fe3239d97efce3f0"
+    },
+    {
+      "id": "asset-09f352785985",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/BerkeleyMono_Regular.p.0x~g-6.~uijej.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/BerkeleyMono_Regular.p.0x-g-6.-uijej-11d9573b6f.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "11d9573b6fc17704a84bd8c6b3cc50063f5f56396141fb307a69e69616d8941e"
+    },
+    {
+      "id": "asset-3fe93841db57",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/1497d94d4ac5c969.p.0zw8maj75452d.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/1497d94d4ac5c969.p.0zw8maj75452d-c2fa6862b0.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "c2fa6862b03629214873944b171b0df1189420be52aabd82142d45f96fdce588"
+    },
+    {
+      "id": "asset-998a8ff5bca0",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/CursorGothic_Italic-s.p.0klm.ze1la4ej.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/CursorGothic_Italic-s.p.0klm.ze1la4ej-a9978131f5.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "a9978131f519749a565687c16b245847f250bc0d493faf8c79be72402cf64a3e"
+    },
+    {
+      "id": "asset-f716a9a402bb",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0p8a-qayx25k1.css?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0p8a-qayx25k1-8bffb2951f.css",
+      "mimeType": "text/css",
+      "sha256": "8bffb2951f30ca07579a2c812c142dd2237074fa65d259b2b63d570657dd7210"
+    },
+    {
+      "id": "asset-c67e1fe582c6",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/06qnn3s1n-wms.css?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/06qnn3s1n-wms-a0f6c58706.css",
+      "mimeType": "text/css",
+      "sha256": "a0f6c587064252a5ee5c436b2db625bf73852843174a9882cb836c45167db615"
+    },
+    {
+      "id": "asset-e7259d9f38ed",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/CursorGothic_Bold-s.p.15hkw~ebmtjvr.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/CursorGothic_Bold-s.p.15hkw-ebmtjvr-5bd0d893a9.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "5bd0d893a900262f6410ffb2f3eee6f84f1d1cb1594c7952bceb83746dcaf1b0"
+    },
+    {
+      "id": "asset-67ac93e2ac65",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/03h7_gfiqul9j.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/03h7_gfiqul9j-5fcc03df28.js",
+      "mimeType": "application/javascript",
+      "sha256": "5fcc03df28ebf5e367049046349b4fe3dbeccddad0bf7f2c4e57b4703ac610dd"
+    },
+    {
+      "id": "asset-ac0b17d13cb7",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0-s6avy_5tur_.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0-s6avy_5tur_-745560e3aa.js",
+      "mimeType": "application/javascript",
+      "sha256": "745560e3aafe880c353560df8a83c6ea82566b0810030dfa2d71cadfcebc5c59"
+    },
+    {
+      "id": "asset-a90de86ee04b",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0ccwldie.pqcz.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0ccwldie.pqcz-723401e28b.js",
+      "mimeType": "application/javascript",
+      "sha256": "723401e28b9c4a3ded7aacc269da1132e7dced0de7e301d196c729aadea5562b"
+    },
+    {
+      "id": "asset-26f1adffd5e7",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0r1acmo3fs1le.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0r1acmo3fs1le-42101f8264.js",
+      "mimeType": "application/javascript",
+      "sha256": "42101f826411cd9d9bd2f6bdee3759f51bedbeabeaae6882fc4509eb0239eb3f"
+    },
+    {
+      "id": "asset-5e19835b823c",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/17nsuep_9254c.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/17nsuep_9254c-d03de84eb9.js",
+      "mimeType": "application/javascript",
+      "sha256": "d03de84eb994c0d40402d8372179b9cce52382be048141b84dd6edfdd2dcb5ed"
+    },
+    {
+      "id": "asset-780424c6e90d",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0bcatfrew8l9s.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0bcatfrew8l9s-29f5cc8a66.js",
+      "mimeType": "application/javascript",
+      "sha256": "29f5cc8a6689be0ad0944f03687bdc2df048b75f9382a871eb8ba1a0d9bc6d79"
+    },
+    {
+      "id": "asset-9688c039daf7",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0i~ah33k53.y1.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0i-ah33k53.y1-c25725bc1c.js",
+      "mimeType": "application/javascript",
+      "sha256": "c25725bc1c186f88af94b1173d07f69db1232e3fa322d32008195c7d39b948c8"
+    },
+    {
+      "id": "asset-e986450bdaaa",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0xx5mh9btj-pb.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0xx5mh9btj-pb-96e4b724ee.js",
+      "mimeType": "application/javascript",
+      "sha256": "96e4b724ee6dfbdabde9acca4371c0504e338c81c1b4a82127f7df972b773395"
+    },
+    {
+      "id": "asset-ac5b51e60a69",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/16ss.dk3pj-mm.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/16ss.dk3pj-mm-3c703d93a7.js",
+      "mimeType": "application/javascript",
+      "sha256": "3c703d93a7492990ac71ae3425c05ce0ad4585655cc4446a94dd39783df313b9"
+    },
+    {
+      "id": "asset-e6303c66b761",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fmisc%2Fasset-cc24ca462279ca23250c.jpg&w=1920&q=70",
+      "localPath": "assets/files/image-1f051afccb",
+      "mimeType": "image/webp",
+      "sha256": "1f051afccb0b976e9085a1e410c4d1adfe90d0d7a1709334263489153fc8a5b0"
+    },
+    {
+      "id": "asset-1d526e03c71a",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0pv4~sepimyr4.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0pv4-sepimyr4-be0ba2ef54.js",
+      "mimeType": "application/javascript",
+      "sha256": "be0ba2ef54e2256c8b4bd09e3b53cb7cbfcb210887b549c9bbcab555d581480c"
+    },
+    {
+      "id": "asset-664bcb24e9c2",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0n8phzttu9nva.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0n8phzttu9nva-54197320de.js",
+      "mimeType": "application/javascript",
+      "sha256": "54197320de95aefdac070ac42905aa14ae7367012f833afadd643aece04b63e7"
+    },
+    {
+      "id": "asset-cdd78bf9ea71",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/turbopack-08av2-_rmz3t_.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/turbopack-08av2-_rmz3t_-0c76b17ab4.js",
+      "mimeType": "application/javascript",
+      "sha256": "0c76b17ab43ce03131807ee1856e7247c3b407a995b96b5a9fc018fa8b5a266a"
+    },
+    {
+      "id": "asset-3852145f0282",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0bvhregxbt1vw.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0bvhregxbt1vw-4256b8fc10.js",
+      "mimeType": "application/javascript",
+      "sha256": "4256b8fc105fe32b4f2687b9929d70c3f04687297f57e97a1fb4d79b1290e121"
+    },
+    {
+      "id": "asset-31107e99b3dc",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0c658s2-_biny.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0c658s2-_biny-7d4af651c5.js",
+      "mimeType": "application/javascript",
+      "sha256": "7d4af651c537a5ce5a838fb000730c046ead3edeeb24997147fa09bcf251cc37"
+    },
+    {
+      "id": "asset-90e0fc773448",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/11mpk4ts4cfge.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/11mpk4ts4cfge-c351d4876e.js",
+      "mimeType": "application/javascript",
+      "sha256": "c351d4876ec7814d455ab36a832657bcd4fab260d37b81f8eddb20b8eebc5106"
+    },
+    {
+      "id": "asset-a86ec1de53d6",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/04kvlyqnlrxc-.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/04kvlyqnlrxc--e6a474d0a3.js",
+      "mimeType": "application/javascript",
+      "sha256": "e6a474d0a3c8ea3d3b5266a4b5da25ca81f7a0bf83c11e2224bad13a2fba39da"
+    },
+    {
+      "id": "asset-1bb0a2fdfc7e",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/09-zgo-z~gsem.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/09-zgo-z-gsem-6b1e0f337b.js",
+      "mimeType": "application/javascript",
+      "sha256": "6b1e0f337b04777c2d201a9ea3ac663957adfda9ec4e394ee1665bde1ebb3301"
+    },
+    {
+      "id": "asset-1d0cea306d3e",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/18au7bbkkxpce.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/18au7bbkkxpce-ddc3d649ed.js",
+      "mimeType": "application/javascript",
+      "sha256": "ddc3d649edfc0bff483a2a5b43c3cbf7fa386c5ea2c88e20599cd1c70ae15979"
+    },
+    {
+      "id": "asset-eeea7eaabdda",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0ao4wzlf12e7b.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0ao4wzlf12e7b-5c6f3167eb.js",
+      "mimeType": "application/javascript",
+      "sha256": "5c6f3167eb32ae5790b899ed3a44fdf1f4038184668d9f8ee1bd1d68f4cea1a9"
+    },
+    {
+      "id": "asset-89dcb897922b",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/103hxdc76u8vx.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/103hxdc76u8vx-6d01ecc4a4.js",
+      "mimeType": "application/javascript",
+      "sha256": "6d01ecc4a4b2935e08cbe1c86e86f268b90ae308a1310d262ac5e9de9069244e"
+    },
+    {
+      "id": "asset-cea736a7dd47",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0bu7ecbqjkc2n.css?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0bu7ecbqjkc2n-eacb96f716.css",
+      "mimeType": "text/css",
+      "sha256": "eacb96f716e5ea596e2affcf2ec9487cde2ef19fb27553db517fdc641df328d5"
+    },
+    {
+      "id": "asset-4f47bf9fcf77",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0yrc0.fp5jwql.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0yrc0.fp5jwql-f459762593.js",
+      "mimeType": "application/javascript",
+      "sha256": "f45976259304a3612b6b1f5df31756c4e90eb5a8a14804b8f7b4ad536cb592d3"
+    },
+    {
+      "id": "asset-843e1bff0b80",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/175hjs9.~ubr3.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/175hjs9.-ubr3-f6bbee184f.js",
+      "mimeType": "application/javascript",
+      "sha256": "f6bbee184fc7aeb558f93e9301b77e6b673c8a584bf1e05d4d3e78a22410ff79"
+    },
+    {
+      "id": "asset-09cef8f0eb66",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0_es~dz1j6by9.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0_es-dz1j6by9-1b43468e63.js",
+      "mimeType": "application/javascript",
+      "sha256": "1b43468e63a90680dd0000fe764ab021edd4db6ca414db90cc6c67b555dbca39"
+    },
+    {
+      "id": "asset-867ffe764621",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0sqf5rkr2fh9k.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0sqf5rkr2fh9k-9caf53bff4.js",
+      "mimeType": "application/javascript",
+      "sha256": "9caf53bff45b29263360db16fdb5e1f39b3906d6d576765343109b4791c74949"
+    },
+    {
+      "id": "asset-b3ca2c35be9c",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0zpcdpkmxmnc1.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0zpcdpkmxmnc1-11c1a885d0.js",
+      "mimeType": "application/javascript",
+      "sha256": "11c1a885d0ec715a7a93b601f0cf7b04b2e9dbd8b6c797059c8d3fe9b453af81"
+    },
+    {
+      "id": "asset-f36edcf6b098",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0s3x1ja_w88o3.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0s3x1ja_w88o3-5c4255c835.js",
+      "mimeType": "application/javascript",
+      "sha256": "5c4255c83519abfb3e4ea2250e1a0c1b1882dc22216cf9f8aceee3d8734141d3"
+    },
+    {
+      "id": "asset-253b35036b7e",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/10l3tw-0uigae.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/10l3tw-0uigae-83fc2568da.js",
+      "mimeType": "application/javascript",
+      "sha256": "83fc2568da9d080000c6547fb0a58d3b37099145e49162f6405c53ab294757e1"
+    },
+    {
+      "id": "asset-869d3933f0ac",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0j-uh6k81n4gd.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0j-uh6k81n4gd-182d67f92b.js",
+      "mimeType": "application/javascript",
+      "sha256": "182d67f92bddb781bf3b9b72ff4a81634ee2f9ab44481dc3780f0c1aeebdb94d"
+    },
+    {
+      "id": "asset-fbc0b6877982",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/80dbc432bf467303-s.p.0ucnnm22nbe4-.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/80dbc432bf467303-s.p.0ucnnm22nbe4--5010c0df83.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "5010c0df836d8c80e36d7fd2ef00de4d7b5b34d359c330489d8b1a695665a719"
+    },
+    {
+      "id": "asset-abde791bfef3",
+      "originalUrl": "https://cursor.com/marketing-static/demos/cursor-wallpaper.png",
+      "localPath": "assets/files/cursor-wallpaper-0b0e25bcda.png",
+      "mimeType": "image/png",
+      "sha256": "0b0e25bcdae8d466bcba8af657a9241427cee1ee3e2d93863794eb0dd635f48a"
+    },
+    {
+      "id": "asset-d3607a837d93",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0hlkdp-ln.x0s.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0hlkdp-ln.x0s-4732386dd6.js",
+      "mimeType": "application/javascript",
+      "sha256": "4732386dd6e986dcd898fc3a9240e6ab6e6d71081d41522af8873c4fc9383bc4"
+    },
+    {
+      "id": "asset-b72909668843",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0zbx3evt-2.vj.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0zbx3evt-2.vj-50a4aa2798.js",
+      "mimeType": "application/javascript",
+      "sha256": "50a4aa27989dc7d0f149da9cf5b6bcd9e20ced04c86bdde3a18e94793966d45a"
+    },
+    {
+      "id": "asset-266c5ad6ff11",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/14366~p2-8nzg.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/14366-p2-8nzg-34b67a4cd0.js",
+      "mimeType": "application/javascript",
+      "sha256": "34b67a4cd0f2bcf69cd70323cd043732b54f322e9f9605a7e9a5227d34702474"
+    },
+    {
+      "id": "asset-37c74b5f0d34",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0-82frnzhpzhr.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0-82frnzhpzhr-9e6a1a46b3.js",
+      "mimeType": "application/javascript",
+      "sha256": "9e6a1a46b30398ae62427673ca6753e26b5621cb76c7bcbd015dd5f9c9d1b979"
+    },
+    {
+      "id": "asset-0afe7802b365",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0nxecx9g23viw.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0nxecx9g23viw-748dbe795a.js",
+      "mimeType": "application/javascript",
+      "sha256": "748dbe795a9496efabf9db145f22e5296e949640b0791dbbf3113ac3f24d155d"
+    },
+    {
+      "id": "asset-d2d5f993c7b5",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0xs3~p2b9jj6t.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0xs3-p2b9jj6t-84cb423428.js",
+      "mimeType": "application/javascript",
+      "sha256": "84cb4234283917907459b7219409c522bcced838b1f96e5766eef9fc97d91ade"
+    },
+    {
+      "id": "asset-bd83c5fe4269",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0o.h1-3825zax.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0o.h1-3825zax-6e95004541.js",
+      "mimeType": "application/javascript",
+      "sha256": "6e950045418838cac3d7e027b04f5b2a0a098cc61ad856025a4c3e115254cd87"
+    },
+    {
+      "id": "asset-85195599560c",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/0x3l3e6wse2pc.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/0x3l3e6wse2pc-3666293e1d.js",
+      "mimeType": "application/javascript",
+      "sha256": "3666293e1dbc8770d4785e601dd9cb655d8de10f9144518be3aa10f902c5cda0"
+    },
+    {
+      "id": "asset-67dfe2fc818a",
+      "originalUrl": "https://cursor.com/an/UfoPFiz3bKlZcL0x/",
+      "localPath": "assets/files/UfoPFiz3bKlZcL0x-b68be90cf9",
+      "mimeType": "application/javascript",
+      "sha256": "b68be90cf9e1b8c989922905bd6318094e330b3306fec4b6e5b5ec4790f02f6e"
+    },
+    {
+      "id": "asset-d36b6a53a3cd",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/chunks/14s_myja48akq.js?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/14s_myja48akq-2b395f0c8b.js",
+      "mimeType": "application/javascript",
+      "sha256": "2b395f0c8b7fc61505f5da75ec14e5d2293842b78b31904c1436edc3c81f4376"
+    },
+    {
+      "id": "asset-284481086129",
+      "originalUrl": "https://cursor.com/marketing-static/_next/static/media/CursorGothic_BoldItalic-s.p.0cqzqaem~_s9y.woff2?dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/CursorGothic_BoldItalic-s.p.0cqzqaem-_s9y-bf99104f2b.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "bf99104f2bce7c8ddcfaafbf22a3a607f553c5770c939ac0f0320ee23a8ec76c"
+    },
+    {
+      "id": "asset-26eb26a12bb0",
+      "originalUrl": "https://cursor.com/marketing-static/fonts/cursor-icons-16.woff2",
+      "localPath": "assets/files/cursor-icons-16-d295cbdbb0.woff2",
+      "mimeType": "font/woff2",
+      "sha256": "d295cbdbb0e60a0a32df6dc47786beb717fa176e16e436d53a32be64420c7fed"
+    },
+    {
+      "id": "asset-96037c517a89",
+      "originalUrl": "https://0ay7zb.cursor.com/analytics/loader-v1.js?key=6f091e8fd6f3c36209a1e08f140c7a4b334baea548f4702052f0732f8d577990",
+      "localPath": "assets/files/loader-v1-44c4bf4b0a.js",
+      "mimeType": "application/javascript",
+      "sha256": "44c4bf4b0a57f200fecbeddc8ed1ac0b800239a06ee184a296e295d724d0a996"
+    },
+    {
+      "id": "asset-6560b2adb148",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=%2Fmarketing-static%2Fusers%2Fswhitmore.png&w=32&q=70&dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/image-b61a8e6a90",
+      "mimeType": "image/webp",
+      "sha256": "b61a8e6a90f67d48c26ec32c6f50b49a4eae9018f65612139fc069fbec2ce23b"
+    },
+    {
+      "id": "asset-7e523e6ab76c",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=%2Fmarketing-static%2Fusers%2Feric.jpeg&w=32&q=70&dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/image-5365505212",
+      "mimeType": "image/webp",
+      "sha256": "5365505212a40e6700609c3e256d898091e7a7eae0f62ddd5975ab3e007faff8"
+    },
+    {
+      "id": "asset-ed51f8b37f44",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Finternal-brand%2Finternal-brand-023-3291bb4c.jpg&w=1920&q=70",
+      "localPath": "assets/files/image-210f74b22c",
+      "mimeType": "image/webp",
+      "sha256": "210f74b22cf5b4ddb66ea81dccf3c0b8d07284a76d03f0bde3b338b50292928d"
+    },
+    {
+      "id": "asset-3e2d5a21ff0f",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fmisc%2Fasset-85923e7fafe00c9c0d1f.jpg&w=1920&q=70",
+      "localPath": "assets/files/image-5402894a70",
+      "mimeType": "image/webp",
+      "sha256": "5402894a70ea84b351eab09bfd72857ed09471ac47c6390f0c3b3e436e44375d"
+    },
+    {
+      "id": "asset-517e08413ff6",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=%2Fmarketing-static%2Ficon-192x192.png&w=32&q=70&dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/image-f6b7cedb28",
+      "mimeType": "image/webp",
+      "sha256": "f6b7cedb2840f912db5170c34e8e2bd7603597e9a0e770f9a38fc8c41bcab036"
+    },
+    {
+      "id": "asset-396277275843",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=%2Fmarketing-static%2Fusers%2Frikki.jpg&w=32&q=70&dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/image-24ec6ea443",
+      "mimeType": "image/webp",
+      "sha256": "24ec6ea4430c573a81c2729ff1b342086f7599941004dacb132935009f43e619"
+    },
+    {
+      "id": "asset-22fe9aca3241",
+      "originalUrl": "https://cursor.com/marketing-static/_next/image?url=%2Fmarketing-static%2Fusers%2Fryo.png&w=32&q=70&dpl=dpl_9EPrEo5JXbU9UhqHk5Q6yJhMK9ks",
+      "localPath": "assets/files/image-bb607c5eda",
+      "mimeType": "image/webp",
+      "sha256": "bb607c5edaafe270775c251943c1565ab0677bca76b15fd3079cd27de862ffc3"
+    },
+    {
+      "id": "asset-d2127ff7d8fc",
+      "originalUrl": "https://cursor.com/an/5NFOPZQoiC99Q/?id=GTM-M2R7938W",
+      "localPath": "assets/files/5NFOPZQoiC99Q-62aef281ec",
+      "mimeType": "application/javascript",
+      "sha256": "62aef281ec8338ff56773918ef2552b3877d210abf6452a21549fa65d8fd2e4b"
+    },
+    {
+      "id": "asset-a0d014272b06",
+      "originalUrl": "https://0ay7zb.cursor.com/analytics/measure-v1.js?key=6f091e8fd6f3c36209a1e08f140c7a4b334baea548f4702052f0732f8d577990&v=1.1.0",
+      "localPath": "assets/files/measure-v1-649a458c77.js",
+      "mimeType": "application/javascript",
+      "sha256": "649a458c7768c275fc3772a1c9b2cf1cec40f17cce411fdba132caee7e0df597"
+    },
+    {
+      "id": "asset-34d1ffe1d017",
+      "originalUrl": "https://cursor.com/an/UfoPFiz3bKlZcL0x/5Bwao5xD2tUnJnW8GT9VMSWOgPaMcYwSSlx4t2TdGyahMy0e",
+      "localPath": "assets/files/5Bwao5xD2tUnJnW8GT9VMSWOgPaMcYwSSlx4t2TdGyahMy0e-cc6625186b",
+      "mimeType": "application/javascript",
+      "sha256": "cc6625186b842f0edbdd2b7c4c1286e62e1582dd575f6fd75e31476f643f3197"
+    },
+    {
+      "id": "asset-ed98cd2e7149",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/initialize?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client&sv=3.32.2&t=1787107757164&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&se=1",
+      "localPath": "assets/files/initialize-f8d685e00f",
+      "mimeType": "application/json",
+      "sha256": "f8d685e00f93ee3742a382c75d690626c64efac82b5a948c822986eb0bd93757"
+    },
+    {
+      "id": "asset-b4e6c21d83dd",
+      "originalUrl": "https://cursor.com/marketing-static/logo/logo-light-theme.mp4",
+      "localPath": "assets/files/logo-light-theme-882069e07f.mp4",
+      "mimeType": "video/mp4",
+      "sha256": "882069e07fa9df3685f7731c7602196103a7b148dc01927807d2558501c0f222"
+    },
+    {
+      "id": "asset-56bb241c12e6",
+      "originalUrl": "https://cursor.com/_vercel/insights/script.js",
+      "localPath": "assets/files/script-79bf638dd4.js",
+      "mimeType": "application/javascript",
+      "sha256": "79bf638dd4acdeb9b80c5a4009a3e1986968d615e9557dcf23d91b5e8ad158d8"
+    },
+    {
+      "id": "asset-2376d7c0197f",
+      "originalUrl": "https://cursor.com/_vercel/speed-insights/script.js",
+      "localPath": "assets/files/script-c703720710.js",
+      "mimeType": "application/javascript",
+      "sha256": "c703720710415599d2f0b3f31fbfda63e34d6d19e730bada78b9b92197564f5b"
+    },
+    {
+      "id": "asset-ab070f55a0b3",
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G5H6JBHFD7Z&gtg_health=1",
+      "localPath": "assets/files/js-c24c8a68f1",
+      "mimeType": "application/javascript",
+      "sha256": "c24c8a68f1ffcf9b37963dfdf26c4874c307feceac1245180f85db1da436416a"
+    },
+    {
+      "id": "asset-296b1e85f651",
+      "originalUrl": "https://cursor.com/?_rsc=e6avv",
+      "localPath": "assets/files/asset-82-0791f01d1e",
+      "mimeType": "text/x-component",
+      "sha256": "0791f01d1e6844478176ccec017f51340a159e03195d00946bb21a728e51ee64"
+    },
+    {
+      "id": "asset-e6a64ba7e888",
+      "originalUrl": "https://cursor.com/?_rsc=787ve",
+      "localPath": "assets/files/asset-83-81e96e31e2",
+      "mimeType": "text/x-component",
+      "sha256": "81e96e31e221dc7a172e8a5637210fce302f0b976a2209bef9b2df4f45533eae"
+    },
+    {
+      "id": "asset-0d98e88a6ed6",
+      "originalUrl": "https://cursor.com/?_rsc=dmwq7",
+      "localPath": "assets/files/asset-84-de970fe97b",
+      "mimeType": "text/x-component",
+      "sha256": "de970fe97b4473d5dbd48e9ec138a255b17c25654126c9ce8da8bd08e7b09975"
+    },
+    {
+      "id": "asset-40f9d6a5c848",
+      "originalUrl": "https://cursor.com/?_rsc=1mfq6",
+      "localPath": "assets/files/asset-85-80f6ae2bfa",
+      "mimeType": "text/x-component",
+      "sha256": "80f6ae2bfa09c525f9063da6e2904cdd010adafb8c6bc3631e98449ade9d2955"
+    },
+    {
+      "id": "asset-2fc064e0b5f1",
+      "originalUrl": "https://cursor.com/an/5NFOPZQoiC99Q/SnA2w_J1eZvtP_iUWnAS05CdJpFq-R5gkhcewSL1hKzMgWGbsMk",
+      "localPath": "assets/files/SnA2w_J1eZvtP_iUWnAS05CdJpFq-R5gkhcewSL1hKzMgWGbsMk-1c7db2d9f6",
+      "mimeType": "application/javascript",
+      "sha256": "1c7db2d9f62cea3312d3e334cbd4ad7f553fce82c80d4e6b11166f6a3d4305b9"
+    },
+    {
+      "id": "asset-2846e4e3836d",
+      "originalUrl": "https://cursor.com/?_rsc=1lo3v",
+      "localPath": "assets/files/asset-87-80f6ae2bfa",
+      "mimeType": "text/x-component",
+      "sha256": "80f6ae2bfa09c525f9063da6e2904cdd010adafb8c6bc3631e98449ade9d2955"
+    },
+    {
+      "id": "asset-ea468ca39de8",
+      "originalUrl": "https://cursor.com/?_rsc=zd9er",
+      "localPath": "assets/files/asset-88-899bd53297",
+      "mimeType": "text/x-component",
+      "sha256": "899bd53297ed2102e7635f87d0fb099747125939329ce29b8fff8ab5d5b24dfa"
+    },
+    {
+      "id": "asset-de28ec45d21b",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107757753&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-1d516a20eb17",
+      "originalUrl": "https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_io7m1pn781g4",
+      "localPath": "assets/files/pixel-33fa9bfc5d.js",
+      "mimeType": "application/javascript",
+      "sha256": "33fa9bfc5de2a8322793a7cc57b66e0913471effcfe64d85b504db31122a65af"
+    },
+    {
+      "id": "asset-9c3d689c3275",
+      "originalUrl": "https://analytics.roadwayai.com/tag.js",
+      "localPath": "assets/files/tag-3aa77e19d5.js",
+      "mimeType": "application/javascript",
+      "sha256": "3aa77e19d59d8f6296805c5a05b3d602d8ebd998e6f84e22fd29a6f11e3919f0"
+    },
+    {
+      "id": "asset-320d4256fc0e",
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "localPath": "assets/files/insight.min-af0745562f.js",
+      "mimeType": "application/javascript",
+      "sha256": "af0745562f1d597413e728a7ddaf2513e7385c4fa3a1ad800e8aa70128aad4cc"
+    },
+    {
+      "id": "asset-c5acbaebd7a0",
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "localPath": "assets/files/fbevents-5e2dfcdd99.js",
+      "mimeType": "application/x-javascript",
+      "sha256": "5e2dfcdd99fbe63470e85c69591563a7ff90690c3d60f3d333641b6ed672ca6e"
+    },
+    {
+      "id": "asset-2b9843cbe53e",
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.beta.min.js",
+      "localPath": "assets/files/insight.beta.min-fdaf347fbd.js",
+      "mimeType": "application/javascript",
+      "sha256": "fdaf347fbd9671058231953f1603be2fe2a9f5ec0b4906f5f1389059fad4988b"
+    },
+    {
+      "id": "asset-fbcc655a6737",
+      "originalUrl": "https://cursor.com/an/5NFOPZQoiC99Q/SnA2w_J1f-H1RvntKwpjoJb0M8A0pwV7lkUUiHuthvGSiLDJ",
+      "localPath": "assets/files/SnA2w_J1f-H1RvntKwpjoJb0M8A0pwV7lkUUiHuthvGSiLDJ-348db6b60f",
+      "mimeType": "application/javascript",
+      "sha256": "348db6b60f6ba6769971c64309e1ef70266b0368e92de7f56346d2d52214fad9"
+    },
+    {
+      "id": "asset-94751af1e163",
+      "originalUrl": "https://ip.conceptualhq.com/",
+      "localPath": "assets/files/asset-96-f1a6822756",
+      "mimeType": "text/plain",
+      "sha256": "f1a6822756d5df7a5df5171968faea6bcff819464ca7c3ff4fc6459532292e27"
+    },
+    {
+      "id": "asset-427565a6ce10",
+      "originalUrl": "https://connect.facebook.net/signals/config/547821531655094?v=2.9.380&r=stable&domain=cursor.com&optin_meta_enabled_capi=true&hme=c50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88&ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C291%2C292%2C290%2C305%2C327%2C225%2C214%2C66%2C215%2C213%2C330%2C321%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180",
+      "localPath": "assets/files/547821531655094-43134523b6",
+      "mimeType": "application/x-javascript",
+      "sha256": "43134523b6794a2ee59d39168fbe89776a7930eb0ce1789314b86690914104d3"
+    },
+    {
+      "id": "asset-07e1e2d181c6",
+      "originalUrl": "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D727A8BC77U33845DVA0&lib=ttq",
+      "localPath": "assets/files/events-e2c87013a7.js",
+      "mimeType": "application/javascript",
+      "sha256": "e2c87013a7cd30f7ff8c0fc789fa108e000e05fac620dae8c2643ca9b260ab80"
+    },
+    {
+      "id": "asset-41db6abcf9c7",
+      "originalUrl": "https://sc-static.net/scevent.min.js",
+      "localPath": "assets/files/scevent.min-c0e123daa8.js",
+      "mimeType": "application/javascript",
+      "sha256": "c0e123daa834228d5b736306435e8108941ee5da92e6b7f00dac5e7220113ef8"
+    },
+    {
+      "id": "asset-1a0090b4982e",
+      "originalUrl": "https://cursor.com/?_rsc=1ujcj",
+      "localPath": "assets/files/asset-100-0791f01d1e",
+      "mimeType": "text/x-component",
+      "sha256": "0791f01d1e6844478176ccec017f51340a159e03195d00946bb21a728e51ee64"
+    },
+    {
+      "id": "asset-2320f21baf0c",
+      "originalUrl": "https://cursor.com/?_rsc=13rnr",
+      "localPath": "assets/files/asset-101-80f6ae2bfa",
+      "mimeType": "text/x-component",
+      "sha256": "80f6ae2bfa09c525f9063da6e2904cdd010adafb8c6bc3631e98449ade9d2955"
+    },
+    {
+      "id": "asset-4c42833fbd1b",
+      "originalUrl": "https://connect.facebook.net/signals/config/1600187491022491?v=2.9.380&r=stable&domain=cursor.com&optin_meta_enabled_capi=true&hme=c50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88&ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C291%2C292%2C290%2C305%2C327%2C225%2C214%2C66%2C215%2C213%2C330%2C321%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180%2C242%2C240%2C235%2C237%2C238%2C239%2C236%2C224%2C241%2C234%2C206%2C200%2C204%2C205%2C203%2C198%2C349%2C209%2C201%2C202%2C228%2C199%2C197%2C249%2C219%2C191%2C192%2C187%2C193%2C190%2C188%2C189%2C186%2C184%2C195%2C196%2C194%2C293%2C348%2C314%2C315%2C312%2C313%2C311%2C207%2C252%2C259%2C253%2C255%2C258%2C256%2C257%2C254%2C251%2C270%2C263%2C267%2C262%2C271%2C268%2C261%2C266%2C265%2C269%2C264%2C260%2C307%2C324",
+      "localPath": "assets/files/1600187491022491-902234d1ff",
+      "mimeType": "application/x-javascript",
+      "sha256": "902234d1ffc8e9a29363bdbc35a15ed609d00f59d47d94f272b800d0b021bb9b"
+    },
+    {
+      "id": "asset-4c1f48e3d272",
+      "originalUrl": "https://cursor.com/?_rsc=1tzyd",
+      "localPath": "assets/files/asset-103-de970fe97b",
+      "mimeType": "text/x-component",
+      "sha256": "de970fe97b4473d5dbd48e9ec138a255b17c25654126c9ce8da8bd08e7b09975"
+    },
+    {
+      "id": "asset-d0a4b6589b81",
+      "originalUrl": "https://cursor.com/?_rsc=1nl9i",
+      "localPath": "assets/files/asset-104-81e96e31e2",
+      "mimeType": "text/x-component",
+      "sha256": "81e96e31e221dc7a172e8a5637210fce302f0b976a2209bef9b2df4f45533eae"
+    },
+    {
+      "id": "asset-fa371547244d",
+      "originalUrl": "https://analytics.tiktok.com/i18n/pixel/static/main.MTZkNzEzYmVhMQ.js",
+      "localPath": "assets/files/main.MTZkNzEzYmVhMQ-6d79d3131f.js",
+      "mimeType": "application/javascript",
+      "sha256": "6d79d3131f067618d08b677b51e8b80cf5b61d3a032f73b4b53409b181dbc704"
+    },
+    {
+      "id": "asset-854464412d51",
+      "originalUrl": "https://cursor.com/?_rsc=1301h",
+      "localPath": "assets/files/asset-106-80f6ae2bfa",
+      "mimeType": "text/x-component",
+      "sha256": "80f6ae2bfa09c525f9063da6e2904cdd010adafb8c6bc3631e98449ade9d2955"
+    },
+    {
+      "id": "asset-adbc126f7725",
+      "originalUrl": "https://analytics.tiktok.com/i18n/pixel/static/identify_ea043f1c.js",
+      "localPath": "assets/files/identify_ea043f1c-417c2fa4ff.js",
+      "mimeType": "application/javascript",
+      "sha256": "417c2fa4ff8cf5e36b1797c558e99b797cf8e9a960ce8e126ccd8de6ff09efca"
+    },
+    {
+      "id": "asset-9308c02792e9",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107759216&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-cfdb8bfc2c18",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107759034&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-44dbcb68b9fc",
+      "originalUrl": "https://cursor.com/?_rsc=gp702",
+      "localPath": "assets/files/asset-110-899bd53297",
+      "mimeType": "text/x-component",
+      "sha256": "899bd53297ed2102e7635f87d0fb099747125939329ce29b8fff8ab5d5b24dfa"
+    },
+    {
+      "id": "asset-3c063298d1a1",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-06dcb626-c378-4bad-95f9-b17e827ed5d4&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=263&m_fcps=308&m_pi=263&m_pl=397&m_pv=2&m_rd=741&m_sh=900&m_sl=736&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=3b25b02a-af74-4edd-9b87-4ce5076b0a6b&ts=1787107759072&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-9a5e16f9567e",
+      "originalUrl": "https://tr.snapchat.com/config/com/4c44e719-1ea9-48cd-b2fa-2627f58ce5be.js?v=3.60.0-2608111919",
+      "localPath": "assets/files/4c44e719-1ea9-48cd-b2fa-2627f58ce5be-ad71862ce1.js",
+      "mimeType": "application/javascript",
+      "sha256": "ad71862ce11c527ba14b8fb8491a82627429614705719e86ab31ea3f79c1a241"
+    },
+    {
+      "id": "asset-f831aedc0bea",
+      "originalUrl": "https://0ay7zb.cursor.com/api/v1/track?key=6f091e8fd6f3c36209a1e08f140c7a4b334baea548f4702052f0732f8d577990",
+      "localPath": "assets/files/track-a0ed791cd6",
+      "mimeType": "application/json",
+      "sha256": "a0ed791cd62ed47425a91bded75c35400b7b4869fba8bb84dd0552e8ee4d8a75"
+    },
+    {
+      "id": "asset-88d1bf518e12",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-c4fa38cc-1b68-4973-b972-225e2df13149&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=171&m_fcps=184&m_pi=171&m_pl=273&m_pv=2&m_rd=558&m_sh=900&m_sl=555&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=94023662-caee-4c3e-b039-dc0aab0ef50c&ts=1787107765171&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-6e8c2da9ba7a",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107765166&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-17a6639bd0c1",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107765353&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-3b9b614681b3",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-8827d0d5-44e7-40a6-a59d-c89b65761d7d&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=166&m_fcps=180&m_pi=166&m_pl=276&m_pv=2&m_rd=604&m_sh=900&m_sl=601&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=37569b9e-bf0d-469b-b982-0969d41926bc&ts=1787107771418&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-e491933b4468",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107771599&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-aba494f25906",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107771413&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-e979d1c9b5d2",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-4823ddab-796f-45cb-a159-eb6efa84b5cf&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=165&m_fcps=180&m_pi=165&m_pl=260&m_pv=2&m_rd=733&m_sh=900&m_sl=730&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=85a81806-6667-431f-8821-3f30cc5c3b6c&ts=1787107777718&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-36bedf37f95d",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107777714&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-0065a4c158f6",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107777896&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-99b4c47a4c8a",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-dbf8903e-91aa-42da-abf6-fff7e5ea3c58&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=165&m_fcps=176&m_pi=165&m_pl=0&m_pv=2&m_rd=559&m_sh=900&m_sl=556&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=a88ffaa5-a7ba-4a43-898e-518ee6d1204a&ts=1787107779145&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-1612361dd6b7",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107779326&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-e4e1fe9c5159",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107779141&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-c7522a368128",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-cc7ec607-b5ae-4f76-ba22-78abaa1eea70&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=178&m_fcps=196&m_pi=178&m_pl=0&m_pv=2&m_rd=593&m_sh=900&m_sl=590&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=28de9f39-3701-436d-96b7-93a15b52689e&ts=1787107785352&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-211dc0ff324e",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107785535&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-43f3f1bfb36e",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107785348&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-c7adb5780b5e",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-dbdd12ae-821c-48d1-a324-c19fea6c6db7&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=182&m_fcps=196&m_pi=182&m_pl=287&m_pv=2&m_rd=752&m_sh=900&m_sl=748&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=cf56b9a1-247d-4d46-98e2-458cc367a1f0&ts=1787107791757&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-6f9b175f277d",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107791752&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-6399b41e31e3",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107791938&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-6bf7272d5421",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-6c7e4746-607f-4ec8-a089-83a94eeb38ac&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=153&m_fcps=164&m_pi=153&m_pl=252&m_pv=2&m_rd=533&m_sh=900&m_sl=531&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=e5bd64aa-258c-4ec5-93cf-6da016b7032c&ts=1787107792679&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-1314b1af4429",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107792863&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-a78d07899e21",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107792674&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-747b8a56cccb",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-5ec3aa8c-9dd4-4fbd-86dc-6182395e5a38&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=214&m_fcps=224&m_pi=214&m_pl=0&m_pv=2&m_rd=584&m_sh=900&m_sl=580&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=5d4dec67-1521-45ae-8556-c84c36d169e3&ts=1787107798890&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-6c3000197a5f",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107799068&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-a1c5efdfee8d",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107798881&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-9a3bbb62fe27",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-3f65ed31-7720-4782-b80d-56a656a4e5d9&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=134&m_fcps=180&m_pi=134&m_pl=253&m_pv=2&m_rd=535&m_sh=900&m_sl=532&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=8eb5dbb1-af73-4750-ba54-2186f66c6029&ts=1787107805061&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-d182922a2bad",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107805243&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-cbd8944fa69b",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107805056&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-68173351138a",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-0ece719c-76f1-4d8b-bf48-a721a57a35b9&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=201&m_fcps=212&m_pi=201&m_pl=316&m_pv=2&m_rd=630&m_sh=900&m_sl=627&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=b190d89b-03e4-4587-b34c-4b18d1064b76&ts=1787107811313&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-3ae08e4ebbbb",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107811307&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-570d5f563651",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107811494&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-2c990ff41189",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-7988c199-1bcb-473e-8058-78ce624b6078&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=159&m_fcps=212&m_pi=159&m_pl=296&m_pv=2&m_rd=660&m_sh=900&m_sl=654&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=78a7d31f-e633-43ef-93a7-0d992f0da1f8&ts=1787107817553&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-9d26768b9552",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107817726&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-3fa30e36cce7",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107817547&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-0e07f9a3efee",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-541f6594-d873-47c2-a5a5-9e776c95e20c&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=172&m_fcps=184&m_pi=172&m_pl=284&m_pv=2&m_rd=648&m_sh=900&m_sl=644&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=a9d27fbf-5825-4402-81d4-bafecad6a3f0&ts=1787107823799&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-5cbe5adf407e",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107823978&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-4a79b4039d67",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107823793&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-0587fe42af55",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-752e2a5f-abe6-443c-b2c1-342836953df8&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=152&m_fcps=164&m_pi=152&m_pl=259&m_pv=2&m_rd=705&m_sh=900&m_sl=702&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=75c1fc64-3b5c-4ece-b1e1-70753d71d851&ts=1787107830034&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-1804a1d209c1",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107830030&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-7449aeb571ab",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-84ab66a2-02af-4c10-80da-29602cbea6c3&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=142&m_fcps=188&m_pi=142&m_pl=259&m_pv=2&m_rd=541&m_sh=900&m_sl=538&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=b5ea2fb1-b267-437a-8fbe-1c33c57a5cae&ts=1787107830962&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-ade2326526bc",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107830957&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-96fb2b189c5c",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107831208&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-ecc9ca9e3ba1",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-1707e9f5-cc1f-4592-aed5-4c72b9904714&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=207&m_fcps=220&m_pi=207&m_pl=330&m_pv=2&m_rd=777&m_sh=900&m_sl=773&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=22a8c98c-78c3-4784-b99f-bf36c81f0109&ts=1787107837358&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-9dbf48809c95",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107837353&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-8f77039ed57b",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107837537&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-163b3b3b7ca6",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-43487156-5eb7-47f8-8aef-d67dcfb94621&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=173&m_fcps=188&m_pi=173&m_pl=0&m_pv=2&m_rd=560&m_sh=900&m_sl=557&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=55758416-a3fd-43af-8dd2-7838daee3711&ts=1787107838308&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-ad17ec3c4ab5",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107838488&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-78312626be92",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107838299&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-66e09833f7ed",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-b30a10fa-4bc7-41ec-a7d1-9deb566099c8&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=202&m_fcps=216&m_pi=202&m_pl=0&m_pv=2&m_rd=600&m_sh=900&m_sl=597&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=11e24eae-3441-4dbd-bcd8-75026f14e57e&ts=1787107844529&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-c605124b73e5",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107844707&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-d9a236f2bc70",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107844520&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-de2c5f6fd187",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-620c5f4e-68ae-44b8-ab06-2129c0039563&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=147&m_fcps=192&m_pi=147&m_pl=270&m_pv=2&m_rd=566&m_sh=900&m_sl=560&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=4781e7d3-3489-47fa-90ba-73d0c5c0a65c&ts=1787107850706&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-f2299b20ab44",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107850698&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-91cebfce0925",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107850884&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-53454b1f288b",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-80e53708-3503-4b76-b886-018122ec2793&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=182&m_fcps=200&m_pi=182&m_pl=292&m_pv=2&m_rd=571&m_sh=900&m_sl=567&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=bbb56322-c890-43ef-9eb7-250ee7a4b580&ts=1787107856881&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-99dff17535bc",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107857064&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-a357027e4eb4",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107856877&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-654fa379f971",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107863096&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-396dc9dd88a8",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-ba875a10-034f-4b6e-b22b-79037b5d9385&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=171&m_fcps=184&m_pi=171&m_pl=278&m_pv=2&m_rd=785&m_sh=900&m_sl=781&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=9374fe41-4f7d-47cd-9d1a-134387cb2432&ts=1787107863322&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-ad5f5516b4ba",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107863283&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-dfc06102099f",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-c6b814c4-cf23-474b-9e29-7a69f5fab199&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=198&m_fcps=208&m_pi=198&m_pl=318&m_pv=2&m_rd=620&m_sh=900&m_sl=617&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=97120fd5-46cc-4777-8ba8-fbb627956b36&ts=1787107869336&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-b0f5779bb903",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107869325&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-6e03433bc7a2",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107869532&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    },
+    {
+      "id": "asset-0491c3793e02",
+      "originalUrl": "https://tr.snapchat.com/p?pid=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&ev=PAGE_VIEW&intg=gtm&pids=4c44e719-1ea9-48cd-b2fa-2627f58ce5be&u_c1=24e74180-abbf-4d99-99cd-b8fc8ae649b1&cdid=%40-f44e0fd9-9e4d-48ac-b63d-7121a3200869&u_sclid=0f7d59d8-2b11-4f20-8444-2866c2d55e11&u_scsid=e19dda1d-930f-4d9d-abf4-e2d2166554d8&gac=e2db8391&bg=false&bt=1d53c387&d_a=x86&d_bvs=%5B%2C%7B%22brand%22%3A%22Not%3DA%3FBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%22151.0.7922.34%22%7D%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22151.0.7922.34%22%7D%5D&d_os=10_15_7&d_ot=macOS&df=true&huah=true&m_dcl=262&m_fcps=280&m_pi=262&m_pl=356&m_pv=2&m_rd=655&m_sh=900&m_sl=651&m_sw=1440&pl=https%3A%2F%2Fcursor.com%2F&trackId=955b3beb-c87b-4e25-bfa5-8234a719746a&ts=1787107875575&v=3.60.0-2608111919",
+      "localPath": "assets/files/p-2aa4fa2070",
+      "mimeType": "image/png",
+      "sha256": "2aa4fa20701cdd6d8d56046069001186b5267e3ee7d0ef618ad2f4a683723e11"
+    },
+    {
+      "id": "asset-54313ebae4d2",
+      "originalUrl": "https://alb.reddit.com/rp.gif?ts=1787107875571&id=a2_io7m1pn781g4&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=f57f6586-0c89-494f-aaff-2a698ee1fe43&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fcursor.com%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1",
+      "localPath": "assets/files/rp-ef1955ae75.gif",
+      "mimeType": "image/gif",
+      "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+    },
+    {
+      "id": "asset-956e6b9888f8",
+      "originalUrl": "https://cursor.com/statsig-proxy/v1/rgstr?k=client-Bm4HJ0aDjXHQVsoACMREyLNxm5p6zzuzhO50MgtoT5D&st=javascript-client-react&sv=3.32.2&t=1787107875759&sid=d1e60d0e-26c9-4e8a-8af2-5360b64a7057&ec=1",
+      "localPath": "assets/files/rgstr-c955e57777",
+      "mimeType": "application/json",
+      "sha256": "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+    }
+  ]
+}

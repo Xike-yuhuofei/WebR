@@ -1,0 +1,24 @@
+{
+  "id": "state-535e42aa07-6",
+  "pageId": "page-1",
+  "url": "https://vite.dev/plugins/",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "artifacts": {
+    "screenshot": "screenshot.png",
+    "dom": "dom.html",
+    "fullpage": "fullpage.png",
+    "computedStyles": "computed-styles.json",
+    "accessibility": "accessibility.json",
+    "har": "page.har"
+  },
+  "fingerprint": "sha256:3899cbb7c88f59ce541a88134e6d2ab0e46802a23453569bb4a1689eea016971",
+  "title": "Plugins | Vite"
+}

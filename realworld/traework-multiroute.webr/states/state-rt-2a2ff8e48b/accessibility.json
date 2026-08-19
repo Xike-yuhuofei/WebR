@@ -1,0 +1,365 @@
+{
+  "nodeCount": 40,
+  "nodes": [
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "管理",
+      "name": null
+    },
+    {
+      "tag": "div",
+      "role": "tablist",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "插件技能",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "插件",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": "tab",
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "技能",
+      "name": null
+    },
+    {
+      "tag": "input",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "搜索插件"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "全部",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "推荐",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "金融投资",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "法务合规",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "开发工具",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "调研分析",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "界面设计",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "内容创作",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "效率提升",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "立即体验",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "了解更多",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Try in chat from preview",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "飞书根据我的飞书消息，生成一个工作季度总结文档立即体验",
+      "name": "Try in chat from preview"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "立即体验",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "了解更多",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Try in chat from preview",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "企业微信帮我创建下周一上午10点的项目启动会视频会议立即体验",
+      "name": "Try in chat from preview"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "立即体验",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "了解更多",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Try in chat from preview",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "钉钉总结一下我上周的钉钉消息，帮我生成一个周报立即体验",
+      "name": "Try in chat from preview"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "立即体验",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "了解更多",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Try in chat from preview",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "腾讯文档帮我绘制一个年度行业峰会筹备的思维导图立即体验",
+      "name": "Try in chat from preview"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "立即体验",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "了解更多",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Try in chat from preview",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "飞书根据我的飞书消息，生成一个工作季度总结文档立即体验",
+      "name": "Try in chat from preview"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Show 让好团队，更进一步",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Show 让好团队，更进一步"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Show 连接团队，也连接客户",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Show 连接团队，也连接客户"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Show 在钉钉，工作更顺畅",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Show 在钉钉，工作更顺畅"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Show 一起写，想法更快成形",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Show 一起写，想法更快成形"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Previous recommendation",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Previous recommendation"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": "Next recommendation",
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": null,
+      "name": "Next recommendation"
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "使用",
+      "name": null
+    },
+    {
+      "tag": "button",
+      "role": null,
+      "ariaLabel": null,
+      "ariaExpanded": null,
+      "ariaHidden": null,
+      "text": "使用",
+      "name": null
+    }
+  ]
+}
